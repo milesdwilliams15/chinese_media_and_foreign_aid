@@ -3,4 +3,4 @@
 Contributors are:
 
   - Miles D. Williams 
-  - Lucie Lu
+  - Lucie Lu 
