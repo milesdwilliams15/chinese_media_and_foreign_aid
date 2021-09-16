@@ -1,1 +1,6 @@
-# chinese_foreign_aid_and_media
+# Xinhua Coverage and Chinese Foreign Aid
+
+Contributors are:
+
+  - Miles D. Williams 
+  - Lucie Lu
