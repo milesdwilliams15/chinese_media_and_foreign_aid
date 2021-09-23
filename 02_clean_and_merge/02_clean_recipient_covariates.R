@@ -35,37 +35,224 @@ dem_data <- dem_data %>%
     recipient_iso3 = countrycode::countrycode(
       cown, "cown", "iso3c"
     )
-  )
+  ) %>%
+  
+  # Only keep vars of interest
+  select(year, recipient_iso3, pmm_fh, pmm_polity)
 
 
 # economic data -----------------------------------------------------------
 
 # Variables to keep:
 #   * population
-#   * employed
-#   * human capital index (years of school and returns to education)
+#   * unemployed rate (ILO)
 #   * real GDP in 2011 dollars
 
-econ_data <- pwt9.0 %>%
-  transmute(
-    country = country,
-    isocode = isocode,
-    year = year,
-    pop = pop * 1000000,
-    emp = emp * 1000000,
-    hc = hc,
-    gdp = rgdpna
-  )
+econ_data <- read_csv(
+  paste0(getwd(), "/01_data/covariate_data/world_bank_data.csv")
+)
 
-# Keep values for relevant years
 econ_data <- econ_data %>%
-  filter(year %in% 2000:2014)
-
-# Add iso3 code for later merging
-econ_data <- econ_data %>%
+  
+  # ensure codes are iso3 codes
   mutate(
-    recipient_iso3 =
-      countrycode::countrycode(
-        country, "country.name", "iso3c"
-      )
+    recipient_iso3 = countrycode::countrycode(
+      country, "country.name", "iso3c"
+    )
+  ) %>%
+  
+  # NAs are regions that we can drop
+  filter(!is.na(recipient_iso3)) %>%
+  
+  # Drop human capital index
+  select(-hc, -country)
+
+
+
+# disaster data -----------------------------------------------------------
+
+# Data on deaths from natural disasters:
+
+disaster_data <- 
+  read_csv(
+    paste0(getwd(),"/01_data/covariate_data/deaths-natural-disasters-ihme.csv")
   )
+
+# We already have iso3 code, so just rename:
+disaster_data <- disaster_data %>%
+  rename(recipient_iso3 = rcode) %>%
+  select(-recipient)
+
+
+# civil war data ----------------------------------------------------------
+
+cw_data <- read_csv(
+  paste0(getwd(),"/01_data/covariate_data/prio_civilwars.csv")
+)
+
+# Some cleaning:
+cw_data <- cw_data %>%
+  mutate(
+    
+    # replace NAs with 0
+    civilwar = replace_na(civilwar, 0),
+    
+    # get iso3 country codes
+    recipient_iso3 = 
+      countrycode::countrycode(
+        location, "country.name", "iso3c"
+      )
+  ) %>%
+  
+  # get rid of conflict IDs (make some trouble for merging)
+  select(-conflict_id) %>%
+  
+  # Drop NAs 
+  na.omit %>%
+  
+  # Reduce to one observation per year per country
+  group_by(year, recipient_iso3) %>%
+  summarize(
+    civilwar = max(civilwar)
+  )
+
+
+# distance data -----------------------------------------------------------
+
+dist_data <- 
+  haven::read_dta(
+    paste0(getwd(),"/01_data/covariate_data/dist_cepii.dta")
+  )
+
+dist_data <- dist_data %>%
+  
+  # Only keep bilateral distances wrt China ("CHN")
+  filter(iso_o == "CHN") %>%
+  
+  # Rename iso_d 
+  rename(recipient_iso3 = iso_d) %>%
+  
+  # only keep distance measures
+  select(recipient_iso3, dist, distw, distwces)
+
+
+
+# trade data --------------------------------------------------------------
+
+trade_data <- read_csv(
+  paste0(getwd(), "/01_data/covariate_data/trade_data.csv")
+)
+
+trade_data <- trade_data %>%
+  
+  # Only keep CHN in dcode
+  filter(dcode=="CHN") %>%
+  
+  # Rename rcode 
+  rename(recipient_iso3 = rcode) %>%
+  
+  # Drop dcode
+  select(-dcode)
+
+
+# Alliance data -----------------------------------------------------------
+
+ally_data <- read_csv(
+  paste0(getwd(), "/01_data/covariate_data/atop.csv")
+)
+
+ally_data <- ally_data %>%
+  
+  # get iso codes
+  mutate(
+    dcode = countrycode::countrycode(
+      mem1, origin = 'cown',
+      destination = 'iso3c'
+    ),
+    recipient_iso3 = countrycode::countrycode(
+      mem2, origin = 'cown',
+      destination = 'iso3c'
+    )
+  ) %>%
+  
+  # Only keep cases where dcode == CHN
+  filter(dcode == "CHN") %>%
+  
+  # keep the alliance variable + id vars
+  select(
+    year, recipient_iso3, atopally
+  )
+
+
+# combine into final covariate dataset ------------------------------------
+
+cov_data <- # recipient + year to match 
+  read_csv(
+    paste0(getwd(), "/01_data/aid_data/clean_aid_data.csv")
+  ) %>%
+  select(year, recipient_iso3)
+
+cov_list <- list(
+  dem_data, econ_data, disaster_data,
+  cw_data, dist_data, trade_data, ally_data
+)
+
+start_n <- nrow(cov_data)
+for(i in 1:length(cov_list)) {
+  if(i != 5) {
+    by_vars <- c("recipient_iso3", "year")
+  } else {
+    by_vars <- "recipient_iso3"
+  }
+  cov_data <- cov_data %>%
+    left_join(
+      cov_list[[i]],
+      by = by_vars
+    )
+  if(start_n != nrow(cov_data)) 
+    stop("Something went wrong in merge ", i, "!")
+} 
+
+
+
+# Clean up missing values -------------------------------------------------
+
+# how many obs have missing data?
+start_n - nrow(na.omit(cov_data)) # okay that's a lot
+
+# Some vars with NAs we can impute missing as '0'
+cov_data <- cov_data %>%
+  
+  # get rid of some additional junk variables
+  select(-code) %>%
+  
+  # impute ally and civil war variables
+  mutate_at(
+    c("atopally", "civilwar"),
+    ~ replace_na(.x, 0)
+  )
+
+start_n - nrow(na.omit(cov_data)) # that's better, but not great
+
+# Use random forests to impute remaining missing data
+library(missRanger)
+cov_data <- cov_data %>%
+  missRanger(pmm.k = 3) # combine imputations with predictive mean matching
+
+# for citation of missRanger, see: https://academic.oup.com/bioinformatics/article/28/1/112/219101
+
+# Fix imputed distance vals to be mean of predictions for a given recipient
+cov_data <- cov_data %>%
+  group_by(recipient_iso3) %>%
+  mutate_at(
+    c("dist", "distw", "distwces"),
+    mean
+  )
+
+
+# save the results --------------------------------------------------------
+
+write_csv(
+  cov_data,
+  paste0(getwd(), "/01_data/covariate_data/clean_covariate_data.csv")
+)
