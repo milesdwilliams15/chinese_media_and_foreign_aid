@@ -8,7 +8,6 @@
 rm(list = ls())       # tidy the workspace
 library(tidyverse)    # for grammar
 library(democracyData)# a bunch of democracy datasets
-library(pwt9)
 
 
 # democracy data ----------------------------------------------------------
