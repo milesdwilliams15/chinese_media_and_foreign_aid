@@ -27,4 +27,4 @@ http://www.china.org.cn/english/international/96576.htm
 
 - Xinhua: China-Made Anti-AIDS Medicine Said Benefiting Developing Countries, [WHO, South Africa] http://covid-19.chinadaily.com.cn/english/doc/2004-05/23/content_333017.htm
 
-- PRC FM Spokesman: PRC Offers Emergency Aid for DPRK Train Explosion; Hu Calls Kim [DPRK Train Explosion Accident, Pyong'an Province] https://reliefweb.int/report/democratic-peoples-republic-korea/china-offers-aid-n-korea
+- PRC FM Spokesman: PRC Offers Emergency Aid for DPRK Train Explosion; Hu Calls Kim, 2004, [DPRK Train Explosion Accident, Pyong'an Province] https://reliefweb.int/report/democratic-peoples-republic-korea/china-offers-aid-n-korea
