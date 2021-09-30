@@ -36,6 +36,10 @@ http://www.china.org.cn/english/international/96576.htm
 
 ## All the media coverage by Xinhua
 
-- total counts of a country; salience
-- total search
-- check with Joe why I only get a fraction of the data
+- total search: 2,255,332 is the total from 2000 to 2014. Able to retrieve 100,000 at a time. 
+- total counts of a country; salience:
+  - if we go to this route, we can use the "country" column to extract the countries mentioned in the article; "extracted_organizations" to extract the topics.
+  - extract one year's articles at a time
+
+
+
