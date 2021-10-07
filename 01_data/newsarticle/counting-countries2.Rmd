@@ -1,0 +1,46 @@
+---
+title: "Preprocessing: counting countries Xinhua 2000"
+author: "Lucie Lu"
+date: "10/6/2021"
+output: html_document
+---
+
+```{r}
+test <- read.csv("Xinhua_2000.csv")
+#head(test)
+library(tidyverse)
+#https://hbctraining.github.io/Intro-to-R/lessons/08_intro_tidyverse.html
+test <- test %>% 
+  rownames_to_column() %>% 
+  as_tibble()
+```
+
+```{r}
+df <- test %>% 
+  pull(	
+country) %>% 
+  str_split("[|]")
+
+max(lengths(df))
+
+names(df) <- test$rowname
+#df_2 <- data.frame(matrix(unlist(df), nrow=max(lengths(df)), byrow=TRUE),stringsAsFactors=FALSE)
+
+library (plyr)
+df_2 <- ldply (df, data.frame)
+df_2 <- tibble(df_2)
+colnames(df_2)[2] <- "country_mentioned"
+
+df_2$countries_mentioned <- as.factor(df_2$country_mentioned)
+```
+
+```{r}
+library(dplyr)
+df_2 %>% 
+  group_by(country_mentioned) %>%
+  dplyr::summarise(n = n()) %>%
+  arrange(desc(n))
+
+#duplicated name summarise in both packages
+#https://statisticsglobe.com/r-error-must-only-be-used-inside-dplyr-verbs
+```
