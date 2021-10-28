@@ -51,6 +51,11 @@ econ_data <- read_csv(
   paste0(getwd(), "/01_data/covariate_data/world_bank_data.csv")
 )
 
+# Pull out China's to add in later
+china_gdp <- econ_data %>%
+  filter(country == "China") %>%
+  select(year, gdp)
+
 econ_data <- econ_data %>%
   
   # ensure codes are iso3 codes
@@ -64,7 +69,13 @@ econ_data <- econ_data %>%
   filter(!is.na(recipient_iso3)) %>%
   
   # Drop human capital index
-  select(-hc, -country)
+  select(-hc, -country) %>%
+  
+  # Merge in China GDP data
+  left_join(
+    china_gdp %>% rename(china_gdp = gdp),
+    by = "year"
+  )
 
 
 
