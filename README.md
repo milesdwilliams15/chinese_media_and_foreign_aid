@@ -38,3 +38,25 @@ Contributors are:
 
 ## data sources
 - the aid data is also scrapped from the news, but we defend ourselves in saying those data not only use Xinhua source, so the data sources are not completely overlapping.
+
+# Meeting memo (12/3/2021)
+Miles: 
+## Analysis for getting around endogeneity issues
+- Lagged instruments -- 2LSL: regress coverage on a bunch of stuff and previous coverage; then regress predicted coverage on aid
+- Some alternative instrument
+- GMM
+- Just using lag of coverage
+
+### Identification:
+- Between-recipient coverage at a given point in time (subset, African continents for example)
+- Within-recipient coverage over time (key recipients)
+
+### other things
+- add some dummies
+- go back to redo the imputation and create alternative dataset
+
+Lucie: 
+## update the literature list
+## write a rough draft of literature review
+## think about other models
+
