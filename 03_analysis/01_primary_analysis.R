@@ -50,9 +50,9 @@ trans_dt <-
     asinh # use inverse hyperbolic sine rather than log(1 + x)
   ) %>%
   group_by(recipient_iso3) %>%
-  # mutate(
-  #   aid = lag(aid, by = "year")
-  # ) %>%
+  mutate(
+    count = lead(count, by = "year")
+  ) %>%
   ungroup %>%
   na.omit
 
@@ -77,7 +77,7 @@ pdata <- # for estimating random recipient effects with censReg
 # Predicting Coverage
 spec <- 
   count ~ aid + pmm_polity + gdp + pop + unemp + disaster + civilwar +
-  dist + trade + atopally + as.factor(year) | 
+  dist + trade + atopally + as.factor(year)
 
 
 ml_tobit <- function(eq, count = T) { # multilevel tobit with recipient random effects
@@ -153,9 +153,9 @@ trans_dt <-
     asinh # use inverse hyperbolic sine rather than log(1 + x)
   ) %>%
   group_by(recipient_iso3) %>%
-  # mutate(
-  #   aid = lead(aid, by = "year")
-  # ) %>%
+  mutate(
+    aid = lead(aid, by = "year")
+  ) %>%
   ungroup %>%
   na.omit
 spec <- 
