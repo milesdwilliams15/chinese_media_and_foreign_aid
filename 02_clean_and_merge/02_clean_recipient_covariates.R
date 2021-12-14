@@ -8,7 +8,7 @@
 rm(list = ls())       # tidy the workspace
 library(tidyverse)    # for grammar
 library(democracyData)# a bunch of democracy datasets
-
+library(countrycode)  # to standardize country codes
 
 # democracy data ----------------------------------------------------------
 
@@ -246,13 +246,13 @@ start_n - nrow(na.omit(cov_data)) # that's better, but not great
 
 # Use random forests to impute remaining missing data
 library(missRanger)
-cov_data <- cov_data %>%
+imp_cov_data <- cov_data %>%
   missRanger(pmm.k = 3) # combine imputations with predictive mean matching
 
 # for citation of missRanger, see: https://academic.oup.com/bioinformatics/article/28/1/112/219101
 
 # Fix imputed distance vals to be mean of predictions for a given recipient
-cov_data <- cov_data %>%
+imp_cov_data <- imp_cov_data %>%
   group_by(recipient_iso3) %>%
   mutate_at(
     c("dist", "distw", "distwces"),
@@ -260,9 +260,35 @@ cov_data <- cov_data %>%
   )
 
 
+# Add regional dummies ---------------------------------------------------
+
+cov_data <- 
+  cov_data %>%
+  mutate(
+    region = countrycode(
+      recipient_iso3,
+      origin = "iso3c",
+      destination = "region"
+    )
+  )
+imp_cov_data <- 
+  imp_cov_data %>%
+  mutate(
+    region = countrycode(
+      recipient_iso3,
+      origin = "iso3c",
+      destination = "region"
+    )
+  )
+
+
 # save the results --------------------------------------------------------
 
 write_csv(
+  imp_cov_data,
+  paste0(getwd(), "/01_data/covariate_data/clean_covariate_data_imputed.csv")
+)
+write_csv(
   cov_data,
-  paste0(getwd(), "/01_data/covariate_data/clean_covariate_data.csv")
+  paste0(getwd(), "/01_data/covariate_data/clean_covariate_data_nonimputed.csv")
 )
