@@ -48,7 +48,7 @@ imp_final_data <-
     by = c("recipient_iso3", "year")
   ) %>%
   left_join(
-    cov_data, 
+    imp_cov_data, 
     by = c("recipient_iso3", "year")
   )
 

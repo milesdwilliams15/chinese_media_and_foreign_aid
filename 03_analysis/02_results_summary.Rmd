@@ -1,0 +1,30 @@
+---
+title: "Results"
+#author: "Miles D. Williams"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, warning = F, message = F)
+```
+
+**Note**: Table 1 shows results with the imputed dataset. Table 2 shows results with the non-imputed dataset.
+
+
+
+```{r, results='asis'}
+load(
+  paste0(getwd(), "/tab1.R")
+)
+reg.tab1 <- reg.tab
+cat(reg.tab1)
+```
+
+```{r, results='asis'}
+load(
+  paste0(getwd(), "/tab2.R")
+)
+reg.tab2 <- reg.tab
+cat(reg.tab2)
+```
