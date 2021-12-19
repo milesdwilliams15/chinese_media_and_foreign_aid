@@ -1,0 +1,80 @@
+---
+title: "ElasticNet and Lasso"
+author: "Lucie Lu"
+date: "12/18/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+
+data <- read.csv("https://raw.githubusercontent.com/milesdwilliams15/chinese_media_and_foreign_aid/main/01_data/final_data/final_data_imputed.csv")
+
+library(Matrix)
+
+set.seed(2234653)
+split_data <- sample(nrow(data), floor(0.7*nrow(data)))
+train_data <- data [split_data,]
+test_data <- data [-split_data,]
+
+
+library(glmnet) 
+#train_sparse_3_sub <- sparse.model.matrix(~.,train_3_sub)
+#test_sparse_3_sub <- sparse.model.matrix(~.,test_3_sub)
+
+library(caret)
+
+#set training control
+train_control <- trainControl(method="cv", number = 10, 
+                              search="random",
+                              verboseIter=T)
+
+sel_x <- train_data[c("count", "pmm_polity", "gdp", "pop", "unemp", "disaster", "civilwar",
+                          "dist", "trade", "atopally")]
+
+# tune the variables to get lambda and alpha for Elastic Net
+fit_en <- train(y=train_data$aid, x=as.matrix(sel_x),
+                              method="glmnet", tuneLength=25, trControl=train_control)
+
+fit_elasticnet_f <- glmnet(y=train_data$aid, x=as.matrix(sel_x), 
+                                 lambda = 2.17, alpha = 0.031)
+
+coef(fit_elasticnet_f)
+
+
+```
+
+```{r}
+
+sel_x_t <- test_data[c("count", "pmm_polity", "gdp", "pop", "unemp", "disaster", "civilwar",
+                          "dist", "trade", "atopally")]
+
+
+pred_elasticnet_f <- predict(fit_elasticnet_f, as.matrix(sel_x_t))
+rmse_f <-  sqrt(mean((pred_elasticnet_f - test_data$aid)^2))
+rmse_f
+
+#this is very huge.....
+library(ModelMetrics)
+rmse(test_data$aid, pred_elasticnet_f)
+```
+
+
+
+```{r ridge}
+
+set.seed(323445)
+fit2 <- cv.glmnet(x = data.matrix(sel_x), y = train_data$aid, nfolds = 10, alpha = 1)
+plot(fit2$glmnet.fit, "lambda")
+plot(fit2) #MSE is huge here
+
+# using the lambda minimizing the cross-validation error leaves us only the "count" variable. Odd.
+coef(fit2, s = "lambda.min")
+
+# nothing is left here... This gives a larger penalty with more shrinkage. 
+coef(fit2, s = "lambda.1se")
+
+```
