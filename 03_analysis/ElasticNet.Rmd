@@ -13,6 +13,26 @@ knitr::opts_chunk$set(echo = TRUE)
 
 data <- read.csv("https://raw.githubusercontent.com/milesdwilliams15/chinese_media_and_foreign_aid/main/01_data/final_data/final_data_imputed.csv")
 
+# MW: added variable transformations
+library(tidyverse)
+data <- data %>%
+  mutate(
+    income = gdp / pop
+  ) %>%
+  mutate_at(
+    c("aid", "count", "gdp", "income", "pop", "unemp",
+      "disaster", "dist", "distw", 
+      "distwces", "trade", "china_gdp"),
+    asinh # use inverse hyperbolic sine rather than log(1 + x)
+  ) %>%
+  group_by(recipient_iso3) %>%
+  mutate(
+    aid = lead(aid, by = "year"),
+    lead_count = lead(count, by = "year")
+  ) %>%
+  ungroup %>%
+  na.omit
+
 library(Matrix)
 
 set.seed(2234653)
