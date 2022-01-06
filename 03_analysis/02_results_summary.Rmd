@@ -3,13 +3,16 @@ title: "Results"
 #author: "Miles D. Williams"
 date: "`r Sys.Date()`"
 output: pdf_document
+header-includes:
+  - \usepackage{lscape}
+  - \usepackage{pdfpages}
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = F, warning = F, message = F)
 ```
 
-**Note**: Table 1 shows results with the imputed dataset. Table 2 shows results with the non-imputed dataset.
+**Note**: Table 1 shows full panel results with the imputed dataset. Table 2 shows full panel results with the non-imputed dataset. Tables 3-5 show OLS, IV, and Lewbel IV estimates by region, respectively, for the imputed dataset. Tables 6-8 show the same with the non-imputed dataset.
 
 
 
@@ -21,6 +24,7 @@ reg.tab1 <- reg.tab
 cat(reg.tab1)
 ```
 
+
 ```{r, results='asis'}
 load(
   paste0(getwd(), "/tab2.R")
@@ -28,3 +32,61 @@ load(
 reg.tab2 <- reg.tab
 cat(reg.tab2)
 ```
+
+
+\newpage
+\begin{landscape}
+
+```{r, results='asis'}
+load(
+  paste0(getwd(), "/ols_region_tab1.R")
+)
+cat(ols.region)
+```
+
+
+```{r, results='asis'}
+load(
+  paste0(getwd(), "/ivlag_region_tab1.R")
+)
+cat(ivlag.region)
+```
+
+
+```{r, results='asis'}
+load(
+  paste0(getwd(), "/ivlew_region_tab1.R")
+)
+cat(ivlew.region)
+```
+
+
+
+```{r, results='asis'}
+load(
+  paste0(getwd(), "/ols_region_tab2.R")
+)
+cat(ols.region)
+```
+
+
+```{r, results='asis'}
+load(
+  paste0(getwd(), "/ivlag_region_tab2.R")
+)
+cat(ivlag.region)
+```
+
+
+```{r, results='asis'}
+load(
+  paste0(getwd(), "/ivlew_region_tab2.R")
+)
+cat(ivlew.region)
+```
+
+
+\end{landscape}
+
+
+

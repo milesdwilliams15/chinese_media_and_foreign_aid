@@ -99,7 +99,6 @@ iv_lag <- iv_robust(
 )
 
 ## Lewbel Instruments
-
 stage1.fit <- lm(
   update(spec, lead_count ~ .),
   data = pdata
@@ -126,6 +125,7 @@ iv_lewbel <- iv_robust(
   clusters = recipient_iso3
 )
 
+## Make regression table to summarize results:
 coef_map <- list(
   "count" = "Coverage (lag)",
   "lead_count" = "Coverage (in-year)",
@@ -160,10 +160,169 @@ reg.tab <- texreg(
   caption = "Model Estimates"
 )
 
-
-# regression tables -------------------------------------------------------
+## Save the regression table:
 save(
   reg.tab,
   file = paste0(getwd(), "/03_analysis/tab",i,".R")
 )
 
+
+# results by region -------------------------------------------------------
+
+spec <- # specification without predictor of interest 
+  aid ~ pmm_polity + gdp + pop + unemp + disaster + civilwar +
+  dist + trade + atopally + as.factor(year)
+pdata <- mutate(pdata, region = str_replace(region, "&", "+"))
+
+# models to estimate by region:
+# 1. OLS
+# 2. lag of dv as instrument for in-year dv
+# 3. internal instruments via Lewbel approach
+
+## OLS
+ols_region <- pdata %>% 
+  
+  # Split data by region
+  group_split(
+    region
+  ) %>% 
+  
+  # Estimate models for each region
+  map(
+    ~ lm_robust(
+        update(spec, ~ count + .),
+        data = .,
+        se_type = "stata",
+        clusters = recipient_iso3
+      )
+  ) %>%
+  
+  # Ensure the list of models is appropriately labeled
+  set_names(
+    sort(unique(pdata$region))
+  )
+  
+
+## With lag of DV as IV
+iv_spec <- 
+  aid ~ lead_count + pmm_polity + gdp + pop + unemp + disaster + civilwar +
+  dist + trade + atopally + as.factor(year) |
+  count +  pmm_polity + gdp + pop + unemp + disaster + civilwar +
+  dist + trade + atopally + as.factor(year)
+iv_lag_region <- pdata %>%
+  
+  # Split data by region
+  group_split(
+    region
+  ) %>%
+  
+  # Estimate models by region
+  map(
+    ~ iv_robust(
+        iv_spec,
+        data = .,
+        se_type = "stata",
+        clusters = recipient_iso3
+      )
+  ) %>%
+  
+  # Label the models
+  set_names(
+    sort(unique(pdata$region))
+  )
+  
+
+## Lewbel Instruments
+iv_lewbel_region <- pdata %>%
+  
+  # Split by region
+  group_split(
+    region
+  ) %>%
+  
+  # Estiamte models by region
+  map(
+    ~ {
+      stage1.fit <- lm(
+        update(spec, lead_count ~ .),
+        data = .
+      )
+      eps <- resid(stage1.fit)
+      z <- model.frame(
+        update(spec, ~ . - as.factor(year)),
+        data = .
+      )[, -1]
+      zbr <- apply(z, 2, function(x) (x - mean(x)) * eps^2)
+      colnames(zbr) <- paste0("z", 1:ncol(zbr))
+      zbr <- as_tibble(zbr)
+      ndata <- bind_cols(., zbr)
+      lewbel_spec <- 
+        aid ~ lead_count + pmm_polity + gdp + pop + unemp + disaster + civilwar +
+        dist + trade + atopally + as.factor(year) |
+        pmm_polity + gdp + pop + unemp + disaster + civilwar +
+        dist + trade + atopally + as.factor(year) + 
+        z1 + z2 + z3 + z4 + z5 + z6 + z7 + z8 + z9
+      iv_robust(
+        lewbel_spec,
+        data = ndata,
+        se_type = "stata",
+        clusters = recipient_iso3
+      )
+    }
+  ) %>%
+  
+  # Label the models
+  set_names(
+    sort(unique(pdata$region))
+  )
+
+## Make regression tables to summarize results:
+coef_map <- list(
+  "count" = "Coverage (lag)",
+  "lead_count" = "Coverage (in-year)",
+  "pmm_polity" = "Polity",
+  "gdp" = "GDP",
+  "pop" = "Population",
+  "unemp" = "Unemployment",
+  "disaster" = "Disaster Deaths",
+  "civilwar" = "Civil War",
+  "trade" = "Trade",
+  "atopally" = "Alliance",
+  "dist" = "Distance"
+)
+
+ols.region <- texreg(
+  ols_region,
+  custom.coef.map = coef_map,
+  include.ci = F,
+  stars = c(0.001, 0.01, 0.05, 0.1),
+  caption = "OLS Estimates by Region"
+)
+ivlag.region <- texreg(
+  iv_lag_region,
+  custom.coef.map = coef_map,
+  include.ci = F,
+  stars = c(0.001, 0.01, 0.05, 0.1),
+  caption = "IV Lag Estimates by Region"
+)
+ivlew.region <- texreg(
+  iv_lewbel_region,
+  custom.coef.map = coef_map,
+  include.ci = F,
+  stars = c(0.001, 0.01, 0.05, 0.1),
+  caption = "Lewbel IV Estimates by Region"
+)
+
+## Save the regression table:
+save(
+  ols.region,
+  file = paste0(getwd(), "/03_analysis/ols_region_tab",i,".R")
+)
+save(
+  ivlag.region,
+  file = paste0(getwd(), "/03_analysis/ivlag_region_tab",i,".R")
+)
+save(
+  ivlew.region,
+  file = paste0(getwd(), "/03_analysis/ivlew_region_tab",i,".R")
+)
