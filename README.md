@@ -60,3 +60,6 @@ Contributors are:
 - write a rough draft of literature review
 - think about other models
 
+# Meeting Memo (1/20/2022)
+Aid data (https://www.aiddata.org/blog/call-for-papers-separating-fact-from-fiction-chinas-growing-global-influence-and-its-implications)
+
