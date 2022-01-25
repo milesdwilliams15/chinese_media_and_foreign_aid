@@ -1,5 +1,7 @@
 I find the column `government_visits` in the file named `ChinesePublicDiplomacy.csv` the most useful to us.
 
+**Definition** of `government_visits`: Total number of high-level and provincial-level visits by government officials between China and the receiving country each year. Includes visits in the receiving country, in China, or in a third location.
+
 
 **Scope**: Quantitative measures of China’s public diplomacy tools leveraged bilaterally.
 **Year Coverage**: 2000-2016 for EAP region and 2000-2018 for SCA region
