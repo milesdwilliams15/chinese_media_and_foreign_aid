@@ -16,6 +16,10 @@ aid_data <-
   read_csv(
     paste0(getwd(), "/01_data/aid_data/clean_aid_data.csv")
   )
+dip_data <-
+  read_csv(
+    paste0(getwd(), "/01_data/PublicDiplomacy/clean_diplomacy_data.csv")
+  )
 xin_data <-
   read_csv(
     paste0(getwd(), "/01_data/newsarticle/xinhua_cleaned.csv")
@@ -39,12 +43,20 @@ final_data <-
     by = c("recipient_iso3", "year")
   ) %>%
   left_join(
+    dip_data,
+    by = c("recipient_iso3", "year")
+  ) %>%
+  left_join(
     cov_data, 
     by = c("recipient_iso3", "year")
   )
 imp_final_data <-
   left_join(
     aid_data, xin_data,
+    by = c("recipient_iso3", "year")
+  ) %>%
+  left_join(
+    dip_data,
     by = c("recipient_iso3", "year")
   ) %>%
   left_join(
@@ -61,12 +73,12 @@ nrow(aid_data) - nrow(final_data) # no difference!
 
 final_data <- final_data %>%
   mutate_at(
-    c("count", "freq"),
+    c("count", "freq", "govt_visits", "mil_visits", "total_visits"),
     ~ replace_na(.x, 0)
   )
 imp_final_data <- imp_final_data %>%
   mutate_at(
-    c("count", "freq"),
+    c("count", "freq", "govt_visits", "mil_visits", "total_visits"),
     ~ replace_na(.x, 0)
   )
 
