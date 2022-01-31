@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2017.8.26)  6 JAN 2022 08:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2017.8.26)  27 JAN 2022 14:06
 entering extended mode
 **./02_results_summary.tex
 (02_results_summary.tex
@@ -1002,50 +1002,50 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3]
-Overfull \hbox (69.68181pt too wide) in paragraph at lines 176--209
+Overfull \hbox (76.68115pt too wide) in paragraph at lines 180--215
  [] 
  []
 
 
-Overfull \hbox (81.20944pt too wide) in paragraph at lines 218--251
+Overfull \hbox (81.20944pt too wide) in paragraph at lines 224--259
  [] 
  []
 
 
-Overfull \hbox (81.20944pt too wide) in paragraph at lines 260--293
+Overfull \hbox (81.20944pt too wide) in paragraph at lines 268--303
  [] 
  []
 
 
-Overfull \hbox (69.68181pt too wide) in paragraph at lines 303--336
+Overfull \hbox (76.68115pt too wide) in paragraph at lines 313--348
  [] 
  []
 
 
-Overfull \hbox (81.20944pt too wide) in paragraph at lines 345--378
+Overfull \hbox (81.20944pt too wide) in paragraph at lines 357--392
  [] 
  []
 
 
-Overfull \hbox (81.20944pt too wide) in paragraph at lines 387--420
+Overfull \hbox (81.20944pt too wide) in paragraph at lines 401--436
  [] 
  []
 
 [4] [5] [6] [7] [8] [9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 428.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 428.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 444.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 444.
 (02_results_summary.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 428.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 428.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 444.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 444.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 428.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 444.
  ) 
 Here is how much of TeX's memory you used:
  13567 strings out of 493335
  196414 string characters out of 3136680
- 358193 words of memory out of 3000000
+ 361193 words of memory out of 3000000
  16859 multiletter control sequences out of 15000+200000
  44618 words of font info for 62 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1062,7 +1062,7 @@ X 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
 type1/public/lm/lmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
 lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy5.pf
 b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy7.pfb>
-Output written on 02_results_summary.pdf (9 pages, 158612 bytes).
+Output written on 02_results_summary.pdf (9 pages, 158219 bytes).
 PDF statistics:
  104 PDF objects out of 1000 (max. 8388607)
  18 named destinations out of 1000 (max. 500000)

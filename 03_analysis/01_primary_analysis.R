@@ -18,7 +18,7 @@ trans_dt <-
     income = gdp / pop
   ) %>%
   mutate_at(
-    c("aid", "count", "gdp", "income", "pop", "unemp",
+    c("aid", "count", "govt_visits", "gdp", "income", "pop", "unemp",
       "disaster", "dist", "distw", 
       "distwces", "trade", "china_gdp"),
     asinh # use inverse hyperbolic sine rather than log(1 + x)
@@ -41,7 +41,7 @@ pdata <- # for estimating random recipient effects with censReg
 # estimate main models ----------------------------------------------------
 
 spec <- # specification without predictor of interest 
-  aid ~ pmm_polity + gdp + pop + unemp + disaster + civilwar +
+  aid ~ govt_visits + pmm_polity + gdp + pop + unemp + disaster + civilwar +
   dist + trade + atopally + as.factor(year)
 
 # models to estimate:
@@ -87,7 +87,7 @@ ols_level <- lm_robust(
 
 ## With lag of DV as IV
 iv_spec <- 
-  aid ~ lead_count + pmm_polity + gdp + pop + unemp + disaster + civilwar +
+  aid ~ lead_count + govt_visits + pmm_polity + gdp + pop + unemp + disaster + civilwar +
     dist + trade + atopally + as.factor(year) |
     count +  pmm_polity + gdp + pop + unemp + disaster + civilwar +
     dist + trade + atopally + as.factor(year)
@@ -113,7 +113,7 @@ colnames(zbr) <- paste0("z", 1:ncol(zbr))
 zbr <- as_tibble(zbr)
 ndata <- bind_cols(pdata, zbr)
 lewbel_spec <- 
-  aid ~ lead_count + pmm_polity + gdp + pop + unemp + disaster + civilwar +
+  aid ~ lead_count + govt_visits + pmm_polity + gdp + pop + unemp + disaster + civilwar +
     dist + trade + atopally + as.factor(year) |
     pmm_polity + gdp + pop + unemp + disaster + civilwar +
     dist + trade + atopally + as.factor(year) + 
@@ -129,6 +129,7 @@ iv_lewbel <- iv_robust(
 coef_map <- list(
   "count" = "Coverage (lag)",
   "lead_count" = "Coverage (in-year)",
+  "govt_visits" = "Diplomatic Visits",
   "pmm_polity" = "Polity",
   "gdp" = "GDP",
   "pop" = "Population",
@@ -170,7 +171,7 @@ save(
 # results by region -------------------------------------------------------
 
 spec <- # specification without predictor of interest 
-  aid ~ pmm_polity + gdp + pop + unemp + disaster + civilwar +
+  aid ~ govt_visits + pmm_polity + gdp + pop + unemp + disaster + civilwar +
   dist + trade + atopally + as.factor(year)
 pdata <- mutate(pdata, region = str_replace(region, "&", "+"))
 
@@ -205,7 +206,7 @@ ols_region <- pdata %>%
 
 ## With lag of DV as IV
 iv_spec <- 
-  aid ~ lead_count + pmm_polity + gdp + pop + unemp + disaster + civilwar +
+  aid ~ lead_count + govt_visits + pmm_polity + gdp + pop + unemp + disaster + civilwar +
   dist + trade + atopally + as.factor(year) |
   count +  pmm_polity + gdp + pop + unemp + disaster + civilwar +
   dist + trade + atopally + as.factor(year)
@@ -257,7 +258,7 @@ iv_lewbel_region <- pdata %>%
       zbr <- as_tibble(zbr)
       ndata <- bind_cols(., zbr)
       lewbel_spec <- 
-        aid ~ lead_count + pmm_polity + gdp + pop + unemp + disaster + civilwar +
+        aid ~ lead_count + govt_visits + pmm_polity + gdp + pop + unemp + disaster + civilwar +
         dist + trade + atopally + as.factor(year) |
         pmm_polity + gdp + pop + unemp + disaster + civilwar +
         dist + trade + atopally + as.factor(year) + 
@@ -280,6 +281,7 @@ iv_lewbel_region <- pdata %>%
 coef_map <- list(
   "count" = "Coverage (lag)",
   "lead_count" = "Coverage (in-year)",
+  "govt_visits" = "Diplomatic Visits",
   "pmm_polity" = "Polity",
   "gdp" = "GDP",
   "pop" = "Population",
