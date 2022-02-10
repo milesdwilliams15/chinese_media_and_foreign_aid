@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2017.8.26)  27 JAN 2022 14:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2017.8.26)  10 FEB 2022 12:53
 entering extended mode
 **./02_results_summary.tex
 (02_results_summary.tex
@@ -994,53 +994,53 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 82.
+(Font)              <10> on input line 83.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 82.
+(Font)              <7> on input line 83.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 82.
+(Font)              <5> on input line 83.
 [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3]
-Overfull \hbox (76.68115pt too wide) in paragraph at lines 180--215
+Overfull \hbox (100.57025pt too wide) in paragraph at lines 197--232
  [] 
  []
 
 
-Overfull \hbox (81.20944pt too wide) in paragraph at lines 224--259
+Overfull \hbox (117.82045pt too wide) in paragraph at lines 241--276
  [] 
  []
 
 
-Overfull \hbox (81.20944pt too wide) in paragraph at lines 268--303
+Overfull \hbox (81.20944pt too wide) in paragraph at lines 285--320
  [] 
  []
 
 
-Overfull \hbox (76.68115pt too wide) in paragraph at lines 313--348
+Overfull \hbox (100.57025pt too wide) in paragraph at lines 330--365
  [] 
  []
 
 
-Overfull \hbox (81.20944pt too wide) in paragraph at lines 357--392
+Overfull \hbox (117.82045pt too wide) in paragraph at lines 374--409
  [] 
  []
 
 
-Overfull \hbox (81.20944pt too wide) in paragraph at lines 401--436
+Overfull \hbox (81.20944pt too wide) in paragraph at lines 418--453
  [] 
  []
 
 [4] [5] [6] [7] [8] [9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 444.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 444.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 461.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 461.
 (02_results_summary.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 444.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 444.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 461.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 461.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 444.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 461.
  ) 
 Here is how much of TeX's memory you used:
  13567 strings out of 493335
@@ -1062,7 +1062,7 @@ X 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
 type1/public/lm/lmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
 lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy5.pf
 b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy7.pfb>
-Output written on 02_results_summary.pdf (9 pages, 158219 bytes).
+Output written on 02_results_summary.pdf (9 pages, 158331 bytes).
 PDF statistics:
  104 PDF objects out of 1000 (max. 8388607)
  18 named destinations out of 1000 (max. 500000)

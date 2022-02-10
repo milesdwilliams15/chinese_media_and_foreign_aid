@@ -11,6 +11,7 @@ library(censReg)
 library(AER)
 library(texreg)
 library(estimatr)
+library(mgcv)
 
 
 # run analysis ------------------------------------------------------------
