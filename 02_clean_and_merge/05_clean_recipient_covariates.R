@@ -8,24 +8,38 @@
 rm(list = ls())       # tidy the workspace
 library(tidyverse)    # for grammar
 library(democracyData)# a bunch of democracy datasets
+library(vdem)         # to get the varieties of democracy dataset
 library(countrycode)  # to standardize country codes
 
 # democracy data ----------------------------------------------------------
 
-# For democracy data, we'll use 
+# From democracy data, we'll use 
 #   * Polity 2
 #   * Freedom House
 dem_data <-
   generate_democracy_scores_dataset(
     datasets = c(
       "polity_pmm", # polity
-      "fh_pmm"      # political + civil liberities
+      "fh_pmm"      # political + civil liberties
     ),
     "wide"
   )
 
+# To this, we'll add the five varieties of democracy indices
+#   * Electoral Democracy
+#   * Liberal Democracy
+#   * Participatory Democracy
+#   * Deliberative Democracy
+#   * Egalitarian Democracy
+vdem_data <- extract_vdem(
+  section_number = 2
+) %>%
+  select(vdem_country_name, year, v2x_polyarchy:v2x_egaldem)
+
 # limit to years needed (2000-2014)
 dem_data <- dem_data %>%
+  filter(year %in% 2000:2014)
+vdem_data <- vdem_data %>%
   filter(year %in% 2000:2014)
 
 # use iso3 code for later merging
@@ -38,6 +52,18 @@ dem_data <- dem_data %>%
   
   # Only keep vars of interest
   select(year, recipient_iso3, pmm_fh, pmm_polity)
+vdem_data <- vdem_data %>%
+  mutate(
+    recipient_iso3 = countrycode(
+      vdem_country_name, "country.name", "iso3c"
+    )
+  ) %>%
+  select(-vdem_country_name)
+
+# merge the democracy datasets
+dem_data <- left_join(
+  dem_data, vdem_data, by = c("year", "recipient_iso3")
+)
 
 
 # economic data -----------------------------------------------------------
