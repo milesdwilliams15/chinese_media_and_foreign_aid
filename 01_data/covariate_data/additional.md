@@ -10,6 +10,9 @@
 
 
 ## Governance data -- QofG dataset:
+When using QoG Basic data, make sure to cite both the original source and our publication:
+
+Dahlberg, Stefan,  Aksel Sundström, Sören Holmberg, Bo Rothstein, Natalia Alvarado Pachon & Cem Mert Dalli. 2022. The Quality of Government Basic Dataset, version Jan22. University of Gothenburg: The Quality of Government Institute, https://www.gu.se/en/quality-government doi:10.18157/qogbasjan22
 
 1. Marshall, M. G., & Elzinga-Marshall, G. (2017). Global report 2017: Conflict, governance, and state fragility
 
