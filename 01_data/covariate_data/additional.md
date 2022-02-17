@@ -29,3 +29,9 @@ The variable examines in what extent the freely elected head of government and a
 policies of the government; if the government is free from pervasive corruption; and if the government is accountable to the electorate between elections and 
 operates with openness and transparency. 
 Countries are graded between 0 (worst) and 12 (best).
+
+
+
+## FDI by IMF
+Foreign direct investment, net (BoP, current US$)
+https://data.worldbank.org/indicator/BN.KLT.DINV.CD
