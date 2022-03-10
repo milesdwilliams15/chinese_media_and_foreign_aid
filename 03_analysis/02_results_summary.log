@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2017.8.26)  10 FEB 2022 12:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2017.8.26)  10 MAR 2022 09:51
 entering extended mode
 **./02_results_summary.tex
 (02_results_summary.tex
@@ -1045,7 +1045,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 461.
 Here is how much of TeX's memory you used:
  13567 strings out of 493335
  196414 string characters out of 3136680
- 361193 words of memory out of 3000000
+ 362193 words of memory out of 3000000
  16859 multiletter control sequences out of 15000+200000
  44618 words of font info for 62 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1062,7 +1062,7 @@ X 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
 type1/public/lm/lmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
 lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy5.pf
 b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy7.pfb>
-Output written on 02_results_summary.pdf (9 pages, 158331 bytes).
+Output written on 02_results_summary.pdf (9 pages, 158692 bytes).
 PDF statistics:
  104 PDF objects out of 1000 (max. 8388607)
  18 named destinations out of 1000 (max. 500000)
