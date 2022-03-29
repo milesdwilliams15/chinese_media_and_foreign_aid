@@ -100,32 +100,45 @@ iv_lag <- iv_robust(
   clusters = recipient_iso3
 )
 
-## Lewbel Instruments
-# stage1.fit <- lm(
-#   update(spec, lead_count ~ .),
-#   data = pdata
-# )
-# eps <- resid(stage1.fit)
-# z <- model.frame(
-#   update(spec, ~ . - as.factor(year)),
-#   data = pdata
-# )[, -1]
-# zbr <- apply(z, 2, function(x) (x - mean(x)) * eps^2)
-# colnames(zbr) <- paste0("z", 1:ncol(zbr))
-# zbr <- as_tibble(zbr)
-# ndata <- bind_cols(pdata, zbr)
-# lewbel_spec <- 
-#   aid ~ lead_count + govt_visits + pmm_fh + gdp + pop + unemp + disaster + civilwar +
-#     dist + trade + atopally + as.factor(year) |
-#     pmm_fh + gdp + pop + unemp + disaster + civilwar +
-#     dist + trade + atopally + as.factor(year) + 
-#     z1 + z2 + z3 + z4 + z5 + z6 + z7 + z8 + z9
-# iv_lewbel <- iv_robust(
-#   lewbel_spec,
-#   data = ndata,
-#   se_type = "stata",
-#   clusters = recipient_iso3
-# )
+# Lewbel Instruments
+stage1.fitz <- lm(
+  update(spec, lead_count ~ .),
+  data = pdata
+)
+stage1.fitv <- lm(
+  update(spec, lead_visits ~ .),
+  data = pdata
+)
+epsz <- resid(stage1.fitz)
+epsv <- resid(stage1.fitv)
+z <- model.frame(
+  update(spec, ~ . - as.factor(year)),
+  data = pdata
+)[, -1]
+v <- model.frame(
+  update(spec, ~ . - as.factor(year)),
+  data = pdata
+)[, -1]
+zbr <- apply(z, 2, function(x) (x - mean(x)) * epsz^2)
+vbr <- apply(v, 2, function(x) (x - mean(x)) * epsv^2)
+colnames(zbr) <- paste0("z", 1:ncol(zbr))
+colnames(vbr) <- paste0("v", 1:ncol(vbr))
+zbr <- as_tibble(zbr)
+vbr <- as_tibble(vbr)
+ndata <- bind_cols(pdata, zbr, vbr)
+lewbel_spec <-
+  aid ~ lead_count + lead_visits + pmm_fh + gdp + pop + unemp + disaster + civilwar +
+    dist + trade + atopally + as.factor(year) |
+    pmm_fh + gdp + pop + unemp + disaster + civilwar +
+    dist + trade + atopally + as.factor(year) +
+    z1 + z2 + z3 + z4 + z5 + z6 + z7 + z8 + z9 +
+    v1 + v2 + v3 + v4 + v5 + v6 + v7 + v8 + v9
+iv_lewbel <- iv_robust(
+  lewbel_spec,
+  data = ndata,
+  se_type = "stata",
+  clusters = recipient_iso3
+)
 
 ## Make regression table to summarize results:
 coef_map <- list(
@@ -133,7 +146,7 @@ coef_map <- list(
   "lead_count" = "Coverage (in-year)",
   "govt_visits" = "Diplomatic Visits (lag)",
   "lead_visits" = "Diplomatic Visits (in-year)",
-  "pmm_fh" = "Polity",
+  "pmm_fh" = "Freedom House",
   "gdp" = "GDP",
   "pop" = "Population",
   "unemp" = "Unemployment",
@@ -149,8 +162,8 @@ model_list <- list(
   "ML Tobit" = ml_tobit, 
   "Selection" = glm_select, 
   "Level" = ols_level, 
-  "IV Lag" = iv_lag
-  #"IV Lewbel" = iv_lewbel
+  "IV Lag" = iv_lag,
+  "IV Lewbel" = iv_lewbel
 )
 if(data_set == "final_data_nonimputed.csv") {
   model_list[[2]] <- NULL
