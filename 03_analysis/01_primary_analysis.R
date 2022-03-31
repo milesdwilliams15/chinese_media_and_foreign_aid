@@ -188,7 +188,7 @@ save(
 # results by region -------------------------------------------------------
 
 spec <- # specification without predictor of interest 
-  aid ~ govt_visits + pmm_fh + gdp + pop + unemp + disaster + civilwar +
+  aid ~ pmm_fh + gdp + pop + unemp + disaster + civilwar +
   dist + trade + atopally + as.factor(year)
 pdata <- mutate(pdata, region = str_replace(region, "&", "+"))
 
@@ -208,7 +208,7 @@ ols_region <- pdata %>%
   # Estimate models for each region
   map(
     ~ lm_robust(
-        update(spec, ~ count + .),
+        update(spec, ~ count + govt_visits + .),
         data = .,
         se_type = "stata",
         clusters = recipient_iso3
@@ -316,14 +316,18 @@ ols.region <- texreg(
   custom.coef.map = coef_map,
   include.ci = F,
   stars = c(0.001, 0.01, 0.05, 0.1),
-  caption = "OLS Estimates by Region"
+  caption = "OLS Estimates by Region",
+  caption.above = T,
+  sideways = T
 )
 ivlag.region <- texreg(
   iv_lag_region,
   custom.coef.map = coef_map,
   include.ci = F,
   stars = c(0.001, 0.01, 0.05, 0.1),
-  caption = "IV Lag Estimates by Region"
+  caption = "IV Lag Estimates by Region",
+  caption.above = T,
+  sideways = T
 )
 # ivlew.region <- texreg(
 #   iv_lewbel_region,
