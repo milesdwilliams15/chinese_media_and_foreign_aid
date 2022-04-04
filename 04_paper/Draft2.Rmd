@@ -1,5 +1,5 @@
 ---
-title: "Friends Get More Money, Attention and Handshake: Chinese Foreign Aid, Xinhua and Diplomatic Visits"
+title: "Friends Get More Money, Attention and Handshakes: Chinese Foreign Aid, Xinhua and Diplomatic Visits"
 author: ["Lucie Lu","Miles D. Williams"]
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: 
@@ -112,7 +112,7 @@ As a state-sponsored media platform, *Xinhua* News Agency is often considered mo
 Despite growing in the global media landscape, *Xinhua*, as an international broadcaster, needs foreign audiences. Simply providing more information will not improve their image in the Western world. Attracting audiences depends on credibility, a state-sponsored-image-construction news outlet would typically lack. As @druckman_limits_2001 presents, one conditional factor in influencing public opinion (especially foreign audiences'), is an information sender's "credibility." On the one hand, governments attempt to positively shape the global narrative regarding their leaders and foreign policies using their own newsgathering and broadcasting operations. On the other hand, *Xinhua* needs to maintain a low political bias and higher professional standard to assert its brand and increase its international competitiveness.
 
 
-Hence, while *Xinhua* plays a major role in defining, shaping and projecting China's image, its primary function is to transmit information. It reports on a variety of global issues with different regional focuses to meet the standard of international news competitors. Taking into account the limited space of **Xinhua** to report global affairs, editors’ choices reflect which countries are more than the others to receive media coverage. 
+Hence, while *Xinhua* plays a major role in defining, shaping and projecting China's image, its primary function is to transmit information. It reports on a variety of global issues with different regional focuses to meet the standard of international news competitors. Taking into account the limited space of *Xinhua* to report global affairs, editors’ choices reflect which countries are more than the others to receive media coverage. 
 
 
 # Public Diplomacy
@@ -120,7 +120,7 @@ Hence, while *Xinhua* plays a major role in defining, shaping and projecting Chi
 Previous sections illustrate media agenda setting as an essential step in a country's public diplomacy process to influence the public's opinion in a second country. For example, building international media outreach to have a space in the global marketplace of ideas are the Chinese government's crucial step to "speak to [foreign] people – and listen to them" (@hoffman_introduction_1968, p. 4). In fact, all public diplomacy programs have a primary responsibility to explain and defend government policies to foreign audience" (@deibel_culture_1976, p. 15). 
 
 
-	An image that fits into a traditional mental image of public diplomacy is "diplomats engaged in traditional negotiations under the glare of publicity" (@deibel_culture_1976, p. 13). In addition to negotiations behind closed doors, records of visits have symbolic evidence to show the bilateral relationships between countries. The elite-level diplomacy, government-to-government diplomatic visit, is the focus in this section. Government-to-government visits are important as leaders' resources are scarce. They often mark the further development in bilateral relations, especially in furthering the visiting and host countries' bilateral trade relationships (@nitsch_state_2005). Leader visits also have implications on the host leaders' security in office (@malis_state_2021) and the states' security issues (@mcmanus_making_2018). In all, diplomatic visits send important an important positive signal that the visiting and hosting countries support each other and have closer relationships. 
+An image that fits into a traditional mental image of public diplomacy is "diplomats engaged in traditional negotiations under the glare of publicity" (@deibel_culture_1976, p. 13). In addition to negotiations behind closed doors, records of visits have symbolic evidence to show the bilateral relationships between countries. The elite-level diplomacy, government-to-government diplomatic visit, is the focus in this section. Government-to-government visits are important as leaders' resources are scarce. They often mark the further development in bilateral relations, especially in furthering the visiting and host countries' bilateral trade relationships (@nitsch_state_2005). Leader visits also have implications on the host leaders' security in office (@malis_state_2021) and the states' security issues (@mcmanus_making_2018). In all, diplomatic visits send important an important positive signal that the visiting and hosting countries support each other and have closer relationships. 
 	
 	
 Visiting leaders can increase the awareness of themselves and their country among citizens in the host country. @goldsmith_spinning_2009 find that the impact of high-level government visits on foreign publics' opinions is contextual. U.S. visits had large and positive impact until the international media reported the negative aspects of the "war on terror" in Iraq. Again, credibility of a country's leadership is the key to conditioning the effects of high-level visits on the foreign public's perception of the country's policy. The most recent finding shows that high-level diplomatic visits across the board can improve the public approval of the visiting leader's job performance by a significantly large effect. The positive messages are especially contingent on how the public-diplomacy activities are mentioned in the news in the host countries (@goldsmith_does_2021). In most cases, the host leader has leverage to provide frame for the journalists to report the government-to-government visit that is expected to receive positive coverage. 
@@ -130,14 +130,14 @@ In short, diplomatic visits usually come with policy agenda between two countrie
 
 # Hypotheses
 
-We have made the case that both state-sponsored media outreach and diplomatic visits have essential implications to sway foreign public opinion. News editors build the credibility of the news agency to transmit information around the globe. High-level officials spend time and resources to visit other countries for economic or security purposes – to strengthen the bilateral relationship. Since both approaches feature scarce time and resources to be invested, we expect that Beijing will choose whom to cast the spotlight and to visit strategically. In other words, countries that receive higher state-sponsored media coverage and diplomatic visits are strategically important in the eyes of Beijing. They are in the potential friend circle. While public diplomacy is one way to increase a state’s soft power, in the end, it is intangible power and symbolic. Foreign aid, instead, provides tangible and materials support to the countries in need. Hence, we expect China to prioritize giving foreign aid to its “friends” -- countries where China has developed multi-facet relationships through public diplomacy efforts. This rationale leads to our hypotheses:
+We have made the case that both state-sponsored media outreach and diplomatic visits have essential implications to sway foreign public opinion. News editors build the credibility of the news agency to transmit information around the globe. High-level officials spend time and resources to visit other countries for economic or security purposes to strengthen their bilateral relationship. Since both approaches involve limited time and resources, we expect that Beijing will choose on whom to cast the spotlight, and whom to visit, strategically. In other words, countries that receive higher state-sponsored media coverage and diplomatic visits are strategically important in the eyes of Beijing. They are in the potential friend circle. While public diplomacy is one way to increase a state’s soft power, in the end, it is intangible power and symbolic. Foreign aid, instead, provides tangible and material support to countries in need. Hence, we expect China to prioritize giving foreign aid to its “friends”---countries where China has developed strong relationships through public diplomacy efforts. This rationale leads to our hypotheses:
 
 
 
-*H1: When developing countries receive more media exposure in *Xinhua*, they are more likely to receive more foreign aid from China.*
+> *H1: When developing countries receive more media exposure in *Xinhua*, they are more likely to receive more foreign aid from China.*
 
 
-*H2: When developing countries host or visit Chinese high-level diplomatic visits more frequently, they are more likely to receive more foreign aid from China.* 
+> *H2: When developing countries host or visit Chinese high-level diplomatic visits more frequently, they are more likely to receive more foreign aid from China.* 
 
 
 # Data and Methods
@@ -164,8 +164,174 @@ In the event that the process that determines whether countries receive aid from
 
 Finally, because within-year coverage and visits may have greatest relevance for predicting the response, using the lag of each variable in model estimation may under-estimate the complementarities between coverage and visits with aid. However, estimating the models using same-year coverage and visits poses a challenge due to likely endogeneity between them and the response. Unable to find a satisfactory set of instruments, we take two different approaches. For one, we leverage the variation in the one year lag of each predictor to instrument for in-year values of each. This approach has been applied elsewhere in the literature when dealing with time-series data [see @braumoeller2008]. For the second approach, we use the internal instruments approach outlined by @lewbel2012, which leverages heteroskedasticity in the data to synthesize instrumental variables.
 
-We present results from each of these approaches in the following analysis. Further, in the Appendix we break down the sample by geographic region in the event that different dynamics govern decisions within different sets of aid recipients.
+We present results from each of these approaches in the following analysis. 
 
+# Results
+
+```{r}
+library(tidyverse)
+library(kableExtra)
+dt <- read_csv(
+  paste0(str_remove(getwd(), "/04_paper"), 
+         "/01_data/final_data/final_data_imputed.csv")
+)
+```
+
+
+Results are shown for `r scales::comma(nrow(dt %>% filter(year!=2000)))` unique recipient-year observations from 2001 to 2014. Multiple imputation for missing values in covariates was done via chaining random forests combined with predictive mean matching, which ensures imputed values do not differ from values already present in the data (such as in the case of a binary variable) and that the conditional distributions have realistic variances.^[For multiple imputation we used the `missRanger` R package. See @stekhovenBuhlmann2011 for more on the method and its robustness relative to other approaches.] Summary statistics are shown the Appendix.
+
+```{r, include=FALSE}
+load(
+  paste0(stringr::str_remove(getwd(), "/04_paper"), "/03_analysis/tab1.R")
+)
+reg.tab1 <- reg.tab
+cat(reg.tab1)
+```
+
+
+\begin{table}
+\caption{Model Estimates}
+\begin{center}
+\begin{tabular}{l c c c c c c}
+\hline
+ & OLS & ML Tobit & Selection & Level & IV Lag & IV Lewbel \\
+\hline
+Coverage (lag)              & $0.63^{*}$      & $1.29^{**}$    & $0.18^{***}$  & $0.11$          &                 &                 \\
+                            & $(0.28)$        & $(0.43)$       & $(0.05)$      & $(0.14)$        &                 &                 \\
+Coverage (in-year)          &                 &                &               &                 & $0.67^{*}$      & $0.51^{\cdot}$  \\
+                            &                 &                &               &                 & $(0.31)$        & $(0.29)$        \\
+Diplomatic Visits (lag)     & $0.93^{**}$     & $1.54^{\cdot}$ & $0.21^{**}$   & $0.36^{*}$      &                 &                 \\
+                            & $(0.34)$        & $(0.83)$       & $(0.07)$      & $(0.15)$        &                 &                 \\
+Diplomatic Visits (in-year) &                 &                &               &                 & $1.08^{**}$     & $1.38^{**}$     \\
+                            &                 &                &               &                 & $(0.41)$        & $(0.45)$        \\
+Freedom House               & $-0.36$         & $-0.58$        & $-0.08^{*}$   & $-0.20^{*}$     & $-0.36$         & $-0.39$         \\
+                            & $(0.28)$        & $(0.40)$       & $(0.04)$      & $(0.09)$        & $(0.28)$        & $(0.29)$        \\
+GDP                         & $-2.71^{***}$   & $-4.83^{***}$  & $-0.77^{***}$ & $0.01$          & $-2.73^{***}$   & $-2.68^{***}$   \\
+                            & $(0.36)$        & $(0.48)$       & $(0.06)$      & $(0.17)$        & $(0.36)$        & $(0.34)$        \\
+Population                  & $2.52^{***}$    & $5.26^{***}$   & $0.69^{***}$  & $0.27$          & $2.51^{***}$    & $2.56^{***}$    \\
+                            & $(0.35)$        & $(0.76)$       & $(0.06)$      & $(0.17)$        & $(0.35)$        & $(0.36)$        \\
+Unemployment                & $0.18$          & $0.84$         & $0.13$        & $-0.05$         & $0.19$          & $0.20$          \\
+                            & $(0.47)$        & $(0.95)$       & $(0.08)$      & $(0.19)$        & $(0.47)$        & $(0.47)$        \\
+Disaster Deaths             & $0.18$          & $0.14$         & $0.04$        & $0.02$          & $0.18$          & $0.17$          \\
+                            & $(0.17)$        & $(0.27)$       & $(0.03)$      & $(0.05)$        & $(0.17)$        & $(0.16)$        \\
+Civil War                   & $-1.62^{\cdot}$ & $-2.77^{*}$    & $-0.38^{*}$   & $-0.75^{\cdot}$ & $-1.62^{\cdot}$ & $-1.57^{\cdot}$ \\
+                            & $(0.91)$        & $(1.25)$       & $(0.15)$      & $(0.39)$        & $(0.92)$        & $(0.91)$        \\
+Trade                       & $0.14$          & $-0.18$        & $0.04$        & $0.03$          & $0.14$          & $0.14$          \\
+                            & $(0.15)$        & $(0.18)$       & $(0.03)$      & $(0.05)$        & $(0.15)$        & $(0.15)$        \\
+Alliance                    & $0.36$          & $2.00$         & $0.29$        & $-0.64$         & $0.07$          & $-0.32$         \\
+                            & $(0.94)$        & $(2.75)$       & $(0.22)$      & $(0.47)$        & $(0.94)$        & $(1.00)$        \\
+Distance                    & $1.84^{*}$      & $4.12^{\cdot}$ & $0.49^{***}$  & $0.55$          & $1.94^{*}$      & $2.21^{*}$      \\
+                            & $(0.83)$        & $(2.34)$       & $(0.15)$      & $(0.37)$        & $(0.87)$        & $(0.87)$        \\
+\hline
+Adj. R$^2$                  & $0.19$          &              &             & $0.11$          & $0.20$          & $0.20$          \\
+Num. obs.                   & $1932$          & $1932$         & $1932$        & $982$           & $1932$          & $1932$          \\
+Deviance explained          &               &              & $0.15$        &               &               &               \\
+\hline
+\multicolumn{7}{l}{\scriptsize{$^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$; $^{\cdot}p<0.1$}}
+\end{tabular}
+\label{table:coefficients}
+\end{center}
+\end{table}
+
+Table 1 reports the regression coefficients for equation 1 using each of the estimation techniques outlined in the previous section. Estimates for the controls comport with prior research, save that the coefficients for democracy using the Freedom House measure reach conventional levels of statistical significance in the selection and level estimates. Contra @dreherEtAl2018, these estimates suggest China disproportionately targets its development finance to authoritarian regimes. While this result is not statistically significant for the alternative estimators, the coefficient remains consistently negative across all estimation techniques.
+
+Consistent with other studies, China prioritizes recipients with smaller economies and larger populations. Depending on the estimation strategy, greater distance is related to *more* aid, which is a finding that runs contrary to patterns observed for DAC donors. This result likely is driven by China's prioritization of aid giving in Sub-Saharan Africa. Finally, China seems to have a bias against giving aid in the context of ongoing conflict. Across estimation strategies, the coefficient on civil war is negative and marginally significant ($p < 0.1$) in four of the models and statistically significant ($p < 0.05$) in two.
+
+China does not appear to discriminate on the basis of other measures of need, such as unemployment and natural disaster deaths. Further, trade and alliances, measures of material and strategic importance to Beijing, show no significant relationship with aid.
+
+Turning to the estimates of interest, across specifications the coefficients on media coverage in *Xinhua* and the number of diplomatic visits run in the expected direction. Expressed as elasticities, the range of estimates suggest that one percent greater yearly instances of coverage in one recipient relative to another are associated with more than half a percent to over one percent greater aid received by that aid recipient. Further, one percent greater diplomatic visits is related to almost one percent to one and a half percent greater aid to that recipient relative to another. This finding is consistent with the view that China's development finance has public diplomacy and international legitimacy functions. 
+
+
+
+# Conclusion
+
+Does Beijing intentionally keep its development finance a secret [@fuchsRudyak2019]? Or, does it use foreign aid as a public tool of diplomacy and to promote its legitimacy abroad?
+
+In this study, we tackle this question by considering complementarities between where China gives aid with Chinese media coverage of developing countries intended for foreign audiences and China’s bilateral diplomatic activities. These measures capture two distinct but related aspects of China’s foreign policy: status/legitimacy in the eyes of a foreign (predominantly Western) audience and south-south diplomacy. To the extent that China’s development finance complements these goals, we expect greater coverage of a developing country in a Chinese media outlet directed to foreign readers and greater bilateral diplomatic activity to correlate with greater Chinese foreign aid giving. To test this expectation we merge AidData’s Chinese development finance dataset with two newly available datasets: (1) AidData’s compiled yearly counts of bilateral official diplomatic visits from China and (2) millions of English edition *Xinhua* news articles from 2000 to 2014 scraped by the Cline Center for Advanced Social Research. We find that greater media coverage of developing countries targeted at a foreign audience via the English version of *Xinhua* and the number of diplomatic visits to a developing country predict greater receipt of Chinese aid. Our results support the view that Chinese aid allocation patterns map to China’s broader diplomacy and legitimacy seeking objectives on the world stage. 
+
+Much work, of course, remains to further interrogate the links between China's development finance and its strategic and diplomatic objectives. This study provides but a glimpse into the complementarities between Beijing's foreign aid and its public diplomacy. Even so, it contributes to our understanding of the strategic determinants of China's aid, which even now contains mysteries we have yet to resolve.
+
+\clearpage
+
+# Appendix
+
+Table A.1 shows summary statistics for the data sample used in the main analysis. 
+
+\clearpage
+
+\captionsetup{labelformat=AppendixTables}
+\setcounter{table}{0}
+
+```{r}
+dt %>%
+  mutate(
+    aid = aid / 1000000,
+    count = count / 1000,
+    trade = trade / 1000000000,
+    gdp = gdp / 1000000,
+    pop = pop / 1000000
+  ) %>%
+  summarize(
+    across(
+      c(aid, count, govt_visits, pmm_fh, gdp:unemp, disaster:dist, trade, atopally),
+      list(Mean = mean, Median = median, SD = sd, Min. = min, Max. = max),
+      na.rm=T
+    ) 
+  ) %>%
+  pivot_longer(cols = everything()) %>%
+  separate(
+    col = name,
+    into = c(" ", "stat"),
+    sep = "_(?=[^_]+$)"
+  ) %>%
+  mutate(
+    value = scales::comma(round(value, 2))
+  ) %>%
+  pivot_wider(
+    values_from = value,
+    names_from = stat
+  ) %>%
+  mutate(
+    " " = c(
+      "Aid (millions)",
+      "Article Mentions (thousands)",
+      "Government Visits",
+      "Freedom House",
+      "GDP (in 100 millions)",
+      "Population (in millions)",
+      "Unemployment Rate",
+      "Disaster Deaths",
+      "Civil War",
+      "Distance (in kilometers)",
+      "Trade (in millions)",
+      "Allies"
+    )
+  ) %>%
+  kbl(
+    caption = "Summary Statistics (2000-2014)",
+    booktabs = T,
+    linesep = ""
+  )
+```
+
+
+
+```{r, results='asis'}
+tabs <- c(
+  "ols_region_tab1.R",
+  "ivlag_region_tab1.R"
+)
+load(
+  paste0(stringr::str_remove(getwd(), "/04_paper"), 
+         "/03_analysis/",tabs[1])
+)
+load(
+  paste0(stringr::str_remove(getwd(), "/04_paper"),
+         "/03_analysis/",tabs[2])
+)
+#cat(ols.region)
+#cat(ivlag.region)
+```
 
 
 \clearpage
