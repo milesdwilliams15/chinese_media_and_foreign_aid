@@ -168,6 +168,10 @@ model_list <- list(
 if(data_set == "final_data_nonimputed.csv") {
   model_list[[2]] <- NULL
 }
+save(
+  model_list,
+  file = paste0(getwd(), "/03_analysis/model_list",i,".R")
+)
 
 reg.tab <- texreg(
   model_list,

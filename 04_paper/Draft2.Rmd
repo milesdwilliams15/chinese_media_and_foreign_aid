@@ -171,6 +171,7 @@ We present results from each of these approaches in the following analysis.
 ```{r}
 library(tidyverse)
 library(kableExtra)
+library()
 dt <- read_csv(
   paste0(str_remove(getwd(), "/04_paper"), 
          "/01_data/final_data/final_data_imputed.csv")
@@ -183,6 +184,9 @@ Results are shown for `r scales::comma(nrow(dt %>% filter(year!=2000)))` unique 
 ```{r, include=FALSE}
 load(
   paste0(stringr::str_remove(getwd(), "/04_paper"), "/03_analysis/tab1.R")
+)
+load(
+  paste0(stringr::str_remove(getwd(), "/04_paper"), "/03_analysis/model_list1.R") 
 )
 reg.tab1 <- reg.tab
 cat(reg.tab1)
@@ -234,6 +238,107 @@ Deviance explained          &               &              & $0.15$        &    
 \end{table}
 
 Table 1 reports the regression coefficients for equation 1 using each of the estimation techniques outlined in the previous section. Estimates for the controls comport with prior research, save that the coefficients for democracy using the Freedom House measure reach conventional levels of statistical significance in the selection and level estimates. Contra @dreherEtAl2018, these estimates suggest China disproportionately targets its development finance to authoritarian regimes. While this result is not statistically significant for the alternative estimators, the coefficient remains consistently negative across all estimation techniques.
+
+```{r}
+coef_table <- map_dfr(
+  model_list,
+  ~ tidy(coeftest(.x))
+) %>%
+  filter(
+    str_detect(term, "count") | 
+      str_detect(term, "visits")
+  ) %>%
+  mutate(
+    conf.low = estimate - 1.96 * std.error,
+    conf.high = estimate + 1.96 * std.error,
+    term = rep(c("Coverage", "Visits"), len = n())
+  ) %>%
+  select(term, estimate, conf.low, conf.high)
+tibble(
+  "1" = coef_table$term[1:2],
+  "2" = coef_table$estimate[1:2],
+  "3" = " ",
+  "4" = coef_table$estimate[3:4],
+  "5" = " ",
+  "6" = coef_table$estimate[5:6],
+  "7" = " ",
+  "8" = coef_table$estimate[7:8],
+  "9" = " ",
+  "10" = coef_table$estimate[9:10],
+  "11" = " ",
+  "12" = coef_table$estimate[11:12],
+  "13" = " "
+) %>% 
+  mutate_if(is.numeric, function(x) round(x, 2)) %>%
+  kable("latex", booktabs = T,
+        caption = "Model Estimates",
+        col.names = c(
+          " ", rep(c("Est.", "95% CI"), len = 12)
+        )) %>%
+  kable_classic(full_width = F) %>%
+  column_spec(
+    3, image = spec_pointrange(
+      x = coef_table$estimate[1:2],
+      xmin = coef_table$conf.low[1:2],
+      xmax = coef_table$conf.high[1:2],
+      vline = 0
+    )
+  ) %>%
+  column_spec(
+    5, image = spec_pointrange(
+      x = coef_table$estimate[3:4],
+      xmin = coef_table$conf.low[3:4],
+      xmax = coef_table$conf.high[3:4],
+      vline = 0
+    )
+  ) %>%
+  column_spec(
+    7, image = spec_pointrange(
+      x = coef_table$estimate[5:6],
+      xmin = coef_table$conf.low[5:6],
+      xmax = coef_table$conf.high[5:6],
+      vline = 0,
+      lim = c(0, max(coef_table$conf.high[5:6]))
+    )
+  ) %>%
+  column_spec(
+    9, image = spec_pointrange(
+      x = coef_table$estimate[7:8],
+      xmin = coef_table$conf.low[7:8],
+      xmax = coef_table$conf.high[7:8],
+      vline = 0
+    )
+  )%>%
+  column_spec(
+    11, image = spec_pointrange(
+      x = coef_table$estimate[9:10],
+      xmin = coef_table$conf.low[9:10],
+      xmax = coef_table$conf.high[9:10],
+      vline = 0
+    )
+  ) %>%
+  column_spec(
+    13, image = spec_pointrange(
+      x = coef_table$estimate[11:12],
+      xmin = coef_table$conf.low[11:12],
+      xmax = coef_table$conf.high[11:12],
+      vline = 0
+    )
+  ) %>%
+  add_header_above(
+    c(
+      " " = 1,
+      "Linear" = 2,
+      "Tobit" = 2,
+      "Selection" = 2,
+      "Level" = 2,
+      "IV Lag" = 2,
+      "IV Lewbel" = 2
+    )
+  )%>% cat()
+
+```
+
 
 Consistent with other studies, China prioritizes recipients with smaller economies and larger populations. Depending on the estimation strategy, greater distance is related to *more* aid, which is a finding that runs contrary to patterns observed for DAC donors. This result likely is driven by China's prioritization of aid giving in Sub-Saharan Africa. Finally, China seems to have a bias against giving aid in the context of ongoing conflict. Across estimation strategies, the coefficient on civil war is negative and marginally significant ($p < 0.1$) in four of the models and statistically significant ($p < 0.05$) in two.
 
