@@ -171,7 +171,6 @@ We present results from each of these approaches in the following analysis.
 ```{r}
 library(tidyverse)
 library(kableExtra)
-library()
 dt <- read_csv(
   paste0(str_remove(getwd(), "/04_paper"), 
          "/01_data/final_data/final_data_imputed.csv")
@@ -242,7 +241,7 @@ Table 1 reports the regression coefficients for equation 1 using each of the est
 ```{r}
 coef_table <- map_dfr(
   model_list,
-  ~ tidy(coeftest(.x))
+  ~ estimatr::tidy(lmtest::coeftest(.x))
 ) %>%
   filter(
     str_detect(term, "count") | 
@@ -270,8 +269,8 @@ tibble(
   "13" = " "
 ) %>% 
   mutate_if(is.numeric, function(x) round(x, 2)) %>%
-  kable("latex", booktabs = T,
-        caption = "Model Estimates",
+  kbl(booktabs = T,
+        caption = "Table 1: Model Estimates",
         col.names = c(
           " ", rep(c("Est.", "95% CI"), len = 12)
         )) %>%
@@ -335,7 +334,7 @@ tibble(
       "IV Lag" = 2,
       "IV Lewbel" = 2
     )
-  )%>% cat()
+  )
 
 ```
 
