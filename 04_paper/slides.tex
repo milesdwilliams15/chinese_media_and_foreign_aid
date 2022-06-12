@@ -1,17 +1,109 @@
-\documentclass{beamer}
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  ignorenonframetext,
+]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\newif\ifbibliography
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{mathabx}
 \usepackage{mathpazo}
 \usepackage{eulervm}
 \usepackage{natbib}
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
 
+\author{}
+\date{\vspace{-2.5em}}
 
+\begin{document}
 
-%% Load the markdown package
+\begin{frame}
+\%\% Load the markdown package
+
 \usepackage[citations,footnotes,definitionLists,hashEnumerators,smartEllipses,tightLists=false,pipeTables,tableCaptions,hybrid]{markdown}
-%%begin novalidate
-\markdownSetup{rendererPrototypes={
+
+\%\%begin novalidate \markdownSetup{rendererPrototypes={
  link = {\href{#2}{#1}},
  headingOne = {\section{#1}},
  headingTwo = {\subsection{#1}},
@@ -20,32 +112,28 @@
  horizontalRule = {\end{block}}
 }}
 
-%%end novalidate
-
+\%\%end novalidate
 
 \usetheme{Dresden}
 \usefonttheme{serif}
 \usecolortheme{rose}
 
-
 \title{Friends Get More Money, Attention and Handshakes:
 Chinese Foreign Aid, Xinhua and Diplomatic Visits}
-
 
 \author{Lucie Lu, Miles D. Williams\\ University of Illinois at Urbana-Champaign}
 \date {MPSA 2022 \\ April 8, 2022}
 
-
-\begin{document}
+\textbackslash begin\{document\}
 
 \maketitle
 
 \begin{frame}{Puzzle}
 
 \begin{itemize}
-    \item China seems to deliberately keep its foreign aid giving a secret.
-    \item However, development finace arguably should promote "South-South cooperation" and improve China's image abroad.
-    \item \textit{Such goals require transparency, so what should we make of its absence?}
+    \item China seems to deliberately keep its foreign aids secret
+    \item However, aids as part of the "South-South cooperation" improve China's image abroad.
+    \item Two opposite modes of interactions: foreign aids and media/public diplomacy -- secret and open
 \end{itemize}
 
 
@@ -55,31 +143,32 @@ Chinese Foreign Aid, Xinhua and Diplomatic Visits}
 \begin{frame}{Research Question and Argument}
 
 \begin{itemize}
-\item \textbf{The Puzzle}: \textit{Absent formal modes of transparency, what evidence do we have that Chinese aid serves public diplomacy?}
-\item \textbf{Argument}: \textit{We should observe complementarties between where China sends a greater number of diplomatic missions and that receive greater media coverage in outlets targeted at foreign audiences with where China gives greater foreign aid.}
+    \item Research Question: How does China’s foreign aid relate to Beijing’s efforts at public diplomacy and international recognition?
+
+   \item Argument: Countries that receive higher media exposure and diplomacy efforts are
+strategically more important to Beijing, and in turn receive disproportionally larger China’s
+foreign aid.
+
 \end{itemize}
-
 \end{frame}
-
 
 \begin{frame}{Argument Continued}
 
 Two dimensions of Chinese public diplomacy efforts:
 
 \begin{itemize}
-    \item State-sponsored \textit{Xinhua} mediac coverage of developing countries intended for foreign audiences
+    \item state-sponsored \textit{Xinhua} mediac coverage of developing countries intended for foreign audiences
     \item China’s bilateral South-South diplomatic activities
 
 \end{itemize}
 
 
-Developing countries that receive \textbf{higher} media coverage and diplomatic visit are strategically more important than the others. Hence, they get \textbf{more} aid.
+Developing countries that receive \textbf{higher} media coverage and diplomatic visit are strategically more important than the others. Hence, they get \textbf{more} benefits of aids.
     
 
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%
 
 \begin{frame}{Motivations behind Chinese Foreign Aid}
 
@@ -92,21 +181,10 @@ Mirror Western donors:
     \item Countries with more natural resources, closer voting alignment with Beijing, more capacity to repay loans \begin{footnotesize} (Dreher et al., 2021) \end{footnotesize}
 \end{itemize}
 
+Similar to Western donors, the transparency of foreign aid arguably serve China’s interests.
 \end{frame}
 
 \begin{frame}{Motivations behind Chinese Foreign Aid}
-
-Like Western donors, China should have an interest in generating goodwill toward Beijing.
-
-\begin{itemize}
-    \item US cites benefits from public branding of tsunami relief to Indonesia in 2004.
-    \item Surveys of policymakers show increasing influence of Beijing.
-\end{itemize}
-
-\end{frame}
-
-\begin{frame}{Motivations behind Chinese Foreign Aid}
-
 The obscurity seems to have more to do with capacity and logistics, rather than intention \begin{footnotesize} (Dreher et al. 2018) \end{footnotesize}. We
 explore the \textbf{connections }between China’s bilateral development finance and other, visible,
 activities linked to diplomatic and legitimacy-seeking objectives. 
@@ -117,7 +195,7 @@ activities linked to diplomatic and legitimacy-seeking objectives.
 
 
 \begin{itemize}
-\item What's covered in the news signals to the public what is important \begin{footnotesize} (McCombs \& Shaw, 1972) \end{footnotesize}
+\item What's covered in the news signal to the public what is important \begin{footnotesize} (McCombs \& Shaw, 1972) \end{footnotesize}
 
 \item Media coverage of the countries will lead to the countries as a whole becoming more
 salient among the public. \begin{footnotesize} (Wanta et al., 2004) \end{footnotesize}
@@ -135,7 +213,7 @@ salient among the public. \begin{footnotesize} (Wanta et al., 2004) \end{footnot
 
 \item Media coverage shapes public attitudes -- core objective of mediated public diplomacy. \begin{footnotesize} (Entman, 2008; Kiousis \& Wu, 2008) \end{footnotesize}
 
-\item \textit{Xinhua} has dual roles: reporting news and building the China
+\item Xinhua has dual roles: reporting news and building the China
 image as part of Beijing’s “going out” strategy \begin{footnotesize} (Shambaugh, 2015) \end{footnotesize}
 
 \item Its primary function is to transmit information. It reports on a variety of global issues
@@ -154,14 +232,14 @@ citizens in the host country \begin{footnotesize} (Goldsmith \& Horiuchi, 2009; 
 \item Diplomatic visits usually come with policy agenda between two countries,
 and the two are expected to cooperate in various domains through their negotiations.
 
-\item Diplomatic visit is a signal of support and closeness of countries.
+\item Diplomatic visit is a signal of support and proximity of
+the countries.
 
 \end{itemize}
 
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%
 
 \begin{frame}{Hypotheses}
 
@@ -173,31 +251,28 @@ strategically.
 
 \item We expect China to prioritize giving foreign
 aid to its “friends” -- countries where China has developed strong relationships through
-public diplomacy efforts -- and to countries it seeks to highlight to Western audiences.
+public diplomacy efforts.
 
 \end{itemize}
 
 \end{frame}
 
-
 \begin{frame}{Hypotheses} 
 
 \begin{itemize} 
-    \item \textit{H1:} When developing countries receive more media exposure in \textit{Xinhua}, they are more
+    \item \textit{H1:} When developing countries receive more media exposure in Xinhua, they are more
 likely to receive more foreign aid from China.
-    \item \textit{H2:} When developing countries host Chinese high-level diplomatic visits more
+    \item \textit{H2:} When developing countries host or visit Chinese high-level diplomatic visits more
 frequently, they are more likely to receive more foreign aid from China.
 \end{itemize}
 
 \end{frame}
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%
 
 \begin{frame}{Data and Methods}
 
-Unique recipient-year observations from 2001 to 2014
+Unique recipient-year observations from 2000 to 2014
 
 \begin{itemize} 
 
@@ -206,31 +281,28 @@ Unique recipient-year observations from 2001 to 2014
 \item IV: number of diplomatic visits (AidData’s compiled yearly counts of bilateral official
 diplomatic visits from China)
 
-\item IV: counts of country media coverage (Millions of English edition \textit{Xinhua} news articles scraped by the Cline Center for Advanced Social Research)
+\item IV: counts of country media coverage (Millions of English edition Xinhua news articles scraped by the Cline Center for Advanced Social Research)
 
 
 \end{itemize}
 
 \end{frame}
-
 
 \begin{frame}{Data and Methods}
 
 \begin{itemize} 
 
-\item Covariates: aid recipient characteristics (GDP, presence of civil war, disasters, political and civil liberties) and bilateral characteristics between China and aid recipients (economic ties, alliances)
+\item Covariates: aid recipient characteristics (GDP, presence of war, disasters, political and civil liberties) and bilateral characteristics between China and aid recipients (economic ties, alliances)
 
-\item Model Specifications: $\text{ihs(aid}_{rt}) = \tau_t + \beta_1\text{ihs(coverage}_{rt}) + \beta_2\text{ihs(visits}_{rt}) + X_{rt}^\top \gamma + \epsilon_{rt}.$
-
-\item Estimation: OLS (CR1 errors), Tobit (random recipient intercepts), Logit/Selection (random recipient intercepts), Level/OLS (CR1 errors), Lagged IV (CR1 errors), Lewbel IV (CR1 errors).
+\item Model Specifications: OLS with robust standard errors clustered by recipients; Tobit maximum likelihood estimator; selection and level equations; instrumental variables
 
 \end{itemize}
 
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%\%
 
-\begin{frame}{Results}
+\textbackslash begin\{frame\}\{Results\}
 
 \begin{table}
 
@@ -247,23 +319,6 @@ Visits & 0.93 & \includegraphics[width=0.67in, height=0.17in]{} & 1.54 & \includ
 \bottomrule
 \end{tabular}
 \end{table}
-
 \end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\begin{frame}{Conclusion}
-
-
-\begin{itemize}
-    \item Despite a lack of formal transparency China's foreign aid serves a public role.
-    \item Beijing's development finance complements its efforts at south-south diplomacy.
-    \item And its development finance complements media coverage of aid recipients targted at Western audiences.
-\end{itemize}
-
-\textbf{Like Western donors, visibility foreign aid serves China’s interests.}
-\end{frame}
-
 
 \end{document}
