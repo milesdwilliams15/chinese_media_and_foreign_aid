@@ -1,0 +1,207 @@
+---
+title: "Friends Get More Money, Attention, and Handshakes: Xinhua, Diplomacy, and Chinese Foreign Aid"
+subtitle: "AidData Academic Roundtable"
+author: ["Lucie Lu & Miles D. Williams", "*University of Illinois at Urbana-Champaign*"]
+date: 'June 24, 2022'
+footer: "AidData Academic Roundtable"
+output: 
+  powerpoint_presentation:
+    reference_doc: my_template.pptx
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(knitr)
+```
+
+## What We Know
+
+```{r}
+include_graphics("china_aid_logo.jpg")
+```
+
+## What We Know
+
+China targets aid recipients on the basis of:
+
+-   Development need (Dreher et al. 2018)
+
+-   Who imports more Chinese goods (Dreher and Fuchs, 2015)
+
+-   Who has more natural resources, closer voting alignment with Beijing in the UN, and more capacity to repay loans (Dreher et al., 2021)
+
+## What We Know
+
+-   Like Western donors, China should wield international aid, in part, to generate goodwill toward Beijing.
+
+<!-- -->
+
+-   We know that this has been important for the US (e.g. tsunami relief to Indonesia in 2004)
+
+-   There is some evidence that the perception fo Beijing's influence in developing countries is growing (per differences in 2014 and 2017 waves of AidData surveys of policymakers in 126 countries)
+
+## Puzzle
+
+```{r}
+include_graphics("low_transparency.jpeg")
+```
+
+## Puzzle
+
+The obscurity may have more to do with capacity than intention (Dreher et al. 2018).
+
+## Puzzle
+
+But transparency remains.
+
+## Research Question and Argument
+
+**The Puzzle**: Absent traditional modes of transparency, how does Beijing leverage its international development finance in service of its diplomatic and legitimacy-seeking objectives?
+
+## Research Question and Argument
+
+**The Answer**: China complements other **visible** public diplomacy and legitimacy-seeking activities with greater development finance.
+
+## Our Data
+
+Explanatory Variables:
+
+-   AidData's *China's Public Diplomacy Dashboard*
+
+-   Cline Center for Advanced Social Research's *Global News Index and Extracted Features Repository*
+
+Outcome:
+
+-   AidData's *Global Chinese Development Finance Dataset*
+
+## The Underlying Logic
+
+Two dimensions of Beijing's public diplomacy:
+
+-   "South-South" diplomatic visits
+
+    -   Visible and symbolic show of support and aligment
+
+-   State-sponsored *Xinhua* coverage of developing countries
+
+    -   Agenda-setting tool and signal of Beijing's priorities for foreign audiences
+
+## Preview
+
+Analysis shows that:
+
+-   More Diplomatic Visits $\to$ More Aid
+
+-   More State-sponsored Coverage $\to$ More Aid
+
+## Why this Matters
+
+These results don't just support the view **that** Beijing uses aid to support diplomatic and goals and promote its agenda. They show **how** Beijing uses aid to accomplish these goals.
+
+## Why this Matters
+
+Visits and coverage put a spotlight on China's priorities, while aid provides material backing that these visible signals are more than hollow performances.
+
+## Diplomacy and Media in China's Foreign Policy
+
+**Why focus on diplomatic visits and external-facing state-run media coverage in *Xinhua*?**
+
+## Diplomacy
+
+-   Visiting leaders can increase the awareness of themselves and their country among citizens in the host country (Goldsmith and Horiuchi, 2009; Goldsmith et al., 2021)
+
+-   Diplomatic visits usually come with policy agenda between two countries, and the two are expected to cooperate in various domains through their negotiations.
+
+-   Diplomatic visit is a signal of support and closeness of countries.
+
+## Outward Facing Media Coverage
+
+-   What's covered in the news signals to the public what is important (McCombs and Shaw, 1972)
+
+-   Media are critical in building states' image to international audiences (Nye, 2008)
+
+-   Media coverage shapes public attitudes --- core objective of mediated public diplomacy. (Entman, 2008; Kiousis and Wu, 2008)
+
+-   *Xinhua* has dual roles:
+
+    -   Reporting news
+
+    -   Building up China's image (e.g., Beijing's "going out" strategy --- Shambaug, 2015)
+
+## Diplomacy and Media and China's Foreign Policy
+
+Visits and outward media coverage are **visible** and are linked to efforts to build **strong ties** with other nations and to **shape perceptions of Beijing's priorities**.
+
+## The Importance of Scarcity
+
+-   Visits and coverage provide visible signals about Beijing's priorities because they are scarce commodities.
+
+-   Visits require planning and resources to implement.
+
+-   Writing, editing, and publishing news articles (even online) requires time and money.
+
+-   Limited resources and bandwidth forces choices about what countries to visit and to highlight in news stories.
+
+-   Visits and coverage reflect Beijing's **strategic priorities.**
+
+## Here's the Bark...Where's the Bite?
+
+-   As important as visits and coverage are for signaling Beijing's commitments and shaping global perceptions of its priorities...
+
+-   ...they are performative acts if they are backed up by no material support.
+
+-   Enter global development finance.
+
+-   Beijing uses international aid to complement its visible displays of its priorities.
+
+## Hypotheses
+
+H1: When developing countries receive more media exposure in *Xinhua*, they receive more foreign aid from China.
+
+H2: When developing countries host more Chinese high-level diplomatic visits, they receive more foreign aid from China.
+
+## Data and Methods
+
+| Variable               | Description                                                                                        | Source                                                                                               |
+|------------------------|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
+| Outcome                | bilateral ODA-like flows from China to developing countries                                        | AidData's *Chinese Development Finance Dataset*                                                      |
+| Explanatory Variable 1 | the number of bilateral diplomatic visits hosted by recipients from Beijing                        | AidData's compiled yearly counts of bilateral official diplomatic visits from China                  |
+| Explanatory Variable 2 | the number of times a developing country is mentioned in a year in the English edition of *Xinhua* | compiled from millions of *Xinhua* articles scraped by the Cline Center for Advanced Social Research |
+
+: The Data: Unique recipient-year observations from 2001-2014
+
+## Data and Methods
+
+-   Use multiple regression to adjust for various controls.
+
+-   Apply numerous estimation approaches --- multiple estimators are justifiable, but each has its flaws.
+
+## Results
+
+```{r}
+include_graphics("results_figure.jpg")
+```
+
+## Conclusion
+
+-   Despite limited visibility through traditional means, China's global development finance serves a very public set of objectives.
+
+-   Beijing leverages aid in support of such goals by complementing visible acts that signal its priorities with greater foreign aid spending.
+
+-   These findings not only support the view that China's aid is partly in service of public diplomacy...
+
+-   ...but also show how aid supports this objective.
+
+## Thank You
+
+Miles D. Williams: milesdw2\@illinois.edu
+
+Lucie Lu: lul3\@illinois.edu
+
+## Appendix: Model and Estimation
+
+| Item          | Description                                                                                                                                                                                    |
+|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Covariates    | aid recipient characteristics (GDP, presence of civil war, disasters, political and civil liberties) and bilateral characteristics between China and aid recipients (economic ties, alliances) |
+| Specification | `asinh(aid) ~ asinh(coverage) + asinh(visits) + covariates + recipient + year`                                                                                                                 |
+| Estimation    | OLS (CR1 errors), Tobit (random recipient intercepts), Logit/Selection (random recipient intercepts), Level/OLS (CR1 errors), Lagged IV (CR1 errors), Lewbel IV (CR1 errors).                  |
