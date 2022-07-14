@@ -33,11 +33,7 @@ China targets aid recipients on the basis of:
 ## What We Know
 
 -   Like Western donors, China should wield international aid, in part, to generate goodwill toward Beijing.
-
-<!-- -->
-
 -   We know that this has been important for the US (e.g. tsunami relief to Indonesia in 2004)
-
 -   There is some evidence that the perception fo Beijing's influence in developing countries is growing (per differences in 2014 and 2017 waves of AidData surveys of policymakers in 126 countries)
 
 ## Puzzle
@@ -48,11 +44,11 @@ include_graphics("low_transparency.jpeg")
 
 ## Puzzle
 
-The obscurity may have more to do with capacity than intention (Dreher et al. 2018).
+-   Some argue that this is an intentional and strategic choice.
 
-## Puzzle
+-   But it may have more to do with capacity (Dreher et al. 2018).
 
-But transparency remains.
+-   Limited transparency remains nonetheless.
 
 ## Research Question and Argument
 
@@ -66,13 +62,13 @@ But transparency remains.
 
 Explanatory Variables:
 
--   AidData's *China's Public Diplomacy Dashboard*
+-   **Bilateral Diplomatic Visits** - AidData's *China's Public Diplomacy Dashboard*
 
--   Cline Center for Advanced Social Research's *Global News Index and Extracted Features Repository*
+-   **State-run Media Coverage** - Cline Center for Advanced Social Research's *Global News Index and Extracted Features Repository*
 
 Outcome:
 
--   AidData's *Global Chinese Development Finance Dataset*
+-   **Bilateral Development Assistance** - AidData's *Global Chinese Development Finance Dataset*
 
 ## The Underlying Logic
 
@@ -110,7 +106,7 @@ Visits and coverage put a spotlight on China's priorities, while aid provides ma
 
 -   Visiting leaders can increase the awareness of themselves and their country among citizens in the host country (Goldsmith and Horiuchi, 2009; Goldsmith et al., 2021)
 
--   Diplomatic visits usually come with policy agenda between two countries, and the two are expected to cooperate in various domains through their negotiations.
+-   Diplomatic visits usually come with a policy agenda between two countries, and the two are expected to cooperate in various domains through their negotiations.
 
 -   Diplomatic visit is a signal of support and closeness of countries.
 
@@ -156,14 +152,14 @@ Visits and outward media coverage are **visible** and are linked to efforts to b
 
 ## Hypotheses
 
-H1: When developing countries receive more media exposure in *Xinhua*, they receive more foreign aid from China.
+**H1**: When developing countries receive more media exposure in *Xinhua*, they receive more foreign aid from China.
 
-H2: When developing countries host more Chinese high-level diplomatic visits, they receive more foreign aid from China.
+**H2**: When developing countries host more Chinese high-level diplomatic visits, they receive more foreign aid from China.
 
 ## Data and Methods
 
 | Variable               | Description                                                                                        | Source                                                                                               |
-|------------------------|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
+|------------------|---------------------------|----------------------------|
 | Outcome                | bilateral ODA-like flows from China to developing countries                                        | AidData's *Chinese Development Finance Dataset*                                                      |
 | Explanatory Variable 1 | the number of bilateral diplomatic visits hosted by recipients from Beijing                        | AidData's compiled yearly counts of bilateral official diplomatic visits from China                  |
 | Explanatory Variable 2 | the number of times a developing country is mentioned in a year in the English edition of *Xinhua* | compiled from millions of *Xinhua* articles scraped by the Cline Center for Advanced Social Research |
@@ -194,14 +190,14 @@ include_graphics("results_figure.jpg")
 
 ## Thank You
 
-Miles D. Williams: milesdw2\@illinois.edu
+**Miles D. Williams**: milesdw2\@illinois.edu
 
-Lucie Lu: lul3\@illinois.edu
+**Lucie Lu**: lul3\@illinois.edu
 
 ## Appendix: Model and Estimation
 
 | Item          | Description                                                                                                                                                                                    |
-|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|----------------|--------------------------------------------------------|
 | Covariates    | aid recipient characteristics (GDP, presence of civil war, disasters, political and civil liberties) and bilateral characteristics between China and aid recipients (economic ties, alliances) |
 | Specification | `asinh(aid) ~ asinh(coverage) + asinh(visits) + covariates + recipient + year`                                                                                                                 |
 | Estimation    | OLS (CR1 errors), Tobit (random recipient intercepts), Logit/Selection (random recipient intercepts), Level/OLS (CR1 errors), Lagged IV (CR1 errors), Lewbel IV (CR1 errors).                  |
