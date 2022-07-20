@@ -159,7 +159,7 @@ Visits and outward media coverage are **visible** and are linked to efforts to b
 ## Data and Methods
 
 | Variable               | Description                                                                                        | Source                                                                                               |
-|------------------|---------------------------|----------------------------|
+|------------------------|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
 | Outcome                | bilateral ODA-like flows from China to developing countries                                        | AidData's *Chinese Development Finance Dataset*                                                      |
 | Explanatory Variable 1 | the number of bilateral diplomatic visits hosted by recipients from Beijing                        | AidData's compiled yearly counts of bilateral official diplomatic visits from China                  |
 | Explanatory Variable 2 | the number of times a developing country is mentioned in a year in the English edition of *Xinhua* | compiled from millions of *Xinhua* articles scraped by the Cline Center for Advanced Social Research |
@@ -197,7 +197,7 @@ include_graphics("results_figure.jpg")
 ## Appendix: Model and Estimation
 
 | Item          | Description                                                                                                                                                                                    |
-|----------------|--------------------------------------------------------|
+|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Covariates    | aid recipient characteristics (GDP, presence of civil war, disasters, political and civil liberties) and bilateral characteristics between China and aid recipients (economic ties, alliances) |
 | Specification | `asinh(aid) ~ asinh(coverage) + asinh(visits) + covariates + recipient + year`                                                                                                                 |
 | Estimation    | OLS (CR1 errors), Tobit (random recipient intercepts), Logit/Selection (random recipient intercepts), Level/OLS (CR1 errors), Lagged IV (CR1 errors), Lewbel IV (CR1 errors).                  |

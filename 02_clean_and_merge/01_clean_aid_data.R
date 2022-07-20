@@ -7,12 +7,14 @@
 
 rm(list = ls())
 library(tidyverse)
+library(here)
 
 
 # attach raw aid data -----------------------------------------------------
 
 aid_data <- readxl::read_excel(
-  paste0(getwd(), "/01_data/aid_data/GlobalChineseOfficialFinanceDataset_v1.0.xlsx")
+  path = here("01_data/aid_data/AidDatasGlobalChineseDevelopmentFinanceDataset_v2.0.xlsx"),
+  sheet = 'Global_CDF2.0'
 )
 dim(aid_data) # check size
 
@@ -21,27 +23,45 @@ dim(aid_data) # check size
 # clean -------------------------------------------------------------------
 
 # The readme pdf that came with the data suggests only keeping observations
-# listed as recommended_for_research==TRUE:
+# listed as 'Recommended For Aggregates' == 'Yes'
 aid_data <-
   aid_data %>%
-  filter(recommended_for_research==T)
+  filter(`Recommended For Aggregates`=='Yes')
 dim(aid_data) # new size
-
+sectors <- paste(
+  aid_data$`Sector Code`,
+  aid_data$`Sector Name`
+) %>% unique
 # Now, clean up recipient names and aid values by year:
 clean_data <- aid_data %>%
   
   # only keep year, recipient code (use iso3), and aid amount
   transmute(
-    year = year,
-    recipient_iso3 = recipient_iso3,
-    aid = usd_defl_2014 # amount in 2014 US dollars
+    year = `Commitment Year`,
+    recipient_iso3 = countrycode::countrycode(
+      Recipient, 'country.name', 'iso3c'
+    ),
+    value =  `Amount (Constant USD2017)`,# amount in 2017 US dollars,
+    flow_class = case_when(
+      `Flow Class` == 'ODA-like' ~ 'aid',
+      `Flow Class` == 'OOF-like' ~ 'debt',
+      TRUE ~ 'drop'
+    ),
+    sector_code = `Sector Code`,
+    sector_name = `Sector Name`
   ) %>%
   
-  # there are multiple lines per recipient per year. aggregate
-  # to the sum of aid to a recipient in a given year:
+  # aggregate the data to be at the recipient-year level:
   group_by(year, recipient_iso3) %>%
   summarize(
-    aid = sum(aid, na.rm=T)
+    aid = sum(value[flow_class=='aid'], na.rm=T),
+    debt = sum(value[flow_class=='debt'], na.rm=T),
+    aid_socgov = sum(value[flow_class=='aid' &
+                             sector_code %in% 100:199], na.rm=T),
+    aid_econ = sum(value[flow_class=='aid' &
+                             sector_code %in% 200:399], na.rm=T),
+    aid_human = sum(value[flow_class=='aid' &
+                             sector_code %in% 700:799], na.rm=T)
   ) %>%
   ungroup %>%
   
@@ -64,8 +84,8 @@ full_schedule <- expand.grid(
   year = 2000:2014,
   recipient_iso3 = unique(clean_data$recipient_iso3)
 )
-dim(full_schedule) # should have 2,085 obs.
-dim(clean_data)    # we only have 1,295
+dim(full_schedule) # should have 2,130 obs.
+dim(clean_data)    # we only have 1,937
 
 full_data <- full_schedule %>%
   left_join(clean_data, by = c("year", "recipient_iso3")) %>%
@@ -73,22 +93,21 @@ full_data <- full_schedule %>%
     recipient = countrycode::countrycode(
       recipient_iso3, "iso3c", "country.name"
     ), # write over recipient name to fill in NAs
-    aid = replace_na(
-      aid, 0
-    )  # replace NAs with 0 
+    across(
+      aid:aid_human,
+      ~ replace_na(.x, 0)
+    )
   )
 dim(full_data) # correct size
 
 # place variables in more sensible order:
 full_data <- full_data %>%
-  select(year, recipient, recipient_iso3, aid)
+  select(year, recipient, recipient_iso3, everything())
 
 
 # save to .csv file -------------------------------------------------------
 
 write_csv(
   full_data,
-  file = paste0(
-    getwd(), "/01_data/aid_data/clean_aid_data.csv"
-  )
+  file = here("01_data/aid_data/clean_aid_data.csv")
 )
