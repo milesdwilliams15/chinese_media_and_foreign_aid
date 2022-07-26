@@ -36,11 +36,11 @@ vdem_data <- extract_vdem(
 ) %>%
   select(vdem_country_name, year, v2x_polyarchy:v2x_egaldem)
 
-# limit to years needed (2000-2014)
+# limit to years needed (1999-2017)
 dem_data <- dem_data %>%
-  filter(year %in% 2000:2014)
+  filter(year %in% 1999:2017)
 vdem_data <- vdem_data %>%
-  filter(year %in% 2000:2014)
+  filter(year %in% 1999:2017)
 
 # use iso3 code for later merging
 dem_data <- dem_data %>%

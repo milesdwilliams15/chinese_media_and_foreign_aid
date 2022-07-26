@@ -81,10 +81,10 @@ clean_data %>%
 
 # make a schedule of recipients by year:
 full_schedule <- expand.grid(
-  year = 2000:2014,
+  year = 2000:2017,
   recipient_iso3 = unique(clean_data$recipient_iso3)
 )
-dim(full_schedule) # should have 2,130 obs.
+dim(full_schedule) # should have 2,556 obs.
 dim(clean_data)    # we only have 1,937
 
 full_data <- full_schedule %>%

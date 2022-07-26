@@ -7,15 +7,14 @@
 
 rm(list = ls())
 library(tidyverse)
+library(here)
 library(countrycode)
 
 
 # data --------------------------------------------------------------------
 
 dip_data <- read_csv(
-  paste0(
-    getwd(), "/01_data/PublicDiplomacy/ChinesePublicDiplomacy.csv"
-  )
+  here("01_data/PublicDiplomacy/ChinesePublicDiplomacy.csv")
 )
 
 
@@ -42,8 +41,5 @@ dip_data <- na.omit(dip_data)
 
 write_csv(
   dip_data,
-  file = paste0(
-    getwd(),
-    "/01_data/PublicDiplomacy/clean_diplomacy_data.csv"
-  )
+  file = here("01_data/PublicDiplomacy/clean_diplomacy_data.csv")
 )
