@@ -1,0 +1,34 @@
+---
+title: "Combine files"
+author: "Lucie Lu"
+date: "2022-07-28"
+output: pdf_document
+---
+
+```{r setup}
+# problem setting up working directory
+# https://stackoverflow.com/questions/44816945/why-setting-working-directory-in-r-notebook-doesnt-change-working-directory-in
+require("knitr")
+knitr::opts_knit$set(root.dir = normalizePath("C:/Users/Lucie Lu/Box Sync/Xinhua co-authoring project/Xinhua news articles_economy_related")) 
+getwd()
+```
+
+
+```{r}
+temp <- list.files(pattern="*.csv")
+listOfDataFrames <- lapply(temp, read.csv)
+```
+
+
+```{r}
+
+df2 <- bind_rows(listOfDataFrames, .id = "column_label")
+#115,675 observations
+
+```
+
+```{r}
+
+#write.csv(df2, "Xinhua_2000_2017_aids_related.csv") 
+
+```

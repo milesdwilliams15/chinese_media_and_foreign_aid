@@ -1,0 +1,76 @@
+---
+title: "Aids/development news articles identified"
+author: "Lucie Lu"
+date: "2022-07-26"
+output: pdf_document
+---
+
+```{r}
+
+dat <- read.csv("C:/Users/Lucie Lu/Box Sync/Xinhua co-authoring project/Xinhua news articles_2000-2017/Xinhua_2016.csv")
+
+```
+
+```{r}
+library(tidytext)
+library(dplyr)
+library(tm)
+library(stringr)
+```
+
+```{r, eval=F}
+# pre-processing
+dat$title
+
+tidy_news <- dat %>%
+    select(title) %>%
+    unnest_tokens("word", title)
+
+data("stop_words")
+tidy_news <- tidy_news %>%
+      anti_join(stop_words)
+
+tidy_news %>%
+  count(word) %>%
+    arrange(desc(n))
+```
+
+```{r}
+
+# dictionary-based approach to subset
+
+aids_dictionary <- c("aid", "aids", "donor",
+                     "lend", "development", "investment", "growth", "support",
+                         "business", "help", "construction", "education", "funds", "projects", 
+                     "donate", "assist")
+
+dat$title2 <- str_replace_all(dat$title, "[[:punct:]]", "")
+sent2 <- unlist(strsplit(dat$title2, "\\."))
+aids_news_title <- grep(paste0('\\b', aids_dictionary, '\\b', collapse = '|'), sent2, ignore.case = TRUE, value = TRUE)
+pattern <- paste0(aids_news_title, collapse = "|")
+
+```
+
+
+```{r}
+#check how long a code runs...
+library(tictoc)
+tic("processing")
+aids_news3 <- dat[str_detect(dat$title2, pattern),]
+toc()
+
+
+#aids_news <- dat[str_detect(dat$title[1:100], paste(aids_news_title, collapse="|")),]
+#sent[grepl(pattern, sent)]
+#later on refine the search as extracted_organizations including China or Chinese
+
+
+```
+
+
+```{r}
+
+#write.csv(aids_news3, "aids_news_2016.csv")
+
+```
+

@@ -1,0 +1,222 @@
+---
+title: "Pre-process China related and country counts"
+author: "Lucie Lu"
+date: "2022-07-29"
+output: pdf_document
+---
+
+
+
+```{r}
+#list.files("Xinhua_news_articles_2000-2014/")
+df2 <- read.csv("C:/Users/Lucie Lu/Box Sync/Xinhua co-authoring project/Xinhua news articles_economy_related/Xinhua_2000_2017_aids_related.csv")
+
+library(tidyverse)
+#https://hbctraining.github.io/Intro-to-R/lessons/08_intro_tidyverse.html
+df2  <- df2 %>% 
+  rownames_to_column() %>% 
+  as_tibble()
+
+```
+
+```{r}
+
+#replace empty country with extracted locations
+#df2$country <- ifelse(df2$country==" ", df2$extracted_locations, df2$country)
+
+country2 <- matrix(NA, nrow=nrow(df2), ncol=1)
+for (i in 1:nrow(df2)){
+  country2[i,] <- ifelse(df2$country[i]=="", df2$extracted_locations[i], df2$country[i])
+}
+
+
+country2 <- as.data.frame(country2)
+df2 <- cbind(df2, country2)
+colnames(df2)[14] <- "country2_completed" 
+```
+
+```{r}
+# identify China-related articles
+#df2$country2_completed
+China_dictionary <- c("People's Republic of China", "China", "Shanghai", "Beijing", "province")
+
+df2$China_related <- ifelse(grepl(paste0('\\b', China_dictionary, '\\b', collapse = '|'), df2$country2_completed, China_dictionary)==T, 1, 0)
+table(df2$China_related) #38618 related articles
+
+```
+```{r create years}
+
+df2$year <- case_when(
+  df2$column_label == 1 ~ "2000",
+  df2$column_label == 2 ~ "2001",
+  df2$column_label == 3 ~ "2002",
+  df2$column_label == 4 ~ "2003",
+  df2$column_label == 5 ~ "2004",
+  df2$column_label == 6 ~ "2005",
+  df2$column_label == 7 ~ "2006",
+  df2$column_label == 8 ~ "2007",
+  df2$column_label == 9 ~ "2008",
+  df2$column_label == 10 ~ "2009",
+  df2$column_label == 11 ~ "2010",
+  df2$column_label == 12 ~ "2011",
+  df2$column_label == 13 ~ "2012",
+  df2$column_label == 14 ~ "2013",
+  df2$column_label == 15 ~ "2014",
+  df2$column_label == 16 ~ "2015",
+  df2$column_label == 17 ~ "2016",
+  df2$column_label == 18 ~ "2017",
+  
+)
+
+table(df2$column_label)
+table(df2$year)
+df2$year <- as.factor(df2$year)
+```
+
+```{r}
+df2_subset_China <- subset(df2, df2$China_related==1) #38,618
+```
+
+```{r, eval=F}
+
+#write.csv(df2, "Xinhua_2000_2017_aids_news_processed.csv")
+#write.csv(df2_subset_China, "Xinhua_2000_2017_aids_news_China_subset_processed.csv")
+```
+
+
+##########################################
+
+```{r import multiple .csv files, eval=F}
+#https://stackoverflow.com/questions/11433432/how-to-import-multiple-csv-files-at-once
+
+temp = list.files(pattern="*.csv")
+for (i in 1:length(temp)) assign(temp[i], read.csv(temp[i]))
+```
+
+```{r}
+Xinhua_2000 <- subset(df2_subset_China, df2_subset_China$year==2000)
+#head(Xinhua_2000)
+library(tidyverse)
+#https://hbctraining.github.io/Intro-to-R/lessons/08_intro_tidyverse.html
+#Xinhua_2000 <- Xinhua_2000 %>% 
+#  rownames_to_column() %>% 
+#  as_tibble()
+```
+
+```{r}
+df <- Xinhua_2000  %>% 
+  pull(country2_completed) %>% 
+  str_split("[|]")
+#max(lengths(df))
+names(df) <- Xinhua_2000$rowname
+#df_2 <- data.frame(matrix(unlist(df), nrow=max(lengths(df)), byrow=TRUE),stringsAsFactors=FALSE)
+library (plyr)
+df_2 <- ldply (df, data.frame)
+df_2 <- tibble(df_2)
+colnames(df_2)[2] <- "country_mentioned"
+df_2$countries_mentioned <- as.factor(df_2$country_mentioned)
+```
+
+```{r}
+library(dplyr)
+new_df_2000 <- df_2 %>% 
+  group_by(country_mentioned) %>%
+  dplyr::summarise(n = n()) %>%
+#  df_2[!(df_2$country_mentioned == "")]  %>%
+#  mutate(freq = round(n/sum(n), 3)) %>%
+  arrange(desc(n))
+
+new_df_2000 <- new_df_2000 %>% mutate(year==2000)
+
+new_df_2000$year <- 2000
+
+#duplicated name summarise in both packages
+#https://statisticsglobe.com/r-error-must-only-be-used-inside-dplyr-verbs
+```
+
+
+```{r get frequency table}
+
+new_df_2000 <- new_df_2000%>% 
+  group_by(country_mentioned) %>%
+#  dplyr::summarise(n2 = n()) %>%
+  mutate(freq_perc = round(100 * n / nrow(Xinhua_2000), digits=2)) #total number of reports in 2000
+
+```
+
+
+
+```{r}
+# list all of the files here
+new_df_2000
+new_df_2001
+new_df_2002
+new_df_2003
+new_df_2004
+new_df_2005
+new_df_2006
+new_df_2007
+new_df_2008 
+new_df_2009
+new_df_2010
+new_df_2011
+new_df_2012
+new_df_2013
+new_df_2014
+new_df_2015
+new_df_2016
+new_df_2017
+```
+
+```{r}
+all_df <- rbind(new_df_2000,
+new_df_2001,
+new_df_2002,
+new_df_2003,
+new_df_2004,
+new_df_2005,
+new_df_2006,
+new_df_2007,
+new_df_2008,
+new_df_2009,
+new_df_2010,
+new_df_2011,
+new_df_2012,
+new_df_2013,
+new_df_2014,
+new_df_2015,
+new_df_2016,
+new_df_2017)
+str(all_df)
+```
+
+```{r}
+#write.csv(all_df, "total.csv")
+
+```
+
+```{r}
+#transform to wide data for better graphing
+#https://cran.r-project.org/web/packages/data.table/vignettes/datatable-reshape.html
+library(data.table)
+county_counts_long <- reshape2::dcast(all_df, country_mentioned ~ year, value.var = "n")
+head(data_all_df_long, 50)
+
+county_freq_long <- reshape2::dcast(all_df, country_mentioned ~ year, value.var = "freq_perc")
+head(county_freq_long, 50)
+```
+
+```{r}
+
+#install.packages("countrycode")
+library(countrycode)
+codelist$country.name.de
+```
+
+```{r export data}
+#write.csv(county_counts_long, "Xinhua_2001_2017_aids_related_articles_countrycounts.csv")
+```
+
+```{r export data frequency}
+#write.csv(county_freq_long, "Xinhua_2001_2017_aids_related_articles_countryfrequencies.csv")
+```
