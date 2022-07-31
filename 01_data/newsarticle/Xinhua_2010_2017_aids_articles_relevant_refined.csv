@@ -1,0 +1,2503 @@
+,country_mentioned,country_matched,recipient_iso,year,frequncies_by_year,counts_by_year,relevant
+2269,"American Samoa, Territory of, American Samoa",Samoa,WSM,2000,NA,NA,1
+2270,"American Samoa, Territory of, American Samoa",Samoa,WSM,2001,0.02,1,1
+2271,"American Samoa, Territory of, American Samoa",Samoa,WSM,2002,NA,NA,1
+2272,"American Samoa, Territory of, American Samoa",Samoa,WSM,2003,NA,NA,1
+2273,"American Samoa, Territory of, American Samoa",Samoa,WSM,2004,0.02,1,1
+2274,"American Samoa, Territory of, American Samoa",Samoa,WSM,2005,NA,NA,1
+2275,"American Samoa, Territory of, American Samoa",Samoa,WSM,2006,NA,NA,1
+2276,"American Samoa, Territory of, American Samoa",Samoa,WSM,2007,NA,NA,1
+2277,"American Samoa, Territory of, American Samoa",Samoa,WSM,2008,0.4,18,1
+2278,"American Samoa, Territory of, American Samoa",Samoa,WSM,2009,0.09,9,1
+2279,"American Samoa, Territory of, American Samoa",Samoa,WSM,2010,0.02,2,1
+2280,"American Samoa, Territory of, American Samoa",Samoa,WSM,2011,NA,NA,1
+2281,"American Samoa, Territory of, American Samoa",Samoa,WSM,2012,NA,NA,1
+2282,"American Samoa, Territory of, American Samoa",Samoa,WSM,2013,NA,NA,1
+2283,"American Samoa, Territory of, American Samoa",Samoa,WSM,2014,NA,NA,1
+2284,"American Samoa, Territory of, American Samoa",Samoa,WSM,2015,NA,NA,1
+2285,"American Samoa, Territory of, American Samoa",Samoa,WSM,2016,NA,NA,1
+2286,"American Samoa, Territory of, American Samoa",Samoa,WSM,2017,NA,NA,1
+3277,"Arab Republic of Egypt, Egypt",Egypt,EGY,2000,1.41,69,1
+3278,"Arab Republic of Egypt, Egypt",Egypt,EGY,2001,1.86,89,1
+3279,"Arab Republic of Egypt, Egypt",Egypt,EGY,2002,1.64,75,1
+3280,"Arab Republic of Egypt, Egypt",Egypt,EGY,2003,1.04,55,1
+3281,"Arab Republic of Egypt, Egypt",Egypt,EGY,2004,1.84,93,1
+3282,"Arab Republic of Egypt, Egypt",Egypt,EGY,2005,1.48,74,1
+3283,"Arab Republic of Egypt, Egypt",Egypt,EGY,2006,1.84,95,1
+3284,"Arab Republic of Egypt, Egypt",Egypt,EGY,2007,2.16,104,1
+3285,"Arab Republic of Egypt, Egypt",Egypt,EGY,2008,2.15,96,1
+3286,"Arab Republic of Egypt, Egypt",Egypt,EGY,2009,1.89,184,1
+3287,"Arab Republic of Egypt, Egypt",Egypt,EGY,2010,1.97,226,1
+3288,"Arab Republic of Egypt, Egypt",Egypt,EGY,2011,2.26,244,1
+3289,"Arab Republic of Egypt, Egypt",Egypt,EGY,2012,1.56,146,1
+3290,"Arab Republic of Egypt, Egypt",Egypt,EGY,2013,2.34,180,1
+3291,"Arab Republic of Egypt, Egypt",Egypt,EGY,2014,1.2,80,1
+3292,"Arab Republic of Egypt, Egypt",Egypt,EGY,2015,1.41,74,1
+3293,"Arab Republic of Egypt, Egypt",Egypt,EGY,2016,1.27,67,1
+3294,"Arab Republic of Egypt, Egypt",Egypt,EGY,2017,1.96,105,1
+3493,"Argentine Republic, Argentina",Argentina,ARG,2000,0.41,20,1
+3494,"Argentine Republic, Argentina",Argentina,ARG,2001,1.15,55,1
+3495,"Argentine Republic, Argentina",Argentina,ARG,2002,1.29,59,1
+3496,"Argentine Republic, Argentina",Argentina,ARG,2003,0.68,36,1
+3497,"Argentine Republic, Argentina",Argentina,ARG,2004,0.65,33,1
+3498,"Argentine Republic, Argentina",Argentina,ARG,2005,0.58,29,1
+3499,"Argentine Republic, Argentina",Argentina,ARG,2006,0.62,32,1
+3500,"Argentine Republic, Argentina",Argentina,ARG,2007,0.52,25,1
+3501,"Argentine Republic, Argentina",Argentina,ARG,2008,0.58,26,1
+3502,"Argentine Republic, Argentina",Argentina,ARG,2009,0.34,33,1
+3503,"Argentine Republic, Argentina",Argentina,ARG,2010,0.79,91,1
+3504,"Argentine Republic, Argentina",Argentina,ARG,2011,0.54,58,1
+3505,"Argentine Republic, Argentina",Argentina,ARG,2012,0.43,40,1
+3506,"Argentine Republic, Argentina",Argentina,ARG,2013,0.52,40,1
+3507,"Argentine Republic, Argentina",Argentina,ARG,2014,0.49,33,1
+3508,"Argentine Republic, Argentina",Argentina,ARG,2015,NA,NA,1
+3509,"Argentine Republic, Argentina",Argentina,ARG,2016,NA,NA,1
+3510,"Argentine Republic, Argentina",Argentina,ARG,2017,NA,NA,1
+5527,Bangladesh,Bangladesh,BGD,2000,2.24,110,1
+5528,Bangladesh,Bangladesh,BGD,2001,0.88,42,1
+5529,Bangladesh,Bangladesh,BGD,2002,1.38,63,1
+5530,Bangladesh,Bangladesh,BGD,2003,1.21,64,1
+5531,Bangladesh,Bangladesh,BGD,2004,1.76,89,1
+5532,Bangladesh,Bangladesh,BGD,2005,1.28,64,1
+5533,Bangladesh,Bangladesh,BGD,2006,1.12,58,1
+5534,Bangladesh,Bangladesh,BGD,2007,2.33,112,1
+5535,Bangladesh,Bangladesh,BGD,2008,1.36,61,1
+5536,Bangladesh,Bangladesh,BGD,2009,2.09,203,1
+5537,Bangladesh,Bangladesh,BGD,2010,1.35,155,1
+5538,Bangladesh,Bangladesh,BGD,2011,1.01,109,1
+5539,Bangladesh,Bangladesh,BGD,2012,1.12,105,1
+5540,Bangladesh,Bangladesh,BGD,2013,0.61,47,1
+5541,Bangladesh,Bangladesh,BGD,2014,0.96,64,1
+5542,Bangladesh,Bangladesh,BGD,2015,0.74,39,1
+5543,Bangladesh,Bangladesh,BGD,2016,0.83,44,1
+5544,Bangladesh,Bangladesh,BGD,2017,0.95,51,1
+5869,Barbados,Barbados,BRB,2000,0.02,1,1
+5870,Barbados,Barbados,BRB,2001,0.04,2,1
+5871,Barbados,Barbados,BRB,2002,0.02,1,1
+5872,Barbados,Barbados,BRB,2003,0.04,2,1
+5873,Barbados,Barbados,BRB,2004,0.04,2,1
+5874,Barbados,Barbados,BRB,2005,0.2,10,1
+5875,Barbados,Barbados,BRB,2006,0.04,2,1
+5876,Barbados,Barbados,BRB,2007,0.04,2,1
+5877,Barbados,Barbados,BRB,2008,NA,NA,1
+5878,Barbados,Barbados,BRB,2009,NA,NA,1
+5879,Barbados,Barbados,BRB,2010,0.01,1,1
+5880,Barbados,Barbados,BRB,2011,0.02,2,1
+5881,Barbados,Barbados,BRB,2012,NA,NA,1
+5882,Barbados,Barbados,BRB,2013,0.05,4,1
+5883,Barbados,Barbados,BRB,2014,0.04,3,1
+5884,Barbados,Barbados,BRB,2015,NA,NA,1
+5885,Barbados,Barbados,BRB,2016,NA,NA,1
+5886,Barbados,Barbados,BRB,2017,0.02,1,1
+8371,"Bolivarian Republic of Venezuela, Venezuela",Venezuela,VEN,2000,0.39,19,1
+8372,"Bolivarian Republic of Venezuela, Venezuela",Venezuela,VEN,2001,0.42,20,1
+8373,"Bolivarian Republic of Venezuela, Venezuela",Venezuela,VEN,2002,0.42,19,1
+8374,"Bolivarian Republic of Venezuela, Venezuela",Venezuela,VEN,2003,0.62,33,1
+8375,"Bolivarian Republic of Venezuela, Venezuela",Venezuela,VEN,2004,0.59,30,1
+8376,"Bolivarian Republic of Venezuela, Venezuela",Venezuela,VEN,2005,0.88,44,1
+8377,"Bolivarian Republic of Venezuela, Venezuela",Venezuela,VEN,2006,0.68,35,1
+8378,"Bolivarian Republic of Venezuela, Venezuela",Venezuela,VEN,2007,0.62,30,1
+8379,"Bolivarian Republic of Venezuela, Venezuela",Venezuela,VEN,2008,1.19,53,1
+8380,"Bolivarian Republic of Venezuela, Venezuela",Venezuela,VEN,2009,0.6,58,1
+8381,"Bolivarian Republic of Venezuela, Venezuela",Venezuela,VEN,2010,0.73,84,1
+8382,"Bolivarian Republic of Venezuela, Venezuela",Venezuela,VEN,2011,0.23,25,1
+8383,"Bolivarian Republic of Venezuela, Venezuela",Venezuela,VEN,2012,0.2,19,1
+8384,"Bolivarian Republic of Venezuela, Venezuela",Venezuela,VEN,2013,0.33,25,1
+8385,"Bolivarian Republic of Venezuela, Venezuela",Venezuela,VEN,2014,0.52,35,1
+8386,"Bolivarian Republic of Venezuela, Venezuela",Venezuela,VEN,2015,0.57,30,1
+8387,"Bolivarian Republic of Venezuela, Venezuela",Venezuela,VEN,2016,0.81,43,1
+8388,"Bolivarian Republic of Venezuela, Venezuela",Venezuela,VEN,2017,0.39,21,1
+9415,"Brunei Darussalam, Brunei",Brunei,BRN,2000,0.41,20,1
+9416,"Brunei Darussalam, Brunei",Brunei,BRN,2001,0.27,13,1
+9417,"Brunei Darussalam, Brunei",Brunei,BRN,2002,0.39,18,1
+9418,"Brunei Darussalam, Brunei",Brunei,BRN,2003,0.64,34,1
+9419,"Brunei Darussalam, Brunei",Brunei,BRN,2004,0.57,29,1
+9420,"Brunei Darussalam, Brunei",Brunei,BRN,2005,0.6,30,1
+9421,"Brunei Darussalam, Brunei",Brunei,BRN,2006,0.43,22,1
+9422,"Brunei Darussalam, Brunei",Brunei,BRN,2007,0.46,22,1
+9423,"Brunei Darussalam, Brunei",Brunei,BRN,2008,0.45,20,1
+9424,"Brunei Darussalam, Brunei",Brunei,BRN,2009,0.44,43,1
+9425,"Brunei Darussalam, Brunei",Brunei,BRN,2010,0.39,45,1
+9426,"Brunei Darussalam, Brunei",Brunei,BRN,2011,0.48,52,1
+9427,"Brunei Darussalam, Brunei",Brunei,BRN,2012,0.3,28,1
+9428,"Brunei Darussalam, Brunei",Brunei,BRN,2013,0.66,51,1
+9429,"Brunei Darussalam, Brunei",Brunei,BRN,2014,0.42,28,1
+9430,"Brunei Darussalam, Brunei",Brunei,BRN,2015,0.36,19,1
+9431,"Brunei Darussalam, Brunei",Brunei,BRN,2016,0.13,7,1
+9432,"Brunei Darussalam, Brunei",Brunei,BRN,2017,0.28,15,1
+11827,Central African Republic,Central African Republic,CAF,2000,0.02,1,1
+11828,Central African Republic,Central African Republic,CAF,2001,0.13,6,1
+11829,Central African Republic,Central African Republic,CAF,2002,0.09,4,1
+11830,Central African Republic,Central African Republic,CAF,2003,0.13,7,1
+11831,Central African Republic,Central African Republic,CAF,2004,0.22,11,1
+11832,Central African Republic,Central African Republic,CAF,2005,0.14,7,1
+11833,Central African Republic,Central African Republic,CAF,2006,0.08,4,1
+11834,Central African Republic,Central African Republic,CAF,2007,0.19,9,1
+11835,Central African Republic,Central African Republic,CAF,2008,0.18,8,1
+11836,Central African Republic,Central African Republic,CAF,2009,0.26,25,1
+11837,Central African Republic,Central African Republic,CAF,2010,0.17,20,1
+11838,Central African Republic,Central African Republic,CAF,2011,0.11,12,1
+11839,Central African Republic,Central African Republic,CAF,2012,0.15,14,1
+11840,Central African Republic,Central African Republic,CAF,2013,0.59,45,1
+11841,Central African Republic,Central African Republic,CAF,2014,1.08,72,1
+11842,Central African Republic,Central African Republic,CAF,2015,0.34,18,1
+11843,Central African Republic,Central African Republic,CAF,2016,0.3,16,1
+11844,Central African Republic,Central African Republic,CAF,2017,0.15,8,1
+12403,Central Somalia,Somalia,SOM,2000,NA,NA,1
+12404,Central Somalia,Somalia,SOM,2001,NA,NA,1
+12405,Central Somalia,Somalia,SOM,2002,NA,NA,1
+12406,Central Somalia,Somalia,SOM,2003,NA,NA,1
+12407,Central Somalia,Somalia,SOM,2004,NA,NA,1
+12408,Central Somalia,Somalia,SOM,2005,NA,NA,1
+12409,Central Somalia,Somalia,SOM,2006,NA,NA,1
+12410,Central Somalia,Somalia,SOM,2007,NA,NA,1
+12411,Central Somalia,Somalia,SOM,2008,NA,NA,1
+12412,Central Somalia,Somalia,SOM,2009,NA,NA,1
+12413,Central Somalia,Somalia,SOM,2010,NA,NA,1
+12414,Central Somalia,Somalia,SOM,2011,0.02,2,1
+12415,Central Somalia,Somalia,SOM,2012,NA,NA,1
+12416,Central Somalia,Somalia,SOM,2013,NA,NA,1
+12417,Central Somalia,Somalia,SOM,2014,NA,NA,1
+12418,Central Somalia,Somalia,SOM,2015,NA,NA,1
+12419,Central Somalia,Somalia,SOM,2016,NA,NA,1
+12420,Central Somalia,Somalia,SOM,2017,NA,NA,1
+14635,"Co-operative Republic of Guyana, Guyana",Guyana,GUY,2000,0.04,2,1
+14636,"Co-operative Republic of Guyana, Guyana",Guyana,GUY,2001,0.04,2,1
+14637,"Co-operative Republic of Guyana, Guyana",Guyana,GUY,2002,0.04,2,1
+14638,"Co-operative Republic of Guyana, Guyana",Guyana,GUY,2003,0.04,2,1
+14639,"Co-operative Republic of Guyana, Guyana",Guyana,GUY,2004,0.06,3,1
+14640,"Co-operative Republic of Guyana, Guyana",Guyana,GUY,2005,0.12,6,1
+14641,"Co-operative Republic of Guyana, Guyana",Guyana,GUY,2006,0.06,3,1
+14642,"Co-operative Republic of Guyana, Guyana",Guyana,GUY,2007,NA,NA,1
+14643,"Co-operative Republic of Guyana, Guyana",Guyana,GUY,2008,0.07,3,1
+14644,"Co-operative Republic of Guyana, Guyana",Guyana,GUY,2009,NA,NA,1
+14645,"Co-operative Republic of Guyana, Guyana",Guyana,GUY,2010,0.05,6,1
+14646,"Co-operative Republic of Guyana, Guyana",Guyana,GUY,2011,0.06,7,1
+14647,"Co-operative Republic of Guyana, Guyana",Guyana,GUY,2012,0.04,4,1
+14648,"Co-operative Republic of Guyana, Guyana",Guyana,GUY,2013,0.03,2,1
+14649,"Co-operative Republic of Guyana, Guyana",Guyana,GUY,2014,NA,NA,1
+14650,"Co-operative Republic of Guyana, Guyana",Guyana,GUY,2015,0.06,3,1
+14651,"Co-operative Republic of Guyana, Guyana",Guyana,GUY,2016,0.04,2,1
+14652,"Co-operative Republic of Guyana, Guyana",Guyana,GUY,2017,0.04,2,1
+15229,"Commonwealth of The Bahamas, Bahamas",Bahamas,BHS,2000,0.02,1,1
+15230,"Commonwealth of The Bahamas, Bahamas",Bahamas,BHS,2001,0.08,4,1
+15231,"Commonwealth of The Bahamas, Bahamas",Bahamas,BHS,2002,0.04,2,1
+15232,"Commonwealth of The Bahamas, Bahamas",Bahamas,BHS,2003,0.02,1,1
+15233,"Commonwealth of The Bahamas, Bahamas",Bahamas,BHS,2004,0.04,2,1
+15234,"Commonwealth of The Bahamas, Bahamas",Bahamas,BHS,2005,0.02,1,1
+15235,"Commonwealth of The Bahamas, Bahamas",Bahamas,BHS,2006,0.08,4,1
+15236,"Commonwealth of The Bahamas, Bahamas",Bahamas,BHS,2007,NA,NA,1
+15237,"Commonwealth of The Bahamas, Bahamas",Bahamas,BHS,2008,NA,NA,1
+15238,"Commonwealth of The Bahamas, Bahamas",Bahamas,BHS,2009,0.13,13,1
+15239,"Commonwealth of The Bahamas, Bahamas",Bahamas,BHS,2010,0.01,1,1
+15240,"Commonwealth of The Bahamas, Bahamas",Bahamas,BHS,2011,0.06,6,1
+15241,"Commonwealth of The Bahamas, Bahamas",Bahamas,BHS,2012,0.02,2,1
+15242,"Commonwealth of The Bahamas, Bahamas",Bahamas,BHS,2013,0.01,1,1
+15243,"Commonwealth of The Bahamas, Bahamas",Bahamas,BHS,2014,0.04,3,1
+15244,"Commonwealth of The Bahamas, Bahamas",Bahamas,BHS,2015,0.04,2,1
+15245,"Commonwealth of The Bahamas, Bahamas",Bahamas,BHS,2016,0.06,3,1
+15246,"Commonwealth of The Bahamas, Bahamas",Bahamas,BHS,2017,0.02,1,1
+15679,Cook Islands,Cook Islands,COK,2000,0.04,2,1
+15680,Cook Islands,Cook Islands,COK,2001,0.02,1,1
+15681,Cook Islands,Cook Islands,COK,2002,0.02,1,1
+15682,Cook Islands,Cook Islands,COK,2003,NA,NA,1
+15683,Cook Islands,Cook Islands,COK,2004,0.08,4,1
+15684,Cook Islands,Cook Islands,COK,2005,0.14,7,1
+15685,Cook Islands,Cook Islands,COK,2006,0.1,5,1
+15686,Cook Islands,Cook Islands,COK,2007,0.1,5,1
+15687,Cook Islands,Cook Islands,COK,2008,NA,NA,1
+15688,Cook Islands,Cook Islands,COK,2009,0.08,8,1
+15689,Cook Islands,Cook Islands,COK,2010,0.04,5,1
+15690,Cook Islands,Cook Islands,COK,2011,0.12,13,1
+15691,Cook Islands,Cook Islands,COK,2012,0.39,36,1
+15692,Cook Islands,Cook Islands,COK,2013,0.16,12,1
+15693,Cook Islands,Cook Islands,COK,2014,0.15,10,1
+15694,Cook Islands,Cook Islands,COK,2015,0.08,4,1
+15695,Cook Islands,Cook Islands,COK,2016,0.06,3,1
+15696,Cook Islands,Cook Islands,COK,2017,0.04,2,1
+16399,"Czechoslovakia, Serbia and Montenegro",Serbia,SRB,2000,NA,NA,1
+16400,"Czechoslovakia, Serbia and Montenegro",Serbia,SRB,2001,0.04,2,1
+16401,"Czechoslovakia, Serbia and Montenegro",Serbia,SRB,2002,0.02,1,1
+16402,"Czechoslovakia, Serbia and Montenegro",Serbia,SRB,2003,0.02,1,1
+16403,"Czechoslovakia, Serbia and Montenegro",Serbia,SRB,2004,NA,NA,1
+16404,"Czechoslovakia, Serbia and Montenegro",Serbia,SRB,2005,0.06,3,1
+16405,"Czechoslovakia, Serbia and Montenegro",Serbia,SRB,2006,0.02,1,1
+16406,"Czechoslovakia, Serbia and Montenegro",Serbia,SRB,2007,0.02,1,1
+16407,"Czechoslovakia, Serbia and Montenegro",Serbia,SRB,2008,0.07,3,1
+16408,"Czechoslovakia, Serbia and Montenegro",Serbia,SRB,2009,NA,NA,1
+16409,"Czechoslovakia, Serbia and Montenegro",Serbia,SRB,2010,NA,NA,1
+16410,"Czechoslovakia, Serbia and Montenegro",Serbia,SRB,2011,0.02,2,1
+16411,"Czechoslovakia, Serbia and Montenegro",Serbia,SRB,2012,0.02,2,1
+16412,"Czechoslovakia, Serbia and Montenegro",Serbia,SRB,2013,NA,NA,1
+16413,"Czechoslovakia, Serbia and Montenegro",Serbia,SRB,2014,NA,NA,1
+16414,"Czechoslovakia, Serbia and Montenegro",Serbia,SRB,2015,NA,NA,1
+16415,"Czechoslovakia, Serbia and Montenegro",Serbia,SRB,2016,NA,NA,1
+16416,"Czechoslovakia, Serbia and Montenegro",Serbia,SRB,2017,NA,NA,1
+17749,"Democratic People's Republic of Korea, North Korea",North Korea,PRK,2000,0.02,1,1
+17750,"Democratic People's Republic of Korea, North Korea",North Korea,PRK,2001,NA,NA,1
+17751,"Democratic People's Republic of Korea, North Korea",North Korea,PRK,2002,0.04,2,1
+17752,"Democratic People's Republic of Korea, North Korea",North Korea,PRK,2003,0.08,4,1
+17753,"Democratic People's Republic of Korea, North Korea",North Korea,PRK,2004,0.14,7,1
+17754,"Democratic People's Republic of Korea, North Korea",North Korea,PRK,2005,0.06,3,1
+17755,"Democratic People's Republic of Korea, North Korea",North Korea,PRK,2006,NA,NA,1
+17756,"Democratic People's Republic of Korea, North Korea",North Korea,PRK,2007,0.08,4,1
+17757,"Democratic People's Republic of Korea, North Korea",North Korea,PRK,2008,NA,NA,1
+17758,"Democratic People's Republic of Korea, North Korea",North Korea,PRK,2009,0.15,15,1
+17759,"Democratic People's Republic of Korea, North Korea",North Korea,PRK,2010,0.11,13,1
+17760,"Democratic People's Republic of Korea, North Korea",North Korea,PRK,2011,0.11,12,1
+17761,"Democratic People's Republic of Korea, North Korea",North Korea,PRK,2012,0.1,9,1
+17762,"Democratic People's Republic of Korea, North Korea",North Korea,PRK,2013,0.03,2,1
+17763,"Democratic People's Republic of Korea, North Korea",North Korea,PRK,2014,0.03,2,1
+17764,"Democratic People's Republic of Korea, North Korea",North Korea,PRK,2015,NA,NA,1
+17765,"Democratic People's Republic of Korea, North Korea",North Korea,PRK,2016,NA,NA,1
+17766,"Democratic People's Republic of Korea, North Korea",North Korea,PRK,2017,NA,NA,1
+17821,"Democratic Republic of Timor-Leste, East Timor",Timor-Leste,TLS,2000,0.55,27,1
+17822,"Democratic Republic of Timor-Leste, East Timor",Timor-Leste,TLS,2001,0.29,14,1
+17823,"Democratic Republic of Timor-Leste, East Timor",Timor-Leste,TLS,2002,0.48,22,1
+17824,"Democratic Republic of Timor-Leste, East Timor",Timor-Leste,TLS,2003,0.34,18,1
+17825,"Democratic Republic of Timor-Leste, East Timor",Timor-Leste,TLS,2004,0.14,7,1
+17826,"Democratic Republic of Timor-Leste, East Timor",Timor-Leste,TLS,2005,0.16,8,1
+17827,"Democratic Republic of Timor-Leste, East Timor",Timor-Leste,TLS,2006,0.27,14,1
+17828,"Democratic Republic of Timor-Leste, East Timor",Timor-Leste,TLS,2007,0.15,7,1
+17829,"Democratic Republic of Timor-Leste, East Timor",Timor-Leste,TLS,2008,0.13,6,1
+17830,"Democratic Republic of Timor-Leste, East Timor",Timor-Leste,TLS,2009,0.09,9,1
+17831,"Democratic Republic of Timor-Leste, East Timor",Timor-Leste,TLS,2010,0.18,21,1
+17832,"Democratic Republic of Timor-Leste, East Timor",Timor-Leste,TLS,2011,0.16,17,1
+17833,"Democratic Republic of Timor-Leste, East Timor",Timor-Leste,TLS,2012,0.07,7,1
+17834,"Democratic Republic of Timor-Leste, East Timor",Timor-Leste,TLS,2013,0.05,4,1
+17835,"Democratic Republic of Timor-Leste, East Timor",Timor-Leste,TLS,2014,0.06,4,1
+17836,"Democratic Republic of Timor-Leste, East Timor",Timor-Leste,TLS,2015,0.1,5,1
+17837,"Democratic Republic of Timor-Leste, East Timor",Timor-Leste,TLS,2016,0.04,2,1
+17838,"Democratic Republic of Timor-Leste, East Timor",Timor-Leste,TLS,2017,0.02,1,1
+17857,"Democratic Socialist Republic of Sri Lanka, Sri Lanka",Sri Lanka,LKA,2000,1.49,73,1
+17858,"Democratic Socialist Republic of Sri Lanka, Sri Lanka",Sri Lanka,LKA,2001,0.92,44,1
+17859,"Democratic Socialist Republic of Sri Lanka, Sri Lanka",Sri Lanka,LKA,2002,1.12,51,1
+17860,"Democratic Socialist Republic of Sri Lanka, Sri Lanka",Sri Lanka,LKA,2003,1.26,67,1
+17861,"Democratic Socialist Republic of Sri Lanka, Sri Lanka",Sri Lanka,LKA,2004,2.62,132,1
+17862,"Democratic Socialist Republic of Sri Lanka, Sri Lanka",Sri Lanka,LKA,2005,2.83,142,1
+17863,"Democratic Socialist Republic of Sri Lanka, Sri Lanka",Sri Lanka,LKA,2006,0.75,39,1
+17864,"Democratic Socialist Republic of Sri Lanka, Sri Lanka",Sri Lanka,LKA,2007,0.79,38,1
+17865,"Democratic Socialist Republic of Sri Lanka, Sri Lanka",Sri Lanka,LKA,2008,0.09,4,1
+17866,"Democratic Socialist Republic of Sri Lanka, Sri Lanka",Sri Lanka,LKA,2009,0.98,95,1
+17867,"Democratic Socialist Republic of Sri Lanka, Sri Lanka",Sri Lanka,LKA,2010,0.6,69,1
+17868,"Democratic Socialist Republic of Sri Lanka, Sri Lanka",Sri Lanka,LKA,2011,1.14,123,1
+17869,"Democratic Socialist Republic of Sri Lanka, Sri Lanka",Sri Lanka,LKA,2012,1.21,113,1
+17870,"Democratic Socialist Republic of Sri Lanka, Sri Lanka",Sri Lanka,LKA,2013,1.18,91,1
+17871,"Democratic Socialist Republic of Sri Lanka, Sri Lanka",Sri Lanka,LKA,2014,1.21,81,1
+17872,"Democratic Socialist Republic of Sri Lanka, Sri Lanka",Sri Lanka,LKA,2015,1.01,53,1
+17873,"Democratic Socialist Republic of Sri Lanka, Sri Lanka",Sri Lanka,LKA,2016,1.08,57,1
+17874,"Democratic Socialist Republic of Sri Lanka, Sri Lanka",Sri Lanka,LKA,2017,0.58,31,1
+18721,Dominican Republic,Dominica,DMA,2000,0.1,5,1
+18722,Dominican Republic,Dominica,DMA,2001,0.13,7,1
+18723,Dominican Republic,Dominica,DMA,2002,0.15,7,1
+18724,Dominican Republic,Dominica,DMA,2003,0.1,5,1
+18725,Dominican Republic,Dominica,DMA,2004,0.32,15,1
+18726,Dominican Republic,Dominica,DMA,2005,0.16,78,1
+18727,Dominican Republic,Dominica,DMA,2006,0.14,7,1
+18728,Dominican Republic,Dominica,DMA,2007,0.29,14,1
+18729,Dominican Republic,Dominica,DMA,2008,0.38,17,1
+18730,Dominican Republic,Dominica,DMA,2009,0.3,29,1
+18731,Dominican Republic,Dominica,DMA,2010,0.75,87,1
+18732,Dominican Republic,Dominica,DMA,2011,0.15,16,1
+18733,Dominican Republic,Dominica,DMA,2012,0.07,7,1
+18734,Dominican Republic,Dominica,DMA,2013,0.15,12,1
+18735,Dominican Republic,Dominica,DMA,2014,0.07,5,1
+18736,Dominican Republic,Dominica,DMA,2015,0.14,7,1
+18737,Dominican Republic,Dominica,DMA,2016,0.09,5,1
+18738,Dominican Republic,Dominica,DMA,2017,0.21,11,1
+22537,"Federal Democratic Republic of Ethiopia, Ethiopia",Ethiopia,ETH,2000,1.86,91,1
+22538,"Federal Democratic Republic of Ethiopia, Ethiopia",Ethiopia,ETH,2001,1.27,61,1
+22539,"Federal Democratic Republic of Ethiopia, Ethiopia",Ethiopia,ETH,2002,1.44,66,1
+22540,"Federal Democratic Republic of Ethiopia, Ethiopia",Ethiopia,ETH,2003,1.32,70,1
+22541,"Federal Democratic Republic of Ethiopia, Ethiopia",Ethiopia,ETH,2004,1.17,59,1
+22542,"Federal Democratic Republic of Ethiopia, Ethiopia",Ethiopia,ETH,2005,1.2,60,1
+22543,"Federal Democratic Republic of Ethiopia, Ethiopia",Ethiopia,ETH,2006,2.42,125,1
+22544,"Federal Democratic Republic of Ethiopia, Ethiopia",Ethiopia,ETH,2007,1.33,64,1
+22545,"Federal Democratic Republic of Ethiopia, Ethiopia",Ethiopia,ETH,2008,0.63,28,1
+22546,"Federal Democratic Republic of Ethiopia, Ethiopia",Ethiopia,ETH,2009,0.65,63,1
+22547,"Federal Democratic Republic of Ethiopia, Ethiopia",Ethiopia,ETH,2010,0.81,93,1
+22548,"Federal Democratic Republic of Ethiopia, Ethiopia",Ethiopia,ETH,2011,1.55,168,1
+22549,"Federal Democratic Republic of Ethiopia, Ethiopia",Ethiopia,ETH,2012,0.82,77,1
+22550,"Federal Democratic Republic of Ethiopia, Ethiopia",Ethiopia,ETH,2013,1.28,98,1
+22551,"Federal Democratic Republic of Ethiopia, Ethiopia",Ethiopia,ETH,2014,1.27,85,1
+22552,"Federal Democratic Republic of Ethiopia, Ethiopia",Ethiopia,ETH,2015,1.58,83,1
+22553,"Federal Democratic Republic of Ethiopia, Ethiopia",Ethiopia,ETH,2016,1.63,86,1
+22554,"Federal Democratic Republic of Ethiopia, Ethiopia",Ethiopia,ETH,2017,2.36,126,1
+22573,"Federal Democratic Republic of Nepal, Patheka, Nepal",Nepal,NPL,2000,0.73,36,1
+22574,"Federal Democratic Republic of Nepal, Patheka, Nepal",Nepal,NPL,2001,0.63,30,1
+22575,"Federal Democratic Republic of Nepal, Patheka, Nepal",Nepal,NPL,2002,1.16,53,1
+22576,"Federal Democratic Republic of Nepal, Patheka, Nepal",Nepal,NPL,2003,1.32,70,1
+22577,"Federal Democratic Republic of Nepal, Patheka, Nepal",Nepal,NPL,2004,0.77,39,1
+22578,"Federal Democratic Republic of Nepal, Patheka, Nepal",Nepal,NPL,2005,1.64,82,1
+22579,"Federal Democratic Republic of Nepal, Patheka, Nepal",Nepal,NPL,2006,1.7,88,1
+22580,"Federal Democratic Republic of Nepal, Patheka, Nepal",Nepal,NPL,2007,1.89,91,1
+22581,"Federal Democratic Republic of Nepal, Patheka, Nepal",Nepal,NPL,2008,0.83,37,1
+22582,"Federal Democratic Republic of Nepal, Patheka, Nepal",Nepal,NPL,2009,1.35,131,1
+22583,"Federal Democratic Republic of Nepal, Patheka, Nepal",Nepal,NPL,2010,0.86,99,1
+22584,"Federal Democratic Republic of Nepal, Patheka, Nepal",Nepal,NPL,2011,0.82,89,1
+22585,"Federal Democratic Republic of Nepal, Patheka, Nepal",Nepal,NPL,2012,0.58,54,1
+22586,"Federal Democratic Republic of Nepal, Patheka, Nepal",Nepal,NPL,2013,0.89,68,1
+22587,"Federal Democratic Republic of Nepal, Patheka, Nepal",Nepal,NPL,2014,0.82,55,1
+22588,"Federal Democratic Republic of Nepal, Patheka, Nepal",Nepal,NPL,2015,2.4,126,1
+22589,"Federal Democratic Republic of Nepal, Patheka, Nepal",Nepal,NPL,2016,0.91,48,1
+22590,"Federal Democratic Republic of Nepal, Patheka, Nepal",Nepal,NPL,2017,0.58,31,1
+22663,"Federal Republic of Nigeria, Nigeria",Niger,NER,2000,1.45,71,1
+22664,"Federal Republic of Nigeria, Nigeria",Niger,NER,2001,2.11,101,1
+22665,"Federal Republic of Nigeria, Nigeria",Niger,NER,2002,2.36,108,1
+22666,"Federal Republic of Nigeria, Nigeria",Niger,NER,2003,2.3,122,1
+22667,"Federal Republic of Nigeria, Nigeria",Niger,NER,2004,2.89,146,1
+22668,"Federal Republic of Nigeria, Nigeria",Niger,NER,2005,2.21,111,1
+22669,"Federal Republic of Nigeria, Nigeria",Niger,NER,2006,2.28,118,1
+22670,"Federal Republic of Nigeria, Nigeria",Niger,NER,2007,2.37,114,1
+22671,"Federal Republic of Nigeria, Nigeria",Niger,NER,2008,0.79,35,1
+22672,"Federal Republic of Nigeria, Nigeria",Niger,NER,2009,1.51,147,1
+22673,"Federal Republic of Nigeria, Nigeria",Niger,NER,2010,1.09,125,1
+22674,"Federal Republic of Nigeria, Nigeria",Niger,NER,2011,1.12,121,1
+22675,"Federal Republic of Nigeria, Nigeria",Niger,NER,2012,0.83,78,1
+22676,"Federal Republic of Nigeria, Nigeria",Niger,NER,2013,1.02,78,1
+22677,"Federal Republic of Nigeria, Nigeria",Niger,NER,2014,1.82,122,1
+22678,"Federal Republic of Nigeria, Nigeria",Niger,NER,2015,1.37,72,1
+22679,"Federal Republic of Nigeria, Nigeria",Niger,NER,2016,1.46,77,1
+22680,"Federal Republic of Nigeria, Nigeria",Niger,NER,2017,1.18,63,1
+22789,"Federative Republic of Brazil, Brazil",Brazil,BRA,2000,1.16,57,1
+22790,"Federative Republic of Brazil, Brazil",Brazil,BRA,2001,1.34,64,1
+22791,"Federative Republic of Brazil, Brazil",Brazil,BRA,2002,1.58,72,1
+22792,"Federative Republic of Brazil, Brazil",Brazil,BRA,2003,1.21,64,1
+22793,"Federative Republic of Brazil, Brazil",Brazil,BRA,2004,1.03,52,1
+22794,"Federative Republic of Brazil, Brazil",Brazil,BRA,2005,1.46,73,1
+22795,"Federative Republic of Brazil, Brazil",Brazil,BRA,2006,1.63,84,1
+22796,"Federative Republic of Brazil, Brazil",Brazil,BRA,2007,2.27,109,1
+22797,"Federative Republic of Brazil, Brazil",Brazil,BRA,2008,3.1,138,1
+22798,"Federative Republic of Brazil, Brazil",Brazil,BRA,2009,2.66,259,1
+22799,"Federative Republic of Brazil, Brazil",Brazil,BRA,2010,3.53,405,1
+22800,"Federative Republic of Brazil, Brazil",Brazil,BRA,2011,3.08,333,1
+22801,"Federative Republic of Brazil, Brazil",Brazil,BRA,2012,3.19,298,1
+22802,"Federative Republic of Brazil, Brazil",Brazil,BRA,2013,3.42,263,1
+22803,"Federative Republic of Brazil, Brazil",Brazil,BRA,2014,1.97,132,1
+22804,"Federative Republic of Brazil, Brazil",Brazil,BRA,2015,2.46,129,1
+22805,"Federative Republic of Brazil, Brazil",Brazil,BRA,2016,2.5,132,1
+22806,"Federative Republic of Brazil, Brazil",Brazil,BRA,2017,2.09,112,1
+23887,French Polynesia,French Polynesia,PYF,2000,NA,NA,1
+23888,French Polynesia,French Polynesia,PYF,2001,NA,NA,1
+23889,French Polynesia,French Polynesia,PYF,2002,NA,NA,1
+23890,French Polynesia,French Polynesia,PYF,2003,NA,NA,1
+23891,French Polynesia,French Polynesia,PYF,2004,NA,NA,1
+23892,French Polynesia,French Polynesia,PYF,2005,NA,NA,1
+23893,French Polynesia,French Polynesia,PYF,2006,NA,NA,1
+23894,French Polynesia,French Polynesia,PYF,2007,NA,NA,1
+23895,French Polynesia,French Polynesia,PYF,2008,NA,NA,1
+23896,French Polynesia,French Polynesia,PYF,2009,NA,NA,1
+23897,French Polynesia,French Polynesia,PYF,2010,NA,NA,1
+23898,French Polynesia,French Polynesia,PYF,2011,NA,NA,1
+23899,French Polynesia,French Polynesia,PYF,2012,NA,NA,1
+23900,French Polynesia,French Polynesia,PYF,2013,NA,NA,1
+23901,French Polynesia,French Polynesia,PYF,2014,NA,NA,1
+23902,French Polynesia,French Polynesia,PYF,2015,NA,NA,1
+23903,French Polynesia,French Polynesia,PYF,2016,0.02,1,1
+23904,French Polynesia,French Polynesia,PYF,2017,NA,NA,1
+24337,"Gabonese Republic, Gabon",Gabon,GAB,2000,0.14,7,1
+24338,"Gabonese Republic, Gabon",Gabon,GAB,2001,0.15,7,1
+24339,"Gabonese Republic, Gabon",Gabon,GAB,2002,0.11,5,1
+24340,"Gabonese Republic, Gabon",Gabon,GAB,2003,0.13,7,1
+24341,"Gabonese Republic, Gabon",Gabon,GAB,2004,0.28,14,1
+24342,"Gabonese Republic, Gabon",Gabon,GAB,2005,0.16,8,1
+24343,"Gabonese Republic, Gabon",Gabon,GAB,2006,0.23,12,1
+24344,"Gabonese Republic, Gabon",Gabon,GAB,2007,0.1,5,1
+24345,"Gabonese Republic, Gabon",Gabon,GAB,2008,0.11,5,1
+24346,"Gabonese Republic, Gabon",Gabon,GAB,2009,0.21,20,1
+24347,"Gabonese Republic, Gabon",Gabon,GAB,2010,0.09,10,1
+24348,"Gabonese Republic, Gabon",Gabon,GAB,2011,0.11,12,1
+24349,"Gabonese Republic, Gabon",Gabon,GAB,2012,0.15,14,1
+24350,"Gabonese Republic, Gabon",Gabon,GAB,2013,0.16,12,1
+24351,"Gabonese Republic, Gabon",Gabon,GAB,2014,0.03,2,1
+24352,"Gabonese Republic, Gabon",Gabon,GAB,2015,NA,NA,1
+24353,"Gabonese Republic, Gabon",Gabon,GAB,2016,NA,NA,1
+24354,"Gabonese Republic, Gabon",Gabon,GAB,2017,NA,NA,1
+24445,Gambia,Gambia,GMB,2000,0.08,4,1
+24446,Gambia,Gambia,GMB,2001,0.04,2,1
+24447,Gambia,Gambia,GMB,2002,NA,NA,1
+24448,Gambia,Gambia,GMB,2003,0.04,2,1
+24449,Gambia,Gambia,GMB,2004,0.02,1,1
+24450,Gambia,Gambia,GMB,2005,0.04,2,1
+24451,Gambia,Gambia,GMB,2006,0.02,1,1
+24452,Gambia,Gambia,GMB,2007,0.08,4,1
+24453,Gambia,Gambia,GMB,2008,NA,NA,1
+24454,Gambia,Gambia,GMB,2009,NA,NA,1
+24455,Gambia,Gambia,GMB,2010,0.09,10,1
+24456,Gambia,Gambia,GMB,2011,0.05,5,1
+24457,Gambia,Gambia,GMB,2012,0.05,5,1
+24458,Gambia,Gambia,GMB,2013,0.14,11,1
+24459,Gambia,Gambia,GMB,2014,0.07,5,1
+24460,Gambia,Gambia,GMB,2015,0.04,2,1
+24461,Gambia,Gambia,GMB,2016,0.02,1,1
+24462,Gambia,Gambia,GMB,2017,0.22,12,1
+24985,Georgia,Georgia,GEO,2000,0.27,13,1
+24986,Georgia,Georgia,GEO,2001,0.31,15,1
+24987,Georgia,Georgia,GEO,2002,0.09,4,1
+24988,Georgia,Georgia,GEO,2003,0.36,19,1
+24989,Georgia,Georgia,GEO,2004,0.38,19,1
+24990,Georgia,Georgia,GEO,2005,0.22,11,1
+24991,Georgia,Georgia,GEO,2006,0.12,6,1
+24992,Georgia,Georgia,GEO,2007,0.19,9,1
+24993,Georgia,Georgia,GEO,2008,1.05,47,1
+24994,Georgia,Georgia,GEO,2009,0.39,38,1
+24995,Georgia,Georgia,GEO,2010,0.26,30,1
+24996,Georgia,Georgia,GEO,2011,0.45,49,1
+24997,Georgia,Georgia,GEO,2012,0.59,55,1
+24998,Georgia,Georgia,GEO,2013,0.27,21,1
+24999,Georgia,Georgia,GEO,2014,0.27,18,1
+25000,Georgia,Georgia,GEO,2015,0.32,17,1
+25001,Georgia,Georgia,GEO,2016,0.21,11,1
+25002,Georgia,Georgia,GEO,2017,0.47,25,1
+26263,Grenada,Grenada,GRD,2000,NA,NA,1
+26264,Grenada,Grenada,GRD,2001,0.02,1,1
+26265,Grenada,Grenada,GRD,2002,NA,NA,1
+26266,Grenada,Grenada,GRD,2003,NA,NA,1
+26267,Grenada,Grenada,GRD,2004,0.24,12,1
+26268,Grenada,Grenada,GRD,2005,0.06,3,1
+26269,Grenada,Grenada,GRD,2006,0.02,1,1
+26270,Grenada,Grenada,GRD,2007,0.02,1,1
+26271,Grenada,Grenada,GRD,2008,0.04,2,1
+26272,Grenada,Grenada,GRD,2009,0.02,2,1
+26273,Grenada,Grenada,GRD,2010,0.02,2,1
+26274,Grenada,Grenada,GRD,2011,0.02,2,1
+26275,Grenada,Grenada,GRD,2012,0.02,2,1
+26276,Grenada,Grenada,GRD,2013,NA,NA,1
+26277,Grenada,Grenada,GRD,2014,0.04,3,1
+26278,Grenada,Grenada,GRD,2015,NA,NA,1
+26279,Grenada,Grenada,GRD,2016,NA,NA,1
+26280,Grenada,Grenada,GRD,2017,NA,NA,1
+26443,Guam,Guam,GUM,2000,NA,NA,1
+26444,Guam,Guam,GUM,2001,NA,NA,1
+26445,Guam,Guam,GUM,2002,NA,NA,1
+26446,Guam,Guam,GUM,2003,0.02,1,1
+26447,Guam,Guam,GUM,2004,NA,NA,1
+26448,Guam,Guam,GUM,2005,NA,NA,1
+26449,Guam,Guam,GUM,2006,NA,NA,1
+26450,Guam,Guam,GUM,2007,NA,NA,1
+26451,Guam,Guam,GUM,2008,NA,NA,1
+26452,Guam,Guam,GUM,2009,0.02,2,1
+26453,Guam,Guam,GUM,2010,0.03,4,1
+26454,Guam,Guam,GUM,2011,0.04,4,1
+26455,Guam,Guam,GUM,2012,NA,NA,1
+26456,Guam,Guam,GUM,2013,0.05,4,1
+26457,Guam,Guam,GUM,2014,NA,NA,1
+26458,Guam,Guam,GUM,2015,0.02,1,1
+26459,Guam,Guam,GUM,2016,NA,NA,1
+26460,Guam,Guam,GUM,2017,0.06,3,1
+26965,Gulf of Guinea,Guinea,GIN,2000,NA,NA,1
+26966,Gulf of Guinea,Guinea,GIN,2001,NA,NA,1
+26967,Gulf of Guinea,Guinea,GIN,2002,NA,NA,1
+26968,Gulf of Guinea,Guinea,GIN,2003,NA,NA,1
+26969,Gulf of Guinea,Guinea,GIN,2004,NA,NA,1
+26970,Gulf of Guinea,Guinea,GIN,2005,NA,NA,1
+26971,Gulf of Guinea,Guinea,GIN,2006,NA,NA,1
+26972,Gulf of Guinea,Guinea,GIN,2007,NA,NA,1
+26973,Gulf of Guinea,Guinea,GIN,2008,NA,NA,1
+26974,Gulf of Guinea,Guinea,GIN,2009,NA,NA,1
+26975,Gulf of Guinea,Guinea,GIN,2010,NA,NA,1
+26976,Gulf of Guinea,Guinea,GIN,2011,0.02,2,1
+26977,Gulf of Guinea,Guinea,GIN,2012,NA,NA,1
+26978,Gulf of Guinea,Guinea,GIN,2013,NA,NA,1
+26979,Gulf of Guinea,Guinea,GIN,2014,NA,NA,1
+26980,Gulf of Guinea,Guinea,GIN,2015,NA,NA,1
+26981,Gulf of Guinea,Guinea,GIN,2016,NA,NA,1
+26982,Gulf of Guinea,Guinea,GIN,2017,NA,NA,1
+28387,"Hashemite Kingdom of Jordan, Jordan",Jordan,JOR,2000,0.94,46,1
+28388,"Hashemite Kingdom of Jordan, Jordan",Jordan,JOR,2001,1.23,59,1
+28389,"Hashemite Kingdom of Jordan, Jordan",Jordan,JOR,2002,0.85,39,1
+28390,"Hashemite Kingdom of Jordan, Jordan",Jordan,JOR,2003,1.42,75,1
+28391,"Hashemite Kingdom of Jordan, Jordan",Jordan,JOR,2004,1.7,86,1
+28392,"Hashemite Kingdom of Jordan, Jordan",Jordan,JOR,2005,0.9,45,1
+28393,"Hashemite Kingdom of Jordan, Jordan",Jordan,JOR,2006,1.28,66,1
+28394,"Hashemite Kingdom of Jordan, Jordan",Jordan,JOR,2007,1.31,63,1
+28395,"Hashemite Kingdom of Jordan, Jordan",Jordan,JOR,2008,1.36,61,1
+28396,"Hashemite Kingdom of Jordan, Jordan",Jordan,JOR,2009,0.82,80,1
+28397,"Hashemite Kingdom of Jordan, Jordan",Jordan,JOR,2010,0.92,106,1
+28398,"Hashemite Kingdom of Jordan, Jordan",Jordan,JOR,2011,0.45,49,1
+28399,"Hashemite Kingdom of Jordan, Jordan",Jordan,JOR,2012,1.24,116,1
+28400,"Hashemite Kingdom of Jordan, Jordan",Jordan,JOR,2013,1.57,121,1
+28401,"Hashemite Kingdom of Jordan, Jordan",Jordan,JOR,2014,1.3,87,1
+28402,"Hashemite Kingdom of Jordan, Jordan",Jordan,JOR,2015,1.54,81,1
+28403,"Hashemite Kingdom of Jordan, Jordan",Jordan,JOR,2016,1.1,58,1
+28404,"Hashemite Kingdom of Jordan, Jordan",Jordan,JOR,2017,1.2,64,1
+31465,"Independent State of Papua New Guinea, Papua New Guinea",Papua New Guinea,PNG,2000,0.12,6,1
+31466,"Independent State of Papua New Guinea, Papua New Guinea",Papua New Guinea,PNG,2001,0.08,4,1
+31467,"Independent State of Papua New Guinea, Papua New Guinea",Papua New Guinea,PNG,2002,0.31,14,1
+31468,"Independent State of Papua New Guinea, Papua New Guinea",Papua New Guinea,PNG,2003,0.23,12,1
+31469,"Independent State of Papua New Guinea, Papua New Guinea",Papua New Guinea,PNG,2004,0.28,14,1
+31470,"Independent State of Papua New Guinea, Papua New Guinea",Papua New Guinea,PNG,2005,0.36,18,1
+31471,"Independent State of Papua New Guinea, Papua New Guinea",Papua New Guinea,PNG,2006,0.45,23,1
+31472,"Independent State of Papua New Guinea, Papua New Guinea",Papua New Guinea,PNG,2007,0.35,17,1
+31473,"Independent State of Papua New Guinea, Papua New Guinea",Papua New Guinea,PNG,2008,0.36,16,1
+31474,"Independent State of Papua New Guinea, Papua New Guinea",Papua New Guinea,PNG,2009,0.16,16,1
+31475,"Independent State of Papua New Guinea, Papua New Guinea",Papua New Guinea,PNG,2010,0.3,34,1
+31476,"Independent State of Papua New Guinea, Papua New Guinea",Papua New Guinea,PNG,2011,0.55,59,1
+31477,"Independent State of Papua New Guinea, Papua New Guinea",Papua New Guinea,PNG,2012,0.25,23,1
+31478,"Independent State of Papua New Guinea, Papua New Guinea",Papua New Guinea,PNG,2013,0.38,29,1
+31479,"Independent State of Papua New Guinea, Papua New Guinea",Papua New Guinea,PNG,2014,0.16,11,1
+31480,"Independent State of Papua New Guinea, Papua New Guinea",Papua New Guinea,PNG,2015,0.36,19,1
+31481,"Independent State of Papua New Guinea, Papua New Guinea",Papua New Guinea,PNG,2016,0.17,9,1
+31482,"Independent State of Papua New Guinea, Papua New Guinea",Papua New Guinea,PNG,2017,0.09,5,1
+31501,"Independent State of Samoa, Samoa",Samoa,WSM,2000,0.04,2,1
+31502,"Independent State of Samoa, Samoa",Samoa,WSM,2001,0.02,1,1
+31503,"Independent State of Samoa, Samoa",Samoa,WSM,2002,NA,NA,1
+31504,"Independent State of Samoa, Samoa",Samoa,WSM,2003,0.02,1,1
+31505,"Independent State of Samoa, Samoa",Samoa,WSM,2004,0.14,7,1
+31506,"Independent State of Samoa, Samoa",Samoa,WSM,2005,0.1,5,1
+31507,"Independent State of Samoa, Samoa",Samoa,WSM,2006,0.12,6,1
+31508,"Independent State of Samoa, Samoa",Samoa,WSM,2007,0.06,3,1
+31509,"Independent State of Samoa, Samoa",Samoa,WSM,2008,NA,NA,1
+31510,"Independent State of Samoa, Samoa",Samoa,WSM,2009,0.24,23,1
+31511,"Independent State of Samoa, Samoa",Samoa,WSM,2010,0.03,4,1
+31512,"Independent State of Samoa, Samoa",Samoa,WSM,2011,0.22,24,1
+31513,"Independent State of Samoa, Samoa",Samoa,WSM,2012,0.19,18,1
+31514,"Independent State of Samoa, Samoa",Samoa,WSM,2013,0.22,17,1
+31515,"Independent State of Samoa, Samoa",Samoa,WSM,2014,0.18,12,1
+31516,"Independent State of Samoa, Samoa",Samoa,WSM,2015,0.1,5,1
+31517,"Independent State of Samoa, Samoa",Samoa,WSM,2016,0.08,4,1
+31518,"Independent State of Samoa, Samoa",Samoa,WSM,2017,0.04,2,1
+31843,Inner Mongolia,Mongolia,MNG,2000,0.02,1,1
+31844,Inner Mongolia,Mongolia,MNG,2001,0.04,2,1
+31845,Inner Mongolia,Mongolia,MNG,2002,0.02,1,1
+31846,Inner Mongolia,Mongolia,MNG,2003,NA,NA,1
+31847,Inner Mongolia,Mongolia,MNG,2004,0.02,1,1
+31848,Inner Mongolia,Mongolia,MNG,2005,0.08,4,1
+31849,Inner Mongolia,Mongolia,MNG,2006,NA,NA,1
+31850,Inner Mongolia,Mongolia,MNG,2007,NA,NA,1
+31851,Inner Mongolia,Mongolia,MNG,2008,NA,NA,1
+31852,Inner Mongolia,Mongolia,MNG,2009,0.02,2,1
+31853,Inner Mongolia,Mongolia,MNG,2010,NA,NA,1
+31854,Inner Mongolia,Mongolia,MNG,2011,0.04,4,1
+31855,Inner Mongolia,Mongolia,MNG,2012,NA,NA,1
+31856,Inner Mongolia,Mongolia,MNG,2013,NA,NA,1
+31857,Inner Mongolia,Mongolia,MNG,2014,0.03,2,1
+31858,Inner Mongolia,Mongolia,MNG,2015,NA,NA,1
+31859,Inner Mongolia,Mongolia,MNG,2016,NA,NA,1
+31860,Inner Mongolia,Mongolia,MNG,2017,0.02,1,1
+32635,"Islamic Republic of Afghanistan, Afghanistan",Afghanistan,AFG,2000,0.24,12,1
+32636,"Islamic Republic of Afghanistan, Afghanistan",Afghanistan,AFG,2001,4.83,231,1
+32637,"Islamic Republic of Afghanistan, Afghanistan",Afghanistan,AFG,2002,4.68,214,1
+32638,"Islamic Republic of Afghanistan, Afghanistan",Afghanistan,AFG,2003,2.75,146,1
+32639,"Islamic Republic of Afghanistan, Afghanistan",Afghanistan,AFG,2004,2.34,118,1
+32640,"Islamic Republic of Afghanistan, Afghanistan",Afghanistan,AFG,2005,1.92,96,1
+32641,"Islamic Republic of Afghanistan, Afghanistan",Afghanistan,AFG,2006,1.92,99,1
+32642,"Islamic Republic of Afghanistan, Afghanistan",Afghanistan,AFG,2007,2.16,104,1
+32643,"Islamic Republic of Afghanistan, Afghanistan",Afghanistan,AFG,2008,1.91,85,1
+32644,"Islamic Republic of Afghanistan, Afghanistan",Afghanistan,AFG,2009,2.89,281,1
+32645,"Islamic Republic of Afghanistan, Afghanistan",Afghanistan,AFG,2010,2.18,250,1
+32646,"Islamic Republic of Afghanistan, Afghanistan",Afghanistan,AFG,2011,1.34,145,1
+32647,"Islamic Republic of Afghanistan, Afghanistan",Afghanistan,AFG,2012,1.36,127,1
+32648,"Islamic Republic of Afghanistan, Afghanistan",Afghanistan,AFG,2013,1.72,132,1
+32649,"Islamic Republic of Afghanistan, Afghanistan",Afghanistan,AFG,2014,1.54,103,1
+32650,"Islamic Republic of Afghanistan, Afghanistan",Afghanistan,AFG,2015,1.43,75,1
+32651,"Islamic Republic of Afghanistan, Afghanistan",Afghanistan,AFG,2016,1.16,61,1
+32652,"Islamic Republic of Afghanistan, Afghanistan",Afghanistan,AFG,2017,1.07,57,1
+32671,"Islamic Republic of Iran, Iran",Iran,IRN,2000,1.22,60,1
+32672,"Islamic Republic of Iran, Iran",Iran,IRN,2001,1.44,69,1
+32673,"Islamic Republic of Iran, Iran",Iran,IRN,2002,1.53,70,1
+32674,"Islamic Republic of Iran, Iran",Iran,IRN,2003,1.79,95,1
+32675,"Islamic Republic of Iran, Iran",Iran,IRN,2004,1.39,70,1
+32676,"Islamic Republic of Iran, Iran",Iran,IRN,2005,1.14,57,1
+32677,"Islamic Republic of Iran, Iran",Iran,IRN,2006,2.19,113,1
+32678,"Islamic Republic of Iran, Iran",Iran,IRN,2007,1.73,83,1
+32679,"Islamic Republic of Iran, Iran",Iran,IRN,2008,1.1,49,1
+32680,"Islamic Republic of Iran, Iran",Iran,IRN,2009,1.3,127,1
+32681,"Islamic Republic of Iran, Iran",Iran,IRN,2010,1.31,150,1
+32682,"Islamic Republic of Iran, Iran",Iran,IRN,2011,1.23,133,1
+32683,"Islamic Republic of Iran, Iran",Iran,IRN,2012,2.13,199,1
+32684,"Islamic Republic of Iran, Iran",Iran,IRN,2013,1.37,105,1
+32685,"Islamic Republic of Iran, Iran",Iran,IRN,2014,1.27,85,1
+32686,"Islamic Republic of Iran, Iran",Iran,IRN,2015,1.79,94,1
+32687,"Islamic Republic of Iran, Iran",Iran,IRN,2016,1.95,103,1
+32688,"Islamic Republic of Iran, Iran",Iran,IRN,2017,2.04,109,1
+32707,"Islamic Republic of Mauritania, Mauritania",Mauritius,MUS,2000,0.16,8,1
+32708,"Islamic Republic of Mauritania, Mauritania",Mauritius,MUS,2001,0.04,2,1
+32709,"Islamic Republic of Mauritania, Mauritania",Mauritius,MUS,2002,0.04,2,1
+32710,"Islamic Republic of Mauritania, Mauritania",Mauritius,MUS,2003,0.08,4,1
+32711,"Islamic Republic of Mauritania, Mauritania",Mauritius,MUS,2004,0.14,7,1
+32712,"Islamic Republic of Mauritania, Mauritania",Mauritius,MUS,2005,0.12,6,1
+32713,"Islamic Republic of Mauritania, Mauritania",Mauritius,MUS,2006,0.23,12,1
+32714,"Islamic Republic of Mauritania, Mauritania",Mauritius,MUS,2007,0.25,12,1
+32715,"Islamic Republic of Mauritania, Mauritania",Mauritius,MUS,2008,0.04,2,1
+32716,"Islamic Republic of Mauritania, Mauritania",Mauritius,MUS,2009,0.22,21,1
+32717,"Islamic Republic of Mauritania, Mauritania",Mauritius,MUS,2010,0.23,26,1
+32718,"Islamic Republic of Mauritania, Mauritania",Mauritius,MUS,2011,0.15,16,1
+32719,"Islamic Republic of Mauritania, Mauritania",Mauritius,MUS,2012,0.29,27,1
+32720,"Islamic Republic of Mauritania, Mauritania",Mauritius,MUS,2013,0.25,19,1
+32721,"Islamic Republic of Mauritania, Mauritania",Mauritius,MUS,2014,0.12,8,1
+32722,"Islamic Republic of Mauritania, Mauritania",Mauritius,MUS,2015,0.11,6,1
+32723,"Islamic Republic of Mauritania, Mauritania",Mauritius,MUS,2016,0.09,5,1
+32724,"Islamic Republic of Mauritania, Mauritania",Mauritius,MUS,2017,0.15,8,1
+32743,"Islamic Republic of Pakistan, Pakistan",Pakistan,PAK,2000,1.33,65,1
+32744,"Islamic Republic of Pakistan, Pakistan",Pakistan,PAK,2001,2.55,122,1
+32745,"Islamic Republic of Pakistan, Pakistan",Pakistan,PAK,2002,2.19,100,1
+32746,"Islamic Republic of Pakistan, Pakistan",Pakistan,PAK,2003,1.83,97,1
+32747,"Islamic Republic of Pakistan, Pakistan",Pakistan,PAK,2004,1.29,65,1
+32748,"Islamic Republic of Pakistan, Pakistan",Pakistan,PAK,2005,3.33,167,1
+32749,"Islamic Republic of Pakistan, Pakistan",Pakistan,PAK,2006,1.95,101,1
+32750,"Islamic Republic of Pakistan, Pakistan",Pakistan,PAK,2007,1.66,80,1
+32751,"Islamic Republic of Pakistan, Pakistan",Pakistan,PAK,2008,1.39,62,1
+32752,"Islamic Republic of Pakistan, Pakistan",Pakistan,PAK,2009,2.49,242,1
+32753,"Islamic Republic of Pakistan, Pakistan",Pakistan,PAK,2010,3.3,379,1
+32754,"Islamic Republic of Pakistan, Pakistan",Pakistan,PAK,2011,1.93,209,1
+32755,"Islamic Republic of Pakistan, Pakistan",Pakistan,PAK,2012,1.02,95,1
+32756,"Islamic Republic of Pakistan, Pakistan",Pakistan,PAK,2013,1.24,95,1
+32757,"Islamic Republic of Pakistan, Pakistan",Pakistan,PAK,2014,1.63,109,1
+32758,"Islamic Republic of Pakistan, Pakistan",Pakistan,PAK,2015,1.56,82,1
+32759,"Islamic Republic of Pakistan, Pakistan",Pakistan,PAK,2016,1.17,62,1
+32760,"Islamic Republic of Pakistan, Pakistan",Pakistan,PAK,2017,1.23,66,1
+33355,Jamaica,Jamaica,JAM,2000,0.06,3,1
+33356,Jamaica,Jamaica,JAM,2001,0.1,5,1
+33357,Jamaica,Jamaica,JAM,2002,0.02,1,1
+33358,Jamaica,Jamaica,JAM,2003,0.06,3,1
+33359,Jamaica,Jamaica,JAM,2004,0.24,12,1
+33360,Jamaica,Jamaica,JAM,2005,0.1,5,1
+33361,Jamaica,Jamaica,JAM,2006,0.08,4,1
+33362,Jamaica,Jamaica,JAM,2007,0.06,3,1
+33363,Jamaica,Jamaica,JAM,2008,0.16,7,1
+33364,Jamaica,Jamaica,JAM,2009,0.13,13,1
+33365,Jamaica,Jamaica,JAM,2010,0.03,4,1
+33366,Jamaica,Jamaica,JAM,2011,0.04,4,1
+33367,Jamaica,Jamaica,JAM,2012,0.09,8,1
+33368,Jamaica,Jamaica,JAM,2013,0.29,22,1
+33369,Jamaica,Jamaica,JAM,2014,0.1,7,1
+33370,Jamaica,Jamaica,JAM,2015,0.06,3,1
+33371,Jamaica,Jamaica,JAM,2016,0.09,5,1
+33372,Jamaica,Jamaica,JAM,2017,0.07,4,1
+36577,"Kingdom of Cambodia, Cambodia",Cambodia,KHM,2000,1.47,72,1
+36578,"Kingdom of Cambodia, Cambodia",Cambodia,KHM,2001,1.57,75,1
+36579,"Kingdom of Cambodia, Cambodia",Cambodia,KHM,2002,1.95,89,1
+36580,"Kingdom of Cambodia, Cambodia",Cambodia,KHM,2003,1.23,65,1
+36581,"Kingdom of Cambodia, Cambodia",Cambodia,KHM,2004,1.23,62,1
+36582,"Kingdom of Cambodia, Cambodia",Cambodia,KHM,2005,1.54,77,1
+36583,"Kingdom of Cambodia, Cambodia",Cambodia,KHM,2006,1.63,84,1
+36584,"Kingdom of Cambodia, Cambodia",Cambodia,KHM,2007,2.02,97,1
+36585,"Kingdom of Cambodia, Cambodia",Cambodia,KHM,2008,0.81,36,1
+36586,"Kingdom of Cambodia, Cambodia",Cambodia,KHM,2009,1.78,173,1
+36587,"Kingdom of Cambodia, Cambodia",Cambodia,KHM,2010,1.58,182,1
+36588,"Kingdom of Cambodia, Cambodia",Cambodia,KHM,2011,2.31,250,1
+36589,"Kingdom of Cambodia, Cambodia",Cambodia,KHM,2012,2.17,203,1
+36590,"Kingdom of Cambodia, Cambodia",Cambodia,KHM,2013,1.93,148,1
+36591,"Kingdom of Cambodia, Cambodia",Cambodia,KHM,2014,1.87,125,1
+36592,"Kingdom of Cambodia, Cambodia",Cambodia,KHM,2015,1.7,89,1
+36593,"Kingdom of Cambodia, Cambodia",Cambodia,KHM,2016,1.44,76,1
+36594,"Kingdom of Cambodia, Cambodia",Cambodia,KHM,2017,1.1,59,1
+36649,"Kingdom of Lesotho, Lesotho",Lesotho,LSO,2000,0.18,9,1
+36650,"Kingdom of Lesotho, Lesotho",Lesotho,LSO,2001,0.21,10,1
+36651,"Kingdom of Lesotho, Lesotho",Lesotho,LSO,2002,0.9,41,1
+36652,"Kingdom of Lesotho, Lesotho",Lesotho,LSO,2003,0.42,22,1
+36653,"Kingdom of Lesotho, Lesotho",Lesotho,LSO,2004,0.36,18,1
+36654,"Kingdom of Lesotho, Lesotho",Lesotho,LSO,2005,0.28,14,1
+36655,"Kingdom of Lesotho, Lesotho",Lesotho,LSO,2006,0.23,12,1
+36656,"Kingdom of Lesotho, Lesotho",Lesotho,LSO,2007,0.33,16,1
+36657,"Kingdom of Lesotho, Lesotho",Lesotho,LSO,2008,0.11,5,1
+36658,"Kingdom of Lesotho, Lesotho",Lesotho,LSO,2009,0.16,16,1
+36659,"Kingdom of Lesotho, Lesotho",Lesotho,LSO,2010,0.03,4,1
+36660,"Kingdom of Lesotho, Lesotho",Lesotho,LSO,2011,0.13,14,1
+36661,"Kingdom of Lesotho, Lesotho",Lesotho,LSO,2012,0.01,1,1
+36662,"Kingdom of Lesotho, Lesotho",Lesotho,LSO,2013,0.03,2,1
+36663,"Kingdom of Lesotho, Lesotho",Lesotho,LSO,2014,0.06,4,1
+36664,"Kingdom of Lesotho, Lesotho",Lesotho,LSO,2015,0.1,5,1
+36665,"Kingdom of Lesotho, Lesotho",Lesotho,LSO,2016,0.15,8,1
+36666,"Kingdom of Lesotho, Lesotho",Lesotho,LSO,2017,0.06,3,1
+36685,"Kingdom of Morocco, Morocco",Morocco,MAR,2000,0.43,21,1
+36686,"Kingdom of Morocco, Morocco",Morocco,MAR,2001,0.31,15,1
+36687,"Kingdom of Morocco, Morocco",Morocco,MAR,2002,0.26,12,1
+36688,"Kingdom of Morocco, Morocco",Morocco,MAR,2003,0.26,14,1
+36689,"Kingdom of Morocco, Morocco",Morocco,MAR,2004,0.54,27,1
+36690,"Kingdom of Morocco, Morocco",Morocco,MAR,2005,0.22,11,1
+36691,"Kingdom of Morocco, Morocco",Morocco,MAR,2006,0.48,25,1
+36692,"Kingdom of Morocco, Morocco",Morocco,MAR,2007,0.48,23,1
+36693,"Kingdom of Morocco, Morocco",Morocco,MAR,2008,0.25,11,1
+36694,"Kingdom of Morocco, Morocco",Morocco,MAR,2009,0.1,10,1
+36695,"Kingdom of Morocco, Morocco",Morocco,MAR,2010,0.19,22,1
+36696,"Kingdom of Morocco, Morocco",Morocco,MAR,2011,0.16,17,1
+36697,"Kingdom of Morocco, Morocco",Morocco,MAR,2012,0.45,42,1
+36698,"Kingdom of Morocco, Morocco",Morocco,MAR,2013,0.44,34,1
+36699,"Kingdom of Morocco, Morocco",Morocco,MAR,2014,0.3,20,1
+36700,"Kingdom of Morocco, Morocco",Morocco,MAR,2015,0.4,21,1
+36701,"Kingdom of Morocco, Morocco",Morocco,MAR,2016,0.81,43,1
+36702,"Kingdom of Morocco, Morocco",Morocco,MAR,2017,1.05,56,1
+36883,"Kingdom of Thailand, Thailand",Thailand,THA,2000,2.9,142,1
+36884,"Kingdom of Thailand, Thailand",Thailand,THA,2001,2.88,138,1
+36885,"Kingdom of Thailand, Thailand",Thailand,THA,2002,5.05,231,1
+36886,"Kingdom of Thailand, Thailand",Thailand,THA,2003,3.55,188,1
+36887,"Kingdom of Thailand, Thailand",Thailand,THA,2004,4.4,222,1
+36888,"Kingdom of Thailand, Thailand",Thailand,THA,2005,4.09,205,1
+36889,"Kingdom of Thailand, Thailand",Thailand,THA,2006,2.3,119,1
+36890,"Kingdom of Thailand, Thailand",Thailand,THA,2007,2.06,99,1
+36891,"Kingdom of Thailand, Thailand",Thailand,THA,2008,1.66,74,1
+36892,"Kingdom of Thailand, Thailand",Thailand,THA,2009,2.33,227,1
+36893,"Kingdom of Thailand, Thailand",Thailand,THA,2010,2.04,234,1
+36894,"Kingdom of Thailand, Thailand",Thailand,THA,2011,2.7,292,1
+36895,"Kingdom of Thailand, Thailand",Thailand,THA,2012,2.48,232,1
+36896,"Kingdom of Thailand, Thailand",Thailand,THA,2013,2.28,175,1
+36897,"Kingdom of Thailand, Thailand",Thailand,THA,2014,1.76,118,1
+36898,"Kingdom of Thailand, Thailand",Thailand,THA,2015,1.85,97,1
+36899,"Kingdom of Thailand, Thailand",Thailand,THA,2016,1.08,57,1
+36900,"Kingdom of Thailand, Thailand",Thailand,THA,2017,1.22,65,1
+36955,"Kingdom of Tonga, Tonga",Tonga,TON,2000,0.04,2,1
+36956,"Kingdom of Tonga, Tonga",Tonga,TON,2001,0.02,1,1
+36957,"Kingdom of Tonga, Tonga",Tonga,TON,2002,0.02,1,1
+36958,"Kingdom of Tonga, Tonga",Tonga,TON,2003,0.06,3,1
+36959,"Kingdom of Tonga, Tonga",Tonga,TON,2004,0.12,6,1
+36960,"Kingdom of Tonga, Tonga",Tonga,TON,2005,0.18,9,1
+36961,"Kingdom of Tonga, Tonga",Tonga,TON,2006,0.23,12,1
+36962,"Kingdom of Tonga, Tonga",Tonga,TON,2007,0.06,3,1
+36963,"Kingdom of Tonga, Tonga",Tonga,TON,2008,0.11,5,1
+36964,"Kingdom of Tonga, Tonga",Tonga,TON,2009,0.22,21,1
+36965,"Kingdom of Tonga, Tonga",Tonga,TON,2010,0.05,6,1
+36966,"Kingdom of Tonga, Tonga",Tonga,TON,2011,0.15,16,1
+36967,"Kingdom of Tonga, Tonga",Tonga,TON,2012,0.15,14,1
+36968,"Kingdom of Tonga, Tonga",Tonga,TON,2013,0.13,10,1
+36969,"Kingdom of Tonga, Tonga",Tonga,TON,2014,0.07,5,1
+36970,"Kingdom of Tonga, Tonga",Tonga,TON,2015,0.06,3,1
+36971,"Kingdom of Tonga, Tonga",Tonga,TON,2016,0.15,8,1
+36972,"Kingdom of Tonga, Tonga",Tonga,TON,2017,0.15,8,1
+38053,"Kyrgyz Republic, Kyrgyzstan",Kyrgyzstan,KGZ,2000,0.18,9,1
+38054,"Kyrgyz Republic, Kyrgyzstan",Kyrgyzstan,KGZ,2001,0.17,8,1
+38055,"Kyrgyz Republic, Kyrgyzstan",Kyrgyzstan,KGZ,2002,0.2,9,1
+38056,"Kyrgyz Republic, Kyrgyzstan",Kyrgyzstan,KGZ,2003,0.09,5,1
+38057,"Kyrgyz Republic, Kyrgyzstan",Kyrgyzstan,KGZ,2004,0.06,3,1
+38058,"Kyrgyz Republic, Kyrgyzstan",Kyrgyzstan,KGZ,2005,0.3,15,1
+38059,"Kyrgyz Republic, Kyrgyzstan",Kyrgyzstan,KGZ,2006,0.27,14,1
+38060,"Kyrgyz Republic, Kyrgyzstan",Kyrgyzstan,KGZ,2007,0.27,13,1
+38061,"Kyrgyz Republic, Kyrgyzstan",Kyrgyzstan,KGZ,2008,0.31,14,1
+38062,"Kyrgyz Republic, Kyrgyzstan",Kyrgyzstan,KGZ,2009,0.27,26,1
+38063,"Kyrgyz Republic, Kyrgyzstan",Kyrgyzstan,KGZ,2010,1.13,130,1
+38064,"Kyrgyz Republic, Kyrgyzstan",Kyrgyzstan,KGZ,2011,0.52,56,1
+38065,"Kyrgyz Republic, Kyrgyzstan",Kyrgyzstan,KGZ,2012,0.26,24,1
+38066,"Kyrgyz Republic, Kyrgyzstan",Kyrgyzstan,KGZ,2013,0.3,23,1
+38067,"Kyrgyz Republic, Kyrgyzstan",Kyrgyzstan,KGZ,2014,0.27,18,1
+38068,"Kyrgyz Republic, Kyrgyzstan",Kyrgyzstan,KGZ,2015,NA,NA,1
+38069,"Kyrgyz Republic, Kyrgyzstan",Kyrgyzstan,KGZ,2016,NA,NA,1
+38070,"Kyrgyz Republic, Kyrgyzstan",Kyrgyzstan,KGZ,2017,NA,NA,1
+38863,"Lao People's Democratic Republic, Laos",Laos,LAO,2000,0.69,34,1
+38864,"Lao People's Democratic Republic, Laos",Laos,LAO,2001,0.44,21,1
+38865,"Lao People's Democratic Republic, Laos",Laos,LAO,2002,0.85,39,1
+38866,"Lao People's Democratic Republic, Laos",Laos,LAO,2003,0.94,50,1
+38867,"Lao People's Democratic Republic, Laos",Laos,LAO,2004,0.81,41,1
+38868,"Lao People's Democratic Republic, Laos",Laos,LAO,2005,1.22,61,1
+38869,"Lao People's Democratic Republic, Laos",Laos,LAO,2006,0.93,48,1
+38870,"Lao People's Democratic Republic, Laos",Laos,LAO,2007,1.1,53,1
+38871,"Lao People's Democratic Republic, Laos",Laos,LAO,2008,0.52,23,1
+38872,"Lao People's Democratic Republic, Laos",Laos,LAO,2009,0.88,86,1
+38873,"Lao People's Democratic Republic, Laos",Laos,LAO,2010,0.64,74,1
+38874,"Lao People's Democratic Republic, Laos",Laos,LAO,2011,1.19,129,1
+38875,"Lao People's Democratic Republic, Laos",Laos,LAO,2012,0.94,88,1
+38876,"Lao People's Democratic Republic, Laos",Laos,LAO,2013,0.94,72,1
+38877,"Lao People's Democratic Republic, Laos",Laos,LAO,2014,1,67,1
+38878,"Lao People's Democratic Republic, Laos",Laos,LAO,2015,NA,NA,1
+38879,"Lao People's Democratic Republic, Laos",Laos,LAO,2016,NA,NA,1
+38880,"Lao People's Democratic Republic, Laos",Laos,LAO,2017,NA,NA,1
+39187,Lebanon,Lebanon,LBN,2000,1.04,51,1
+39188,Lebanon,Lebanon,LBN,2001,0.96,46,1
+39189,Lebanon,Lebanon,LBN,2002,0.79,36,1
+39190,Lebanon,Lebanon,LBN,2003,0.34,18,1
+39191,Lebanon,Lebanon,LBN,2004,0.46,23,1
+39192,Lebanon,Lebanon,LBN,2005,0.6,30,1
+39193,Lebanon,Lebanon,LBN,2006,4.24,219,1
+39194,Lebanon,Lebanon,LBN,2007,1.52,73,1
+39195,Lebanon,Lebanon,LBN,2008,0.81,36,1
+39196,Lebanon,Lebanon,LBN,2009,0.91,89,1
+39197,Lebanon,Lebanon,LBN,2010,0.87,100,1
+39198,Lebanon,Lebanon,LBN,2011,0.48,52,1
+39199,Lebanon,Lebanon,LBN,2012,1.38,129,1
+39200,Lebanon,Lebanon,LBN,2013,1.84,141,1
+39201,Lebanon,Lebanon,LBN,2014,1.24,83,1
+39202,Lebanon,Lebanon,LBN,2015,1.3,68,1
+39203,Lebanon,Lebanon,LBN,2016,1.08,57,1
+39204,Lebanon,Lebanon,LBN,2017,0.82,44,1
+39745,Libya,Libya,LBY,2000,0.24,12,1
+39746,Libya,Libya,LBY,2001,0.36,17,1
+39747,Libya,Libya,LBY,2002,0.2,9,1
+39748,Libya,Libya,LBY,2003,0.04,2,1
+39749,Libya,Libya,LBY,2004,0.46,23,1
+39750,Libya,Libya,LBY,2005,0.58,29,1
+39751,Libya,Libya,LBY,2006,0.31,16,1
+39752,Libya,Libya,LBY,2007,0.48,23,1
+39753,Libya,Libya,LBY,2008,0.4,18,1
+39754,Libya,Libya,LBY,2009,0.36,35,1
+39755,Libya,Libya,LBY,2010,0.37,43,1
+39756,Libya,Libya,LBY,2011,3.86,417,1
+39757,Libya,Libya,LBY,2012,0.53,50,1
+39758,Libya,Libya,LBY,2013,0.33,25,1
+39759,Libya,Libya,LBY,2014,0.75,50,1
+39760,Libya,Libya,LBY,2015,0.65,34,1
+39761,Libya,Libya,LBY,2016,0.66,35,1
+39762,Libya,Libya,LBY,2017,1.22,65,1
+42391,Malaysia,Malaysia,MYS,2000,2.41,118,1
+42392,Malaysia,Malaysia,MYS,2001,1.78,85,1
+42393,Malaysia,Malaysia,MYS,2002,2.19,100,1
+42394,Malaysia,Malaysia,MYS,2003,2.51,133,1
+42395,Malaysia,Malaysia,MYS,2004,2.44,123,1
+42396,Malaysia,Malaysia,MYS,2005,2.69,135,1
+42397,Malaysia,Malaysia,MYS,2006,2.5,129,1
+42398,Malaysia,Malaysia,MYS,2007,2.39,115,1
+42399,Malaysia,Malaysia,MYS,2008,1.35,60,1
+42400,Malaysia,Malaysia,MYS,2009,2.2,214,1
+42401,Malaysia,Malaysia,MYS,2010,2.21,254,1
+42402,Malaysia,Malaysia,MYS,2011,1.91,207,1
+42403,Malaysia,Malaysia,MYS,2012,1.71,160,1
+42404,Malaysia,Malaysia,MYS,2013,2.17,167,1
+42405,Malaysia,Malaysia,MYS,2014,1.94,130,1
+42406,Malaysia,Malaysia,MYS,2015,1.47,77,1
+42407,Malaysia,Malaysia,MYS,2016,0.81,43,1
+42408,Malaysia,Malaysia,MYS,2017,1.14,61,1
+44587,Mexico,Mexico,MEX,2000,0.83,41,1
+44588,Mexico,Mexico,MEX,2001,1.2,58,1
+44589,Mexico,Mexico,MEX,2002,1.58,72,1
+44590,Mexico,Mexico,MEX,2003,1.58,84,1
+44591,Mexico,Mexico,MEX,2004,0.91,47,1
+44592,Mexico,Mexico,MEX,2005,1.13,57,1
+44593,Mexico,Mexico,MEX,2006,0.68,35,1
+44594,Mexico,Mexico,MEX,2007,1.1,53,1
+44595,Mexico,Mexico,MEX,2008,2.02,86,1
+44596,Mexico,Mexico,MEX,2009,2,195,1
+44597,Mexico,Mexico,MEX,2010,1.99,228,1
+44598,Mexico,Mexico,MEX,2011,0.84,91,1
+44599,Mexico,Mexico,MEX,2012,1.03,96,1
+44600,Mexico,Mexico,MEX,2013,0.76,58,1
+44601,Mexico,Mexico,MEX,2014,0.67,45,1
+44602,Mexico,Mexico,MEX,2015,0.74,39,1
+44603,Mexico,Mexico,MEX,2016,0.81,43,1
+44604,Mexico,Mexico,MEX,2017,1.51,81,1
+45847,Mongolia,Mongolia,MNG,2000,0.41,20,1
+45848,Mongolia,Mongolia,MNG,2001,0.4,19,1
+45849,Mongolia,Mongolia,MNG,2002,0.35,16,1
+45850,Mongolia,Mongolia,MNG,2003,0.15,8,1
+45851,Mongolia,Mongolia,MNG,2004,0.12,6,1
+45852,Mongolia,Mongolia,MNG,2005,0.22,11,1
+45853,Mongolia,Mongolia,MNG,2006,0.43,22,1
+45854,Mongolia,Mongolia,MNG,2007,0.31,15,1
+45855,Mongolia,Mongolia,MNG,2008,0.47,21,1
+45856,Mongolia,Mongolia,MNG,2009,0.31,30,1
+45857,Mongolia,Mongolia,MNG,2010,0.46,53,1
+45858,Mongolia,Mongolia,MNG,2011,0.65,70,1
+45859,Mongolia,Mongolia,MNG,2012,0.71,66,1
+45860,Mongolia,Mongolia,MNG,2013,0.43,33,1
+45861,Mongolia,Mongolia,MNG,2014,0.48,32,1
+45862,Mongolia,Mongolia,MNG,2015,0.38,20,1
+45863,Mongolia,Mongolia,MNG,2016,0.45,24,1
+45864,Mongolia,Mongolia,MNG,2017,0.37,20,1
+45883,Montenegro,Montenegro,MNE,2000,0.08,4,1
+45884,Montenegro,Montenegro,MNE,2001,0.04,2,1
+45885,Montenegro,Montenegro,MNE,2002,0.02,1,1
+45886,Montenegro,Montenegro,MNE,2003,0.06,3,1
+45887,Montenegro,Montenegro,MNE,2004,0.12,6,1
+45888,Montenegro,Montenegro,MNE,2005,0.2,10,1
+45889,Montenegro,Montenegro,MNE,2006,0.17,9,1
+45890,Montenegro,Montenegro,MNE,2007,0.08,4,1
+45891,Montenegro,Montenegro,MNE,2008,0.09,4,1
+45892,Montenegro,Montenegro,MNE,2009,0.11,11,1
+45893,Montenegro,Montenegro,MNE,2010,0.16,18,1
+45894,Montenegro,Montenegro,MNE,2011,0.07,8,1
+45895,Montenegro,Montenegro,MNE,2012,0.11,10,1
+45896,Montenegro,Montenegro,MNE,2013,0.14,11,1
+45897,Montenegro,Montenegro,MNE,2014,0.22,15,1
+45898,Montenegro,Montenegro,MNE,2015,0.19,10,1
+45899,Montenegro,Montenegro,MNE,2016,0.15,8,1
+45900,Montenegro,Montenegro,MNE,2017,0.22,12,1
+48259,Nauru,Nauru,NRU,2000,0.04,2,1
+48260,Nauru,Nauru,NRU,2001,NA,NA,1
+48261,Nauru,Nauru,NRU,2002,0.02,1,1
+48262,Nauru,Nauru,NRU,2003,0.02,1,1
+48263,Nauru,Nauru,NRU,2004,0.14,7,1
+48264,Nauru,Nauru,NRU,2005,0.04,2,1
+48265,Nauru,Nauru,NRU,2006,0.04,2,1
+48266,Nauru,Nauru,NRU,2007,0.08,4,1
+48267,Nauru,Nauru,NRU,2008,0.04,2,1
+48268,Nauru,Nauru,NRU,2009,0.04,4,1
+48269,Nauru,Nauru,NRU,2010,0.05,6,1
+48270,Nauru,Nauru,NRU,2011,0.07,8,1
+48271,Nauru,Nauru,NRU,2012,0.11,10,1
+48272,Nauru,Nauru,NRU,2013,0.04,3,1
+48273,Nauru,Nauru,NRU,2014,NA,NA,1
+48274,Nauru,Nauru,NRU,2015,0.08,4,1
+48275,Nauru,Nauru,NRU,2016,NA,NA,1
+48276,Nauru,Nauru,NRU,2017,NA,NA,1
+49645,Niue,Niue,NIU,2000,0.02,1,1
+49646,Niue,Niue,NIU,2001,0.02,1,1
+49647,Niue,Niue,NIU,2002,NA,NA,1
+49648,Niue,Niue,NIU,2003,NA,NA,1
+49649,Niue,Niue,NIU,2004,0.1,5,1
+49650,Niue,Niue,NIU,2005,0.06,3,1
+49651,Niue,Niue,NIU,2006,0.08,4,1
+49652,Niue,Niue,NIU,2007,0.08,4,1
+49653,Niue,Niue,NIU,2008,0.04,2,1
+49654,Niue,Niue,NIU,2009,0.07,7,1
+49655,Niue,Niue,NIU,2010,0.02,2,1
+49656,Niue,Niue,NIU,2011,0.1,11,1
+49657,Niue,Niue,NIU,2012,0.13,12,1
+49658,Niue,Niue,NIU,2013,0.03,2,1
+49659,Niue,Niue,NIU,2014,0.06,4,1
+49660,Niue,Niue,NIU,2015,0.04,2,1
+49661,Niue,Niue,NIU,2016,0.04,2,1
+49662,Niue,Niue,NIU,2017,NA,NA,1
+50149,North Macedonia,North Macedonia,MKD,2000,NA,NA,1
+50150,North Macedonia,North Macedonia,MKD,2001,NA,NA,1
+50151,North Macedonia,North Macedonia,MKD,2002,NA,NA,1
+50152,North Macedonia,North Macedonia,MKD,2003,NA,NA,1
+50153,North Macedonia,North Macedonia,MKD,2004,NA,NA,1
+50154,North Macedonia,North Macedonia,MKD,2005,NA,NA,1
+50155,North Macedonia,North Macedonia,MKD,2006,NA,NA,1
+50156,North Macedonia,North Macedonia,MKD,2007,NA,NA,1
+50157,North Macedonia,North Macedonia,MKD,2008,NA,NA,1
+50158,North Macedonia,North Macedonia,MKD,2009,NA,NA,1
+50159,North Macedonia,North Macedonia,MKD,2010,NA,NA,1
+50160,North Macedonia,North Macedonia,MKD,2011,NA,NA,1
+50161,North Macedonia,North Macedonia,MKD,2012,NA,NA,1
+50162,North Macedonia,North Macedonia,MKD,2013,NA,NA,1
+50163,North Macedonia,North Macedonia,MKD,2014,NA,NA,1
+50164,North Macedonia,North Macedonia,MKD,2015,0.38,20,1
+50165,North Macedonia,North Macedonia,MKD,2016,0.62,33,1
+50166,North Macedonia,North Macedonia,MKD,2017,0.77,41,1
+52147,"Oriental Republic of Uruguay, Uruguay",Uruguay,URY,2000,0.18,9,1
+52148,"Oriental Republic of Uruguay, Uruguay",Uruguay,URY,2001,0.31,15,1
+52149,"Oriental Republic of Uruguay, Uruguay",Uruguay,URY,2002,0.28,13,1
+52150,"Oriental Republic of Uruguay, Uruguay",Uruguay,URY,2003,0.23,12,1
+52151,"Oriental Republic of Uruguay, Uruguay",Uruguay,URY,2004,0.26,13,1
+52152,"Oriental Republic of Uruguay, Uruguay",Uruguay,URY,2005,0.2,10,1
+52153,"Oriental Republic of Uruguay, Uruguay",Uruguay,URY,2006,0.31,16,1
+52154,"Oriental Republic of Uruguay, Uruguay",Uruguay,URY,2007,0.25,12,1
+52155,"Oriental Republic of Uruguay, Uruguay",Uruguay,URY,2008,0.2,9,1
+52156,"Oriental Republic of Uruguay, Uruguay",Uruguay,URY,2009,0.15,15,1
+52157,"Oriental Republic of Uruguay, Uruguay",Uruguay,URY,2010,0.29,33,1
+52158,"Oriental Republic of Uruguay, Uruguay",Uruguay,URY,2011,0.31,33,1
+52159,"Oriental Republic of Uruguay, Uruguay",Uruguay,URY,2012,0.07,7,1
+52160,"Oriental Republic of Uruguay, Uruguay",Uruguay,URY,2013,0.23,18,1
+52161,"Oriental Republic of Uruguay, Uruguay",Uruguay,URY,2014,0.1,7,1
+52162,"Oriental Republic of Uruguay, Uruguay",Uruguay,URY,2015,0.15,8,1
+52163,"Oriental Republic of Uruguay, Uruguay",Uruguay,URY,2016,0.15,8,1
+52164,"Oriental Republic of Uruguay, Uruguay",Uruguay,URY,2017,0.21,11,1
+53551,Panama City,Panama,PAN,2000,NA,NA,1
+53553,Panama City,Panama,PAN,2001,NA,NA,1
+53555,Panama City,Panama,PAN,2002,NA,NA,1
+53557,Panama City,Panama,PAN,2003,NA,NA,1
+53559,Panama City,Panama,PAN,2004,NA,NA,1
+53561,Panama City,Panama,PAN,2005,NA,NA,1
+53563,Panama City,Panama,PAN,2006,NA,NA,1
+53565,Panama City,Panama,PAN,2007,0.02,1,1
+53567,Panama City,Panama,PAN,2008,NA,NA,1
+53569,Panama City,Panama,PAN,2009,NA,NA,1
+53571,Panama City,Panama,PAN,2010,0.02,2,1
+53573,Panama City,Panama,PAN,2011,NA,NA,1
+53575,Panama City,Panama,PAN,2012,NA,NA,1
+53577,Panama City,Panama,PAN,2013,NA,NA,1
+53579,Panama City,Panama,PAN,2014,NA,NA,1
+53581,Panama City,Panama,PAN,2015,NA,NA,1
+53583,Panama City,Panama,PAN,2016,NA,NA,1
+53585,Panama City,Panama,PAN,2017,NA,NA,1
+54523,"People's Democratic Republic of Algeria, Algeria",Algeria,DZA,2000,0.18,9,1
+54524,"People's Democratic Republic of Algeria, Algeria",Algeria,DZA,2001,0.5,24,1
+54525,"People's Democratic Republic of Algeria, Algeria",Algeria,DZA,2002,0.55,25,1
+54526,"People's Democratic Republic of Algeria, Algeria",Algeria,DZA,2003,0.57,30,1
+54527,"People's Democratic Republic of Algeria, Algeria",Algeria,DZA,2004,0.48,24,1
+54528,"People's Democratic Republic of Algeria, Algeria",Algeria,DZA,2005,0.5,25,1
+54529,"People's Democratic Republic of Algeria, Algeria",Algeria,DZA,2006,0.39,20,1
+54530,"People's Democratic Republic of Algeria, Algeria",Algeria,DZA,2007,0.35,17,1
+54531,"People's Democratic Republic of Algeria, Algeria",Algeria,DZA,2008,0.56,25,1
+54532,"People's Democratic Republic of Algeria, Algeria",Algeria,DZA,2009,0.32,31,1
+54533,"People's Democratic Republic of Algeria, Algeria",Algeria,DZA,2010,0.43,49,1
+54534,"People's Democratic Republic of Algeria, Algeria",Algeria,DZA,2011,0.52,56,1
+54535,"People's Democratic Republic of Algeria, Algeria",Algeria,DZA,2012,0.46,43,1
+54536,"People's Democratic Republic of Algeria, Algeria",Algeria,DZA,2013,0.4,31,1
+54537,"People's Democratic Republic of Algeria, Algeria",Algeria,DZA,2014,0.4,27,1
+54538,"People's Democratic Republic of Algeria, Algeria",Algeria,DZA,2015,0.3,16,1
+54539,"People's Democratic Republic of Algeria, Algeria",Algeria,DZA,2016,0.34,18,1
+54540,"People's Democratic Republic of Algeria, Algeria",Algeria,DZA,2017,0.36,19,1
+55549,"Plurinational State of Bolivia, Bolivia",Bolivia,BOL,2000,0.24,12,1
+55550,"Plurinational State of Bolivia, Bolivia",Bolivia,BOL,2001,0.19,9,1
+55551,"Plurinational State of Bolivia, Bolivia",Bolivia,BOL,2002,0.15,7,1
+55552,"Plurinational State of Bolivia, Bolivia",Bolivia,BOL,2003,0.49,26,1
+55553,"Plurinational State of Bolivia, Bolivia",Bolivia,BOL,2004,0.24,12,1
+55554,"Plurinational State of Bolivia, Bolivia",Bolivia,BOL,2005,0.42,21,1
+55555,"Plurinational State of Bolivia, Bolivia",Bolivia,BOL,2006,0.37,19,1
+55556,"Plurinational State of Bolivia, Bolivia",Bolivia,BOL,2007,0.31,15,1
+55557,"Plurinational State of Bolivia, Bolivia",Bolivia,BOL,2008,0.81,36,1
+55558,"Plurinational State of Bolivia, Bolivia",Bolivia,BOL,2009,0.41,40,1
+55559,"Plurinational State of Bolivia, Bolivia",Bolivia,BOL,2010,0.51,59,1
+55560,"Plurinational State of Bolivia, Bolivia",Bolivia,BOL,2011,0.26,28,1
+55561,"Plurinational State of Bolivia, Bolivia",Bolivia,BOL,2012,0.15,14,1
+55562,"Plurinational State of Bolivia, Bolivia",Bolivia,BOL,2013,0.34,26,1
+55563,"Plurinational State of Bolivia, Bolivia",Bolivia,BOL,2014,0.31,21,1
+55564,"Plurinational State of Bolivia, Bolivia",Bolivia,BOL,2015,0.11,6,1
+55565,"Plurinational State of Bolivia, Bolivia",Bolivia,BOL,2016,0.28,15,1
+55566,"Plurinational State of Bolivia, Bolivia",Bolivia,BOL,2017,0.15,8,1
+55657,"Polynesie Francaise, French Polynesia",French Polynesia,PYF,2000,NA,NA,1
+55658,"Polynesie Francaise, French Polynesia",French Polynesia,PYF,2001,0.02,1,1
+55659,"Polynesie Francaise, French Polynesia",French Polynesia,PYF,2002,NA,NA,1
+55660,"Polynesie Francaise, French Polynesia",French Polynesia,PYF,2003,0.02,1,1
+55661,"Polynesie Francaise, French Polynesia",French Polynesia,PYF,2004,NA,NA,1
+55662,"Polynesie Francaise, French Polynesia",French Polynesia,PYF,2005,NA,NA,1
+55663,"Polynesie Francaise, French Polynesia",French Polynesia,PYF,2006,0.02,1,1
+55664,"Polynesie Francaise, French Polynesia",French Polynesia,PYF,2007,NA,NA,1
+55665,"Polynesie Francaise, French Polynesia",French Polynesia,PYF,2008,NA,NA,1
+55666,"Polynesie Francaise, French Polynesia",French Polynesia,PYF,2009,0.07,7,1
+55667,"Polynesie Francaise, French Polynesia",French Polynesia,PYF,2010,NA,NA,1
+55668,"Polynesie Francaise, French Polynesia",French Polynesia,PYF,2011,NA,NA,1
+55669,"Polynesie Francaise, French Polynesia",French Polynesia,PYF,2012,0.02,2,1
+55670,"Polynesie Francaise, French Polynesia",French Polynesia,PYF,2013,0.03,2,1
+55671,"Polynesie Francaise, French Polynesia",French Polynesia,PYF,2014,0.03,2,1
+55672,"Polynesie Francaise, French Polynesia",French Polynesia,PYF,2015,NA,NA,1
+55673,"Polynesie Francaise, French Polynesia",French Polynesia,PYF,2016,NA,NA,1
+55674,"Polynesie Francaise, French Polynesia",French Polynesia,PYF,2017,NA,NA,1
+58897,"Republic of Albania, Albania",Albania,ALB,2000,0.33,16,1
+58898,"Republic of Albania, Albania",Albania,ALB,2001,0.13,6,1
+58899,"Republic of Albania, Albania",Albania,ALB,2002,0.04,2,1
+58900,"Republic of Albania, Albania",Albania,ALB,2003,0.13,7,1
+58901,"Republic of Albania, Albania",Albania,ALB,2004,0.12,6,1
+58902,"Republic of Albania, Albania",Albania,ALB,2005,0.14,7,1
+58903,"Republic of Albania, Albania",Albania,ALB,2006,0.14,7,1
+58904,"Republic of Albania, Albania",Albania,ALB,2007,0.15,7,1
+58905,"Republic of Albania, Albania",Albania,ALB,2008,0.11,5,1
+58906,"Republic of Albania, Albania",Albania,ALB,2009,0.12,12,1
+58907,"Republic of Albania, Albania",Albania,ALB,2010,0.25,29,1
+58908,"Republic of Albania, Albania",Albania,ALB,2011,0.17,18,1
+58909,"Republic of Albania, Albania",Albania,ALB,2012,0.16,15,1
+58910,"Republic of Albania, Albania",Albania,ALB,2013,0.68,52,1
+58911,"Republic of Albania, Albania",Albania,ALB,2014,0.99,66,1
+58912,"Republic of Albania, Albania",Albania,ALB,2015,0.84,44,1
+58913,"Republic of Albania, Albania",Albania,ALB,2016,0.93,49,1
+58914,"Republic of Albania, Albania",Albania,ALB,2017,1.07,57,1
+58933,"Republic of Angola, Angola",Angola,AGO,2000,1.61,79,1
+58934,"Republic of Angola, Angola",Angola,AGO,2001,1.46,70,1
+58935,"Republic of Angola, Angola",Angola,AGO,2002,1.31,60,1
+58936,"Republic of Angola, Angola",Angola,AGO,2003,1.55,82,1
+58937,"Republic of Angola, Angola",Angola,AGO,2004,1.39,70,1
+58938,"Republic of Angola, Angola",Angola,AGO,2005,0.8,40,1
+58939,"Republic of Angola, Angola",Angola,AGO,2006,0.91,47,1
+58940,"Republic of Angola, Angola",Angola,AGO,2007,1.06,51,1
+58941,"Republic of Angola, Angola",Angola,AGO,2008,0.4,18,1
+58942,"Republic of Angola, Angola",Angola,AGO,2009,0.82,80,1
+58943,"Republic of Angola, Angola",Angola,AGO,2010,0.44,51,1
+58944,"Republic of Angola, Angola",Angola,AGO,2011,0.37,40,1
+58945,"Republic of Angola, Angola",Angola,AGO,2012,0.24,22,1
+58946,"Republic of Angola, Angola",Angola,AGO,2013,0.2,15,1
+58947,"Republic of Angola, Angola",Angola,AGO,2014,0.64,43,1
+58948,"Republic of Angola, Angola",Angola,AGO,2015,0.44,23,1
+58949,"Republic of Angola, Angola",Angola,AGO,2016,0.34,18,1
+58950,"Republic of Angola, Angola",Angola,AGO,2017,0.37,20,1
+58969,"Republic of Armenia, Armenia",Armenia,ARM,2000,0.1,5,1
+58970,"Republic of Armenia, Armenia",Armenia,ARM,2001,0.1,5,1
+58971,"Republic of Armenia, Armenia",Armenia,ARM,2002,0.07,3,1
+58972,"Republic of Armenia, Armenia",Armenia,ARM,2003,0.08,4,1
+58973,"Republic of Armenia, Armenia",Armenia,ARM,2004,0.04,2,1
+58974,"Republic of Armenia, Armenia",Armenia,ARM,2005,0.1,5,1
+58975,"Republic of Armenia, Armenia",Armenia,ARM,2006,0.04,2,1
+58976,"Republic of Armenia, Armenia",Armenia,ARM,2007,0.02,1,1
+58977,"Republic of Armenia, Armenia",Armenia,ARM,2008,0.11,5,1
+58978,"Republic of Armenia, Armenia",Armenia,ARM,2009,0.16,16,1
+58979,"Republic of Armenia, Armenia",Armenia,ARM,2010,0.12,14,1
+58980,"Republic of Armenia, Armenia",Armenia,ARM,2011,0.18,20,1
+58981,"Republic of Armenia, Armenia",Armenia,ARM,2012,0.18,17,1
+58982,"Republic of Armenia, Armenia",Armenia,ARM,2013,0.21,16,1
+58983,"Republic of Armenia, Armenia",Armenia,ARM,2014,0.1,7,1
+58984,"Republic of Armenia, Armenia",Armenia,ARM,2015,0.25,13,1
+58985,"Republic of Armenia, Armenia",Armenia,ARM,2016,0.32,17,1
+58986,"Republic of Armenia, Armenia",Armenia,ARM,2017,0.28,15,1
+59041,"Republic of Azerbaijan, Azerbaijan",Azerbaijan,AZE,2000,0.16,8,1
+59042,"Republic of Azerbaijan, Azerbaijan",Azerbaijan,AZE,2001,0.13,6,1
+59043,"Republic of Azerbaijan, Azerbaijan",Azerbaijan,AZE,2002,0.04,2,1
+59044,"Republic of Azerbaijan, Azerbaijan",Azerbaijan,AZE,2003,0.11,6,1
+59045,"Republic of Azerbaijan, Azerbaijan",Azerbaijan,AZE,2004,0.08,4,1
+59046,"Republic of Azerbaijan, Azerbaijan",Azerbaijan,AZE,2005,0.14,7,1
+59047,"Republic of Azerbaijan, Azerbaijan",Azerbaijan,AZE,2006,0.17,9,1
+59048,"Republic of Azerbaijan, Azerbaijan",Azerbaijan,AZE,2007,0.17,8,1
+59049,"Republic of Azerbaijan, Azerbaijan",Azerbaijan,AZE,2008,0.16,7,1
+59050,"Republic of Azerbaijan, Azerbaijan",Azerbaijan,AZE,2009,0.17,17,1
+59051,"Republic of Azerbaijan, Azerbaijan",Azerbaijan,AZE,2010,0.1,12,1
+59052,"Republic of Azerbaijan, Azerbaijan",Azerbaijan,AZE,2011,0.24,26,1
+59053,"Republic of Azerbaijan, Azerbaijan",Azerbaijan,AZE,2012,0.34,32,1
+59054,"Republic of Azerbaijan, Azerbaijan",Azerbaijan,AZE,2013,0.27,21,1
+59055,"Republic of Azerbaijan, Azerbaijan",Azerbaijan,AZE,2014,0.18,12,1
+59056,"Republic of Azerbaijan, Azerbaijan",Azerbaijan,AZE,2015,0.4,21,1
+59057,"Republic of Azerbaijan, Azerbaijan",Azerbaijan,AZE,2016,0.28,15,1
+59058,"Republic of Azerbaijan, Azerbaijan",Azerbaijan,AZE,2017,0.21,11,1
+59077,"Republic of Belarus, Belarus",Belarus,BLR,2000,0.1,5,1
+59078,"Republic of Belarus, Belarus",Belarus,BLR,2001,0.1,5,1
+59079,"Republic of Belarus, Belarus",Belarus,BLR,2002,0.04,2,1
+59080,"Republic of Belarus, Belarus",Belarus,BLR,2003,0.08,4,1
+59081,"Republic of Belarus, Belarus",Belarus,BLR,2004,0.1,5,1
+59082,"Republic of Belarus, Belarus",Belarus,BLR,2005,0.16,8,1
+59083,"Republic of Belarus, Belarus",Belarus,BLR,2006,0.1,5,1
+59084,"Republic of Belarus, Belarus",Belarus,BLR,2007,0.1,5,1
+59085,"Republic of Belarus, Belarus",Belarus,BLR,2008,0.11,5,1
+59086,"Republic of Belarus, Belarus",Belarus,BLR,2009,0.22,21,1
+59087,"Republic of Belarus, Belarus",Belarus,BLR,2010,0.22,25,1
+59088,"Republic of Belarus, Belarus",Belarus,BLR,2011,0.26,28,1
+59089,"Republic of Belarus, Belarus",Belarus,BLR,2012,0.26,24,1
+59090,"Republic of Belarus, Belarus",Belarus,BLR,2013,0.42,32,1
+59091,"Republic of Belarus, Belarus",Belarus,BLR,2014,0.36,24,1
+59092,"Republic of Belarus, Belarus",Belarus,BLR,2015,0.59,31,1
+59093,"Republic of Belarus, Belarus",Belarus,BLR,2016,0.44,23,1
+59094,"Republic of Belarus, Belarus",Belarus,BLR,2017,0.54,29,1
+59113,"Republic of Benin, Benin",Benin,BEN,2000,0.08,4,1
+59114,"Republic of Benin, Benin",Benin,BEN,2001,0.13,6,1
+59115,"Republic of Benin, Benin",Benin,BEN,2002,0.2,9,1
+59116,"Republic of Benin, Benin",Benin,BEN,2003,0.13,7,1
+59117,"Republic of Benin, Benin",Benin,BEN,2004,0.28,14,1
+59118,"Republic of Benin, Benin",Benin,BEN,2005,0.1,5,1
+59119,"Republic of Benin, Benin",Benin,BEN,2006,0.08,4,1
+59120,"Republic of Benin, Benin",Benin,BEN,2007,0.27,13,1
+59121,"Republic of Benin, Benin",Benin,BEN,2008,0.07,3,1
+59122,"Republic of Benin, Benin",Benin,BEN,2009,0.15,15,1
+59123,"Republic of Benin, Benin",Benin,BEN,2010,0.22,25,1
+59124,"Republic of Benin, Benin",Benin,BEN,2011,0.14,15,1
+59125,"Republic of Benin, Benin",Benin,BEN,2012,0.15,14,1
+59126,"Republic of Benin, Benin",Benin,BEN,2013,0.12,9,1
+59127,"Republic of Benin, Benin",Benin,BEN,2014,0.37,25,1
+59128,"Republic of Benin, Benin",Benin,BEN,2015,0.23,12,1
+59129,"Republic of Benin, Benin",Benin,BEN,2016,0.21,11,1
+59130,"Republic of Benin, Benin",Benin,BEN,2017,0.09,5,1
+59149,"Republic of Botswana, Botswana",Botswana,BWA,2000,0.84,41,1
+59150,"Republic of Botswana, Botswana",Botswana,BWA,2001,0.84,40,1
+59151,"Republic of Botswana, Botswana",Botswana,BWA,2002,0.74,34,1
+59152,"Republic of Botswana, Botswana",Botswana,BWA,2003,0.72,38,1
+59153,"Republic of Botswana, Botswana",Botswana,BWA,2004,0.57,29,1
+59154,"Republic of Botswana, Botswana",Botswana,BWA,2005,0.32,16,1
+59155,"Republic of Botswana, Botswana",Botswana,BWA,2006,0.45,23,1
+59156,"Republic of Botswana, Botswana",Botswana,BWA,2007,0.37,18,1
+59157,"Republic of Botswana, Botswana",Botswana,BWA,2008,0.13,6,1
+59158,"Republic of Botswana, Botswana",Botswana,BWA,2009,0.54,53,1
+59159,"Republic of Botswana, Botswana",Botswana,BWA,2010,0.17,20,1
+59160,"Republic of Botswana, Botswana",Botswana,BWA,2011,0.31,33,1
+59161,"Republic of Botswana, Botswana",Botswana,BWA,2012,0.37,35,1
+59162,"Republic of Botswana, Botswana",Botswana,BWA,2013,0.21,16,1
+59163,"Republic of Botswana, Botswana",Botswana,BWA,2014,0.12,8,1
+59164,"Republic of Botswana, Botswana",Botswana,BWA,2015,0.32,17,1
+59165,"Republic of Botswana, Botswana",Botswana,BWA,2016,0.13,7,1
+59166,"Republic of Botswana, Botswana",Botswana,BWA,2017,0.26,14,1
+59185,"Republic of Bulgaria, Bulgaria",Bulgaria,BGR,2000,0.16,8,1
+59186,"Republic of Bulgaria, Bulgaria",Bulgaria,BGR,2001,0.4,19,1
+59187,"Republic of Bulgaria, Bulgaria",Bulgaria,BGR,2002,0.2,9,1
+59188,"Republic of Bulgaria, Bulgaria",Bulgaria,BGR,2003,0.66,35,1
+59189,"Republic of Bulgaria, Bulgaria",Bulgaria,BGR,2004,0.1,5,1
+59190,"Republic of Bulgaria, Bulgaria",Bulgaria,BGR,2005,0.32,16,1
+59191,"Republic of Bulgaria, Bulgaria",Bulgaria,BGR,2006,0.35,18,1
+59192,"Republic of Bulgaria, Bulgaria",Bulgaria,BGR,2007,0.31,15,1
+59193,"Republic of Bulgaria, Bulgaria",Bulgaria,BGR,2008,0.65,29,1
+59194,"Republic of Bulgaria, Bulgaria",Bulgaria,BGR,2009,0.44,43,1
+59195,"Republic of Bulgaria, Bulgaria",Bulgaria,BGR,2010,0.46,53,1
+59196,"Republic of Bulgaria, Bulgaria",Bulgaria,BGR,2011,0.34,37,1
+59197,"Republic of Bulgaria, Bulgaria",Bulgaria,BGR,2012,0.39,36,1
+59198,"Republic of Bulgaria, Bulgaria",Bulgaria,BGR,2013,0.43,33,1
+59199,"Republic of Bulgaria, Bulgaria",Bulgaria,BGR,2014,0.43,29,1
+59200,"Republic of Bulgaria, Bulgaria",Bulgaria,BGR,2015,0.53,28,1
+59201,"Republic of Bulgaria, Bulgaria",Bulgaria,BGR,2016,0.45,24,1
+59202,"Republic of Bulgaria, Bulgaria",Bulgaria,BGR,2017,0.6,32,1
+59221,"Republic of Burundi, Burundi",Burundi,BDI,2000,0.49,24,1
+59222,"Republic of Burundi, Burundi",Burundi,BDI,2001,0.86,41,1
+59223,"Republic of Burundi, Burundi",Burundi,BDI,2002,0.55,25,1
+59224,"Republic of Burundi, Burundi",Burundi,BDI,2003,0.55,29,1
+59225,"Republic of Burundi, Burundi",Burundi,BDI,2004,0.87,44,1
+59226,"Republic of Burundi, Burundi",Burundi,BDI,2005,0.52,26,1
+59227,"Republic of Burundi, Burundi",Burundi,BDI,2006,0.46,24,1
+59228,"Republic of Burundi, Burundi",Burundi,BDI,2007,0.37,18,1
+59229,"Republic of Burundi, Burundi",Burundi,BDI,2008,0.13,6,1
+59230,"Republic of Burundi, Burundi",Burundi,BDI,2009,0.34,33,1
+59231,"Republic of Burundi, Burundi",Burundi,BDI,2010,0.29,33,1
+59232,"Republic of Burundi, Burundi",Burundi,BDI,2011,0.43,46,1
+59233,"Republic of Burundi, Burundi",Burundi,BDI,2012,0.31,29,1
+59234,"Republic of Burundi, Burundi",Burundi,BDI,2013,0.48,37,1
+59235,"Republic of Burundi, Burundi",Burundi,BDI,2014,0.3,20,1
+59236,"Republic of Burundi, Burundi",Burundi,BDI,2015,0.65,34,1
+59237,"Republic of Burundi, Burundi",Burundi,BDI,2016,0.55,29,1
+59238,"Republic of Burundi, Burundi",Burundi,BDI,2017,0.54,29,1
+59257,"Republic of Cabo Verde, Cape Verde",Cape Verde,CPV,2000,0.12,6,1
+59258,"Republic of Cabo Verde, Cape Verde",Cape Verde,CPV,2001,0.13,6,1
+59259,"Republic of Cabo Verde, Cape Verde",Cape Verde,CPV,2002,0.22,10,1
+59260,"Republic of Cabo Verde, Cape Verde",Cape Verde,CPV,2003,0.13,7,1
+59261,"Republic of Cabo Verde, Cape Verde",Cape Verde,CPV,2004,0.12,6,1
+59262,"Republic of Cabo Verde, Cape Verde",Cape Verde,CPV,2005,0.12,6,1
+59263,"Republic of Cabo Verde, Cape Verde",Cape Verde,CPV,2006,0.17,9,1
+59264,"Republic of Cabo Verde, Cape Verde",Cape Verde,CPV,2007,0.17,8,1
+59265,"Republic of Cabo Verde, Cape Verde",Cape Verde,CPV,2008,0.11,5,1
+59266,"Republic of Cabo Verde, Cape Verde",Cape Verde,CPV,2009,0.09,9,1
+59267,"Republic of Cabo Verde, Cape Verde",Cape Verde,CPV,2010,0.15,17,1
+59268,"Republic of Cabo Verde, Cape Verde",Cape Verde,CPV,2011,0.07,8,1
+59269,"Republic of Cabo Verde, Cape Verde",Cape Verde,CPV,2012,0.02,2,1
+59270,"Republic of Cabo Verde, Cape Verde",Cape Verde,CPV,2013,0.09,7,1
+59271,"Republic of Cabo Verde, Cape Verde",Cape Verde,CPV,2014,0.16,11,1
+59272,"Republic of Cabo Verde, Cape Verde",Cape Verde,CPV,2015,NA,NA,1
+59273,"Republic of Cabo Verde, Cape Verde",Cape Verde,CPV,2016,NA,NA,1
+59274,"Republic of Cabo Verde, Cape Verde",Cape Verde,CPV,2017,NA,NA,1
+59293,"Republic of Cameroon, Cameroon",Cameroon,CMR,2000,0.1,5,1
+59294,"Republic of Cameroon, Cameroon",Cameroon,CMR,2001,0.25,12,1
+59295,"Republic of Cameroon, Cameroon",Cameroon,CMR,2002,0.22,10,1
+59296,"Republic of Cameroon, Cameroon",Cameroon,CMR,2003,0.34,18,1
+59297,"Republic of Cameroon, Cameroon",Cameroon,CMR,2004,0.22,11,1
+59298,"Republic of Cameroon, Cameroon",Cameroon,CMR,2005,0.2,10,1
+59299,"Republic of Cameroon, Cameroon",Cameroon,CMR,2006,0.21,11,1
+59300,"Republic of Cameroon, Cameroon",Cameroon,CMR,2007,0.37,18,1
+59301,"Republic of Cameroon, Cameroon",Cameroon,CMR,2008,0.07,3,1
+59302,"Republic of Cameroon, Cameroon",Cameroon,CMR,2009,0.33,32,1
+59303,"Republic of Cameroon, Cameroon",Cameroon,CMR,2010,0.13,15,1
+59304,"Republic of Cameroon, Cameroon",Cameroon,CMR,2011,0.15,16,1
+59305,"Republic of Cameroon, Cameroon",Cameroon,CMR,2012,0.18,17,1
+59306,"Republic of Cameroon, Cameroon",Cameroon,CMR,2013,0.16,12,1
+59307,"Republic of Cameroon, Cameroon",Cameroon,CMR,2014,0.4,27,1
+59308,"Republic of Cameroon, Cameroon",Cameroon,CMR,2015,0.42,22,1
+59309,"Republic of Cameroon, Cameroon",Cameroon,CMR,2016,0.38,20,1
+59310,"Republic of Cameroon, Cameroon",Cameroon,CMR,2017,0.19,10,1
+59329,"Republic of Chad, Chad",Chad,TCD,2000,0.1,5,1
+59330,"Republic of Chad, Chad",Chad,TCD,2001,0.08,4,1
+59331,"Republic of Chad, Chad",Chad,TCD,2002,0.11,5,1
+59332,"Republic of Chad, Chad",Chad,TCD,2003,0.19,10,1
+59333,"Republic of Chad, Chad",Chad,TCD,2004,0.93,47,1
+59334,"Republic of Chad, Chad",Chad,TCD,2005,0.24,12,1
+59335,"Republic of Chad, Chad",Chad,TCD,2006,0.39,20,1
+59336,"Republic of Chad, Chad",Chad,TCD,2007,0.52,25,1
+59337,"Republic of Chad, Chad",Chad,TCD,2008,0.38,17,1
+59338,"Republic of Chad, Chad",Chad,TCD,2009,0.33,32,1
+59339,"Republic of Chad, Chad",Chad,TCD,2010,0.3,34,1
+59340,"Republic of Chad, Chad",Chad,TCD,2011,0.14,15,1
+59341,"Republic of Chad, Chad",Chad,TCD,2012,0.19,18,1
+59342,"Republic of Chad, Chad",Chad,TCD,2013,0.36,28,1
+59343,"Republic of Chad, Chad",Chad,TCD,2014,0.57,38,1
+59344,"Republic of Chad, Chad",Chad,TCD,2015,0.3,16,1
+59345,"Republic of Chad, Chad",Chad,TCD,2016,0.44,23,1
+59346,"Republic of Chad, Chad",Chad,TCD,2017,0.3,16,1
+59365,"Republic of Chile, Chile",Chile,CHL,2000,0.41,20,1
+59366,"Republic of Chile, Chile",Chile,CHL,2001,0.59,28,1
+59367,"Republic of Chile, Chile",Chile,CHL,2002,0.42,19,1
+59368,"Republic of Chile, Chile",Chile,CHL,2003,0.85,45,1
+59369,"Republic of Chile, Chile",Chile,CHL,2004,0.79,40,1
+59370,"Republic of Chile, Chile",Chile,CHL,2005,0.56,28,1
+59371,"Republic of Chile, Chile",Chile,CHL,2006,0.56,29,1
+59372,"Republic of Chile, Chile",Chile,CHL,2007,0.44,21,1
+59373,"Republic of Chile, Chile",Chile,CHL,2008,1.05,47,1
+59374,"Republic of Chile, Chile",Chile,CHL,2009,0.63,61,1
+59375,"Republic of Chile, Chile",Chile,CHL,2010,1.8,207,1
+59376,"Republic of Chile, Chile",Chile,CHL,2011,1.04,113,1
+59377,"Republic of Chile, Chile",Chile,CHL,2012,0.43,40,1
+59378,"Republic of Chile, Chile",Chile,CHL,2013,0.81,62,1
+59379,"Republic of Chile, Chile",Chile,CHL,2014,0.28,19,1
+59380,"Republic of Chile, Chile",Chile,CHL,2015,0.59,31,1
+59381,"Republic of Chile, Chile",Chile,CHL,2016,0.64,34,1
+59382,"Republic of Chile, Chile",Chile,CHL,2017,0.41,22,1
+59401,"Republic of Colombia, Colombia",Colombia,COL,2000,0.75,37,1
+59402,"Republic of Colombia, Colombia",Colombia,COL,2001,0.71,34,1
+59403,"Republic of Colombia, Colombia",Colombia,COL,2002,0.92,42,1
+59404,"Republic of Colombia, Colombia",Colombia,COL,2003,0.74,39,1
+59405,"Republic of Colombia, Colombia",Colombia,COL,2004,0.69,35,1
+59406,"Republic of Colombia, Colombia",Colombia,COL,2005,0.58,29,1
+59407,"Republic of Colombia, Colombia",Colombia,COL,2006,0.45,23,1
+59408,"Republic of Colombia, Colombia",Colombia,COL,2007,0.56,27,1
+59409,"Republic of Colombia, Colombia",Colombia,COL,2008,0.94,42,1
+59410,"Republic of Colombia, Colombia",Colombia,COL,2009,0.7,68,1
+59411,"Republic of Colombia, Colombia",Colombia,COL,2010,0.63,72,1
+59412,"Republic of Colombia, Colombia",Colombia,COL,2011,0.42,45,1
+59413,"Republic of Colombia, Colombia",Colombia,COL,2012,0.33,31,1
+59414,"Republic of Colombia, Colombia",Colombia,COL,2013,0.43,33,1
+59415,"Republic of Colombia, Colombia",Colombia,COL,2014,0.19,13,1
+59416,"Republic of Colombia, Colombia",Colombia,COL,2015,0.55,29,1
+59417,"Republic of Colombia, Colombia",Colombia,COL,2016,0.74,39,1
+59418,"Republic of Colombia, Colombia",Colombia,COL,2017,0.3,16,1
+59455,"Republic of Costa Rica, Costa Rica",Costa Rica,CRI,2000,0.16,8,1
+59456,"Republic of Costa Rica, Costa Rica",Costa Rica,CRI,2001,0.15,7,1
+59457,"Republic of Costa Rica, Costa Rica",Costa Rica,CRI,2002,0.11,5,1
+59458,"Republic of Costa Rica, Costa Rica",Costa Rica,CRI,2003,0.23,12,1
+59459,"Republic of Costa Rica, Costa Rica",Costa Rica,CRI,2004,0.16,8,1
+59460,"Republic of Costa Rica, Costa Rica",Costa Rica,CRI,2005,0.2,10,1
+59461,"Republic of Costa Rica, Costa Rica",Costa Rica,CRI,2006,0.17,9,1
+59462,"Republic of Costa Rica, Costa Rica",Costa Rica,CRI,2007,0.15,7,1
+59463,"Republic of Costa Rica, Costa Rica",Costa Rica,CRI,2008,0.18,8,1
+59464,"Republic of Costa Rica, Costa Rica",Costa Rica,CRI,2009,0.42,41,1
+59465,"Republic of Costa Rica, Costa Rica",Costa Rica,CRI,2010,0.2,23,1
+59466,"Republic of Costa Rica, Costa Rica",Costa Rica,CRI,2011,0.22,24,1
+59467,"Republic of Costa Rica, Costa Rica",Costa Rica,CRI,2012,0.22,21,1
+59468,"Republic of Costa Rica, Costa Rica",Costa Rica,CRI,2013,0.25,19,1
+59469,"Republic of Costa Rica, Costa Rica",Costa Rica,CRI,2014,0.03,2,1
+59470,"Republic of Costa Rica, Costa Rica",Costa Rica,CRI,2015,0.02,1,1
+59471,"Republic of Costa Rica, Costa Rica",Costa Rica,CRI,2016,0.17,9,1
+59472,"Republic of Costa Rica, Costa Rica",Costa Rica,CRI,2017,0.13,7,1
+59563,"Republic of Cuba, Cuba",Cuba,CUB,2000,0.61,30,1
+59564,"Republic of Cuba, Cuba",Cuba,CUB,2001,0.54,26,1
+59565,"Republic of Cuba, Cuba",Cuba,CUB,2002,0.28,13,1
+59566,"Republic of Cuba, Cuba",Cuba,CUB,2003,0.25,13,1
+59567,"Republic of Cuba, Cuba",Cuba,CUB,2004,0.65,33,1
+59568,"Republic of Cuba, Cuba",Cuba,CUB,2005,0.48,24,1
+59569,"Republic of Cuba, Cuba",Cuba,CUB,2006,0.25,13,1
+59570,"Republic of Cuba, Cuba",Cuba,CUB,2007,0.21,10,1
+59571,"Republic of Cuba, Cuba",Cuba,CUB,2008,0.94,42,1
+59572,"Republic of Cuba, Cuba",Cuba,CUB,2009,0.66,64,1
+59573,"Republic of Cuba, Cuba",Cuba,CUB,2010,0.54,62,1
+59574,"Republic of Cuba, Cuba",Cuba,CUB,2011,0.61,66,1
+59575,"Republic of Cuba, Cuba",Cuba,CUB,2012,0.58,54,1
+59576,"Republic of Cuba, Cuba",Cuba,CUB,2013,0.79,61,1
+59577,"Republic of Cuba, Cuba",Cuba,CUB,2014,0.96,64,1
+59578,"Republic of Cuba, Cuba",Cuba,CUB,2015,0.69,36,1
+59579,"Republic of Cuba, Cuba",Cuba,CUB,2016,0.89,47,1
+59580,"Republic of Cuba, Cuba",Cuba,CUB,2017,0.84,45,1
+59653,"Republic of Djibouti, Djibouti",Djibouti,DJI,2000,0.61,30,1
+59654,"Republic of Djibouti, Djibouti",Djibouti,DJI,2001,0.08,4,1
+59655,"Republic of Djibouti, Djibouti",Djibouti,DJI,2002,0.2,9,1
+59656,"Republic of Djibouti, Djibouti",Djibouti,DJI,2003,0.11,6,1
+59657,"Republic of Djibouti, Djibouti",Djibouti,DJI,2004,0.24,12,1
+59658,"Republic of Djibouti, Djibouti",Djibouti,DJI,2005,0.16,8,1
+59659,"Republic of Djibouti, Djibouti",Djibouti,DJI,2006,0.54,28,1
+59660,"Republic of Djibouti, Djibouti",Djibouti,DJI,2007,0.1,5,1
+59661,"Republic of Djibouti, Djibouti",Djibouti,DJI,2008,0.18,8,1
+59662,"Republic of Djibouti, Djibouti",Djibouti,DJI,2009,0.2,19,1
+59663,"Republic of Djibouti, Djibouti",Djibouti,DJI,2010,0.2,23,1
+59664,"Republic of Djibouti, Djibouti",Djibouti,DJI,2011,0.55,60,1
+59665,"Republic of Djibouti, Djibouti",Djibouti,DJI,2012,0.16,15,1
+59666,"Republic of Djibouti, Djibouti",Djibouti,DJI,2013,0.25,19,1
+59667,"Republic of Djibouti, Djibouti",Djibouti,DJI,2014,0.18,12,1
+59668,"Republic of Djibouti, Djibouti",Djibouti,DJI,2015,0.42,22,1
+59669,"Republic of Djibouti, Djibouti",Djibouti,DJI,2016,0.25,13,1
+59670,"Republic of Djibouti, Djibouti",Djibouti,DJI,2017,0.73,39,1
+59689,"Republic of Ecuador, Ecuador",Ecuador,ECU,2000,0.43,21,1
+59690,"Republic of Ecuador, Ecuador",Ecuador,ECU,2001,0.25,12,1
+59691,"Republic of Ecuador, Ecuador",Ecuador,ECU,2002,0.33,15,1
+59692,"Republic of Ecuador, Ecuador",Ecuador,ECU,2003,0.32,17,1
+59693,"Republic of Ecuador, Ecuador",Ecuador,ECU,2004,0.32,16,1
+59694,"Republic of Ecuador, Ecuador",Ecuador,ECU,2005,0.36,18,1
+59695,"Republic of Ecuador, Ecuador",Ecuador,ECU,2006,0.23,12,1
+59696,"Republic of Ecuador, Ecuador",Ecuador,ECU,2007,0.27,13,1
+59697,"Republic of Ecuador, Ecuador",Ecuador,ECU,2008,0.72,32,1
+59698,"Republic of Ecuador, Ecuador",Ecuador,ECU,2009,0.28,27,1
+59699,"Republic of Ecuador, Ecuador",Ecuador,ECU,2010,0.39,45,1
+59700,"Republic of Ecuador, Ecuador",Ecuador,ECU,2011,0.26,28,1
+59701,"Republic of Ecuador, Ecuador",Ecuador,ECU,2012,0.11,10,1
+59702,"Republic of Ecuador, Ecuador",Ecuador,ECU,2013,0.18,14,1
+59703,"Republic of Ecuador, Ecuador",Ecuador,ECU,2014,0.15,10,1
+59704,"Republic of Ecuador, Ecuador",Ecuador,ECU,2015,0.19,10,1
+59705,"Republic of Ecuador, Ecuador",Ecuador,ECU,2016,0.85,45,1
+59706,"Republic of Ecuador, Ecuador",Ecuador,ECU,2017,0.11,6,1
+59725,"Republic of El Salvador, El Salvador",El Salvador,SLV,2000,0.04,2,1
+59726,"Republic of El Salvador, El Salvador",El Salvador,SLV,2001,0.52,25,1
+59727,"Republic of El Salvador, El Salvador",El Salvador,SLV,2002,0.15,7,1
+59728,"Republic of El Salvador, El Salvador",El Salvador,SLV,2003,0.17,9,1
+59729,"Republic of El Salvador, El Salvador",El Salvador,SLV,2004,0.1,5,1
+59730,"Republic of El Salvador, El Salvador",El Salvador,SLV,2005,0.28,14,1
+59731,"Republic of El Salvador, El Salvador",El Salvador,SLV,2006,0.08,4,1
+59732,"Republic of El Salvador, El Salvador",El Salvador,SLV,2007,0.1,5,1
+59733,"Republic of El Salvador, El Salvador",El Salvador,SLV,2008,0.11,5,1
+59734,"Republic of El Salvador, El Salvador",El Salvador,SLV,2009,0.34,33,1
+59735,"Republic of El Salvador, El Salvador",El Salvador,SLV,2010,0.35,40,1
+59736,"Republic of El Salvador, El Salvador",El Salvador,SLV,2011,0.34,37,1
+59737,"Republic of El Salvador, El Salvador",El Salvador,SLV,2012,0.02,2,1
+59738,"Republic of El Salvador, El Salvador",El Salvador,SLV,2013,0.05,4,1
+59739,"Republic of El Salvador, El Salvador",El Salvador,SLV,2014,0.12,8,1
+59740,"Republic of El Salvador, El Salvador",El Salvador,SLV,2015,NA,NA,1
+59741,"Republic of El Salvador, El Salvador",El Salvador,SLV,2016,0.08,4,1
+59742,"Republic of El Salvador, El Salvador",El Salvador,SLV,2017,NA,NA,1
+59761,"Republic of Equatorial Guinea, Equatorial Guinea",Guinea,GIN,2000,NA,NA,1
+59762,"Republic of Equatorial Guinea, Equatorial Guinea",Guinea,GIN,2001,NA,NA,1
+59763,"Republic of Equatorial Guinea, Equatorial Guinea",Guinea,GIN,2002,0.04,2,1
+59764,"Republic of Equatorial Guinea, Equatorial Guinea",Guinea,GIN,2003,0.06,3,1
+59765,"Republic of Equatorial Guinea, Equatorial Guinea",Guinea,GIN,2004,0.1,5,1
+59766,"Republic of Equatorial Guinea, Equatorial Guinea",Guinea,GIN,2005,0.08,4,1
+59767,"Republic of Equatorial Guinea, Equatorial Guinea",Guinea,GIN,2006,0.12,6,1
+59768,"Republic of Equatorial Guinea, Equatorial Guinea",Guinea,GIN,2007,0.17,8,1
+59769,"Republic of Equatorial Guinea, Equatorial Guinea",Guinea,GIN,2008,0.13,6,1
+59770,"Republic of Equatorial Guinea, Equatorial Guinea",Guinea,GIN,2009,0.11,11,1
+59771,"Republic of Equatorial Guinea, Equatorial Guinea",Guinea,GIN,2010,0.02,2,1
+59772,"Republic of Equatorial Guinea, Equatorial Guinea",Guinea,GIN,2011,0.12,13,1
+59773,"Republic of Equatorial Guinea, Equatorial Guinea",Guinea,GIN,2012,0.13,12,1
+59774,"Republic of Equatorial Guinea, Equatorial Guinea",Guinea,GIN,2013,0.05,4,1
+59775,"Republic of Equatorial Guinea, Equatorial Guinea",Guinea,GIN,2014,0.07,5,1
+59776,"Republic of Equatorial Guinea, Equatorial Guinea",Guinea,GIN,2015,0.19,10,1
+59777,"Republic of Equatorial Guinea, Equatorial Guinea",Guinea,GIN,2016,0.13,7,1
+59778,"Republic of Equatorial Guinea, Equatorial Guinea",Guinea,GIN,2017,0.09,5,1
+59833,"Republic of Fiji, Fiji",Fiji,FJI,2000,0.16,8,1
+59834,"Republic of Fiji, Fiji",Fiji,FJI,2001,0.02,1,1
+59835,"Republic of Fiji, Fiji",Fiji,FJI,2002,0.02,1,1
+59836,"Republic of Fiji, Fiji",Fiji,FJI,2003,0.09,5,1
+59837,"Republic of Fiji, Fiji",Fiji,FJI,2004,0.26,13,1
+59838,"Republic of Fiji, Fiji",Fiji,FJI,2005,0.12,6,1
+59839,"Republic of Fiji, Fiji",Fiji,FJI,2006,0.29,15,1
+59840,"Republic of Fiji, Fiji",Fiji,FJI,2007,0.21,10,1
+59841,"Republic of Fiji, Fiji",Fiji,FJI,2008,0.18,8,1
+59842,"Republic of Fiji, Fiji",Fiji,FJI,2009,0.38,37,1
+59843,"Republic of Fiji, Fiji",Fiji,FJI,2010,0.22,25,1
+59844,"Republic of Fiji, Fiji",Fiji,FJI,2011,0.51,55,1
+59845,"Republic of Fiji, Fiji",Fiji,FJI,2012,0.75,70,1
+59846,"Republic of Fiji, Fiji",Fiji,FJI,2013,0.59,45,1
+59847,"Republic of Fiji, Fiji",Fiji,FJI,2014,0.39,26,1
+59848,"Republic of Fiji, Fiji",Fiji,FJI,2015,0.21,11,1
+59849,"Republic of Fiji, Fiji",Fiji,FJI,2016,0.38,20,1
+59850,"Republic of Fiji, Fiji",Fiji,FJI,2017,0.24,13,1
+59941,"Republic of Ghana, Ghana",Ghana,GHA,2000,0.55,27,1
+59942,"Republic of Ghana, Ghana",Ghana,GHA,2001,0.5,24,1
+59943,"Republic of Ghana, Ghana",Ghana,GHA,2002,0.63,29,1
+59944,"Republic of Ghana, Ghana",Ghana,GHA,2003,0.23,12,1
+59945,"Republic of Ghana, Ghana",Ghana,GHA,2004,0.57,29,1
+59946,"Republic of Ghana, Ghana",Ghana,GHA,2005,0.52,26,1
+59947,"Republic of Ghana, Ghana",Ghana,GHA,2006,0.79,41,1
+59948,"Republic of Ghana, Ghana",Ghana,GHA,2007,0.79,38,1
+59949,"Republic of Ghana, Ghana",Ghana,GHA,2008,0.4,18,1
+59950,"Republic of Ghana, Ghana",Ghana,GHA,2009,0.4,39,1
+59951,"Republic of Ghana, Ghana",Ghana,GHA,2010,0.39,45,1
+59952,"Republic of Ghana, Ghana",Ghana,GHA,2011,0.6,65,1
+59953,"Republic of Ghana, Ghana",Ghana,GHA,2012,0.81,76,1
+59954,"Republic of Ghana, Ghana",Ghana,GHA,2013,0.65,50,1
+59955,"Republic of Ghana, Ghana",Ghana,GHA,2014,0.85,57,1
+59956,"Republic of Ghana, Ghana",Ghana,GHA,2015,0.59,31,1
+59957,"Republic of Ghana, Ghana",Ghana,GHA,2016,0.83,44,1
+59958,"Republic of Ghana, Ghana",Ghana,GHA,2017,1.07,57,1
+59995,"Republic of Guinea-Bissau, Guinea-Bissau",Guinea-Bissau,GNB,2000,0.02,1,1
+59996,"Republic of Guinea-Bissau, Guinea-Bissau",Guinea-Bissau,GNB,2001,0.02,1,1
+59997,"Republic of Guinea-Bissau, Guinea-Bissau",Guinea-Bissau,GNB,2002,0.02,1,1
+59998,"Republic of Guinea-Bissau, Guinea-Bissau",Guinea-Bissau,GNB,2003,0.06,3,1
+59999,"Republic of Guinea-Bissau, Guinea-Bissau",Guinea-Bissau,GNB,2004,NA,NA,1
+60000,"Republic of Guinea-Bissau, Guinea-Bissau",Guinea-Bissau,GNB,2005,0.04,2,1
+60001,"Republic of Guinea-Bissau, Guinea-Bissau",Guinea-Bissau,GNB,2006,0.04,2,1
+60002,"Republic of Guinea-Bissau, Guinea-Bissau",Guinea-Bissau,GNB,2007,0.06,3,1
+60003,"Republic of Guinea-Bissau, Guinea-Bissau",Guinea-Bissau,GNB,2008,NA,NA,1
+60004,"Republic of Guinea-Bissau, Guinea-Bissau",Guinea-Bissau,GNB,2009,0.04,4,1
+60005,"Republic of Guinea-Bissau, Guinea-Bissau",Guinea-Bissau,GNB,2010,0.13,15,1
+60006,"Republic of Guinea-Bissau, Guinea-Bissau",Guinea-Bissau,GNB,2011,0.04,4,1
+60007,"Republic of Guinea-Bissau, Guinea-Bissau",Guinea-Bissau,GNB,2012,0.02,2,1
+60008,"Republic of Guinea-Bissau, Guinea-Bissau",Guinea-Bissau,GNB,2013,0.13,10,1
+60009,"Republic of Guinea-Bissau, Guinea-Bissau",Guinea-Bissau,GNB,2014,0.12,8,1
+60010,"Republic of Guinea-Bissau, Guinea-Bissau",Guinea-Bissau,GNB,2015,NA,NA,1
+60011,"Republic of Guinea-Bissau, Guinea-Bissau",Guinea-Bissau,GNB,2016,NA,NA,1
+60012,"Republic of Guinea-Bissau, Guinea-Bissau",Guinea-Bissau,GNB,2017,NA,NA,1
+60031,"Republic of Guinea, Guinea",Guinea,GIN,2000,0.37,18,1
+60032,"Republic of Guinea, Guinea",Guinea,GIN,2001,0.29,14,1
+60033,"Republic of Guinea, Guinea",Guinea,GIN,2002,0.22,10,1
+60034,"Republic of Guinea, Guinea",Guinea,GIN,2003,0.51,27,1
+60035,"Republic of Guinea, Guinea",Guinea,GIN,2004,0.52,26,1
+60036,"Republic of Guinea, Guinea",Guinea,GIN,2005,0.26,13,1
+60037,"Republic of Guinea, Guinea",Guinea,GIN,2006,0.43,22,1
+60038,"Republic of Guinea, Guinea",Guinea,GIN,2007,0.31,15,1
+60039,"Republic of Guinea, Guinea",Guinea,GIN,2008,0.16,7,1
+60040,"Republic of Guinea, Guinea",Guinea,GIN,2009,0.27,26,1
+60041,"Republic of Guinea, Guinea",Guinea,GIN,2010,0.37,42,1
+60042,"Republic of Guinea, Guinea",Guinea,GIN,2011,0.27,29,1
+60043,"Republic of Guinea, Guinea",Guinea,GIN,2012,0.2,19,1
+60044,"Republic of Guinea, Guinea",Guinea,GIN,2013,0.2,15,1
+60045,"Republic of Guinea, Guinea",Guinea,GIN,2014,1.47,98,1
+60046,"Republic of Guinea, Guinea",Guinea,GIN,2015,0.55,29,1
+60047,"Republic of Guinea, Guinea",Guinea,GIN,2016,0.36,19,1
+60048,"Republic of Guinea, Guinea",Guinea,GIN,2017,0.28,15,1
+60067,"Republic of Haiti, Haiti",Haiti,HTI,2000,0.02,1,1
+60068,"Republic of Haiti, Haiti",Haiti,HTI,2001,0.08,4,1
+60069,"Republic of Haiti, Haiti",Haiti,HTI,2002,0.09,4,1
+60070,"Republic of Haiti, Haiti",Haiti,HTI,2003,0.08,4,1
+60071,"Republic of Haiti, Haiti",Haiti,HTI,2004,1.27,64,1
+60072,"Republic of Haiti, Haiti",Haiti,HTI,2005,0.26,13,1
+60073,"Republic of Haiti, Haiti",Haiti,HTI,2006,0.29,15,1
+60074,"Republic of Haiti, Haiti",Haiti,HTI,2007,0.1,5,1
+60075,"Republic of Haiti, Haiti",Haiti,HTI,2008,0.34,15,1
+60076,"Republic of Haiti, Haiti",Haiti,HTI,2009,0.33,32,1
+60077,"Republic of Haiti, Haiti",Haiti,HTI,2010,5.29,607,1
+60078,"Republic of Haiti, Haiti",Haiti,HTI,2011,0.54,58,1
+60079,"Republic of Haiti, Haiti",Haiti,HTI,2012,0.32,30,1
+60080,"Republic of Haiti, Haiti",Haiti,HTI,2013,0.4,31,1
+60081,"Republic of Haiti, Haiti",Haiti,HTI,2014,0.28,19,1
+60082,"Republic of Haiti, Haiti",Haiti,HTI,2015,0.19,10,1
+60083,"Republic of Haiti, Haiti",Haiti,HTI,2016,0.36,19,1
+60084,"Republic of Haiti, Haiti",Haiti,HTI,2017,0.15,8,1
+60103,"Republic of Honduras, Honduras",Honduras,HND,2000,0.08,4,1
+60104,"Republic of Honduras, Honduras",Honduras,HND,2001,0.1,5,1
+60105,"Republic of Honduras, Honduras",Honduras,HND,2002,0.13,6,1
+60106,"Republic of Honduras, Honduras",Honduras,HND,2003,0.17,9,1
+60107,"Republic of Honduras, Honduras",Honduras,HND,2004,0.16,8,1
+60108,"Republic of Honduras, Honduras",Honduras,HND,2005,0.18,9,1
+60109,"Republic of Honduras, Honduras",Honduras,HND,2006,0.06,3,1
+60110,"Republic of Honduras, Honduras",Honduras,HND,2007,0.1,5,1
+60111,"Republic of Honduras, Honduras",Honduras,HND,2008,0.22,10,1
+60112,"Republic of Honduras, Honduras",Honduras,HND,2009,0.68,66,1
+60113,"Republic of Honduras, Honduras",Honduras,HND,2010,0.24,27,1
+60114,"Republic of Honduras, Honduras",Honduras,HND,2011,0.28,30,1
+60115,"Republic of Honduras, Honduras",Honduras,HND,2012,0.06,6,1
+60116,"Republic of Honduras, Honduras",Honduras,HND,2013,0.09,7,1
+60117,"Republic of Honduras, Honduras",Honduras,HND,2014,0.06,4,1
+60118,"Republic of Honduras, Honduras",Honduras,HND,2015,NA,NA,1
+60119,"Republic of Honduras, Honduras",Honduras,HND,2016,0.04,2,1
+60120,"Republic of Honduras, Honduras",Honduras,HND,2017,0.02,1,1
+60175,"Republic of India, India",India,IND,2000,2.31,113,1
+60176,"Republic of India, India",India,IND,2001,2.74,131,1
+60177,"Republic of India, India",India,IND,2002,3.41,156,1
+60178,"Republic of India, India",India,IND,2003,3.24,172,1
+60179,"Republic of India, India",India,IND,2004,3.81,192,1
+60180,"Republic of India, India",India,IND,2005,5.35,268,1
+60181,"Republic of India, India",India,IND,2006,3.81,197,1
+60182,"Republic of India, India",India,IND,2007,3.39,163,1
+60183,"Republic of India, India",India,IND,2008,2.36,105,1
+60184,"Republic of India, India",India,IND,2009,3.87,377,1
+60185,"Republic of India, India",India,IND,2010,3.84,441,1
+60186,"Republic of India, India",India,IND,2011,4.07,440,1
+60187,"Republic of India, India",India,IND,2012,4.59,429,1
+60188,"Republic of India, India",India,IND,2013,4.54,349,1
+60189,"Republic of India, India",India,IND,2014,4.13,276,1
+60190,"Republic of India, India",India,IND,2015,4.14,217,1
+60191,"Republic of India, India",India,IND,2016,2.71,143,1
+60192,"Republic of India, India",India,IND,2017,2.86,153,1
+60211,"Republic of Indonesia, Indonesia",Indonesia,IDN,2000,2.08,102,1
+60212,"Republic of Indonesia, Indonesia",Indonesia,IDN,2001,1.53,73,1
+60213,"Republic of Indonesia, Indonesia",Indonesia,IDN,2002,3.48,159,1
+60214,"Republic of Indonesia, Indonesia",Indonesia,IDN,2003,2.83,150,1
+60215,"Republic of Indonesia, Indonesia",Indonesia,IDN,2004,3.23,163,1
+60216,"Republic of Indonesia, Indonesia",Indonesia,IDN,2005,5.37,269,1
+60217,"Republic of Indonesia, Indonesia",Indonesia,IDN,2006,4.03,108,1
+60218,"Republic of Indonesia, Indonesia",Indonesia,IDN,2007,3.12,150,1
+60219,"Republic of Indonesia, Indonesia",Indonesia,IDN,2008,1.62,72,1
+60220,"Republic of Indonesia, Indonesia",Indonesia,IDN,2009,3.74,364,1
+60221,"Republic of Indonesia, Indonesia",Indonesia,IDN,2010,3.61,414,1
+60222,"Republic of Indonesia, Indonesia",Indonesia,IDN,2011,4.25,460,1
+60223,"Republic of Indonesia, Indonesia",Indonesia,IDN,2012,3.43,321,1
+60224,"Republic of Indonesia, Indonesia",Indonesia,IDN,2013,3.28,252,1
+60225,"Republic of Indonesia, Indonesia",Indonesia,IDN,2014,1.94,130,1
+60226,"Republic of Indonesia, Indonesia",Indonesia,IDN,2015,2.29,120,1
+60227,"Republic of Indonesia, Indonesia",Indonesia,IDN,2016,1.63,86,1
+60228,"Republic of Indonesia, Indonesia",Indonesia,IDN,2017,1.46,78,1
+60247,"Republic of Iraq, Iraq",Iraq,IRQ,2000,0.96,47,1
+60248,"Republic of Iraq, Iraq",Iraq,IRQ,2001,1.17,56,1
+60249,"Republic of Iraq, Iraq",Iraq,IRQ,2002,2.38,109,1
+60250,"Republic of Iraq, Iraq",Iraq,IRQ,2003,12.04,638,1
+60251,"Republic of Iraq, Iraq",Iraq,IRQ,2004,6.56,331,1
+60252,"Republic of Iraq, Iraq",Iraq,IRQ,2005,2.71,136,1
+60253,"Republic of Iraq, Iraq",Iraq,IRQ,2006,2.3,119,1
+60254,"Republic of Iraq, Iraq",Iraq,IRQ,2007,3.26,157,1
+60255,"Republic of Iraq, Iraq",Iraq,IRQ,2008,1.17,52,1
+60256,"Republic of Iraq, Iraq",Iraq,IRQ,2009,0.95,92,1
+60257,"Republic of Iraq, Iraq",Iraq,IRQ,2010,0.59,68,1
+60258,"Republic of Iraq, Iraq",Iraq,IRQ,2011,0.49,53,1
+60259,"Republic of Iraq, Iraq",Iraq,IRQ,2012,0.7,65,1
+60260,"Republic of Iraq, Iraq",Iraq,IRQ,2013,0.82,63,1
+60261,"Republic of Iraq, Iraq",Iraq,IRQ,2014,2.53,169,1
+60262,"Republic of Iraq, Iraq",Iraq,IRQ,2015,1.85,97,1
+60263,"Republic of Iraq, Iraq",Iraq,IRQ,2016,1.36,72,1
+60264,"Republic of Iraq, Iraq",Iraq,IRQ,2017,1.25,67,1
+60283,"Republic of Kazakhstan, Kazakhstan",Kazakhstan,KAZ,2000,0.2,10,1
+60284,"Republic of Kazakhstan, Kazakhstan",Kazakhstan,KAZ,2001,0.15,7,1
+60285,"Republic of Kazakhstan, Kazakhstan",Kazakhstan,KAZ,2002,0.26,12,1
+60286,"Republic of Kazakhstan, Kazakhstan",Kazakhstan,KAZ,2003,0.19,10,1
+60287,"Republic of Kazakhstan, Kazakhstan",Kazakhstan,KAZ,2004,0.2,10,1
+60288,"Republic of Kazakhstan, Kazakhstan",Kazakhstan,KAZ,2005,0.4,20,1
+60289,"Republic of Kazakhstan, Kazakhstan",Kazakhstan,KAZ,2006,0.33,17,1
+60290,"Republic of Kazakhstan, Kazakhstan",Kazakhstan,KAZ,2007,0.42,20,1
+60291,"Republic of Kazakhstan, Kazakhstan",Kazakhstan,KAZ,2008,0.58,26,1
+60292,"Republic of Kazakhstan, Kazakhstan",Kazakhstan,KAZ,2009,0.52,51,1
+60293,"Republic of Kazakhstan, Kazakhstan",Kazakhstan,KAZ,2010,0.24,27,1
+60294,"Republic of Kazakhstan, Kazakhstan",Kazakhstan,KAZ,2011,0.65,70,1
+60295,"Republic of Kazakhstan, Kazakhstan",Kazakhstan,KAZ,2012,0.5,47,1
+60296,"Republic of Kazakhstan, Kazakhstan",Kazakhstan,KAZ,2013,0.78,60,1
+60297,"Republic of Kazakhstan, Kazakhstan",Kazakhstan,KAZ,2014,0.79,53,1
+60298,"Republic of Kazakhstan, Kazakhstan",Kazakhstan,KAZ,2015,0.84,44,1
+60299,"Republic of Kazakhstan, Kazakhstan",Kazakhstan,KAZ,2016,0.53,28,1
+60300,"Republic of Kazakhstan, Kazakhstan",Kazakhstan,KAZ,2017,0.62,33,1
+60319,"Republic of Kenya, Kenya",Kenya,KEN,2000,3.35,164,1
+60320,"Republic of Kenya, Kenya",Kenya,KEN,2001,2.93,140,1
+60321,"Republic of Kenya, Kenya",Kenya,KEN,2002,1.62,74,1
+60322,"Republic of Kenya, Kenya",Kenya,KEN,2003,2.49,132,1
+60323,"Republic of Kenya, Kenya",Kenya,KEN,2004,2.28,115,1
+60324,"Republic of Kenya, Kenya",Kenya,KEN,2005,2.47,124,1
+60325,"Republic of Kenya, Kenya",Kenya,KEN,2006,2.75,142,1
+60326,"Republic of Kenya, Kenya",Kenya,KEN,2007,2.45,118,1
+60327,"Republic of Kenya, Kenya",Kenya,KEN,2008,1.84,82,1
+60328,"Republic of Kenya, Kenya",Kenya,KEN,2009,1.79,174,1
+60329,"Republic of Kenya, Kenya",Kenya,KEN,2010,1.2,138,1
+60330,"Republic of Kenya, Kenya",Kenya,KEN,2011,2.57,278,1
+60331,"Republic of Kenya, Kenya",Kenya,KEN,2012,1.9,178,1
+60332,"Republic of Kenya, Kenya",Kenya,KEN,2013,2.04,157,1
+60333,"Republic of Kenya, Kenya",Kenya,KEN,2014,2.39,160,1
+60334,"Republic of Kenya, Kenya",Kenya,KEN,2015,2.97,156,1
+60335,"Republic of Kenya, Kenya",Kenya,KEN,2016,3.54,187,1
+60336,"Republic of Kenya, Kenya",Kenya,KEN,2017,4.36,233,1
+60499,"Republic of Liberia, Liberia",Liberia,LBR,2000,0.16,8,1
+60500,"Republic of Liberia, Liberia",Liberia,LBR,2001,0.31,15,1
+60501,"Republic of Liberia, Liberia",Liberia,LBR,2002,0.2,9,1
+60502,"Republic of Liberia, Liberia",Liberia,LBR,2003,0.57,30,1
+60503,"Republic of Liberia, Liberia",Liberia,LBR,2004,0.38,19,1
+60504,"Republic of Liberia, Liberia",Liberia,LBR,2005,0.38,19,1
+60505,"Republic of Liberia, Liberia",Liberia,LBR,2006,0.35,18,1
+60506,"Republic of Liberia, Liberia",Liberia,LBR,2007,0.17,8,1
+60507,"Republic of Liberia, Liberia",Liberia,LBR,2008,0.2,9,1
+60508,"Republic of Liberia, Liberia",Liberia,LBR,2009,0.28,27,1
+60509,"Republic of Liberia, Liberia",Liberia,LBR,2010,0.29,33,1
+60510,"Republic of Liberia, Liberia",Liberia,LBR,2011,0.3,32,1
+60511,"Republic of Liberia, Liberia",Liberia,LBR,2012,0.2,19,1
+60512,"Republic of Liberia, Liberia",Liberia,LBR,2013,0.17,13,1
+60513,"Republic of Liberia, Liberia",Liberia,LBR,2014,1.6,107,1
+60514,"Republic of Liberia, Liberia",Liberia,LBR,2015,0.69,36,1
+60515,"Republic of Liberia, Liberia",Liberia,LBR,2016,0.27,14,1
+60516,"Republic of Liberia, Liberia",Liberia,LBR,2017,0.19,10,1
+60589,"Republic of Madagascar, Madagascar",Madagascar,MDG,2000,0.12,6,1
+60590,"Republic of Madagascar, Madagascar",Madagascar,MDG,2001,0.04,2,1
+60591,"Republic of Madagascar, Madagascar",Madagascar,MDG,2002,0.18,8,1
+60592,"Republic of Madagascar, Madagascar",Madagascar,MDG,2003,0.17,9,1
+60593,"Republic of Madagascar, Madagascar",Madagascar,MDG,2004,0.28,14,1
+60594,"Republic of Madagascar, Madagascar",Madagascar,MDG,2005,0.14,7,1
+60595,"Republic of Madagascar, Madagascar",Madagascar,MDG,2006,0.15,8,1
+60596,"Republic of Madagascar, Madagascar",Madagascar,MDG,2007,0.79,38,1
+60597,"Republic of Madagascar, Madagascar",Madagascar,MDG,2008,0.13,6,1
+60598,"Republic of Madagascar, Madagascar",Madagascar,MDG,2009,0.43,42,1
+60599,"Republic of Madagascar, Madagascar",Madagascar,MDG,2010,0.05,6,1
+60600,"Republic of Madagascar, Madagascar",Madagascar,MDG,2011,0.12,13,1
+60601,"Republic of Madagascar, Madagascar",Madagascar,MDG,2012,0.15,14,1
+60602,"Republic of Madagascar, Madagascar",Madagascar,MDG,2013,0.12,9,1
+60603,"Republic of Madagascar, Madagascar",Madagascar,MDG,2014,0.27,18,1
+60604,"Republic of Madagascar, Madagascar",Madagascar,MDG,2015,0.21,11,1
+60605,"Republic of Madagascar, Madagascar",Madagascar,MDG,2016,0.28,15,1
+60606,"Republic of Madagascar, Madagascar",Madagascar,MDG,2017,0.26,14,1
+60625,"Republic of Malawi, Malawi",Malawi,MWI,2000,0.59,29,1
+60626,"Republic of Malawi, Malawi",Malawi,MWI,2001,0.79,38,1
+60627,"Republic of Malawi, Malawi",Malawi,MWI,2002,1.58,72,1
+60628,"Republic of Malawi, Malawi",Malawi,MWI,2003,0.85,45,1
+60629,"Republic of Malawi, Malawi",Malawi,MWI,2004,1.01,51,1
+60630,"Republic of Malawi, Malawi",Malawi,MWI,2005,0.54,27,1
+60631,"Republic of Malawi, Malawi",Malawi,MWI,2006,0.77,40,1
+60632,"Republic of Malawi, Malawi",Malawi,MWI,2007,0.58,28,1
+60633,"Republic of Malawi, Malawi",Malawi,MWI,2008,0.13,6,1
+60634,"Republic of Malawi, Malawi",Malawi,MWI,2009,0.48,47,1
+60635,"Republic of Malawi, Malawi",Malawi,MWI,2010,0.26,30,1
+60636,"Republic of Malawi, Malawi",Malawi,MWI,2011,0.18,19,1
+60637,"Republic of Malawi, Malawi",Malawi,MWI,2012,0.26,24,1
+60638,"Republic of Malawi, Malawi",Malawi,MWI,2013,0.09,7,1
+60639,"Republic of Malawi, Malawi",Malawi,MWI,2014,0.13,9,1
+60640,"Republic of Malawi, Malawi",Malawi,MWI,2015,0.27,14,1
+60641,"Republic of Malawi, Malawi",Malawi,MWI,2016,0.3,16,1
+60642,"Republic of Malawi, Malawi",Malawi,MWI,2017,0.17,9,1
+60661,"Republic of Maldives, Maldives",Maldives,MDV,2000,0.08,4,1
+60662,"Republic of Maldives, Maldives",Maldives,MDV,2001,0.06,3,1
+60663,"Republic of Maldives, Maldives",Maldives,MDV,2002,0.15,7,1
+60664,"Republic of Maldives, Maldives",Maldives,MDV,2003,0.09,5,1
+60665,"Republic of Maldives, Maldives",Maldives,MDV,2004,0.87,44,1
+60666,"Republic of Maldives, Maldives",Maldives,MDV,2005,0.76,38,1
+60667,"Republic of Maldives, Maldives",Maldives,MDV,2006,0.04,2,1
+60668,"Republic of Maldives, Maldives",Maldives,MDV,2007,0.12,6,1
+60669,"Republic of Maldives, Maldives",Maldives,MDV,2008,NA,NA,1
+60670,"Republic of Maldives, Maldives",Maldives,MDV,2009,0.06,6,1
+60671,"Republic of Maldives, Maldives",Maldives,MDV,2010,0.17,20,1
+60672,"Republic of Maldives, Maldives",Maldives,MDV,2011,0.05,5,1
+60673,"Republic of Maldives, Maldives",Maldives,MDV,2012,0.16,15,1
+60674,"Republic of Maldives, Maldives",Maldives,MDV,2013,0.09,7,1
+60675,"Republic of Maldives, Maldives",Maldives,MDV,2014,0.54,36,1
+60676,"Republic of Maldives, Maldives",Maldives,MDV,2015,0.29,15,1
+60677,"Republic of Maldives, Maldives",Maldives,MDV,2016,0.11,6,1
+60678,"Republic of Maldives, Maldives",Maldives,MDV,2017,0.07,4,1
+60697,"Republic of Mali, Mali",Mali,MLI,2000,0.22,11,1
+60698,"Republic of Mali, Mali",Mali,MLI,2001,0.33,16,1
+60699,"Republic of Mali, Mali",Mali,MLI,2002,0.15,7,1
+60700,"Republic of Mali, Mali",Mali,MLI,2003,0.21,11,1
+60701,"Republic of Mali, Mali",Mali,MLI,2004,0.36,18,1
+60702,"Republic of Mali, Mali",Mali,MLI,2005,0.26,13,1
+60703,"Republic of Mali, Mali",Mali,MLI,2006,0.17,9,1
+60704,"Republic of Mali, Mali",Mali,MLI,2007,0.4,19,1
+60705,"Republic of Mali, Mali",Mali,MLI,2008,0.27,12,1
+60706,"Republic of Mali, Mali",Mali,MLI,2009,0.42,41,1
+60707,"Republic of Mali, Mali",Mali,MLI,2010,0.32,37,1
+60708,"Republic of Mali, Mali",Mali,MLI,2011,0.26,28,1
+60709,"Republic of Mali, Mali",Mali,MLI,2012,0.85,79,1
+60710,"Republic of Mali, Mali",Mali,MLI,2013,1.37,105,1
+60711,"Republic of Mali, Mali",Mali,MLI,2014,0.7,47,1
+60712,"Republic of Mali, Mali",Mali,MLI,2015,0.67,35,1
+60713,"Republic of Mali, Mali",Mali,MLI,2016,0.28,15,1
+60714,"Republic of Mali, Mali",Mali,MLI,2017,0.32,17,1
+60769,"Republic of Mauritius, Mauritius",Mauritius,MUS,2000,0.18,9,1
+60770,"Republic of Mauritius, Mauritius",Mauritius,MUS,2001,0.15,7,1
+60771,"Republic of Mauritius, Mauritius",Mauritius,MUS,2002,0.39,18,1
+60772,"Republic of Mauritius, Mauritius",Mauritius,MUS,2003,0.26,14,1
+60773,"Republic of Mauritius, Mauritius",Mauritius,MUS,2004,0.48,24,1
+60774,"Republic of Mauritius, Mauritius",Mauritius,MUS,2005,0.42,21,1
+60775,"Republic of Mauritius, Mauritius",Mauritius,MUS,2006,0.29,15,1
+60776,"Republic of Mauritius, Mauritius",Mauritius,MUS,2007,0.27,13,1
+60777,"Republic of Mauritius, Mauritius",Mauritius,MUS,2008,0.16,7,1
+60778,"Republic of Mauritius, Mauritius",Mauritius,MUS,2009,0.25,24,1
+60779,"Republic of Mauritius, Mauritius",Mauritius,MUS,2010,0.17,20,1
+60780,"Republic of Mauritius, Mauritius",Mauritius,MUS,2011,0.11,12,1
+60781,"Republic of Mauritius, Mauritius",Mauritius,MUS,2012,0.18,17,1
+60782,"Republic of Mauritius, Mauritius",Mauritius,MUS,2013,0.18,14,1
+60783,"Republic of Mauritius, Mauritius",Mauritius,MUS,2014,0.12,8,1
+60784,"Republic of Mauritius, Mauritius",Mauritius,MUS,2015,0.19,10,1
+60785,"Republic of Mauritius, Mauritius",Mauritius,MUS,2016,0.19,10,1
+60786,"Republic of Mauritius, Mauritius",Mauritius,MUS,2017,0.09,5,1
+60805,"Republic of Moldova, Moldova",Moldova,MDA,2000,0.14,7,1
+60806,"Republic of Moldova, Moldova",Moldova,MDA,2001,0.04,2,1
+60807,"Republic of Moldova, Moldova",Moldova,MDA,2002,0.09,4,1
+60808,"Republic of Moldova, Moldova",Moldova,MDA,2003,0.04,2,1
+60809,"Republic of Moldova, Moldova",Moldova,MDA,2004,0.02,1,1
+60810,"Republic of Moldova, Moldova",Moldova,MDA,2005,0.1,5,1
+60811,"Republic of Moldova, Moldova",Moldova,MDA,2006,0.1,5,1
+60812,"Republic of Moldova, Moldova",Moldova,MDA,2007,0.1,5,1
+60813,"Republic of Moldova, Moldova",Moldova,MDA,2008,0.2,9,1
+60814,"Republic of Moldova, Moldova",Moldova,MDA,2009,0.17,17,1
+60815,"Republic of Moldova, Moldova",Moldova,MDA,2010,0.3,35,1
+60816,"Republic of Moldova, Moldova",Moldova,MDA,2011,0.02,2,1
+60817,"Republic of Moldova, Moldova",Moldova,MDA,2012,0.1,9,1
+60818,"Republic of Moldova, Moldova",Moldova,MDA,2013,0.23,18,1
+60819,"Republic of Moldova, Moldova",Moldova,MDA,2014,0.31,21,1
+60820,"Republic of Moldova, Moldova",Moldova,MDA,2015,0.13,7,1
+60821,"Republic of Moldova, Moldova",Moldova,MDA,2016,0.08,4,1
+60822,"Republic of Moldova, Moldova",Moldova,MDA,2017,0.19,10,1
+60841,"Republic of Mozambique, Mozambique",Mozambique,MOZ,2000,2.35,115,1
+60842,"Republic of Mozambique, Mozambique",Mozambique,MOZ,2001,1.53,73,1
+60843,"Republic of Mozambique, Mozambique",Mozambique,MOZ,2002,1.88,86,1
+60844,"Republic of Mozambique, Mozambique",Mozambique,MOZ,2003,1.72,91,1
+60845,"Republic of Mozambique, Mozambique",Mozambique,MOZ,2004,1.51,76,1
+60846,"Republic of Mozambique, Mozambique",Mozambique,MOZ,2005,1.2,60,1
+60847,"Republic of Mozambique, Mozambique",Mozambique,MOZ,2006,0.72,37,1
+60848,"Republic of Mozambique, Mozambique",Mozambique,MOZ,2007,1.02,49,1
+60849,"Republic of Mozambique, Mozambique",Mozambique,MOZ,2008,0.31,14,1
+60850,"Republic of Mozambique, Mozambique",Mozambique,MOZ,2009,0.79,77,1
+60851,"Republic of Mozambique, Mozambique",Mozambique,MOZ,2010,0.46,53,1
+60852,"Republic of Mozambique, Mozambique",Mozambique,MOZ,2011,0.73,79,1
+60853,"Republic of Mozambique, Mozambique",Mozambique,MOZ,2012,0.47,44,1
+60854,"Republic of Mozambique, Mozambique",Mozambique,MOZ,2013,0.42,32,1
+60855,"Republic of Mozambique, Mozambique",Mozambique,MOZ,2014,0.4,27,1
+60856,"Republic of Mozambique, Mozambique",Mozambique,MOZ,2015,0.42,22,1
+60857,"Republic of Mozambique, Mozambique",Mozambique,MOZ,2016,0.42,22,1
+60858,"Republic of Mozambique, Mozambique",Mozambique,MOZ,2017,0.39,21,1
+60877,"Republic of Namibia, Namibia",Namibia,NAM,2000,0.71,35,1
+60878,"Republic of Namibia, Namibia",Namibia,NAM,2001,0.67,32,1
+60879,"Republic of Namibia, Namibia",Namibia,NAM,2002,0.57,26,1
+60880,"Republic of Namibia, Namibia",Namibia,NAM,2003,0.4,21,1
+60881,"Republic of Namibia, Namibia",Namibia,NAM,2004,0.56,28,1
+60882,"Republic of Namibia, Namibia",Namibia,NAM,2005,0.26,13,1
+60883,"Republic of Namibia, Namibia",Namibia,NAM,2006,0.35,18,1
+60884,"Republic of Namibia, Namibia",Namibia,NAM,2007,0.5,24,1
+60885,"Republic of Namibia, Namibia",Namibia,NAM,2008,0.2,9,1
+60886,"Republic of Namibia, Namibia",Namibia,NAM,2009,0.23,22,1
+60887,"Republic of Namibia, Namibia",Namibia,NAM,2010,0.15,17,1
+60888,"Republic of Namibia, Namibia",Namibia,NAM,2011,0.11,12,1
+60889,"Republic of Namibia, Namibia",Namibia,NAM,2012,0.06,6,1
+60890,"Republic of Namibia, Namibia",Namibia,NAM,2013,0.17,13,1
+60891,"Republic of Namibia, Namibia",Namibia,NAM,2014,0.18,12,1
+60892,"Republic of Namibia, Namibia",Namibia,NAM,2015,0.38,20,1
+60893,"Republic of Namibia, Namibia",Namibia,NAM,2016,0.85,45,1
+60894,"Republic of Namibia, Namibia",Namibia,NAM,2017,0.69,37,1
+60913,"Republic of Nicaragua, Nicaragua",Nicaragua,NIC,2000,0.08,4,1
+60914,"Republic of Nicaragua, Nicaragua",Nicaragua,NIC,2001,0.1,5,1
+60915,"Republic of Nicaragua, Nicaragua",Nicaragua,NIC,2002,0.15,7,1
+60916,"Republic of Nicaragua, Nicaragua",Nicaragua,NIC,2003,0.21,11,1
+60917,"Republic of Nicaragua, Nicaragua",Nicaragua,NIC,2004,0.28,14,1
+60918,"Republic of Nicaragua, Nicaragua",Nicaragua,NIC,2005,0.24,12,1
+60919,"Republic of Nicaragua, Nicaragua",Nicaragua,NIC,2006,0.17,9,1
+60920,"Republic of Nicaragua, Nicaragua",Nicaragua,NIC,2007,0.35,17,1
+60921,"Republic of Nicaragua, Nicaragua",Nicaragua,NIC,2008,0.47,21,1
+60922,"Republic of Nicaragua, Nicaragua",Nicaragua,NIC,2009,0.37,36,1
+60923,"Republic of Nicaragua, Nicaragua",Nicaragua,NIC,2010,0.26,30,1
+60924,"Republic of Nicaragua, Nicaragua",Nicaragua,NIC,2011,0.31,34,1
+60925,"Republic of Nicaragua, Nicaragua",Nicaragua,NIC,2012,0.03,3,1
+60926,"Republic of Nicaragua, Nicaragua",Nicaragua,NIC,2013,0.22,17,1
+60927,"Republic of Nicaragua, Nicaragua",Nicaragua,NIC,2014,0.09,6,1
+60928,"Republic of Nicaragua, Nicaragua",Nicaragua,NIC,2015,0.06,3,1
+60929,"Republic of Nicaragua, Nicaragua",Nicaragua,NIC,2016,0.13,7,1
+60930,"Republic of Nicaragua, Nicaragua",Nicaragua,NIC,2017,0.02,1,1
+60949,"Republic of Niger, Niger",Niger,NER,2000,0.12,6,1
+60950,"Republic of Niger, Niger",Niger,NER,2001,0.1,5,1
+60951,"Republic of Niger, Niger",Niger,NER,2002,0.11,5,1
+60952,"Republic of Niger, Niger",Niger,NER,2003,0.23,12,1
+60953,"Republic of Niger, Niger",Niger,NER,2004,0.3,15,1
+60954,"Republic of Niger, Niger",Niger,NER,2005,0.58,29,1
+60955,"Republic of Niger, Niger",Niger,NER,2006,0.27,14,1
+60956,"Republic of Niger, Niger",Niger,NER,2007,0.5,24,1
+60957,"Republic of Niger, Niger",Niger,NER,2008,0.07,3,1
+60958,"Republic of Niger, Niger",Niger,NER,2009,0.41,40,1
+60959,"Republic of Niger, Niger",Niger,NER,2010,0.38,44,1
+60960,"Republic of Niger, Niger",Niger,NER,2011,0.27,29,1
+60961,"Republic of Niger, Niger",Niger,NER,2012,0.44,41,1
+60962,"Republic of Niger, Niger",Niger,NER,2013,0.38,29,1
+60963,"Republic of Niger, Niger",Niger,NER,2014,0.15,10,1
+60964,"Republic of Niger, Niger",Niger,NER,2015,0.34,18,1
+60965,"Republic of Niger, Niger",Niger,NER,2016,0.36,19,1
+60966,"Republic of Niger, Niger",Niger,NER,2017,0.3,16,1
+61021,"Republic of Panama, Panama",Panama,PAN,2000,0.18,9,1
+61022,"Republic of Panama, Panama",Panama,PAN,2001,0.21,10,1
+61023,"Republic of Panama, Panama",Panama,PAN,2002,0.18,8,1
+61024,"Republic of Panama, Panama",Panama,PAN,2003,0.19,10,1
+61025,"Republic of Panama, Panama",Panama,PAN,2004,0.16,8,1
+61026,"Republic of Panama, Panama",Panama,PAN,2005,0.24,12,1
+61027,"Republic of Panama, Panama",Panama,PAN,2006,0.31,16,1
+61028,"Republic of Panama, Panama",Panama,PAN,2007,0.17,8,1
+61029,"Republic of Panama, Panama",Panama,PAN,2008,0.43,19,1
+61030,"Republic of Panama, Panama",Panama,PAN,2009,0.23,22,1
+61031,"Republic of Panama, Panama",Panama,PAN,2010,0.25,29,1
+61032,"Republic of Panama, Panama",Panama,PAN,2011,0.18,20,1
+61033,"Republic of Panama, Panama",Panama,PAN,2012,0.05,5,1
+61034,"Republic of Panama, Panama",Panama,PAN,2013,0.26,20,1
+61035,"Republic of Panama, Panama",Panama,PAN,2014,0.07,5,1
+61036,"Republic of Panama, Panama",Panama,PAN,2015,0.15,8,1
+61037,"Republic of Panama, Panama",Panama,PAN,2016,0.08,4,1
+61038,"Republic of Panama, Panama",Panama,PAN,2017,0.13,7,1
+61057,"Republic of Paraguay, Paraguay",Paraguay,PRY,2000,0.08,4,1
+61058,"Republic of Paraguay, Paraguay",Paraguay,PRY,2001,0.19,9,1
+61059,"Republic of Paraguay, Paraguay",Paraguay,PRY,2002,0.09,4,1
+61060,"Republic of Paraguay, Paraguay",Paraguay,PRY,2003,0.19,10,1
+61061,"Republic of Paraguay, Paraguay",Paraguay,PRY,2004,0.16,8,1
+61062,"Republic of Paraguay, Paraguay",Paraguay,PRY,2005,0.2,10,1
+61063,"Republic of Paraguay, Paraguay",Paraguay,PRY,2006,0.19,10,1
+61064,"Republic of Paraguay, Paraguay",Paraguay,PRY,2007,0.17,8,1
+61065,"Republic of Paraguay, Paraguay",Paraguay,PRY,2008,0.04,2,1
+61066,"Republic of Paraguay, Paraguay",Paraguay,PRY,2009,0.13,13,1
+61067,"Republic of Paraguay, Paraguay",Paraguay,PRY,2010,0.21,24,1
+61068,"Republic of Paraguay, Paraguay",Paraguay,PRY,2011,0.17,18,1
+61069,"Republic of Paraguay, Paraguay",Paraguay,PRY,2012,0.04,4,1
+61070,"Republic of Paraguay, Paraguay",Paraguay,PRY,2013,0.25,19,1
+61071,"Republic of Paraguay, Paraguay",Paraguay,PRY,2014,0.01,1,1
+61072,"Republic of Paraguay, Paraguay",Paraguay,PRY,2015,0.04,2,1
+61073,"Republic of Paraguay, Paraguay",Paraguay,PRY,2016,0.08,4,1
+61074,"Republic of Paraguay, Paraguay",Paraguay,PRY,2017,0.04,2,1
+61093,"Republic of Peru, Peru",Peru,PER,2000,0.53,26,1
+61094,"Republic of Peru, Peru",Peru,PER,2001,0.5,24,1
+61095,"Republic of Peru, Peru",Peru,PER,2002,0.55,25,1
+61096,"Republic of Peru, Peru",Peru,PER,2003,0.58,31,1
+61097,"Republic of Peru, Peru",Peru,PER,2004,0.5,25,1
+61098,"Republic of Peru, Peru",Peru,PER,2005,0.52,26,1
+61099,"Republic of Peru, Peru",Peru,PER,2006,0.43,22,1
+61100,"Republic of Peru, Peru",Peru,PER,2007,0.81,39,1
+61101,"Republic of Peru, Peru",Peru,PER,2008,1.48,66,1
+61102,"Republic of Peru, Peru",Peru,PER,2009,0.3,29,1
+61103,"Republic of Peru, Peru",Peru,PER,2010,0.68,78,1
+61104,"Republic of Peru, Peru",Peru,PER,2011,0.59,64,1
+61105,"Republic of Peru, Peru",Peru,PER,2012,0.31,29,1
+61106,"Republic of Peru, Peru",Peru,PER,2013,0.61,47,1
+61107,"Republic of Peru, Peru",Peru,PER,2014,0.31,21,1
+61108,"Republic of Peru, Peru",Peru,PER,2015,0.91,48,1
+61109,"Republic of Peru, Peru",Peru,PER,2016,0.95,50,1
+61110,"Republic of Peru, Peru",Peru,PER,2017,0.58,31,1
+61165,"Republic of Rwanda, Rwanda",Rwanda,RWA,2000,0.84,41,1
+61166,"Republic of Rwanda, Rwanda",Rwanda,RWA,2001,1.23,59,1
+61167,"Republic of Rwanda, Rwanda",Rwanda,RWA,2002,1.23,56,1
+61168,"Republic of Rwanda, Rwanda",Rwanda,RWA,2003,1.11,59,1
+61169,"Republic of Rwanda, Rwanda",Rwanda,RWA,2004,1.61,81,1
+61170,"Republic of Rwanda, Rwanda",Rwanda,RWA,2005,0.74,37,1
+61171,"Republic of Rwanda, Rwanda",Rwanda,RWA,2006,0.45,23,1
+61172,"Republic of Rwanda, Rwanda",Rwanda,RWA,2007,0.5,24,1
+61173,"Republic of Rwanda, Rwanda",Rwanda,RWA,2008,0.36,16,1
+61174,"Republic of Rwanda, Rwanda",Rwanda,RWA,2009,0.39,38,1
+61175,"Republic of Rwanda, Rwanda",Rwanda,RWA,2010,0.3,35,1
+61176,"Republic of Rwanda, Rwanda",Rwanda,RWA,2011,0.27,29,1
+61177,"Republic of Rwanda, Rwanda",Rwanda,RWA,2012,0.3,28,1
+61178,"Republic of Rwanda, Rwanda",Rwanda,RWA,2013,0.57,44,1
+61179,"Republic of Rwanda, Rwanda",Rwanda,RWA,2014,0.61,41,1
+61180,"Republic of Rwanda, Rwanda",Rwanda,RWA,2015,1.07,56,1
+61181,"Republic of Rwanda, Rwanda",Rwanda,RWA,2016,1.1,58,1
+61182,"Republic of Rwanda, Rwanda",Rwanda,RWA,2017,1.38,74,1
+61201,"Republic of Senegal, Senegal",Senegal,SEN,2000,0.43,21,1
+61202,"Republic of Senegal, Senegal",Senegal,SEN,2001,0.48,23,1
+61203,"Republic of Senegal, Senegal",Senegal,SEN,2002,0.61,28,1
+61204,"Republic of Senegal, Senegal",Senegal,SEN,2003,0.57,30,1
+61205,"Republic of Senegal, Senegal",Senegal,SEN,2004,0.67,34,1
+61206,"Republic of Senegal, Senegal",Senegal,SEN,2005,0.38,19,1
+61207,"Republic of Senegal, Senegal",Senegal,SEN,2006,0.5,26,1
+61208,"Republic of Senegal, Senegal",Senegal,SEN,2007,0.71,34,1
+61209,"Republic of Senegal, Senegal",Senegal,SEN,2008,0.58,26,1
+61210,"Republic of Senegal, Senegal",Senegal,SEN,2009,0.36,35,1
+61211,"Republic of Senegal, Senegal",Senegal,SEN,2010,0.25,29,1
+61212,"Republic of Senegal, Senegal",Senegal,SEN,2011,0.18,20,1
+61213,"Republic of Senegal, Senegal",Senegal,SEN,2012,0.25,23,1
+61214,"Republic of Senegal, Senegal",Senegal,SEN,2013,0.39,30,1
+61215,"Republic of Senegal, Senegal",Senegal,SEN,2014,0.33,22,1
+61216,"Republic of Senegal, Senegal",Senegal,SEN,2015,0.29,15,1
+61217,"Republic of Senegal, Senegal",Senegal,SEN,2016,0.34,18,1
+61218,"Republic of Senegal, Senegal",Senegal,SEN,2017,0.26,14,1
+61237,"Republic of Seychelles, Seychelles",Seychelles,SYC,2000,0.12,6,1
+61238,"Republic of Seychelles, Seychelles",Seychelles,SYC,2001,0.13,6,1
+61239,"Republic of Seychelles, Seychelles",Seychelles,SYC,2002,0.26,12,1
+61240,"Republic of Seychelles, Seychelles",Seychelles,SYC,2003,0.11,6,1
+61241,"Republic of Seychelles, Seychelles",Seychelles,SYC,2004,0.26,13,1
+61242,"Republic of Seychelles, Seychelles",Seychelles,SYC,2005,0.18,9,1
+61243,"Republic of Seychelles, Seychelles",Seychelles,SYC,2006,0.15,8,1
+61244,"Republic of Seychelles, Seychelles",Seychelles,SYC,2007,0.15,7,1
+61245,"Republic of Seychelles, Seychelles",Seychelles,SYC,2008,0.09,4,1
+61246,"Republic of Seychelles, Seychelles",Seychelles,SYC,2009,0.1,10,1
+61247,"Republic of Seychelles, Seychelles",Seychelles,SYC,2010,0.16,18,1
+61248,"Republic of Seychelles, Seychelles",Seychelles,SYC,2011,0.06,6,1
+61249,"Republic of Seychelles, Seychelles",Seychelles,SYC,2012,0.09,8,1
+61250,"Republic of Seychelles, Seychelles",Seychelles,SYC,2013,0.01,1,1
+61251,"Republic of Seychelles, Seychelles",Seychelles,SYC,2014,0.06,4,1
+61252,"Republic of Seychelles, Seychelles",Seychelles,SYC,2015,0.1,5,1
+61253,"Republic of Seychelles, Seychelles",Seychelles,SYC,2016,0.04,2,1
+61254,"Republic of Seychelles, Seychelles",Seychelles,SYC,2017,0.09,5,1
+61273,"Republic of Sierra Leone, Sierra Leone",Sierra Leone,SLE,2000,0.53,26,1
+61274,"Republic of Sierra Leone, Sierra Leone",Sierra Leone,SLE,2001,0.56,27,1
+61275,"Republic of Sierra Leone, Sierra Leone",Sierra Leone,SLE,2002,0.63,29,1
+61276,"Republic of Sierra Leone, Sierra Leone",Sierra Leone,SLE,2003,0.23,12,1
+61277,"Republic of Sierra Leone, Sierra Leone",Sierra Leone,SLE,2004,0.32,16,1
+61278,"Republic of Sierra Leone, Sierra Leone",Sierra Leone,SLE,2005,0.14,7,1
+61279,"Republic of Sierra Leone, Sierra Leone",Sierra Leone,SLE,2006,0.1,5,1
+61280,"Republic of Sierra Leone, Sierra Leone",Sierra Leone,SLE,2007,0.19,9,1
+61281,"Republic of Sierra Leone, Sierra Leone",Sierra Leone,SLE,2008,0.07,3,1
+61282,"Republic of Sierra Leone, Sierra Leone",Sierra Leone,SLE,2009,0.17,17,1
+61283,"Republic of Sierra Leone, Sierra Leone",Sierra Leone,SLE,2010,0.31,36,1
+61284,"Republic of Sierra Leone, Sierra Leone",Sierra Leone,SLE,2011,0.09,10,1
+61285,"Republic of Sierra Leone, Sierra Leone",Sierra Leone,SLE,2012,0.1,9,1
+61286,"Republic of Sierra Leone, Sierra Leone",Sierra Leone,SLE,2013,0.25,19,1
+61287,"Republic of Sierra Leone, Sierra Leone",Sierra Leone,SLE,2014,1.48,99,1
+61288,"Republic of Sierra Leone, Sierra Leone",Sierra Leone,SLE,2015,0.69,36,1
+61289,"Republic of Sierra Leone, Sierra Leone",Sierra Leone,SLE,2016,0.25,13,1
+61290,"Republic of Sierra Leone, Sierra Leone",Sierra Leone,SLE,2017,0.24,13,1
+61381,"Republic of South Africa, South Africa",South Africa,ZAF,2000,3.43,168,1
+61382,"Republic of South Africa, South Africa",South Africa,ZAF,2001,3.62,173,1
+61383,"Republic of South Africa, South Africa",South Africa,ZAF,2002,4.68,214,1
+61384,"Republic of South Africa, South Africa",South Africa,ZAF,2003,2.7,143,1
+61385,"Republic of South Africa, South Africa",South Africa,ZAF,2004,2.4,121,1
+61386,"Republic of South Africa, South Africa",South Africa,ZAF,2005,2.67,134,1
+61387,"Republic of South Africa, South Africa",South Africa,ZAF,2006,2.69,139,1
+61388,"Republic of South Africa, South Africa",South Africa,ZAF,2007,2.79,134,1
+61389,"Republic of South Africa, South Africa",South Africa,ZAF,2008,1.37,61,1
+61390,"Republic of South Africa, South Africa",South Africa,ZAF,2009,2.01,196,1
+61391,"Republic of South Africa, South Africa",South Africa,ZAF,2010,1.52,175,1
+61392,"Republic of South Africa, South Africa",South Africa,ZAF,2011,2.29,248,1
+61393,"Republic of South Africa, South Africa",South Africa,ZAF,2012,2.48,232,1
+61394,"Republic of South Africa, South Africa",South Africa,ZAF,2013,3.62,278,1
+61395,"Republic of South Africa, South Africa",South Africa,ZAF,2014,1.81,121,1
+61396,"Republic of South Africa, South Africa",South Africa,ZAF,2015,2.73,143,1
+61397,"Republic of South Africa, South Africa",South Africa,ZAF,2016,2.77,146,1
+61398,"Republic of South Africa, South Africa",South Africa,ZAF,2017,2.73,146,1
+61417,"Republic of Suriname, Suriname",Suriname,SUR,2000,0.04,2,1
+61418,"Republic of Suriname, Suriname",Suriname,SUR,2001,0.02,1,1
+61419,"Republic of Suriname, Suriname",Suriname,SUR,2002,0.02,1,1
+61420,"Republic of Suriname, Suriname",Suriname,SUR,2003,NA,NA,1
+61421,"Republic of Suriname, Suriname",Suriname,SUR,2004,0.02,1,1
+61422,"Republic of Suriname, Suriname",Suriname,SUR,2005,0.02,1,1
+61423,"Republic of Suriname, Suriname",Suriname,SUR,2006,0.04,2,1
+61424,"Republic of Suriname, Suriname",Suriname,SUR,2007,0.02,1,1
+61425,"Republic of Suriname, Suriname",Suriname,SUR,2008,0.07,3,1
+61426,"Republic of Suriname, Suriname",Suriname,SUR,2009,0.01,1,1
+61427,"Republic of Suriname, Suriname",Suriname,SUR,2010,0.03,4,1
+61428,"Republic of Suriname, Suriname",Suriname,SUR,2011,0.03,3,1
+61429,"Republic of Suriname, Suriname",Suriname,SUR,2012,0.04,4,1
+61430,"Republic of Suriname, Suriname",Suriname,SUR,2013,0.03,2,1
+61431,"Republic of Suriname, Suriname",Suriname,SUR,2014,0.04,3,1
+61432,"Republic of Suriname, Suriname",Suriname,SUR,2015,NA,NA,1
+61433,"Republic of Suriname, Suriname",Suriname,SUR,2016,0.06,3,1
+61434,"Republic of Suriname, Suriname",Suriname,SUR,2017,0.02,1,1
+61453,"Republic of Tajikistan, Tajikistan",Tajikistan,TJK,2000,0.14,7,1
+61454,"Republic of Tajikistan, Tajikistan",Tajikistan,TJK,2001,0.4,19,1
+61455,"Republic of Tajikistan, Tajikistan",Tajikistan,TJK,2002,0.35,16,1
+61456,"Republic of Tajikistan, Tajikistan",Tajikistan,TJK,2003,0.09,5,1
+61457,"Republic of Tajikistan, Tajikistan",Tajikistan,TJK,2004,0.12,6,1
+61458,"Republic of Tajikistan, Tajikistan",Tajikistan,TJK,2005,0.22,11,1
+61459,"Republic of Tajikistan, Tajikistan",Tajikistan,TJK,2006,0.29,15,1
+61460,"Republic of Tajikistan, Tajikistan",Tajikistan,TJK,2007,0.25,12,1
+61461,"Republic of Tajikistan, Tajikistan",Tajikistan,TJK,2008,0.43,19,1
+61462,"Republic of Tajikistan, Tajikistan",Tajikistan,TJK,2009,0.29,28,1
+61463,"Republic of Tajikistan, Tajikistan",Tajikistan,TJK,2010,0.14,16,1
+61464,"Republic of Tajikistan, Tajikistan",Tajikistan,TJK,2011,0.28,30,1
+61465,"Republic of Tajikistan, Tajikistan",Tajikistan,TJK,2012,0.19,18,1
+61466,"Republic of Tajikistan, Tajikistan",Tajikistan,TJK,2013,0.27,21,1
+61467,"Republic of Tajikistan, Tajikistan",Tajikistan,TJK,2014,0.48,32,1
+61468,"Republic of Tajikistan, Tajikistan",Tajikistan,TJK,2015,0.3,16,1
+61469,"Republic of Tajikistan, Tajikistan",Tajikistan,TJK,2016,0.27,14,1
+61470,"Republic of Tajikistan, Tajikistan",Tajikistan,TJK,2017,0.36,19,1
+61507,"Republic of the Marshall Islands, Marshall Islands",Marshall Islands,MHL,2000,0.06,3,1
+61508,"Republic of the Marshall Islands, Marshall Islands",Marshall Islands,MHL,2001,NA,NA,1
+61509,"Republic of the Marshall Islands, Marshall Islands",Marshall Islands,MHL,2002,NA,NA,1
+61510,"Republic of the Marshall Islands, Marshall Islands",Marshall Islands,MHL,2003,NA,NA,1
+61511,"Republic of the Marshall Islands, Marshall Islands",Marshall Islands,MHL,2004,0.06,3,1
+61512,"Republic of the Marshall Islands, Marshall Islands",Marshall Islands,MHL,2005,0.04,2,1
+61513,"Republic of the Marshall Islands, Marshall Islands",Marshall Islands,MHL,2006,0.06,3,1
+61514,"Republic of the Marshall Islands, Marshall Islands",Marshall Islands,MHL,2007,0.06,3,1
+61515,"Republic of the Marshall Islands, Marshall Islands",Marshall Islands,MHL,2008,0.09,4,1
+61516,"Republic of the Marshall Islands, Marshall Islands",Marshall Islands,MHL,2009,0.06,6,1
+61517,"Republic of the Marshall Islands, Marshall Islands",Marshall Islands,MHL,2010,0.03,3,1
+61518,"Republic of the Marshall Islands, Marshall Islands",Marshall Islands,MHL,2011,0.06,6,1
+61519,"Republic of the Marshall Islands, Marshall Islands",Marshall Islands,MHL,2012,0.06,6,1
+61520,"Republic of the Marshall Islands, Marshall Islands",Marshall Islands,MHL,2013,0.18,14,1
+61521,"Republic of the Marshall Islands, Marshall Islands",Marshall Islands,MHL,2014,0.01,1,1
+61522,"Republic of the Marshall Islands, Marshall Islands",Marshall Islands,MHL,2015,0.17,9,1
+61523,"Republic of the Marshall Islands, Marshall Islands",Marshall Islands,MHL,2016,NA,NA,1
+61524,"Republic of the Marshall Islands, Marshall Islands",Marshall Islands,MHL,2017,0.02,1,1
+61543,"Republic of the Philippines, Philippines",Philippines,PHL,2000,1.29,63,1
+61544,"Republic of the Philippines, Philippines",Philippines,PHL,2001,1.27,61,1
+61545,"Republic of the Philippines, Philippines",Philippines,PHL,2002,2.1,96,1
+61546,"Republic of the Philippines, Philippines",Philippines,PHL,2003,2.42,128,1
+61547,"Republic of the Philippines, Philippines",Philippines,PHL,2004,2.26,114,1
+61548,"Republic of the Philippines, Philippines",Philippines,PHL,2005,2.04,102,1
+61549,"Republic of the Philippines, Philippines",Philippines,PHL,2006,1.66,86,1
+61550,"Republic of the Philippines, Philippines",Philippines,PHL,2007,1.58,76,1
+61551,"Republic of the Philippines, Philippines",Philippines,PHL,2008,1.21,54,1
+61552,"Republic of the Philippines, Philippines",Philippines,PHL,2009,2.33,227,1
+61553,"Republic of the Philippines, Philippines",Philippines,PHL,2010,2.88,183,1
+61554,"Republic of the Philippines, Philippines",Philippines,PHL,2011,2.05,221,1
+61555,"Republic of the Philippines, Philippines",Philippines,PHL,2012,1.88,176,1
+61556,"Republic of the Philippines, Philippines",Philippines,PHL,2013,3.27,251,1
+61557,"Republic of the Philippines, Philippines",Philippines,PHL,2014,1.48,99,1
+61558,"Republic of the Philippines, Philippines",Philippines,PHL,2015,1.47,77,1
+61559,"Republic of the Philippines, Philippines",Philippines,PHL,2016,1.23,65,1
+61560,"Republic of the Philippines, Philippines",Philippines,PHL,2017,1.05,56,1
+61579,"Republic of the Sudan, Sudan",South Sudan,SSD,2000,0.61,30,1
+61580,"Republic of the Sudan, Sudan",South Sudan,SSD,2001,0.71,34,1
+61581,"Republic of the Sudan, Sudan",South Sudan,SSD,2002,0.88,40,1
+61582,"Republic of the Sudan, Sudan",South Sudan,SSD,2003,0.72,38,1
+61583,"Republic of the Sudan, Sudan",South Sudan,SSD,2004,2.6,131,1
+61584,"Republic of the Sudan, Sudan",South Sudan,SSD,2005,1.98,99,1
+61585,"Republic of the Sudan, Sudan",South Sudan,SSD,2006,2.61,135,1
+61586,"Republic of the Sudan, Sudan",South Sudan,SSD,2007,2.33,112,1
+61587,"Republic of the Sudan, Sudan",South Sudan,SSD,2008,1.01,45,1
+61588,"Republic of the Sudan, Sudan",South Sudan,SSD,2009,1.33,129,1
+61589,"Republic of the Sudan, Sudan",South Sudan,SSD,2010,1.24,142,1
+61590,"Republic of the Sudan, Sudan",South Sudan,SSD,2011,0.87,94,1
+61591,"Republic of the Sudan, Sudan",South Sudan,SSD,2012,0.56,52,1
+61592,"Republic of the Sudan, Sudan",South Sudan,SSD,2013,0.87,67,1
+61593,"Republic of the Sudan, Sudan",South Sudan,SSD,2014,0.91,61,1
+61594,"Republic of the Sudan, Sudan",South Sudan,SSD,2015,0.78,41,1
+61595,"Republic of the Sudan, Sudan",South Sudan,SSD,2016,1.33,70,1
+61596,"Republic of the Sudan, Sudan",South Sudan,SSD,2017,2.54,136,1
+61651,"Republic of Tunisia, Tunisia",Tunisia,TUN,2000,0.37,18,1
+61652,"Republic of Tunisia, Tunisia",Tunisia,TUN,2001,0.33,16,1
+61653,"Republic of Tunisia, Tunisia",Tunisia,TUN,2002,0.22,10,1
+61654,"Republic of Tunisia, Tunisia",Tunisia,TUN,2003,0.15,8,1
+61655,"Republic of Tunisia, Tunisia",Tunisia,TUN,2004,0.63,32,1
+61656,"Republic of Tunisia, Tunisia",Tunisia,TUN,2005,0.32,16,1
+61657,"Republic of Tunisia, Tunisia",Tunisia,TUN,2006,0.25,13,1
+61658,"Republic of Tunisia, Tunisia",Tunisia,TUN,2007,0.08,4,1
+61659,"Republic of Tunisia, Tunisia",Tunisia,TUN,2008,0.34,15,1
+61660,"Republic of Tunisia, Tunisia",Tunisia,TUN,2009,0.29,28,1
+61661,"Republic of Tunisia, Tunisia",Tunisia,TUN,2010,0.35,40,1
+61662,"Republic of Tunisia, Tunisia",Tunisia,TUN,2011,1.87,202,1
+61663,"Republic of Tunisia, Tunisia",Tunisia,TUN,2012,0.6,56,1
+61664,"Republic of Tunisia, Tunisia",Tunisia,TUN,2013,0.23,18,1
+61665,"Republic of Tunisia, Tunisia",Tunisia,TUN,2014,0.13,9,1
+61666,"Republic of Tunisia, Tunisia",Tunisia,TUN,2015,0.38,20,1
+61667,"Republic of Tunisia, Tunisia",Tunisia,TUN,2016,0.36,19,1
+61668,"Republic of Tunisia, Tunisia",Tunisia,TUN,2017,0.77,41,1
+61723,"Republic of Uganda, Uganda",Uganda,UGA,2000,2.71,133,1
+61724,"Republic of Uganda, Uganda",Uganda,UGA,2001,3.13,150,1
+61725,"Republic of Uganda, Uganda",Uganda,UGA,2002,2.75,126,1
+61726,"Republic of Uganda, Uganda",Uganda,UGA,2003,3.94,209,1
+61727,"Republic of Uganda, Uganda",Uganda,UGA,2004,3.88,197,1
+61728,"Republic of Uganda, Uganda",Uganda,UGA,2005,3.09,155,1
+61729,"Republic of Uganda, Uganda",Uganda,UGA,2006,2.19,113,1
+61730,"Republic of Uganda, Uganda",Uganda,UGA,2007,2.1,101,1
+61731,"Republic of Uganda, Uganda",Uganda,UGA,2008,0.67,30,1
+61732,"Republic of Uganda, Uganda",Uganda,UGA,2009,0.93,91,1
+61733,"Republic of Uganda, Uganda",Uganda,UGA,2010,0.71,81,1
+61734,"Republic of Uganda, Uganda",Uganda,UGA,2011,0.68,74,1
+61735,"Republic of Uganda, Uganda",Uganda,UGA,2012,0.52,49,1
+61736,"Republic of Uganda, Uganda",Uganda,UGA,2013,0.78,60,1
+61737,"Republic of Uganda, Uganda",Uganda,UGA,2014,1.11,74,1
+61738,"Republic of Uganda, Uganda",Uganda,UGA,2015,0.86,45,1
+61739,"Republic of Uganda, Uganda",Uganda,UGA,2016,1.04,55,1
+61740,"Republic of Uganda, Uganda",Uganda,UGA,2017,1.46,78,1
+61759,"Republic of Uzbekistan, Uzbekistan",Uzbekistan,UZB,2000,0.14,7,1
+61760,"Republic of Uzbekistan, Uzbekistan",Uzbekistan,UZB,2001,0.29,14,1
+61761,"Republic of Uzbekistan, Uzbekistan",Uzbekistan,UZB,2002,0.28,13,1
+61762,"Republic of Uzbekistan, Uzbekistan",Uzbekistan,UZB,2003,0.23,12,1
+61763,"Republic of Uzbekistan, Uzbekistan",Uzbekistan,UZB,2004,0.16,8,1
+61764,"Republic of Uzbekistan, Uzbekistan",Uzbekistan,UZB,2005,0.22,11,1
+61765,"Republic of Uzbekistan, Uzbekistan",Uzbekistan,UZB,2006,0.27,14,1
+61766,"Republic of Uzbekistan, Uzbekistan",Uzbekistan,UZB,2007,0.25,12,1
+61767,"Republic of Uzbekistan, Uzbekistan",Uzbekistan,UZB,2008,0.4,18,1
+61768,"Republic of Uzbekistan, Uzbekistan",Uzbekistan,UZB,2009,0.37,36,1
+61769,"Republic of Uzbekistan, Uzbekistan",Uzbekistan,UZB,2010,0.39,45,1
+61770,"Republic of Uzbekistan, Uzbekistan",Uzbekistan,UZB,2011,0.31,33,1
+61771,"Republic of Uzbekistan, Uzbekistan",Uzbekistan,UZB,2012,0.33,31,1
+61772,"Republic of Uzbekistan, Uzbekistan",Uzbekistan,UZB,2013,0.26,20,1
+61773,"Republic of Uzbekistan, Uzbekistan",Uzbekistan,UZB,2014,0.25,17,1
+61774,"Republic of Uzbekistan, Uzbekistan",Uzbekistan,UZB,2015,0.23,12,1
+61775,"Republic of Uzbekistan, Uzbekistan",Uzbekistan,UZB,2016,0.34,18,1
+61776,"Republic of Uzbekistan, Uzbekistan",Uzbekistan,UZB,2017,0.19,10,1
+61795,"Republic of Vanuatu, Vanuatu",Vanuatu,VUT,2000,0.04,2,1
+61796,"Republic of Vanuatu, Vanuatu",Vanuatu,VUT,2001,0.02,1,1
+61797,"Republic of Vanuatu, Vanuatu",Vanuatu,VUT,2002,0.04,2,1
+61798,"Republic of Vanuatu, Vanuatu",Vanuatu,VUT,2003,0.02,1,1
+61799,"Republic of Vanuatu, Vanuatu",Vanuatu,VUT,2004,0.1,5,1
+61800,"Republic of Vanuatu, Vanuatu",Vanuatu,VUT,2005,0.1,5,1
+61801,"Republic of Vanuatu, Vanuatu",Vanuatu,VUT,2006,0.15,8,1
+61802,"Republic of Vanuatu, Vanuatu",Vanuatu,VUT,2007,0.06,3,1
+61803,"Republic of Vanuatu, Vanuatu",Vanuatu,VUT,2008,0.09,4,1
+61804,"Republic of Vanuatu, Vanuatu",Vanuatu,VUT,2009,0.16,16,1
+61805,"Republic of Vanuatu, Vanuatu",Vanuatu,VUT,2010,0.11,13,1
+61806,"Republic of Vanuatu, Vanuatu",Vanuatu,VUT,2011,0.16,17,1
+61807,"Republic of Vanuatu, Vanuatu",Vanuatu,VUT,2012,0.09,8,1
+61808,"Republic of Vanuatu, Vanuatu",Vanuatu,VUT,2013,0.16,12,1
+61809,"Republic of Vanuatu, Vanuatu",Vanuatu,VUT,2014,0.06,4,1
+61810,"Republic of Vanuatu, Vanuatu",Vanuatu,VUT,2015,0.23,12,1
+61811,"Republic of Vanuatu, Vanuatu",Vanuatu,VUT,2016,0.08,4,1
+61812,"Republic of Vanuatu, Vanuatu",Vanuatu,VUT,2017,0.06,3,1
+61813,Republic of Vietnam,Vietnam,VNM,2000,NA,NA,1
+61814,Republic of Vietnam,Vietnam,VNM,2001,NA,NA,1
+61815,Republic of Vietnam,Vietnam,VNM,2002,NA,NA,1
+61816,Republic of Vietnam,Vietnam,VNM,2003,NA,NA,1
+61817,Republic of Vietnam,Vietnam,VNM,2004,NA,NA,1
+61818,Republic of Vietnam,Vietnam,VNM,2005,NA,NA,1
+61819,Republic of Vietnam,Vietnam,VNM,2006,NA,NA,1
+61820,Republic of Vietnam,Vietnam,VNM,2007,NA,NA,1
+61821,Republic of Vietnam,Vietnam,VNM,2008,NA,NA,1
+61822,Republic of Vietnam,Vietnam,VNM,2009,NA,NA,1
+61823,Republic of Vietnam,Vietnam,VNM,2010,NA,NA,1
+61824,Republic of Vietnam,Vietnam,VNM,2011,NA,NA,1
+61825,Republic of Vietnam,Vietnam,VNM,2012,NA,NA,1
+61826,Republic of Vietnam,Vietnam,VNM,2013,NA,NA,1
+61827,Republic of Vietnam,Vietnam,VNM,2014,NA,NA,1
+61828,Republic of Vietnam,Vietnam,VNM,2015,NA,NA,1
+61829,Republic of Vietnam,Vietnam,VNM,2016,0.02,1,1
+61830,Republic of Vietnam,Vietnam,VNM,2017,NA,NA,1
+61849,"Republic of Yemen, Yemen",Yemen,YEM,2000,0.27,13,1
+61850,"Republic of Yemen, Yemen",Yemen,YEM,2001,0.1,5,1
+61851,"Republic of Yemen, Yemen",Yemen,YEM,2002,0.2,9,1
+61852,"Republic of Yemen, Yemen",Yemen,YEM,2003,0.04,2,1
+61853,"Republic of Yemen, Yemen",Yemen,YEM,2004,0.16,8,1
+61854,"Republic of Yemen, Yemen",Yemen,YEM,2005,0.08,4,1
+61855,"Republic of Yemen, Yemen",Yemen,YEM,2006,0.12,6,1
+61856,"Republic of Yemen, Yemen",Yemen,YEM,2007,0.08,4,1
+61857,"Republic of Yemen, Yemen",Yemen,YEM,2008,0.22,10,1
+61858,"Republic of Yemen, Yemen",Yemen,YEM,2009,0.4,39,1
+61859,"Republic of Yemen, Yemen",Yemen,YEM,2010,0.54,62,1
+61860,"Republic of Yemen, Yemen",Yemen,YEM,2011,0.75,81,1
+61861,"Republic of Yemen, Yemen",Yemen,YEM,2012,0.89,83,1
+61862,"Republic of Yemen, Yemen",Yemen,YEM,2013,0.44,34,1
+61863,"Republic of Yemen, Yemen",Yemen,YEM,2014,0.18,12,1
+61864,"Republic of Yemen, Yemen",Yemen,YEM,2015,1.62,85,1
+61865,"Republic of Yemen, Yemen",Yemen,YEM,2016,0.57,30,1
+61866,"Republic of Yemen, Yemen",Yemen,YEM,2017,0.79,42,1
+61885,"Republic of Zambia, Zambia",Zambia,ZMB,2000,2.06,101,1
+61886,"Republic of Zambia, Zambia",Zambia,ZMB,2001,1.61,77,1
+61887,"Republic of Zambia, Zambia",Zambia,ZMB,2002,2.63,120,1
+61888,"Republic of Zambia, Zambia",Zambia,ZMB,2003,2.3,122,1
+61889,"Republic of Zambia, Zambia",Zambia,ZMB,2004,2.2,111,1
+61890,"Republic of Zambia, Zambia",Zambia,ZMB,2005,1.6,80,1
+61891,"Republic of Zambia, Zambia",Zambia,ZMB,2006,3.02,156,1
+61892,"Republic of Zambia, Zambia",Zambia,ZMB,2007,3.39,163,1
+61893,"Republic of Zambia, Zambia",Zambia,ZMB,2008,0.31,14,1
+61894,"Republic of Zambia, Zambia",Zambia,ZMB,2009,1.56,152,1
+61895,"Republic of Zambia, Zambia",Zambia,ZMB,2010,0.67,77,1
+61896,"Republic of Zambia, Zambia",Zambia,ZMB,2011,0.77,83,1
+61897,"Republic of Zambia, Zambia",Zambia,ZMB,2012,0.59,55,1
+61898,"Republic of Zambia, Zambia",Zambia,ZMB,2013,0.62,48,1
+61899,"Republic of Zambia, Zambia",Zambia,ZMB,2014,0.51,34,1
+61900,"Republic of Zambia, Zambia",Zambia,ZMB,2015,0.78,41,1
+61901,"Republic of Zambia, Zambia",Zambia,ZMB,2016,1.04,55,1
+61902,"Republic of Zambia, Zambia",Zambia,ZMB,2017,1.03,55,1
+61921,"Republic of Zimbabwe, Zimbabwe",Zimbabwe,ZWE,2000,2,98,1
+61922,"Republic of Zimbabwe, Zimbabwe",Zimbabwe,ZWE,2001,2.15,103,1
+61923,"Republic of Zimbabwe, Zimbabwe",Zimbabwe,ZWE,2002,2.87,131,1
+61924,"Republic of Zimbabwe, Zimbabwe",Zimbabwe,ZWE,2003,1.92,102,1
+61925,"Republic of Zimbabwe, Zimbabwe",Zimbabwe,ZWE,2004,1.69,85,1
+61926,"Republic of Zimbabwe, Zimbabwe",Zimbabwe,ZWE,2005,1.28,64,1
+61927,"Republic of Zimbabwe, Zimbabwe",Zimbabwe,ZWE,2006,1.9,98,1
+61928,"Republic of Zimbabwe, Zimbabwe",Zimbabwe,ZWE,2007,1.98,95,1
+61929,"Republic of Zimbabwe, Zimbabwe",Zimbabwe,ZWE,2008,1.08,48,1
+61930,"Republic of Zimbabwe, Zimbabwe",Zimbabwe,ZWE,2009,1.64,160,1
+61931,"Republic of Zimbabwe, Zimbabwe",Zimbabwe,ZWE,2010,0.68,78,1
+61932,"Republic of Zimbabwe, Zimbabwe",Zimbabwe,ZWE,2011,0.53,57,1
+61933,"Republic of Zimbabwe, Zimbabwe",Zimbabwe,ZWE,2012,0.66,62,1
+61934,"Republic of Zimbabwe, Zimbabwe",Zimbabwe,ZWE,2013,0.51,39,1
+61935,"Republic of Zimbabwe, Zimbabwe",Zimbabwe,ZWE,2014,0.7,47,1
+61936,"Republic of Zimbabwe, Zimbabwe",Zimbabwe,ZWE,2015,0.9,47,1
+61937,"Republic of Zimbabwe, Zimbabwe",Zimbabwe,ZWE,2016,0.62,33,1
+61938,"Republic of Zimbabwe, Zimbabwe",Zimbabwe,ZWE,2017,0.86,46,1
+62749,Romania,Romania,ROU,2000,0.51,25,1
+62750,Romania,Romania,ROU,2001,0.46,22,1
+62751,Romania,Romania,ROU,2002,0.26,12,1
+62752,Romania,Romania,ROU,2003,0.28,15,1
+62753,Romania,Romania,ROU,2004,0.1,5,1
+62754,Romania,Romania,ROU,2005,0.26,13,1
+62755,Romania,Romania,ROU,2006,0.68,35,1
+62756,Romania,Romania,ROU,2007,0.83,40,1
+62757,Romania,Romania,ROU,2008,0.99,44,1
+62758,Romania,Romania,ROU,2009,0.68,66,1
+62759,Romania,Romania,ROU,2010,0.3,35,1
+62760,Romania,Romania,ROU,2011,0.44,48,1
+62761,Romania,Romania,ROU,2012,0.21,20,1
+62762,Romania,Romania,ROU,2013,0.69,53,1
+62763,Romania,Romania,ROU,2014,0.6,40,1
+62764,Romania,Romania,ROU,2015,0.53,28,1
+62765,Romania,Romania,ROU,2016,0.44,23,1
+62766,Romania,Romania,ROU,2017,0.58,31,1
+63271,"Russian Federation, Russia",Russia,RUS,2000,2.37,116,1
+63272,"Russian Federation, Russia",Russia,RUS,2001,3.15,151,1
+63273,"Russian Federation, Russia",Russia,RUS,2002,2.8,128,1
+63274,"Russian Federation, Russia",Russia,RUS,2003,3.28,174,1
+63275,"Russian Federation, Russia",Russia,RUS,2004,2.93,148,1
+63276,"Russian Federation, Russia",Russia,RUS,2005,2.87,144,1
+63277,"Russian Federation, Russia",Russia,RUS,2006,3.89,201,1
+63278,"Russian Federation, Russia",Russia,RUS,2007,3.31,159,1
+63279,"Russian Federation, Russia",Russia,RUS,2008,5.01,223,1
+63280,"Russian Federation, Russia",Russia,RUS,2009,3.03,295,1
+63281,"Russian Federation, Russia",Russia,RUS,2010,4.79,550,1
+63282,"Russian Federation, Russia",Russia,RUS,2011,4.14,448,1
+63283,"Russian Federation, Russia",Russia,RUS,2012,4.79,448,1
+63284,"Russian Federation, Russia",Russia,RUS,2013,5.98,459,1
+63285,"Russian Federation, Russia",Russia,RUS,2014,6.55,438,1
+63286,"Russian Federation, Russia",Russia,RUS,2015,5.01,263,1
+63287,"Russian Federation, Russia",Russia,RUS,2016,4.15,219,1
+63288,"Russian Federation, Russia",Russia,RUS,2017,4.26,228,1
+65755,Serbia,Serbia,SRB,2000,0.16,9,1
+65756,Serbia,Serbia,SRB,2001,0.19,9,1
+65757,Serbia,Serbia,SRB,2002,0.04,2,1
+65758,Serbia,Serbia,SRB,2003,0.08,4,1
+65759,Serbia,Serbia,SRB,2004,0.12,6,1
+65760,Serbia,Serbia,SRB,2005,0.28,14,1
+65761,Serbia,Serbia,SRB,2006,0.29,15,1
+65762,Serbia,Serbia,SRB,2007,0.48,23,1
+65763,Serbia,Serbia,SRB,2008,0.49,22,1
+65764,Serbia,Serbia,SRB,2009,0.39,38,1
+65765,Serbia,Serbia,SRB,2010,0.36,41,1
+65766,Serbia,Serbia,SRB,2011,0.31,33,1
+65767,Serbia,Serbia,SRB,2012,0.27,25,1
+65768,Serbia,Serbia,SRB,2013,0.31,24,1
+65769,Serbia,Serbia,SRB,2014,0.93,62,1
+65770,Serbia,Serbia,SRB,2015,0.71,37,1
+65771,Serbia,Serbia,SRB,2016,0.64,34,1
+65772,Serbia,Serbia,SRB,2017,0.8,43,1
+67177,Sint Maarten,Sint Maarten,SXM,2000,NA,NA,1
+67178,Sint Maarten,Sint Maarten,SXM,2001,NA,NA,1
+67179,Sint Maarten,Sint Maarten,SXM,2002,NA,NA,1
+67180,Sint Maarten,Sint Maarten,SXM,2003,NA,NA,1
+67181,Sint Maarten,Sint Maarten,SXM,2004,NA,NA,1
+67182,Sint Maarten,Sint Maarten,SXM,2005,NA,NA,1
+67183,Sint Maarten,Sint Maarten,SXM,2006,NA,NA,1
+67184,Sint Maarten,Sint Maarten,SXM,2007,NA,NA,1
+67185,Sint Maarten,Sint Maarten,SXM,2008,0.02,1,1
+67186,Sint Maarten,Sint Maarten,SXM,2009,NA,NA,1
+67187,Sint Maarten,Sint Maarten,SXM,2010,NA,NA,1
+67188,Sint Maarten,Sint Maarten,SXM,2011,NA,NA,1
+67189,Sint Maarten,Sint Maarten,SXM,2012,NA,NA,1
+67190,Sint Maarten,Sint Maarten,SXM,2013,NA,NA,1
+67191,Sint Maarten,Sint Maarten,SXM,2014,NA,NA,1
+67192,Sint Maarten,Sint Maarten,SXM,2015,NA,NA,1
+67193,Sint Maarten,Sint Maarten,SXM,2016,NA,NA,1
+67194,Sint Maarten,Sint Maarten,SXM,2017,0.02,1,1
+67735,"Socialist Republic of Vietnam, Vietnam",Vietnam,VNM,2000,1.8,88,1
+67736,"Socialist Republic of Vietnam, Vietnam",Vietnam,VNM,2001,2.55,122,1
+67737,"Socialist Republic of Vietnam, Vietnam",Vietnam,VNM,2002,3.65,167,1
+67738,"Socialist Republic of Vietnam, Vietnam",Vietnam,VNM,2003,2.83,150,1
+67739,"Socialist Republic of Vietnam, Vietnam",Vietnam,VNM,2004,2.89,146,1
+67740,"Socialist Republic of Vietnam, Vietnam",Vietnam,VNM,2005,3.01,151,1
+67741,"Socialist Republic of Vietnam, Vietnam",Vietnam,VNM,2006,2.94,152,1
+67742,"Socialist Republic of Vietnam, Vietnam",Vietnam,VNM,2007,3.2,154,1
+67743,"Socialist Republic of Vietnam, Vietnam",Vietnam,VNM,2008,1.89,84,1
+67744,"Socialist Republic of Vietnam, Vietnam",Vietnam,VNM,2009,2.69,262,1
+67745,"Socialist Republic of Vietnam, Vietnam",Vietnam,VNM,2010,2.62,301,1
+67746,"Socialist Republic of Vietnam, Vietnam",Vietnam,VNM,2011,3.22,348,1
+67747,"Socialist Republic of Vietnam, Vietnam",Vietnam,VNM,2012,2.79,261,1
+67748,"Socialist Republic of Vietnam, Vietnam",Vietnam,VNM,2013,2.94,226,1
+67749,"Socialist Republic of Vietnam, Vietnam",Vietnam,VNM,2014,2.83,189,1
+67750,"Socialist Republic of Vietnam, Vietnam",Vietnam,VNM,2015,1.81,95,1
+67751,"Socialist Republic of Vietnam, Vietnam",Vietnam,VNM,2016,2.12,112,1
+67752,"Socialist Republic of Vietnam, Vietnam",Vietnam,VNM,2017,1.79,96,1
+67987,Somalia,Somalia,SOM,2000,0.8,39,1
+67988,Somalia,Somalia,SOM,2001,0.4,19,1
+67989,Somalia,Somalia,SOM,2002,0.44,20,1
+67990,Somalia,Somalia,SOM,2003,0.36,19,1
+67991,Somalia,Somalia,SOM,2004,0.63,32,1
+67992,Somalia,Somalia,SOM,2005,1.02,51,1
+67993,Somalia,Somalia,SOM,2006,1.2,62,1
+67994,Somalia,Somalia,SOM,2007,1.6,77,1
+67995,Somalia,Somalia,SOM,2008,0.99,44,1
+67996,Somalia,Somalia,SOM,2009,1.86,181,1
+67997,Somalia,Somalia,SOM,2010,1,115,1
+67998,Somalia,Somalia,SOM,2011,2.22,240,1
+67999,Somalia,Somalia,SOM,2012,1.14,107,1
+68000,Somalia,Somalia,SOM,2013,1.05,81,1
+68001,Somalia,Somalia,SOM,2014,0.79,53,1
+68002,Somalia,Somalia,SOM,2015,0.88,46,1
+68003,Somalia,Somalia,SOM,2016,1,53,1
+68004,Somalia,Somalia,SOM,2017,1.85,99,1
+68761,South Sudan,South Sudan,SSD,2000,NA,NA,1
+68762,South Sudan,South Sudan,SSD,2001,NA,NA,1
+68763,South Sudan,South Sudan,SSD,2002,NA,NA,1
+68764,South Sudan,South Sudan,SSD,2003,NA,NA,1
+68765,South Sudan,South Sudan,SSD,2004,NA,NA,1
+68766,South Sudan,South Sudan,SSD,2005,NA,NA,1
+68767,South Sudan,South Sudan,SSD,2006,0.04,2,1
+68768,South Sudan,South Sudan,SSD,2007,0.12,6,1
+68769,South Sudan,South Sudan,SSD,2008,NA,NA,1
+68770,South Sudan,South Sudan,SSD,2009,0.02,2,1
+68771,South Sudan,South Sudan,SSD,2010,0.09,10,1
+68772,South Sudan,South Sudan,SSD,2011,0.35,38,1
+68773,South Sudan,South Sudan,SSD,2012,0.47,44,1
+68774,South Sudan,South Sudan,SSD,2013,0.65,50,1
+68775,South Sudan,South Sudan,SSD,2014,1.99,133,1
+68776,South Sudan,South Sudan,SSD,2015,0.32,17,1
+68777,South Sudan,South Sudan,SSD,2016,0.53,28,1
+68778,South Sudan,South Sudan,SSD,2017,1.76,94,1
+69157,Southern Zimbabwe,Zimbabwe,ZWE,2000,NA,NA,1
+69158,Southern Zimbabwe,Zimbabwe,ZWE,2001,0.02,1,1
+69159,Southern Zimbabwe,Zimbabwe,ZWE,2002,NA,NA,1
+69160,Southern Zimbabwe,Zimbabwe,ZWE,2003,NA,NA,1
+69161,Southern Zimbabwe,Zimbabwe,ZWE,2004,NA,NA,1
+69162,Southern Zimbabwe,Zimbabwe,ZWE,2005,NA,NA,1
+69163,Southern Zimbabwe,Zimbabwe,ZWE,2006,NA,NA,1
+69164,Southern Zimbabwe,Zimbabwe,ZWE,2007,NA,NA,1
+69165,Southern Zimbabwe,Zimbabwe,ZWE,2008,NA,NA,1
+69166,Southern Zimbabwe,Zimbabwe,ZWE,2009,NA,NA,1
+69167,Southern Zimbabwe,Zimbabwe,ZWE,2010,NA,NA,1
+69168,Southern Zimbabwe,Zimbabwe,ZWE,2011,NA,NA,1
+69169,Southern Zimbabwe,Zimbabwe,ZWE,2012,NA,NA,1
+69170,Southern Zimbabwe,Zimbabwe,ZWE,2013,NA,NA,1
+69171,Southern Zimbabwe,Zimbabwe,ZWE,2014,NA,NA,1
+69172,Southern Zimbabwe,Zimbabwe,ZWE,2015,NA,NA,1
+69173,Southern Zimbabwe,Zimbabwe,ZWE,2016,NA,NA,1
+69174,Southern Zimbabwe,Zimbabwe,ZWE,2017,NA,NA,1
+69895,"State of Eritrea, Eritrea",Eritrea,ERI,2000,0.69,34,1
+69896,"State of Eritrea, Eritrea",Eritrea,ERI,2001,0.4,19,1
+69897,"State of Eritrea, Eritrea",Eritrea,ERI,2002,0.48,22,1
+69898,"State of Eritrea, Eritrea",Eritrea,ERI,2003,0.28,15,1
+69899,"State of Eritrea, Eritrea",Eritrea,ERI,2004,0.28,14,1
+69900,"State of Eritrea, Eritrea",Eritrea,ERI,2005,0.22,11,1
+69901,"State of Eritrea, Eritrea",Eritrea,ERI,2006,0.39,20,1
+69902,"State of Eritrea, Eritrea",Eritrea,ERI,2007,0.1,5,1
+69903,"State of Eritrea, Eritrea",Eritrea,ERI,2008,0.11,5,1
+69904,"State of Eritrea, Eritrea",Eritrea,ERI,2009,0.16,16,1
+69905,"State of Eritrea, Eritrea",Eritrea,ERI,2010,0.1,12,1
+69906,"State of Eritrea, Eritrea",Eritrea,ERI,2011,0.17,18,1
+69907,"State of Eritrea, Eritrea",Eritrea,ERI,2012,NA,NA,1
+69908,"State of Eritrea, Eritrea",Eritrea,ERI,2013,0.16,12,1
+69909,"State of Eritrea, Eritrea",Eritrea,ERI,2014,0.1,7,1
+69910,"State of Eritrea, Eritrea",Eritrea,ERI,2015,0.1,5,1
+69911,"State of Eritrea, Eritrea",Eritrea,ERI,2016,0.04,2,1
+69912,"State of Eritrea, Eritrea",Eritrea,ERI,2017,0.17,9,1
+69931,"State of Israel, Israel",Israel,ISR,2000,2.92,143,1
+69932,"State of Israel, Israel",Israel,ISR,2001,3.3,158,1
+69933,"State of Israel, Israel",Israel,ISR,2002,3.61,165,1
+69934,"State of Israel, Israel",Israel,ISR,2003,2.24,119,1
+69935,"State of Israel, Israel",Israel,ISR,2004,2.91,147,1
+69936,"State of Israel, Israel",Israel,ISR,2005,2.35,118,1
+69937,"State of Israel, Israel",Israel,ISR,2006,5.88,304,1
+69938,"State of Israel, Israel",Israel,ISR,2007,2.79,134,1
+69939,"State of Israel, Israel",Israel,ISR,2008,3.21,143,1
+69940,"State of Israel, Israel",Israel,ISR,2009,3.37,328,1
+69941,"State of Israel, Israel",Israel,ISR,2010,5.6,643,1
+69942,"State of Israel, Israel",Israel,ISR,2011,3.18,344,1
+69943,"State of Israel, Israel",Israel,ISR,2012,2.43,227,1
+69944,"State of Israel, Israel",Israel,ISR,2013,2.32,178,1
+69945,"State of Israel, Israel",Israel,ISR,2014,1.94,130,1
+69946,"State of Israel, Israel",Israel,ISR,2015,1.28,67,1
+69947,"State of Israel, Israel",Israel,ISR,2016,1.23,65,1
+69948,"State of Israel, Israel",Israel,ISR,2017,1.44,77,1
+70489,"Sultanate of Oman, Oman",Oman,OMN,2000,0.27,13,1
+70490,"Sultanate of Oman, Oman",Oman,OMN,2001,0.21,10,1
+70491,"Sultanate of Oman, Oman",Oman,OMN,2002,0.2,9,1
+70492,"Sultanate of Oman, Oman",Oman,OMN,2003,0.21,11,1
+70493,"Sultanate of Oman, Oman",Oman,OMN,2004,0.59,30,1
+70494,"Sultanate of Oman, Oman",Oman,OMN,2005,0.08,4,1
+70495,"Sultanate of Oman, Oman",Oman,OMN,2006,0.06,3,1
+70496,"Sultanate of Oman, Oman",Oman,OMN,2007,0.12,6,1
+70497,"Sultanate of Oman, Oman",Oman,OMN,2008,0.22,10,1
+70498,"Sultanate of Oman, Oman",Oman,OMN,2009,0.25,24,1
+70499,"Sultanate of Oman, Oman",Oman,OMN,2010,0.24,27,1
+70500,"Sultanate of Oman, Oman",Oman,OMN,2011,0.13,14,1
+70501,"Sultanate of Oman, Oman",Oman,OMN,2012,0.24,22,1
+70502,"Sultanate of Oman, Oman",Oman,OMN,2013,0.16,12,1
+70503,"Sultanate of Oman, Oman",Oman,OMN,2014,0.1,7,1
+70504,"Sultanate of Oman, Oman",Oman,OMN,2015,0.48,25,1
+70505,"Sultanate of Oman, Oman",Oman,OMN,2016,0.09,5,1
+70506,"Sultanate of Oman, Oman",Oman,OMN,2017,0.17,9,1
+71083,"Syrian Arab Republic, Syria",Syria,SYR,2000,0.82,40,1
+71084,"Syrian Arab Republic, Syria",Syria,SYR,2001,0.56,27,1
+71085,"Syrian Arab Republic, Syria",Syria,SYR,2002,0.39,18,1
+71086,"Syrian Arab Republic, Syria",Syria,SYR,2003,0.72,38,1
+71087,"Syrian Arab Republic, Syria",Syria,SYR,2004,0.97,49,1
+71088,"Syrian Arab Republic, Syria",Syria,SYR,2005,0.98,49,1
+71089,"Syrian Arab Republic, Syria",Syria,SYR,2006,1.57,81,1
+71090,"Syrian Arab Republic, Syria",Syria,SYR,2007,1.58,76,1
+71091,"Syrian Arab Republic, Syria",Syria,SYR,2008,0.72,32,1
+71092,"Syrian Arab Republic, Syria",Syria,SYR,2009,0.73,71,1
+71093,"Syrian Arab Republic, Syria",Syria,SYR,2010,0.88,101,1
+71094,"Syrian Arab Republic, Syria",Syria,SYR,2011,1.07,116,1
+71095,"Syrian Arab Republic, Syria",Syria,SYR,2012,4.41,412,1
+71096,"Syrian Arab Republic, Syria",Syria,SYR,2013,4.79,368,1
+71097,"Syrian Arab Republic, Syria",Syria,SYR,2014,4.47,299,1
+71098,"Syrian Arab Republic, Syria",Syria,SYR,2015,NA,NA,1
+71099,"Syrian Arab Republic, Syria",Syria,SYR,2016,NA,NA,1
+71100,"Syrian Arab Republic, Syria",Syria,SYR,2017,NA,NA,1
+74197,"Togolese Republic, Togo",Togo,TGO,2000,0.08,4,1
+74198,"Togolese Republic, Togo",Togo,TGO,2001,0.13,6,1
+74199,"Togolese Republic, Togo",Togo,TGO,2002,0.09,4,1
+74200,"Togolese Republic, Togo",Togo,TGO,2003,0.08,4,1
+74201,"Togolese Republic, Togo",Togo,TGO,2004,0.14,7,1
+74202,"Togolese Republic, Togo",Togo,TGO,2005,0.1,5,1
+74203,"Togolese Republic, Togo",Togo,TGO,2006,0.15,8,1
+74204,"Togolese Republic, Togo",Togo,TGO,2007,0.58,28,1
+74205,"Togolese Republic, Togo",Togo,TGO,2008,0.11,5,1
+74206,"Togolese Republic, Togo",Togo,TGO,2009,0.21,20,1
+74207,"Togolese Republic, Togo",Togo,TGO,2010,0.13,15,1
+74208,"Togolese Republic, Togo",Togo,TGO,2011,0.06,6,1
+74209,"Togolese Republic, Togo",Togo,TGO,2012,0.16,15,1
+74210,"Togolese Republic, Togo",Togo,TGO,2013,0.09,7,1
+74211,"Togolese Republic, Togo",Togo,TGO,2014,0.15,10,1
+74212,"Togolese Republic, Togo",Togo,TGO,2015,NA,NA,1
+74213,"Togolese Republic, Togo",Togo,TGO,2016,NA,NA,1
+74214,"Togolese Republic, Togo",Togo,TGO,2017,NA,NA,1
+74989,Turkey,Turkey,TUR,2000,0.06,3,1
+74990,Turkey,Turkey,TUR,2001,NA,NA,1
+74991,Turkey,Turkey,TUR,2002,0.07,3,1
+74992,Turkey,Turkey,TUR,2003,0.1,5,1
+74993,Turkey,Turkey,TUR,2004,0.14,7,1
+74994,Turkey,Turkey,TUR,2005,0.1,5,1
+74995,Turkey,Turkey,TUR,2006,0.1,5,1
+74996,Turkey,Turkey,TUR,2007,0.12,6,1
+74997,Turkey,Turkey,TUR,2008,0.02,1,1
+74998,Turkey,Turkey,TUR,2009,0.06,6,1
+74999,Turkey,Turkey,TUR,2010,0.23,26,1
+75000,Turkey,Turkey,TUR,2011,0.19,20,1
+75001,Turkey,Turkey,TUR,2012,0.06,6,1
+75002,Turkey,Turkey,TUR,2013,0.13,10,1
+75003,Turkey,Turkey,TUR,2014,0.07,5,1
+75004,Turkey,Turkey,TUR,2015,0.04,2,1
+75005,Turkey,Turkey,TUR,2016,0.17,9,1
+75006,Turkey,Turkey,TUR,2017,0.09,5,1
+75061,Turkmenistan,Turkmenistan,TKM,2000,0.1,5,1
+75062,Turkmenistan,Turkmenistan,TKM,2001,0.17,8,1
+75063,Turkmenistan,Turkmenistan,TKM,2002,0.11,5,1
+75064,Turkmenistan,Turkmenistan,TKM,2003,0.02,1,1
+75065,Turkmenistan,Turkmenistan,TKM,2004,0.04,2,1
+75066,Turkmenistan,Turkmenistan,TKM,2005,0.1,5,1
+75067,Turkmenistan,Turkmenistan,TKM,2006,NA,NA,1
+75068,Turkmenistan,Turkmenistan,TKM,2007,0.12,6,1
+75069,Turkmenistan,Turkmenistan,TKM,2008,0.29,13,1
+75070,Turkmenistan,Turkmenistan,TKM,2009,0.21,20,1
+75071,Turkmenistan,Turkmenistan,TKM,2010,0.07,8,1
+75072,Turkmenistan,Turkmenistan,TKM,2011,0.11,12,1
+75073,Turkmenistan,Turkmenistan,TKM,2012,0.09,8,1
+75074,Turkmenistan,Turkmenistan,TKM,2013,0.26,20,1
+75075,Turkmenistan,Turkmenistan,TKM,2014,0.18,12,1
+75076,Turkmenistan,Turkmenistan,TKM,2015,0.08,4,1
+75077,Turkmenistan,Turkmenistan,TKM,2016,0.09,5,1
+75078,Turkmenistan,Turkmenistan,TKM,2017,0.04,2,1
+75691,Ukraine,Ukraine,UKR,2000,0.53,26,1
+75692,Ukraine,Ukraine,UKR,2001,0.42,20,1
+75693,Ukraine,Ukraine,UKR,2002,0.31,14,1
+75694,Ukraine,Ukraine,UKR,2003,0.19,10,1
+75695,Ukraine,Ukraine,UKR,2004,0.2,10,1
+75696,Ukraine,Ukraine,UKR,2005,0.34,17,1
+75697,Ukraine,Ukraine,UKR,2006,0.39,20,1
+75698,Ukraine,Ukraine,UKR,2007,0.37,18,1
+75699,Ukraine,Ukraine,UKR,2008,0.58,26,1
+75700,Ukraine,Ukraine,UKR,2009,0.39,38,1
+75701,Ukraine,Ukraine,UKR,2010,0.71,81,1
+75702,Ukraine,Ukraine,UKR,2011,0.75,81,1
+75703,Ukraine,Ukraine,UKR,2012,0.98,92,1
+75704,Ukraine,Ukraine,UKR,2013,1.25,96,1
+75705,Ukraine,Ukraine,UKR,2014,5.41,362,1
+75706,Ukraine,Ukraine,UKR,2015,1.94,102,1
+75707,Ukraine,Ukraine,UKR,2016,1.4,74,1
+75708,Ukraine,Ukraine,UKR,2017,1.59,85,1
+76555,"Union of the Comoros, Comoros",Comoros,COM,2000,0.02,1,1
+76556,"Union of the Comoros, Comoros",Comoros,COM,2001,0.02,1,1
+76557,"Union of the Comoros, Comoros",Comoros,COM,2002,0.02,1,1
+76558,"Union of the Comoros, Comoros",Comoros,COM,2003,NA,NA,1
+76559,"Union of the Comoros, Comoros",Comoros,COM,2004,0.16,8,1
+76560,"Union of the Comoros, Comoros",Comoros,COM,2005,0.04,2,1
+76561,"Union of the Comoros, Comoros",Comoros,COM,2006,0.1,5,1
+76562,"Union of the Comoros, Comoros",Comoros,COM,2007,0.04,2,1
+76563,"Union of the Comoros, Comoros",Comoros,COM,2008,0.02,1,1
+76564,"Union of the Comoros, Comoros",Comoros,COM,2009,0.04,4,1
+76565,"Union of the Comoros, Comoros",Comoros,COM,2010,0.07,8,1
+76566,"Union of the Comoros, Comoros",Comoros,COM,2011,0.04,4,1
+76567,"Union of the Comoros, Comoros",Comoros,COM,2012,0.02,2,1
+76568,"Union of the Comoros, Comoros",Comoros,COM,2013,NA,NA,1
+76569,"Union of the Comoros, Comoros",Comoros,COM,2014,0.09,6,1
+76570,"Union of the Comoros, Comoros",Comoros,COM,2015,0.02,1,1
+76571,"Union of the Comoros, Comoros",Comoros,COM,2016,0.11,6,1
+76572,"Union of the Comoros, Comoros",Comoros,COM,2017,0.04,2,1
+76897,"United Republic of Tanzania, Tanzania",Tanzania,TZA,2000,2.41,118,1
+76898,"United Republic of Tanzania, Tanzania",Tanzania,TZA,2001,3.3,158,1
+76899,"United Republic of Tanzania, Tanzania",Tanzania,TZA,2002,1.88,86,1
+76900,"United Republic of Tanzania, Tanzania",Tanzania,TZA,2003,1.81,96,1
+76901,"United Republic of Tanzania, Tanzania",Tanzania,TZA,2004,1.98,100,1
+76902,"United Republic of Tanzania, Tanzania",Tanzania,TZA,2005,1.52,76,1
+76903,"United Republic of Tanzania, Tanzania",Tanzania,TZA,2006,1.51,78,1
+76904,"United Republic of Tanzania, Tanzania",Tanzania,TZA,2007,1.48,71,1
+76905,"United Republic of Tanzania, Tanzania",Tanzania,TZA,2008,0.49,22,1
+76906,"United Republic of Tanzania, Tanzania",Tanzania,TZA,2009,1.06,103,1
+76907,"United Republic of Tanzania, Tanzania",Tanzania,TZA,2010,0.66,76,1
+76908,"United Republic of Tanzania, Tanzania",Tanzania,TZA,2011,0.52,56,1
+76909,"United Republic of Tanzania, Tanzania",Tanzania,TZA,2012,0.5,47,1
+76910,"United Republic of Tanzania, Tanzania",Tanzania,TZA,2013,0.61,47,1
+76911,"United Republic of Tanzania, Tanzania",Tanzania,TZA,2014,0.55,37,1
+76912,"United Republic of Tanzania, Tanzania",Tanzania,TZA,2015,0.97,51,1
+76913,"United Republic of Tanzania, Tanzania",Tanzania,TZA,2016,1.23,65,1
+76914,"United Republic of Tanzania, Tanzania",Tanzania,TZA,2017,1.42,76,1
