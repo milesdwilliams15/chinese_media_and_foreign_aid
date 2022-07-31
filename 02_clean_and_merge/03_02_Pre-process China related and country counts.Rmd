@@ -94,6 +94,7 @@ for (i in 1:length(temp)) assign(temp[i], read.csv(temp[i]))
 ```
 
 ```{r}
+## need to manually update the years and files
 Xinhua_2000 <- subset(df2_subset_China, df2_subset_China$year==2000)
 #head(Xinhua_2000)
 library(tidyverse)
