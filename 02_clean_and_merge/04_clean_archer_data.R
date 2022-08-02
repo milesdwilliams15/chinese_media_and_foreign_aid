@@ -7,72 +7,29 @@
 
 rm(list = ls())
 library(tidyverse)
-
+library(here)
 
 # load data ---------------------------------------------------------------
 
-counts <- read_csv(
-  "01_data/newsarticle/Xinhua_2001_2014_countrycounts.csv"
+data <- read_csv(
+  #"01_data/newsarticle/Xinhua_2001_2014_countrycounts.csv"
+  here("01_data/newsarticle/Xinhua_2010_2017_aids_articles_relevant_refined.csv")
 )
-frequs <- read_csv(
-  "01_data/newsarticle/Xinhua_2001_2014_countryfrequencies.csv"
-)
-
 
 # clean -------------------------------------------------------------------
 
-counts <- counts %>%
-  select(-X1) %>%
-  gather(
-    year, "count", -country_mentioned
-  ) %>%
+data <- data[,-c(1:3)] %>%
   mutate(
-    count = replace_na(count, 0),
-    country = str_remove(country_mentioned, ".*, "),
-    recipient_iso3 = countrycode::countrycode(
-      country, "country.name", "iso3c"
-    )
+    across(frequncies_by_year:counts_by_year, ~replace_na(.x, 0))
   ) %>%
-  select(recipient_iso3, year, count) %>%
-  na.omit
-
-frequs <- frequs %>%
-  select(-X1) %>%
-  gather(
-    year, "freq", -country_mentioned
-  ) %>%
-  mutate(
-    count = replace_na(freq, 0),
-    country = str_remove(country_mentioned, ".*, "),
-    recipient_iso3 = countrycode::countrycode(
-      country, "country.name", "iso3c"
-    )
-  ) %>%
-  select(recipient_iso3, year, freq) %>%
-  na.omit
-
-
-# merge country counts and freq -------------------------------------------
-
-archer <- full_join(
-  counts, frequs, by = c("recipient_iso3", "year")
-)
-
-# deal with duplicates and additional missing values
-archer <- archer %>%
-  mutate(
-    freq = replace_na(freq, 0)
-  ) %>%
-  group_by(recipient_iso3, year) %>%
-  summarize(
-    count = max(count),
-    freq  = max(freq)
+  rename(
+    frequencies_by_year = frequncies_by_year,
+    recipient_iso3 = recipient_iso
   )
-
 
 # save --------------------------------------------------------------------
 
 write_csv(
-  archer,
-  "01_data/newsarticle/xinhua_cleaned.csv"
+  data,
+  here("01_data/newsarticle/xinhua_cleaned.csv")
 )

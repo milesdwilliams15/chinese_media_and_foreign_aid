@@ -73,12 +73,14 @@ nrow(aid_data) - nrow(final_data) # no difference!
 
 final_data <- final_data %>%
   mutate_at(
-    c("count", "freq", "govt_visits", "mil_visits", "total_visits"),
+    c("counts_by_year", "frequencies_by_year", 
+      "govt_visits", "mil_visits", "total_visits"),
     ~ replace_na(.x, 0)
   )
 imp_final_data <- imp_final_data %>%
   mutate_at(
-    c("count", "freq", "govt_visits", "mil_visits", "total_visits"),
+    c("counts_by_year", "frequencies_by_year", 
+      "govt_visits", "mil_visits", "total_visits"),
     ~ replace_na(.x, 0)
   )
 

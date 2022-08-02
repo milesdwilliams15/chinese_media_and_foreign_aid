@@ -7,99 +7,70 @@
 
 rm(list = ls())       # tidy the workspace
 library(tidyverse)    # for grammar
+# remotes::install_github("xmarquez/democracyData", force = TRUE)
 library(democracyData)# a bunch of democracy datasets
-library(vdem)         # to get the varieties of democracy dataset
 library(countrycode)  # to standardize country codes
 
 # democracy data ----------------------------------------------------------
 
 # From democracy data, we'll use 
 #   * Polity 2
-#   * Freedom House
-dem_data <-
-  generate_democracy_scores_dataset(
-    datasets = c(
-      "polity_pmm", # polity
-      "fh_pmm"      # political + civil liberties
-    ),
-    "wide"
-  )
-
-# To this, we'll add the five varieties of democracy indices
-#   * Electoral Democracy
-#   * Liberal Democracy
-#   * Participatory Democracy
-#   * Deliberative Democracy
-#   * Egalitarian Democracy
-vdem_data <- extract_vdem(
-  section_number = 2
-) %>%
-  select(vdem_country_name, year, v2x_polyarchy:v2x_egaldem)
-
-# limit to years needed (1999-2017)
-dem_data <- dem_data %>%
-  filter(year %in% 1999:2017)
-vdem_data <- vdem_data %>%
-  filter(year %in% 1999:2017)
-
-# use iso3 code for later merging
-dem_data <- dem_data %>%
-  mutate(
-    recipient_iso3 = countrycode::countrycode(
-      cown, "cown", "iso3c"
-    )
-  ) %>%
-  
-  # Only keep vars of interest
-  select(year, recipient_iso3, pmm_fh, pmm_polity)
-vdem_data <- vdem_data %>%
-  mutate(
-    recipient_iso3 = countrycode(
-      vdem_country_name, "country.name", "iso3c"
-    )
-  ) %>%
-  select(-vdem_country_name)
-
-# merge the democracy datasets
-dem_data <- left_join(
-  dem_data, vdem_data, by = c("year", "recipient_iso3")
+#   * V-Dem
+dem_data <- generate_democracy_scores_dataset(
+  datasets = c('polity_annual', 'fh_full', 'vdem'),
+  output_format = 'wide',
+  verbose = F
 )
+dem_data <- dem_data %>%
+  transmute(
+    recipient_iso3 = countrycode(
+      cown, 'cown', 'iso3c'
+    ),
+    year,
+    polity2,
+    v2x_api
+  )
 
 
 # economic data -----------------------------------------------------------
 
 # Variables to keep:
 #   * population
-#   * unemployed rate (ILO)
 #   * real GDP in 2011 dollars
 
 econ_data <- read_csv(
-  paste0(getwd(), "/01_data/covariate_data/world_bank_data.csv")
+  paste0(getwd(), "/01_data/covariate_data/world_bank_gdp_pop_1999_2017.csv")
 )
+econ_data <- econ_data %>%
+  drop_na() %>%
+  transmute(
+    year = Time,
+    recipient_iso3 = countrycode(
+      `Country Name`, 'country.name', 'iso3c'
+    ),
+    gdp = `GDP, PPP (constant 2017 international $) [NY.GDP.MKTP.PP.KD]` %>%
+      ifelse(.=='..', NA, .),
+    pop = `Population, total [SP.POP.TOTL]` %>%
+      ifelse(.=='..', NA, .)
+  ) %>%
+  mutate(
+    across(c(year, gdp:pop), as.numeric)
+  )
+  
 
 # Pull out China's to add in later
 china_gdp <- econ_data %>%
-  filter(country == "China") %>%
-  select(year, gdp)
+  filter(recipient_iso3 == "CHN") %>%
+  select(year, gdp, pop)
 
 econ_data <- econ_data %>%
-  
-  # ensure codes are iso3 codes
-  mutate(
-    recipient_iso3 = countrycode::countrycode(
-      country, "country.name", "iso3c"
-    )
-  ) %>%
   
   # NAs are regions that we can drop
   filter(!is.na(recipient_iso3)) %>%
   
-  # Drop human capital index
-  select(-hc, -country) %>%
-  
-  # Merge in China GDP data
+  # Merge in China GDP + Pop data
   left_join(
-    china_gdp %>% rename(china_gdp = gdp),
+    china_gdp %>% rename(china_gdp = gdp, china_pop = pop),
     by = "year"
   )
 
@@ -175,20 +146,30 @@ dist_data <- dist_data %>%
 
 # trade data --------------------------------------------------------------
 
-trade_data <- read_csv(
-  paste0(getwd(), "/01_data/covariate_data/trade_data.csv")
-)
+# Code from this section comes from:
+# https://www.r-bloggers.com/2019/05/open-trade-statistics/
 
+# install.packages('tradestatistics')
+
+# Use open-source trade statistics for 2002-2017
+library(tradestatistics)
+partners <- as_tibble(ots_countries)$country_iso
+partners <- partners[partners!='chn']
+trade_data <- ots_create_tidy_data(
+  years = 2002:2017,
+  reporters = "chn",
+  partners = partners,
+  table = 'yrp'
+) %>% as_tibble()
 trade_data <- trade_data %>%
-  
-  # Only keep CHN in dcode
-  filter(dcode=="CHN") %>%
-  
-  # Rename rcode 
-  rename(recipient_iso3 = rcode) %>%
-  
-  # Drop dcode
-  select(-dcode)
+  transmute(
+    year,
+    recipient_iso3 = toupper(partner_iso),
+    imports = trade_value_usd_imp,
+    exports = trade_value_usd_exp
+  )
+trade_data <- trade_data %>%
+  distinct()
 
 
 # Alliance data -----------------------------------------------------------
@@ -220,6 +201,35 @@ ally_data <- ally_data %>%
   )
 
 
+# un voting data ----------------------------------------------------------
+
+un_vote <- read_csv(
+  here('01_data/covariate_data/UNvotes_filtered.csv')
+)
+un_vote <- un_vote %>%
+  transmute(
+    year,
+    recipient_iso3 = countrycode(
+      ccode2, 'cown', 'iso3c'
+    ),
+    distance = IdealPointDistance,
+    agree
+  )
+
+# FDI ---------------------------------------------------------------------
+
+fdi_data <- read_csv(
+  here('01_data/covariate_data/WB_fdi_filtered.csv')
+)
+fdi_data <- fdi_data %>%
+  transmute(
+    year,
+    recipient_iso3 = countrycode(
+      .$`﻿Country Name`country.name', 'iso3c'
+    ),
+    fdi = net
+  )
+
 # combine into final covariate dataset ------------------------------------
 
 cov_data <- # recipient + year to match 
@@ -228,11 +238,13 @@ cov_data <- # recipient + year to match
   ) %>%
   select(year, recipient_iso3)
 
-cov_list <- list(
+c %>%
+  filter(year >= 2002) # no valid trade data before this dateov_list <- list(
   dem_data, econ_data, disaster_data,
   cw_data, dist_data, trade_data, ally_data
 )
-
+,
+  un_vote, fdi_data
 start_n <- nrow(cov_data)
 for(i in 1:length(cov_list)) {
   if(i != 5) {
@@ -259,10 +271,7 @@ start_n - nrow(na.omit(cov_data)) # okay that's a lot
 # Some vars with NAs we can impute missing as '0'
 cov_data <- cov_data %>%
   
-  # get rid of some additional junk variables
-  select(-code) %>%
-  
-  # impute ally and civil war variables
+  # getute ally and civil war variables
   mutate_at(
     c("atopally", "civilwar"),
     ~ replace_na(.x, 0)

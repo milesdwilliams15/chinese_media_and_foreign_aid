@@ -19,7 +19,8 @@ dip_data <- read_csv(
 
 
 # clean -------------------------------------------------------------------
-
+fix_it <- function(x) str_replace(x,"N/A","0") %>%
+  as.numeric()
 # keep only necessary variables
 dip_data <- dip_data %>%
   transmute(
@@ -27,10 +28,9 @@ dip_data <- dip_data %>%
       receiving_country, "country.name", "iso3c"
     ),
     year = year,
-    govt_visits = government_visits,
-    mil_visits = str_replace(military_visits,"N/A","0") %>%
-      as.numeric(),
-    total_visits = total_elite_visits
+    govt_visits = fix_it(government_visits),
+    mil_visits = fix_it(military_visits),
+    total_visits = fix_it(total_elite_visits)
   )
 
 # drop rows with invalid country code:
