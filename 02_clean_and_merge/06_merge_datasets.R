@@ -15,7 +15,7 @@ library(countrycode)
 aid_data <- 
   read_csv(
     paste0(getwd(), "/01_data/aid_data/clean_aid_data.csv")
-  )
+  ) %>% filter(year >= 2002)
 dip_data <-
   read_csv(
     paste0(getwd(), "/01_data/PublicDiplomacy/clean_diplomacy_data.csv")
