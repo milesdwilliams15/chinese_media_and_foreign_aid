@@ -350,28 +350,14 @@ glmmTMB(
   ziformula = ~1,
   family = nbinom1
 ) -> znb_counts
-summary(znb_counts)
 glmmTMB(
   update(form, total_visits ~ . + as.factor(year) + (1 | recipient)),
   data = new_dt,
   ziformula = ~1,
   family = nbinom2
 ) -> znb_visits
+summary(znb_counts)
 summary(znb_visits)
-library(texreg)
-cmap <- list(
-  'Count model: typeAid' = 'Recipient',
-  'Count model: typeDebt' = 'Debtor',
-  'Count model: typeBoth' = 'Recipient-Debtor'
-)
-screenreg(
-  list(znb_counts, znb_visits),
-  custom.coef.map = cmap,
-  custom.model.names = c(
-    'Xinhua Coverage',
-    'Diplomatic Visits'
-  )
-)
 
 bind_rows(
   broom.mixed::tidy(
@@ -415,7 +401,8 @@ ggplot(fixed_effs) +
   labs(
     x = 'Coefficient with 95% CI',
     y = NULL,
-    color = 'Outcome'
+    color = 'Outcome',
+    caption = 'Mixed Effects Zero-inflated Negative Binomial Estimates'
   ) +
   geom_vline(
     xintercept = 0,
@@ -428,7 +415,10 @@ ggplot(fixed_effs) +
     )
   ) +
   theme(
-    legend.position = 'top'
+    legend.position = 'top',
+    plot.caption = element_text(
+      hjust = .5
+    )
   ) +
   guides(
     color = guide_legend(
@@ -456,35 +446,13 @@ pred_dt <- new_dt %>%
       mean
     )
   )
+
 tibble(
   None = predict(znb_counts, type = 'response', newdata = new_dt %>% mutate(type = unique(type[type=='None']))),
   Aid = predict(znb_counts, type = 'response', newdata = new_dt %>% mutate(type = unique(type[type=='Aid']))),
   Debt = predict(znb_counts, type = 'response', newdata = new_dt %>% mutate(type = unique(type[type=='Debt']))),
   Both = predict(znb_counts, type = 'response', newdata = new_dt %>% mutate(type = unique(type[type=='Both'])))
 ) -> count_preds
-count_preds %>%
-  summarize(
-    across(
-      everything(),
-      mean
-    )
-  ) %>%
-  pivot_longer(
-    everything()
-  ) %>%
-  ggplot() +
-  aes(
-    x = value,
-    y = name
-  ) +
-  geom_col(
-    color = 'black',
-    fill = 'indianred3'
-  ) +
-  labs(
-    x = 'Yearly Predicted Mentions per Country',
-    y = NULL
-  ) -> p1
 
 tibble(
   None = predict(znb_visits, type = 'response', newdata = new_dt %>% mutate(type = unique(type[type=='None']))),
@@ -492,32 +460,6 @@ tibble(
   Debt = predict(znb_visits, type = 'response', newdata = new_dt %>% mutate(type = unique(type[type=='Debt']))),
   Both = predict(znb_visits, type = 'response', newdata = new_dt %>% mutate(type = unique(type[type=='Both'])))
 ) -> visit_preds
-visit_preds %>%
-  summarize(
-    across(
-      everything(),
-      mean
-    )
-  ) %>%
-  pivot_longer(
-    everything()
-  ) %>%
-  ggplot() +
-  aes(
-    x = value,
-    y = name
-  ) +
-  geom_col(
-    color = 'black',
-    fill = 'royalblue'
-  ) +
-  labs(
-    x = 'Yearly Predicted Visits per Country',
-    y = NULL
-  ) -> p2
-library(patchwork)
-p1 + p2
-
 
 count_preds %>%
   summarize(
