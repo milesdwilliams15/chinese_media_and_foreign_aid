@@ -325,62 +325,83 @@ dt %>%
     )
   ) -> new_dt
 
-form <- ~ type + income + pop + disaster + civilwar +
+type_form <- ~ type + income + pop + disaster + civilwar +
   dist + v2x_api + imports + exports + distance + fdi
-lm_robust(
-  update(form, asinh(counts_by_year) ~ .),
-  data = new_dt,
-  clusters = recipient,
-  se_type = 'stata',
-  fixed_effects = ~ year
-) -> ols_counts
-lm_robust(
-  update(form, total_visits ~ .),
-  data = new_dt,
-  clusters = recipient,
-  se_type = 'stata',
-  fixed_effects = ~ year
-) -> ols_visits
-
+cont_form <- update(type_form, ~ . - type + asinh(aid) + asinh(debt))
 
 library(glmmTMB)
 glmmTMB(
-  update(form, counts_by_year ~ . + as.factor(year) + (1 | recipient)),
+  update(type_form, counts_by_year ~ . + as.factor(year) + (1 | recipient)),
   data = new_dt,
   ziformula = ~1,
   family = nbinom1
-) -> znb_counts
+) -> znb_counts_type
 glmmTMB(
-  update(form, total_visits ~ . + as.factor(year) + (1 | recipient)),
+  update(type_form, total_visits ~ . + as.factor(year) + (1 | recipient)),
   data = new_dt,
   ziformula = ~1,
   family = nbinom2
-) -> znb_visits
-summary(znb_counts)
-summary(znb_visits)
+) -> znb_visits_type
+glmmTMB(
+  update(cont_form, counts_by_year ~ . + as.factor(year) + (1 | recipient)),
+  data = new_dt,
+  ziformula = ~1,
+  family = nbinom1
+) -> znb_counts_cont
+glmmTMB(
+  update(cont_form, total_visits ~ . + as.factor(year) + (1 | recipient)),
+  data = new_dt,
+  ziformula = ~1,
+  family = nbinom2
+) -> znb_visits_cont
+summary(znb_counts_type)
+summary(znb_visits_type)
+summary(znb_counts_cont)
+summary(znb_visits_cont)
 
 bind_rows(
   broom.mixed::tidy(
-    znb_counts
+    znb_counts_type
   ),
   broom.mixed::tidy(
-    znb_visits
+    znb_visits_type
+  ),
+  broom.mixed::tidy(
+    znb_counts_cont
+  ),
+  broom.mixed::tidy(
+    znb_visits_cont
   )
 ) %>%
   filter(
-    term %in% paste0(
+    term %in% c(paste0(
       'type', c('Aid', 'Debt', 'Both')
-    )
+    ), 'asinh(aid)', 'asinh(debt)')
   ) %>%
   mutate(
-    term = rep(
+    term = c(rep(
       c('Recipient', 'Debtor', 'Both'),
       len = 6
     ),
-    Outcome = rep(
+    rep(
+      c('Aid (asinh)', 'Debt (asinh)'),
+      len = 4
+    )),
+    Outcome = c(rep(
       c('Xinhua Coverage',
         'Diplomatic Visits'),
       each = 3
+    ),
+    rep(
+      c('Xinhua Coverage',
+        'Diplomatic Visits'),
+      each = 2
+    )),
+    var_type = c(
+      rep('Country Classification',
+          len = 6),
+      rep('Financing Received',
+          len = 4)
     )
   ) -> fixed_effs
 ggplot(fixed_effs) +
@@ -390,6 +411,10 @@ ggplot(fixed_effs) +
     xmax = estimate + 1.96 * std.error,
     y = term,
     color = Outcome
+  ) +
+  facet_wrap(
+    ~ var_type,
+    scales = 'free'
   ) +
   geom_point(
     position = ggstance::position_dodgev(-.5)
