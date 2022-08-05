@@ -452,38 +452,26 @@ ggplot(fixed_effs) +
     )
   )
 
-pred_dt <- new_dt %>%
-  filter(year == 2014) %>%
-  group_by(type, year) %>%
-  summarize(
-    across(
-      c(income, pop, disaster, civilwar, dist, v2x_api,
-        exports, imports, distance, fdi),
-      mean
-    ),
-    recipient = recipient[200]
-  ) %>%
-  ungroup %>%
-  mutate(
-    across(
-      c(income, pop, disaster, civilwar, dist, v2x_api,
-        exports, imports, distance, fdi),
-      mean
-    )
-  )
-
 tibble(
-  None = predict(znb_counts, type = 'response', newdata = new_dt %>% mutate(type = unique(type[type=='None']))),
-  Aid = predict(znb_counts, type = 'response', newdata = new_dt %>% mutate(type = unique(type[type=='Aid']))),
-  Debt = predict(znb_counts, type = 'response', newdata = new_dt %>% mutate(type = unique(type[type=='Debt']))),
-  Both = predict(znb_counts, type = 'response', newdata = new_dt %>% mutate(type = unique(type[type=='Both'])))
+  None = predict(znb_counts_type, type = 'response', 
+                 newdata = new_dt %>% mutate(type = unique(type[type=='None']))),
+  Aid = predict(znb_counts_type, type = 'response', 
+                newdata = new_dt %>% mutate(type = unique(type[type=='Aid']))),
+  Debt = predict(znb_counts_type, type = 'response', 
+                 newdata = new_dt %>% mutate(type = unique(type[type=='Debt']))),
+  Both = predict(znb_counts_type, type = 'response', 
+                 newdata = new_dt %>% mutate(type = unique(type[type=='Both'])))
 ) -> count_preds
 
 tibble(
-  None = predict(znb_visits, type = 'response', newdata = new_dt %>% mutate(type = unique(type[type=='None']))),
-  Aid = predict(znb_visits, type = 'response', newdata = new_dt %>% mutate(type = unique(type[type=='Aid']))),
-  Debt = predict(znb_visits, type = 'response', newdata = new_dt %>% mutate(type = unique(type[type=='Debt']))),
-  Both = predict(znb_visits, type = 'response', newdata = new_dt %>% mutate(type = unique(type[type=='Both'])))
+  None = predict(znb_visits_type, type = 'response', 
+                 newdata = new_dt %>% mutate(type = unique(type[type=='None']))),
+  Aid = predict(znb_visits_type, type = 'response', 
+                newdata = new_dt %>% mutate(type = unique(type[type=='Aid']))),
+  Debt = predict(znb_visits_type, type = 'response', 
+                 newdata = new_dt %>% mutate(type = unique(type[type=='Debt']))),
+  Both = predict(znb_visits_type, type = 'response', 
+                 newdata = new_dt %>% mutate(type = unique(type[type=='Both'])))
 ) -> visit_preds
 
 count_preds %>%
