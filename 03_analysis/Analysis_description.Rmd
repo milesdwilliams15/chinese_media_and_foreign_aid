@@ -1,0 +1,183 @@
+---
+title: "Descriptive analysis 2"
+author: "Lucie Lu"
+date: "2022-08-05"
+output: pdf_document
+---
+
+```{r}
+
+rm(list = ls())
+library(tidyverse)
+library(dplyr)
+#install.packages("censReg")
+#library(censReg)
+#library(AER)
+#library(texreg)
+library(estimatr)
+library(mgcv)
+library(here)
+#install.packages("OneR")
+library(OneR)
+theme_set(theme_light())
+
+```
+
+```{r, eval=F}
+
+dt <- read_csv(
+  "https://raw.githubusercontent.com/milesdwilliams15/chinese_media_and_foreign_aid/main/01_data/final_data/final_data_imputed.csv"
+)
+
+```
+
+
+## Which countries recevie the most aids on average?
+```{r}
+library("dplyr")
+# aid only
+filter(new_dt, type == "Aid")
+
+aid_average <- new_dt %>% group_by(recipient) %>% summarise_at(vars(aid), list(mean_of_aid = mean))
+od_aid_average <- aid_average[order(aid_average$mean_of_aid, decreasing = T), ]
+
+od_aid_average$rank_aid <- rank(-od_aid_average$mean_of_aid, ties.method = "max")
+od_aid_average
+```
+Iraq gets the most aids (aids from humanitarian aids)
+
+## Which countries receive the most aids and debts?
+
+```{r}
+
+debt_average <- new_dt %>% group_by(recipient) %>% summarise_at(vars(debt), list(mean_of_debt = mean))
+
+od_debt_average <- debt_average[order(debt_average$mean_of_debt, decreasing = T), ]
+
+od_debt_average$rank_debt <- rank(-od_debt_average$mean_of_debt, ties.method = "max")
+od_debt_average
+```
+```{r}
+top_20_recipients <- cbind((od_debt_average %>% filter(rank_debt <= 20))[,1], 
+      (od_aid_average %>% filter(rank_aid <= 20))[,1]) 
+colnames(top_20_recipients) <- c("debt_top20", "aid_top20")
+top_20_recipients 
+
+overlap0 <- calculate.overlap( x = list("debt" = top_20_recipients$debt_top20, 
+                                        "aids" = top_20_recipients$aid_top20))
+overlap0$a3
+```
+
+## Interesting patterns
+Top 20 debt and aids countries are shown above. 8 countries have overlaps: Indonesia, Pakistan, Laos, Ethiopia, Cambodia, Sri Lanka, Kenya,Sudan are listed both.
+
+```{r}
+od_debt_average %>% filter(rank_debt == 142) #no debts
+od_aid_average %>% filter(rank_aid == 142) #no aids
+
+c_no_debt <- (od_debt_average %>% filter(rank_debt == 142))$recipient
+c_no_aid <- (od_aid_average %>% filter(rank_aid == 142))$recipient
+
+```
+
+
+```{r}
+#install.packages("VennDiagram")
+library(VennDiagram)
+overlap <- calculate.overlap( x = list( "aids" = top_20_recipients$aid_top20, 
+                                        "debt" = c_no_debt))
+overlap
+```
+
+Russia has most debts, but no aids; Iraq has most aids, but no debts at all. 
+
+## Which countries receive the most aid and debt? And their proportions?
+```{r}
+
+# calculate sum of aid and debt for each row
+for (i in 1:nrow(new_dt)) {
+   new_dt$aids_plus_debts[i] <- new_dt$aid[i] + new_dt$debt[i]
+}
+
+aid_debt_both <- new_dt %>% group_by(recipient) %>% 
+  summarise_at(vars(aids_plus_debts), list(mean_of_both = mean))
+
+##########
+
+# combine aid average and aid debt both data
+aid_prop <- merge(aid_average, aid_debt_both, by = "recipient")
+aid_prop$mean_aid_prop <- round(aid_prop$mean_of_aid/aid_prop$mean_of_both, digits=2)
+
+# combine debt average and aid debt both data
+
+debt_prop <- merge(debt_average, aid_debt_both, by = "recipient")
+debt_prop$mean_debt_prop <- round(debt_prop$mean_of_debt/debt_prop$mean_of_both, digits=2)
+
+```
+
+```{r informative combination of aid and debt data}
+## merge with ordered aid debt both average data
+
+m1 <- merge(aid_debt_both, aid_prop,  by = "recipient")
+m2 <- merge(m1, debt_prop, by = "recipient")
+m2 <- m2[,-c(2,4)]
+
+
+m2 <- m2[order(m2$mean_of_both, decreasing = T), ]
+m2$rank_both <- rank(-m2$mean_of_both, ties.method = "max")
+m2
+
+```
+
+The proportion of debts is much higher than the aids for the top recipients.
+
+## Which countries receive nothing?
+
+```{r}
+# 8 countries never receive anything
+filter(m2, rank_both == 142)
+```
+
+8 countries never receive anything from China: Curacao, Dominican Republic, El Salvador, French Polynesia, Guam, Nicaragua, Panama and Praguay.
+
+```{r combine media and diplomatic visits}
+m2_figure <- m2
+
+m3 <- cbind(new_dt %>% group_by(recipient) %>% summarise_at(vars(counts_by_year), list(coverage = mean)),
+  new_dt %>% group_by(recipient) %>% summarise_at(vars(total_visits), list(diplomatic_visits = mean)))
+
+m3 <- m3[,-3]
+
+m2_figure <- merge(m2_figure, m3, by = 'recipient')
+
+m2_figure <- m2_figure[order(m2_figure$coverage, decreasing = T), ]
+m2_figure$rank_coverage <- rank(-m2_figure$coverage, ties.method = "max")
+m2_figure
+```
+
+```{r}
+top_20_coverage <- (m2_figure %>% filter(rank_coverage <= 20))[,1]
+top_20_recipients$coverage_top20 <-  top_20_coverage
+top_20_recipients
+```
+
+```{r overlaps}
+
+overlap2 <- calculate.overlap( x = list( "aids" = top_20_recipients$aid_top20, 
+                                        "coverage" = top_20_recipients$coverage_top20))
+overlap2$a3
+
+overlap3 <- calculate.overlap( x = list( "aids" = top_20_recipients$debt_top20, 
+                                        "coverage" = top_20_recipients$coverage_top20))
+overlap3$a3
+
+```
+- Countries that show up on the top 20 aid-recipients and Xinhua coverage are: Iraq, Indonesia, Pakistan, Cambodia, Kenya and Zambia.
+
+- Countries that show up on the top 20 debt-recipients and Xinhua coverage are: Russia, Brazil, Indonesia, Pakistan, Vietnam, Malaysia, Iran, Cambodia, Kenya.
+
+```{r}
+
+lm1 <- lm(mean_of_debt ~ Coverage, data=m2_figure)
+summary(lm1)
+```
