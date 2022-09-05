@@ -29,6 +29,12 @@ dt <- read_csv(
   "https://raw.githubusercontent.com/milesdwilliams15/chinese_media_and_foreign_aid/main/01_data/final_data/final_data_imputed.csv"
 )
 
+# and load Miles' file: new_dt
+```
+
+```{r}
+unique(new_dt$recipient)
+#142
 ```
 
 
@@ -44,7 +50,7 @@ od_aid_average <- aid_average[order(aid_average$mean_of_aid, decreasing = T), ]
 od_aid_average$rank_aid <- rank(-od_aid_average$mean_of_aid, ties.method = "max")
 od_aid_average
 ```
-Iraq gets the most aids (aids from humanitarian aids)
+Iraq gets the most aids (aids from humanitarian aids), with a surge in 2010 and 2014.
 
 ## Which countries receive the most aids and debts?
 
@@ -89,7 +95,7 @@ overlap <- calculate.overlap( x = list( "aids" = top_20_recipients$aid_top20,
 overlap
 ```
 
-Russia has most debts, but no aids; Iraq has most aids, but no debts at all. 
+Russia has most debts, but no aids; Iraq has most aids, but no debts at all. (China-Iraq: https://www.mei.edu/publications/china-iraq-relations-poised-quantum-leap#_ftn39)
 
 ## Which countries receive the most aid and debt? And their proportions?
 ```{r}
