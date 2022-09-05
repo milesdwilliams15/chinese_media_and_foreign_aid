@@ -6,13 +6,10 @@
 # setup -------------------------------------------------------------------
 
 rm(list = ls())
-library(tidyverse)
-library(censReg)
-library(AER)
-library(texreg)
-library(estimatr)
-library(mgcv)
-library(here)
+library(tidyverse) # syntax
+library(glmmTMB)   # mixed-effects neg. binom. models
+library(texreg)    # printing regression output
+library(here)      # reduce headaches navigating the working directory
 theme_set(theme_light())
 
 # data --------------------------------------------------------------------
@@ -70,6 +67,11 @@ dt %>%
   ) +
   theme(
     legend.position = 'top'
+  ) 
+  ggsave(
+    here('06_figures/aid_debt_trends.png'),
+    height = 4,
+    width = 6
   )
 
 # coverage and visits by aid and debt
@@ -98,7 +100,8 @@ dt %>%
     labels = scales::comma
   ) +
   scale_color_manual(
-    values = c('Recipient' = 'royalblue', 'Non-recipient' = 'indianred3')
+    values = c('Recipient' = 'royalblue', 
+               'Non-recipient' = 'indianred3')
   ) +
   facet_wrap(
     ~ name, scales = 'free'
@@ -110,6 +113,11 @@ dt %>%
   ) +
   theme(
     legend.position = 'top'
+  ) 
+  ggsave(
+    here('06_figures/total_coverage_visits_by_aid.png'),
+    height = 4,
+    width = 6
   )
 
 dt %>%
@@ -125,7 +133,7 @@ dt %>%
   aes(
     x = year,
     y = value,
-    color = ifelse(`debt > 0`, 'Recipient', 'Non-recipient')
+    color = ifelse(`debt > 0`, 'Debtor', 'Non-debtor')
   ) +
   geom_line(
     size = 0.75
@@ -134,7 +142,8 @@ dt %>%
     labels = scales::comma
   ) +
   scale_color_manual(
-    values = c('Recipient' = 'royalblue', 'Non-recipient' = 'indianred3')
+    values = c('Debtor' = 'royalblue', 
+               'Non-debtor' = 'indianred3')
   ) +
   facet_wrap(
     ~ name, scales = 'free'
@@ -146,6 +155,11 @@ dt %>%
   ) +
   theme(
     legend.position = 'top'
+  ) 
+  ggsave(
+    here('06_figures/total_coverage_visits_by_debt.png'),
+    height = 4,
+    width = 6 
   )
   
 # show by rates rather than totals
@@ -180,6 +194,11 @@ dt %>%
   ) +
   theme(
     legend.position = 'top'
+  ) 
+  ggsave(
+    here('06_figures/rate_coverage_visits_by_aid.png'),
+    height = 4,
+    width = 6
   )
 
 dt %>%
@@ -213,6 +232,11 @@ dt %>%
   ) +
   theme(
     legend.position = 'top'
+  )
+  ggsave(
+    here('06_figures/rate_coverage_visits_by_debt.png'),
+    height = 4,
+    width = 6
   )
 bin <- function(x) {
   x <- x > 0
@@ -258,6 +282,11 @@ dt %>%
   theme(
     legend.position = 'top'
   )
+  ggsave(
+    here('06_figures/dev_countries_over_time_by_type.png'),
+    height = 4,
+    width = 6
+  )
 
 dt %>%
   mutate(
@@ -305,6 +334,11 @@ dt %>%
   ) +
   theme(
     legend.position = 'top'
+  ) 
+  ggsave(
+    here('06_figures/rate_coverage_visits_by_type.png'),
+    height = 4,
+    width = 6
   )
 
 # analysis ----------------------------------------------------------------
@@ -329,7 +363,6 @@ type_form <- ~ type + income + pop + disaster + civilwar +
   dist + v2x_api + imports + exports + distance + fdi
 cont_form <- update(type_form, ~ . - type + asinh(aid) + asinh(debt))
 
-library(glmmTMB)
 glmmTMB(
   update(type_form, counts_by_year ~ . + as.factor(year) + (1 | recipient)),
   data = new_dt,
@@ -450,6 +483,11 @@ ggplot(fixed_effs) +
       title.position = 'top',
       title.hjust = 0.5
     )
+  ) 
+  ggsave(
+    here('06_figures/neg_binom_estimates.png'),
+    height = 4,
+    width = 6
   )
 
 tibble(
@@ -542,4 +580,9 @@ bind_rows(
       title.position = 'top',
       title.hjust = 0.5
     )
+  ) 
+  ggsave(
+    here('06_figures/predicted_differences.png'),
+    height = 4,
+    width = 6
   )

@@ -52,15 +52,15 @@ knitr::opts_chunk$set(echo = F, warning = F, message = F)
 
 # Introduction 
 
-China's overseas development financing now surpasses that of the United States, the World Bank, and several other multilateral development and lending institutions combined. But despite the mammoth proportions of Beijing's aid (and increasingly debt) that it issues world wide, the motives behind its overseas activities remain a mystery. China neither reports its foreign aid spending to international organizations, as do Development Assistance Committee (DAC) members to the OECD, nor does China publish its aid expenditures in a public database, as does the United States in USAID's *Greenbook*. For this reason, many Western governments assume Beijing deliberately keeps its international development finance a secret[@fuchsRudyak2019]. 
+China's overseas development financing now surpasses that of the United States, the World Bank, and several other multilateral development and lending institutions combined. As the reach and scope of its development activities has grown to mammoth proportions, the motives behind its overseas activities remain hotly contested, and the limited transparency surrounding Beijing's overseas financing only adds fuel to controversy. China neither reports its foreign aid spending to international organizations, as do Development Assistance Committee (DAC) members to the OECD, nor does China publish its aid expenditures in a public database, as does the United States in USAID's *Greenbook*. For this reason, many Western governments assume Beijing deliberately tries to keep its international development finance a secret [@fuchsRudyak2019]. 
 
-The secrecy surrounding China's international development financing is puzzling. The painstaking work of researchers to document and analyze trends in China's development financing has illuminated a great deal about Beijing's approach to giving and lending. Far from the rogue donor that many have feared, China's ODA-like expenditures follow patterns similar to those of OECD-DAC donors. Hence, much like these traditional donors, China's foreign aid presents as a versatile foreign policy tool through which Beijing seeks to accomplish important objectives in international politics. These goals include international recognition and closer diplomatic ties with developing countries in what China calls "south-south" cooperation.
+Thankfully, due to the painstaking work of researchers to document and analyze trends in China's development financing, both academics and policymakers have learned a great deal about Beijing's approach to giving and lending. Far from the rogue donor that many have feared, China's ODA-like expenditures follow patterns similar to those of OECD-DAC donors. Hence, much like these traditional donors, China's foreign aid presents as a versatile foreign policy tool through which Beijing seeks to accomplish strategic and economic objectives in international politics, promote public goods in developing countries, and generate goodwill and stronger diplomatic relations with recipient countries. 
 
-However, these goals are difficult to accomplish in secret. This therefore raises a natural question. *How does China's foreign aid relate to Beijing's efforts at public diplomacy and international recognition?*
+However, the discovery that China is little different from traditional Western donors makes the limited state-sanctioned transparency of its overseas development financing all the more puzzling. Many of the goals often attributed to Western donors (generating goodwill, strengthening diplomatic ties, etc.) are difficult to accomplish in secret. And, while Beijing has taken steps to improve the visible branding of its aid projects on the ground, there is limited evidence that this is sufficient for attributing credit to Beijing [see @dietrichEtAl2018]. This therefore raises a natural question. *How does China's foreign aid relate to Beijing's efforts at public diplomacy and international recognition?*
 
-We propose that despite the lack of formal reporting, Beijing can pursue recognition and diplomacy with its overseas financing with the help of other complementary foreign policy activities. Past research has shown that two specific instruments may play special roles in complementing these foreign policy objectives. First, international media are one way that countries can generate attention and promote a positive spin on their activities in foreign audiences. As Nye (2008) notes, daily communications that reach both domestic and foreign populations are a way to improve a country's soft power. Perhaps in recognition of this, Beijing has expanded its outward facing state sponsored media activities and news reporting over the past two decades. This has been done in part through the English version of *Xinhua*, China's top state sponsored news agency.
+We propose that despite the lack of formal reporting, Beijing can pursue recognition and diplomacy with its overseas financing with the help of other complementary foreign policy activities. Past research has shown that two specific instruments may play special roles in complementing these foreign policy objectives. First, international media are one way that countries can generate attention and promote a positive spin on their activities in foreign audiences. As nye_public_2008-2 notes, daily communications that reach both domestic and foreign populations are a way to improve a country's soft power. Perhaps in recognition of this, Beijing has expanded its outward facing state sponsored media activities and news reporting over the past two decades. This has been done in part through the English version of *Xinhua*, China's top state sponsored news agency.
 
-Second, aside from news media, China engages in more conventional forms of bilateral diplomacy via government-to-government diplomatic missions. Efforts to document Beijing's public diplomacy have revealed an expansive set of activities in which Beijing engages. These range from the financial to the cultural, and from elite-to-elite meetings to informational exchanges.
+Second, aside from news media, China engages in more conventional forms of bilateral diplomacy via government-to-government diplomatic missions. Efforts to document Beijing's public diplomacy have revealed an expansive set of activities in which Beijing engages.^[See @aidData2021.] These range from the financial to the cultural, and from elite-to-elite meetings to informational exchanges.
 
 While public diplomacy and outward facing state sponsored media are not solely used to support China's overseas development financing, we believe they have clear overlapping purposes. In particular, diplomacy and coverage are critical *visible* activities that can complement the often opaque character of Beijing's development finance. Thus, to the extent that China's development finance is targeted at supporting image- and alliance-building activities, we hypothesize that recipients of China's overseas development assistance will also be disproportionate targets of media coverage in *Xinhua* (to support China's image and to build publicity around its development activities) and be more frequent hosts of diplomatic missions from Beijing (to support closer bilateral cooperation).
 
@@ -69,6 +69,51 @@ As we test these hypotheses, in our research design we take care to ensure that 
 The results from the analysis provide a novel perspective into the ways that China applies additional instruments to complement the goals it pursues via its overseas development financing. However, while the findings overall are consistent with our hypotheses, they do so in ways that also problematize the neat distinction between China's use of aid and its use of debt. In particular, we find that *Xinhua* coverage is disproportionately concentrated among China's ODA recipients while no significant relationship exists between aid and diplomatic visits. Conversely, we find that debt is significantly linked to greater frequency of bilateral diplomatic missions from Beijing, but no significant difference in *Xinhua* coverage. Together these findings reveal an intriguing pattern: Beijing likes to talk about its aid recipients but prioritizes diplomacy with its debtors.
 
 The reason why these diverging patterns exist between China's aid and debt related activities poses a new puzzle for future research. It further reveals that China's supposed "split personality" when it comes to aid and debt may be more a matter of degree than of absolutes.
+
+
+# Some Stylized Facts
+
+```{r, fig.cap='Total yearly ODA (aid) and OOF (debt) issued by China from 2002 to 2017 in millions of 2017 constant USD.'}
+library(knitr)
+library(here)
+include_graphics(
+  here('06_figures/aid_debt_trends.png')
+)
+```
+
+```{r, fig.cap='Number of \\textit{Xinhua} mentions and diplomatic missions from Beijing per year by developing country aid-recipient status.'}
+include_graphics(
+  here('06_figures/rate_coverage_visits_by_aid.png')
+)
+```
+
+```{r, fig.cap='Number of \\textit{Xinhua} mentions and diplomatic missions from Beijing per year by developing country debtor status.'}
+include_graphics(
+  here('06_figures/rate_coverage_visits_by_debt.png')
+)
+```
+
+```{r, fig.cap='Number of developing countries per year that are (a) beneficiaries of Chinese aid, (b) debtors, (c) both, and (d) neither.'}
+include_graphics(
+  here('06_figures/dev_countries_over_time_by_type.png')
+)
+```
+
+
+# Results
+
+```{r, fig.cap='Estimated Negative Binomial model coefficients with 95\\% confidence intervals. Controls and year fixed effects not shown. Models were estimated with random recipient intercepts.'}
+include_graphics(
+  here('06_figures/neg_binom_estimates.png')
+)
+```
+
+
+```{r, fig.cap='Counterfactual estimates of yearly \\textit{Xinhua} mentions and diplomatic missions from Beijing.'}
+include_graphics(
+  here('06_figures/predicted_differences.png')
+)
+```
 
 
 \clearpage
