@@ -87,6 +87,54 @@ Another implication of our finding is that Beijing is more likely to lend money 
 
 The Chinese government is acutely sensitive to China’s image in foreign media coverage. In addition to building *Xinhua* as a global news agency, China also invests in ownership stake in media companies in other developing countries. A working paper by Sundquist [-@sundquist_telling_2022] shows that the media outlets after the ownership change adopt a more friendly tone when reporting China. This finding is consistent with the conventional argument that media ownership exerts a homogenizing effect on the newspapers’ coverage of foreign policy [@baum_media_2019]. Sending constructive media messages and shaping stories about China to international audiences is critical to Beijing, and *Xinhua* is not alone in this initiative. 
 
+# Some Stylized Facts
+
+Figure 1 shows total ODA (aid) and OOF (debt) disbursed by Beijing per year from 2002 to 2017. Values are shown in millions of 2017 USD. Blue shows values for aid and red shows values for debt. The difference in China's application of debt relative to aid is stark, and the gulf only expands over time. The observed explosion in debt relative to aid aligns with a shift in Beijing's strategy going into the twenty-first century, as others have documented. Burdened with vast foreign currency reserves due do years-long trade surpluses, confronted with excess domestic production of industrial goods, and in need of access to resources to support its continued economic growth, Beijing tasked its so-called policy banks to help Chinese firms gain access to foreign markets [@dreherEtAl2022]. This focus spurred a radical change in China's development finance portfolio. As @dreherEtAl2022 put it, "Beijing began to behave less like a benefactor and more like a banker" (5). Figure 1 shows this transformation from donor to lender in the starkest of terms.
+
+```{r, fig.cap='Total yearly ODA (aid) and OOF (debt) issued by China from 2002 to 2017 in millions of 2017 constant USD.'}
+library(knitr)
+library(here)
+include_graphics(
+  here('06_figures/aid_debt_trends.png')
+)
+```
+
+Alongside this change in Beijing's approach to international development finance, a consensus has evolved that aid and debt serve different functions for China. Aid is supposed to support China's foreign policy goals, while debt is supposed to support its market interests. In short, aid lets Beijing buy influence, whereas debt helps enrich Chinese firms and propel economic growth for China.
+
+```{r, fig.cap='Number of \\textit{Xinhua} mentions and diplomatic missions from Beijing per year by developing country aid-recipient status (top) and debtor status (bottom).', out.width="100%",fig.show='hold'}
+include_graphics(
+  c(here('06_figures/rate_coverage_visits_by_aid.png'),
+    here('06_figures/rate_coverage_visits_by_debt.png'))
+)
+```
+
+Despite this perceived (proposed) division of goals between aid and debt, Figure 2 tells a different story. The figure has a lower and upper panel. The left frame of each panel shows the mean number of *Xinhua* mentions per developing country per year, and the right frame of each panel shows the mean number of diplomatic visits per developing country per year. In the top, the sample is divided by status as a Chinese aid recipient. Blue denotes the trend in yearly mentions in *Xinhua* and diplomatic visits per country among recipients of Chinese aid, whereas red denotes these trends among non-recipients. In the bottom panel, the sample is divided by status as a Chinese debtor. Blue denotes the same trends in the top panel, but in this case for Chinese debtors. Meanwhile, red denotes these trends among non-debtors.
+
+
+
+```{r, fig.cap='Number of developing countries per year that are (a) beneficiaries of Chinese aid, (b) debtors, (c) both, and (d) neither.'}
+include_graphics(
+  here('06_figures/dev_countries_over_time_by_type.png')
+)
+```
+
+\clearpage 
+
+# Results
+
+```{r, fig.cap='Estimated Negative Binomial model coefficients with 95\\% confidence intervals. Controls and year fixed effects not shown. Models were estimated with random recipient intercepts.'}
+include_graphics(
+  here('06_figures/neg_binom_estimates.png')
+)
+```
+
+
+```{r, fig.cap='Counterfactual estimates of yearly \\textit{Xinhua} mentions and diplomatic missions from Beijing.'}
+include_graphics(
+  here('06_figures/predicted_differences.png')
+)
+```
+
 \clearpage
 
 # References

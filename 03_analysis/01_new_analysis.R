@@ -214,13 +214,13 @@ dt %>%
   aes(
     x = year,
     y = value,
-    color = ifelse(`debt > 0`, 'Recipient', 'Non-recipient')
+    color = ifelse(`debt > 0`, 'Debtor', 'Non-debtor')
   ) +
   geom_line(
     size = 0.75
   ) +
   scale_color_manual(
-    values = c('Recipient' = 'royalblue', 'Non-recipient' = 'indianred3')
+    values = c('Debtor' = 'royalblue', 'Non-debtor' = 'indianred3')
   ) +
   facet_wrap(
     ~ name, scales = 'free'
