@@ -89,7 +89,7 @@ The Chinese government is acutely sensitive to China’s image in foreign media 
 
 # Some Stylized Facts
 
-Figure 1 shows total ODA (aid) and OOF (debt) disbursed by Beijing per year from 2002 to 2017. Values are shown in millions of 2017 USD. Blue shows values for aid and red shows values for debt. The difference in China's application of debt relative to aid is stark, and the gulf only expands over time. The observed explosion in debt relative to aid aligns with a shift in Beijing's strategy going into the twenty-first century, as others have documented. Burdened with vast foreign currency reserves due do years-long trade surpluses, confronted with excess domestic production of industrial goods, and in need of access to resources to support its continued economic growth, Beijing tasked its so-called policy banks to help Chinese firms gain access to foreign markets [@dreherEtAl2022]. This focus spurred a radical change in China's development finance portfolio. As @dreherEtAl2022 put it, "Beijing began to behave less like a benefactor and more like a banker" (5). Figure 1 shows this transformation from donor to lender in the starkest of terms.
+Figure 1 shows total ODA (aid) and OOF (debt) disbursed by Beijing per year from 2002 to 2017. Values are shown in millions of 2017 USD. Blue shows values for aid and red shows values for debt. The difference in China's application of debt relative to aid is stark, and the gulf only expands over time. The observed explosion in debt relative to aid aligns with a shift in Beijing's strategy going into the twenty-first century, as others have documented. Burdened with vast foreign currency reserves due do years-long trade surpluses, confronted with excess domestic production of industrial goods, and in need of access to resources to support its continued economic growth, Beijing tasked its so-called policy banks to help Chinese firms gain access to foreign markets [@dreher_banking_2022]. This focus spurred a radical change in China's development finance portfolio. As @dreher_banking_2022 put it, "Beijing began to behave less like a benefactor and more like a banker" (5). Figure 1 shows this transformation from donor to lender in the starkest of terms.
 
 ```{r, fig.cap='Total yearly ODA (aid) and OOF (debt) issued by China from 2002 to 2017 in millions of 2017 constant USD.'}
 library(knitr)
@@ -99,7 +99,20 @@ include_graphics(
 )
 ```
 
-Alongside this change in Beijing's approach to international development finance, a consensus has evolved that aid and debt serve different functions for China. Aid is supposed to support China's foreign policy goals, while debt is supposed to support its market interests. In short, aid lets Beijing buy influence, whereas debt helps enrich Chinese firms and propel economic growth for China.
+
+```{r, fig.cap='Number of developing countries per year that are (a) beneficiaries of Chinese aid, (b) debtors, (c) both, and (d) neither.'}
+include_graphics(
+  here('06_figures/dev_countries_over_time_by_type.png')
+)
+```
+
+Not only has China's total international development financing changed over time, so has its concentration in developing countries. Figure 2 shows yearly trends in the number of developing countries in the data sample by whether they exclusively receive Chinese aid (blue), exclusively are Chinese debtors (red), are both (green), or are neither (grey). The most substantial change over time has been in the number of developing countries that are neither recipients nor debtors with respect to Chinese development financing. In 2002 more than 70 of the developing countries in the sample were neither recipients nor debtors of Beijing's. By 2017 the count declined to 24. 
+
+This change appears to be the product of growth in Beijing's application of debt; though, an expansion in the delivery of aid also explains some of the change. While the number of developing countries that are exclusively recipients of Chinese aid has not followed any particular trend (save for a noticeable decline from 2010 to 2014 and a subsequent rebound), the number of debtors has grown considerably. In 2002 less than 10 countries exclusively were recipients of Chinese loans (debt), and another 15 were recipients of loans in addition to aid. In 2017, 14 developing countries exclusively were recipients of loans, and nearly 50 were recipients of both loans and aid.
+
+However, despite an expansion in the number of debtors over time and the now mammoth scope of total debt relative to aid, most of these loans are concentrated in a smaller set of countries relative to aid. Even at its lowest dip in 2013, the number of developing countries that exclusively are beneficiaries of Chinese aid remained greater than the number of developing countries that exclusively were recipients of loans and the number of countries that were recipients of both loans and aid. This suggests that has Beijing has shifted its strategy for development finance, its approach has been to cast a wider net with its aid while it takes a more targeted approach with debt.
+
+Alongside these shifts in the application of aid and debt in Beijing's approach to international development finance, a consensus has evolved that aid and debt serve different functions for China. Aid is supposed to support China's foreign policy goals, while debt is supposed to support its market interests [see @dreher_banking_2022]. In short, aid lets Beijing buy influence, whereas debt helps enrich Chinese firms and propel economic growth for China. However, an examination of patterns in the main variables of interest in this study that we argue capture different but related foreign policy activities problematizes this tidy distinction.
 
 ```{r, fig.cap='Number of \\textit{Xinhua} mentions and diplomatic missions from Beijing per year by developing country aid-recipient status (top) and debtor status (bottom).', out.width="100%",fig.show='hold'}
 include_graphics(
@@ -108,15 +121,10 @@ include_graphics(
 )
 ```
 
-Despite this perceived (proposed) division of goals between aid and debt, Figure 2 tells a different story. The figure has a lower and upper panel. The left frame of each panel shows the mean number of *Xinhua* mentions per developing country per year, and the right frame of each panel shows the mean number of diplomatic visits per developing country per year. In the top, the sample is divided by status as a Chinese aid recipient. Blue denotes the trend in yearly mentions in *Xinhua* and diplomatic visits per country among recipients of Chinese aid, whereas red denotes these trends among non-recipients. In the bottom panel, the sample is divided by status as a Chinese debtor. Blue denotes the same trends in the top panel, but in this case for Chinese debtors. Meanwhile, red denotes these trends among non-debtors.
+Figure 3 shows trends in the number yearly *Xinhua* mentions of developing countries in the sample and the number of yearly diplomatic visits these countries host. The left frame of each panel shows the mean number of *Xinhua* mentions per developing country per year, and the right frame of each panel shows the mean number of diplomatic visits per developing country per year. In the top, the sample is divided by status as a Chinese aid recipient. Blue denotes the trend in yearly mentions in *Xinhua* and diplomatic visits per country among recipients of Chinese aid, whereas red denotes these trends among non-recipients. In the bottom panel, the sample is divided by status as a Chinese debtor. Blue denotes the same trends in the top panel, but in this case for Chinese debtors. Meanwhile, red denotes these trends among non-debtors.
 
+With respect to aid, there is little observable difference in country coverage in *Xinhua* depending on recipient status. However, recipients host appreciably more diplomatic missions from Beijing than non-recipients. The difference narrows by 2013, but remains nonetheless across the entire sample period. Meanwhile, with respect to debt, there are notable differences in both *Xinhua* mentions and diplomatic missions between debtor and non-debtor developing countries. Debtor status corresponds with greater levels of both outcomes.
 
-
-```{r, fig.cap='Number of developing countries per year that are (a) beneficiaries of Chinese aid, (b) debtors, (c) both, and (d) neither.'}
-include_graphics(
-  here('06_figures/dev_countries_over_time_by_type.png')
-)
-```
 
 \clearpage 
 
