@@ -1,0 +1,169 @@
+---
+title: "Friends Get More Money, Attention and Handshakes: Chinese Foreign Aid, Xinhua and Diplomatic Visits"
+author: ["Lucie Lu","Miles D. Williams"]
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  bookdown::pdf_document2: 
+    toc: false
+classoption: fleqn
+fontfamily: mathpazo
+fontsize: 12pt
+bibliography: ref_xinhua.bib
+link-citations: yes
+linkcolor: blue
+header-includes:
+  - \usepackage{amsmath}
+  - \usepackage{setspace}
+  - \setlength{\mathindent}{15pt}
+  - \setlength\parindent{24pt}
+  - \setlength{\parskip}{0.0pt plus 1.0pt}
+  - \doublespacing
+  - \newtheorem{theorem}{Theorem}[section]
+  - \newtheorem{lemma}[theorem]{Lemma}
+  - \newtheorem{proposition}[theorem]{Proposition}
+  - \newtheorem{corollary}[theorem]{Corollary}
+  - \newenvironment{proof}[1][Proof]{\begin{trivlist}
+      \item[\hskip \labelsep {\bfseries Proof}]}{\end{trivlist}}
+  - \newenvironment{definition}[1][Definition]{\begin{trivlist}
+      \item[\hskip \labelsep {\bfseries 1}]}{\end{trivlist}}
+  - \newenvironment{example}[1][Example]{\begin{trivlist}
+      \item[\hskip \labelsep {\bfseries 1}]}{\end{trivlist}}
+  - \newenvironment{remark}[1][Remark]{\begin{trivlist}
+      \item[\hskip \labelsep {\bfseries 1}]}{\end{trivlist}}
+  - \newcommand{\qed}{\nobreak \ifvmode \relax \else
+      \ifdim\lastskip<1.5em \hskip-\lastskip
+      \hskip1.5em plus0em minus0.5em \fi \nobreak
+      \vrule height0.75em width0.5em depth0.25em\fi}
+  - \usepackage{wrapfig}
+  - \usepackage{float}
+  - \floatplacement{figure}{!t}
+  - \usepackage{caption}\captionsetup[table]{skip=5pt}
+  - \usepackage{dcolumn}
+  - \usepackage{rotating}
+  - \usepackage{caption}\DeclareCaptionLabelFormat{AppendixTables}{A.#2}
+
+Abstract: "Absent formal avenues of transparency, how do China's efforts at gaining international recognition and promoting good relations with aid recipients play out in Beijings foreign aid giving? We bring a novel perspective to this issue by considering Chinese media coverage of developing countries intended for foreign audiences and China’s bilateral diplomatic activities. These measures capture two distinct but related aspects of China’s foreign policy: status/legitimacy in the eyes of a foreign (predominantly Western) audience and south-south diplomacy. To the extent that China’s development finance complements these goals, we expect greater coverage of a developing country in a Chinese media outlet directed to foreign readers and greater bilateral diplomatic activity to correlate with greater Chinese foreign aid giving. To test this expectation we merge AidData’s Chinese development finance dataset with two newly available datasets: (1) AidData’s compiled yearly counts of bilateral official diplomatic visits from China and (2) millions of English edition *Xinhua* news articles from 2000 to 2014 scraped by the Cline Center for Advanced Social Research. We find that greater media coverage of developing countries targeted at a foreign audience via the English version of *Xinhua* and the number of diplomatic visits to a developing country predict greater receipt of Chinese aid. Our results support the view that Chinese aid allocation patterns map to China’s broader diplomacy and legitimacy seeking objectives on the world stage."
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, warning = F, message = F)
+```
+
+
+# Introduction 
+
+China's overseas development financing now surpasses that of the United States, the World Bank, and several other multilateral development and lending institutions combined. But despite the mammoth proportions of Beijing's aid (and increasingly debt) that it issues worldwide, the motives behind its overseas activities remain a mystery. China neither reports its foreign aid spending to international organizations, as do Development Assistance Committee (DAC) members to the OECD, nor does China publish its aid expenditures in a public database, as does the United States in USAID's *Greenbook*. For this reason, many Western governments assume Beijing deliberately keeps its international development finance a secret [@fuchsRudyak2019]. 
+
+Although Beijing has primarily focused on its immediate surrounding neighbors, Asia-Pacific and Central Asia, for security and geostrategic concerns, it is nevertheless increasingly thinking and acting globally [@nathan_chinas_2012]. Similarly, in terms of where China’s money goes and its economic influence is concentrated, some countries clearly are more important than others. However, Beijing's leaders hold the reasons why close to the vest. 
+
+The secrecy surrounding China's international development financing is puzzling. But vis-$\grave{\text{a}}$-vis the limited transparency, the painstaking work of researchers to document and analyze trends in China's development financing has illuminated a great deal about Beijing's approach to giving and lending. **They find** that China is far from the rogue donor that many have feared, but instead, China's ODA-like expenditures follow patterns similar to those of OECD-DAC donors **(citation needed)**. Hence, much like these traditional donors, China's foreign aid presents as a versatile foreign policy tool through which Beijing seeks to accomplish important objectives in international politics. These goals include international recognition that China is a great power and closer diplomatic ties with developing countries in what China calls "South-South" cooperation.
+
+However, the goals of facilitating cooperation and winning international recognition as a rising power are difficult to accomplish in secret. This, therefore, raises a natural question. *Do China’s foreign aid and debt allocation relate to public diplomacy and international recognition efforts? If so, how?*
+
+We propose that despite the lack of formal reporting, Beijing can pursue international recognition and diplomacy with its overseas financing with the help of other complementary foreign policy activities. Specifically, we consider outward-facing state-sanctioned news coverage and bilateral diplomatic missions from Beijing. Past research suggests that these two activities play special roles in complementing the foreign policy objectives that drive China's giving and lending. 
+
+Media coverage is one way that countries can generate attention and promote a positive spin on their activities to foreign audiences. As Nye [-@nye_public_2008-2] notes, daily communications that reach both domestic and foreign populations are a way to improve a country's soft power. Perhaps in recognition of this, Beijing has expanded its outward-facing state-sponsored media activities and news reporting over the past two decades. This has been done in part through the English version of *Xinhua*, China's top state-sponsored news agency.
+
+In addition to expanding the reach and scope of its externally facing news media, China engages in more conventional forms of bilateral diplomacy via government-to-government diplomatic missions. Efforts to document Beijing's public diplomacy have revealed an expansive set of activities in which Beijing engages. These range from the financial to the cultural, and from elite-to-elite meetings to informational exchanges.
+
+While public diplomacy and outward-facing state-sponsored media are not solely used to support China's overseas development financing, we believe they have clear overlapping purposes. In particular, diplomacy and coverage are critical *visible* activities that can complement the often opaque character of Beijing's development finance. Thus, to the extent that China's development finance is targeted at supporting image- and alliance-building activities, we hypothesize that recipients of China's overseas development assistance will also be disproportionate targets of media coverage in *Xinhua* to support China's image abroad and to build publicity around its development activities, and they will be more frequent hosts of diplomatic missions from Beijing to support closer bilateral cooperation.
+
+As we test these hypotheses, in our research design we take care to ensure that we delineate China's development financing according to the type of assistance China offers. Until recently, many have mistakenly conflated Beijing's ODA-like giving with its other official financing (OOF). However, efforts to disentangle China's activities with respect to grants and low-interest loans (financing that would meet the OECD definition of official development assistance or ODA) from its activities with respect to higher interest loans and export credits (OOF) have unmasked a considerable divergence in goals. The conventional view is that while *aid* (ODA) is closely tied to Beijing's foreign policy goals, *debt* (OOF) is related to Beijing's commercial interests.^[See @dreher_banking_2022.] Thus, as we test our hypotheses, we also distinguish between Beijing-as-donor from Beijing-as-lender.
+
+While the findings overall are consistent with our hypotheses, they do so in ways that also problematize the neat distinction between China's use of aid and debt. In particular, we find that *Xinhua* coverage is disproportionately concentrated among China's ODA recipients, while no significant relationship exists between aid and diplomatic visits. Conversely, we find that debt is significantly linked to a greater frequency of bilateral diplomatic missions from Beijing, but no significant difference in *Xinhua* coverage. Together these findings reveal an intriguing pattern: Beijing likes to talk about its aid recipients but prioritizes diplomacy with its debtors.
+
+Aid recipient countries disproportionately get more media attention from *Xinhua* via stories that report both on the state of their economy and their development needs. Notably, *Xinhua* does not just promote China’s efforts to offer aid to those countries in need but also gives a rounded picture of those countries’ economic conditions justifying their legitimate need for aid. 
+
+Meanwhile, the finding that loans correspond with diplomatic missions has special relevance in light of Beijing's Belt and Road Initiative (BRI). A 2018 BRI foreign policy assessment report from Washington [@hurley_examining_2019] highlights that lending indicates Beijing’s economic interests and strategic dominance---China tends to lend to vulnerable states with debt distress in exchange for unfair deals and strategic concessions. Brautigam [-@brautigam_critical_2020] calls the Chinese "debt-trap diplomacy" a meme based on collective fear of the Chinese threat rather than sound empirical evidence. Our finding suggests that China is more likely to provide loans to diplomatically aligned countries. For instance, Russia, one of China’s closest allies, receives the highest amount of lending on average among 142 countries but no aid at all between 2002 and 2017. In contrast, Iraq shows the opposite pattern: it receives the highest amount of aid from China during the period of our investigation, but it does not receive any loans. Concern about Chinese debt nonetheless raises a natural question related to the function of diplomacy in debtor countries. Does debt serve as a tool of diplomacy, or does Beijing wield diplomacy to cover a multitude of "debt-trap" sins? More research is needed to answer this question.
+
+
+# Xinhua’s Global Horizons
+
+*Xinhua* is firmly under the control of the CCP’s Central Propaganda Department. In 2013, President Xi Jinping exhorted the Propaganda Department to “tell Chinese stories well,” and the *Xinhua* news agency is at the forefront [@xinhua_xi_2013].  It also has an increasingly global reach to produce millions of articles in the past decade with hundreds of bureaus worldwide. Yet, *Xinhua*’s news reports should not be dismissed as mere propaganda or empty slogans. *Xinhua* presents itself as a balanced and fact-based news agency, not a government mouthpiece [@brazys_chinas_2020]. This outward-facing Chinese official media, whose mission as a key disseminator of the Party’s narrative to foreign audiences, may inform us of the PRC government’s initiatives of presenting Chinese perspectives of real-time events to global audiences. 
+
+*Xinhua* is global, but also serves as the main domestic media outlet. International and domestic audiences are two separate audiences, as *Xinhua* will produce its news contents in English, French, Spanish, Korean and Japanese, as well as Chinese. Brazys and Dukalaskis [-@brazys_chinas_2020] analyze how different countries are talked about in *Xinhua*’s articles in Chinese and in languages other than Chinese. They find that domestic-facing articles about other countries or regions are neither negative nor neutral, while articles about China are slightly positive. In contrast, *Xinhua*’s outward-facing articles use overall positive tones to report other countries and regions, including the United States. When characterizing China to foreign audiences, the tone is much more positive than the tone it uses for Chinese readers, or stories about any other country to both audiences.
+
+The Chinese government is acutely sensitive to China’s image in foreign media coverage. In addition to building *Xinhua* as a global news agency, China also invests in ownership stake in media companies in other developing countries. A working paper by Sundquist [-@sundquist_telling_2022] shows that the media outlets after the ownership change adopt a more friendly tone when reporting China. This finding is consistent with the conventional argument that media ownership exerts a homogenizing effect on the newspapers’ coverage of foreign policy [@baum_media_2019]. Sending constructive media messages and shaping stories about China to international audiences is critical to Beijing, and *Xinhua* is not alone in this initiative. 
+
+# Some Stylized Facts
+
+Figure \@ref(fig:total-aid-debt) shows total ODA (aid) and OOF (debt) disbursed by Beijing per year from 2002 to 2017. Values are shown in millions of 2017 USD. Blue shows values for aid and red shows values for debt. The difference in China's application of debt relative to aid is stark, and the gulf only expands over time. 
+
+This explosion in debt relative to aid aligns with a shift in Beijing's strategy going into the twenty-first century. Burdened with vast foreign currency reserves due to years-long trade surpluses, confronted with excess domestic production of industrial goods, and in need of access to resources to support its continued economic growth, Beijing tasked its so-called policy banks to help Chinese firms gain access to foreign markets [@dreher_banking_2022]. This focus spurred a radical change in China's development finance portfolio. As @dreher_banking_2022 put it, "Beijing began to behave less like a benefactor and more like a banker" (5). Figure \@ref(fig:total-aid-debt) shows this transformation from donor to lender in the starkest of terms.
+
+```{r total-aid-debt, fig.cap='Total yearly ODA (aid) and OOF (debt) issued by China from 2002 to 2017 in millions of 2017 constant USD.'}
+library(knitr)
+library(here)
+include_graphics(
+  here('06_figures/aid_debt_trends.png')
+)
+```
+
+
+```{r 4-types, fig.cap='Number of developing countries per year that are (a) beneficiaries of Chinese aid, (b) debtors, (c) both, and (d) neither.'}
+include_graphics(
+  here('06_figures/dev_countries_over_time_by_type.png')
+)
+```
+
+Not only has the composition of China's total international development financing changed over time, so has its portfolio of developing countries. Figure \@ref(fig:4-types) shows yearly trends in the number of developing countries in the data sample by whether they exclusively receive Chinese aid (blue), exclusively are Chinese debtors (red), are both (green), or are neither (grey). The most substantial change over time has been in the number of developing countries that are neither recipients nor debtors with respect to Chinese development financing. In 2002 more than 70 of the developing countries in the sample were neither recipients nor debtors of Beijing's. By 2017 the count declined to 24. 
+
+This change appears to be the product of growth in Beijing's application of debt; though, an expansion in the delivery of aid also explains some of the change. While the number of developing countries that are exclusively recipients of Chinese aid has not followed any particular trend (save for a noticeable decline from 2010 to 2014 and subsequent rebound), the number of debtors has grown considerably. In 2002 less than 10 countries exclusively were recipients of Chinese loans (debt), and another 15 were recipients of loans in addition to aid. In 2017, 14 developing countries exclusively were recipients of loans, and nearly 50 were recipients of both loans and aid.
+
+However, despite an expansion in the number of debtors over time and the now mammoth scope of total lending, most of this debt is concentrated in a smaller set of countries relative to aid. Even at its lowest dip in 2013, the number of developing countries that exclusively are beneficiaries of Chinese aid remained greater than the number of developing countries that exclusively were recipients of loans and the number of countries that were recipients of both loans and aid. This suggests that has Beijing has shifted its strategy for development finance, its approach has been to cast a wider net with its aid while it takes a more targeted approach with debt.
+
+```{r aid-debt-country, fig.cap='Top 20 Chinese Aid Recipients (left) and Debt Recipients (right) on Average from 2002 to 2017.', out.width="100%",fig.show='hold'}
+include_graphics(
+  here('06_figures/aid_debt.jpg'))
+
+```
+
+Figure \@ref(fig:aid-debt-country) shows the top-20 Chinese aid and debts recipient countries on average between 2002 and 2017. Notably, on average, Iraq received 500 million in aid but borrows 0 dollars of loan from China. In contrast, Russia borrowed almost 8,000 million dollars from China but received no aid at all. There is little overlap between the top recipient countries that receive both aid and debt from China. There are stark variations in terms of the amounts China lends. Russia and Venezuela were the only countries that borrowed more than 5,000 million dollars debt on average, the sum of which accounted for about 30% of the total lending amounts of the top-20 debt recipients. Eight countries are shown on both the left and right frames: Indonesia, Pakistan, Laos, Ethiopia, Cambodia, Sri Lanka, Kenya, and Sudan. Geographically, five are in South or East Asia, whereas three are in Africa.
+
+
+In terms of the compositions of debt and aid for the top 20 beneficiaries of total amount of both aid and debt, Figure \@ref(fig:compositions) shows that 14 out of 20 countries received over 80% of debt in their portfolio. The top 5 recipients, Russia, Venezuela, Angola, Kazakhstan and Brazil received support from China almost purely in the form of loans. Kazakhstan is the only exception among the five beneficiaries that received slightly 2\% of aid in its portfolio. We can infer that Beijing invests more heavily in its debt, comparing to its aid distribution. In consistent with the trends demonstrated in Figure \@ref(fig:4-types), China takes a targeted approach with debt.
+
+
+```{r compositions, fig.cap='The Aid-Debt Composition of the Top 20 Chinese Aid and Debt Recipients on Average from 2002 to 2017.', out.width="100%",fig.show='hold'}
+include_graphics(
+  here('06_figures/portfolio.jpg'))
+
+```
+
+Alongside these shifts in the application of aid and debt in Beijing's approach to international development finance, a consensus has evolved that aid and debt serve different functions for China. Aid is supposed to support China's foreign policy goals, while debt is supposed to support its market interests [see @dreher_banking_2022]. The idea is that aid lets Beijing buy influence, whereas debt helps enrich Chinese firms and propel economic growth for China. However, an examination of patterns in the main variables of interest in this study problematizes this tidy distinction.
+
+
+```{r aid-debt-cov, fig.cap='Number of \\textit{Xinhua} mentions and diplomatic missions from Beijing per year by developing country aid-recipient status (top) and debtor status (bottom).', out.width="100%",fig.show='hold'}
+include_graphics(
+  c(here('06_figures/rate_coverage_visits_by_aid.png'),
+    here('06_figures/rate_coverage_visits_by_debt.png'))
+)
+```
+
+Figure \@ref(fig:aid-debt-cov) shows trends in the number yearly *Xinhua* mentions of developing countries in the sample and the number of yearly diplomatic visits these countries host. The left frame of each panel shows the mean number of *Xinhua* mentions per developing country per year, and the right frame of each panel shows the mean number of diplomatic visits per developing country per year. In the top, the sample is divided by status as a Chinese aid recipient. Blue denotes the trend in yearly mentions in *Xinhua* and diplomatic visits per country among recipients of Chinese aid, whereas red denotes these trends among non-recipients. In the bottom panel, the sample is divided by status as a Chinese debtor. Blue denotes the same trends in the top panel, but in this case for Chinese debtors. Meanwhile, red denotes these trends among non-debtors.
+
+Recall that hypothesis 1 holds that Beijing will concentrate more *Xinhua* coverage in development finance recipients, and that hypothesis 2 holds that it will send more diplomatic missions to recipients. With respect to aid, there is little observable difference in country coverage in *Xinhua* depending on recipient status. However, recipients host appreciably more diplomatic missions from Beijing than non-recipients. The difference narrows by 2013, but remains across the entire sample period. With respect to debt, there are notable differences in both *Xinhua* mentions and diplomatic missions between debtor and non-debtor developing countries. Debtor status corresponds with more frequent yearly mentions in *Xinhua* and a greater number of hosted missions from Beijing.
+
+These patterns remain only suggestive. Many factors jointly determine Beijing's financing, *Xinhua* coverage, and diplomatic missions that likely confound straightforward identification of the relationships among these variables. The next section summarizes the results from more rigorous statistical tests of hypotheses 1 and 2.
+
+
+\clearpage 
+
+# Results
+
+```{r binom-est, fig.cap='Estimated Negative Binomial model coefficients with 95\\% confidence intervals. Controls and year fixed effects not shown. Models were estimated with random recipient intercepts.'}
+include_graphics(
+  here('06_figures/neg_binom_estimates.png')
+)
+```
+
+
+```{r predicted-diff, fig.cap='Counterfactual estimates of yearly \\textit{Xinhua} mentions and diplomatic missions from Beijing.'}
+include_graphics(
+  here('06_figures/predicted_differences.png')
+)
+```
+
+\clearpage
+
+# References
