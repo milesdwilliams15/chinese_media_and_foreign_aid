@@ -48,6 +48,7 @@ abstract: "Absent formal avenues of transparency, how do China’s foreign aid a
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = F, warning = F, message = F)
 ```
+
 \clearpage
 
 # Introduction
@@ -106,8 +107,6 @@ In addition to considering how diplomatic missions and state-sponsored outward-f
 
 On the one hand, since aid is supposed to have more direct links to China's foreign policy goals, it follows that China will complement its aid giving with visible acts of diplomacy and efforts to increase the salience of aid recipients in foreign audiences. On the other hand, while aid and debt may have distinct goals, such a tidy distinction may be too simplistic. Perhaps more importantly, some of the market oriented objectives that drive China's global debt might benefit from public displays of diplomacy. On this front, recent research suggests that Beijing uses its debt to ensure access to natural resources that China lacks domestically. As noted above, @dreherEtAl2021 find that Beijing targets more of its loans in resource rich developing countries, a strategy that @dreher_banking_2022 contend is meant to guarantee access to said resources. When Beijing's policy banks provide these loans, developing country governments collateralize their oil or rare minerals, all but assuring access to these resources for Beijing since many of these countries are unable to directly repay the loans[@dreher_banking_2022].
 
-
-
 # Media's Agenda-Setting Effects
 
 ## First-level Agenda-setting
@@ -162,24 +161,51 @@ To the extent that aid supports Beijing's foreign policy goals, we should expect
 
 > H2: Developing countries that receive more foreign aid from China will host more diplomatic missions from China.
 
-
 The same logic applies to Beijing's use of debt. If loans function in service of political objectives, then countries that owe greater debt to Beijing also will be both targets of greater foreign-facing media coverage in *Xinhua* and hosts of a greater number of diplomatic missions from Beijing.
 
 > H3: Developing countries that owe more debt to China will receive more coverage in *Xinhua*.
 
 > H4: Developing countries that owe more debt to China will host more diplomatic missions from China.
 
-
 If we can reject the null hypothesis for H1 and H2, but cannot for H3 and H4, this will be consistent with the view that China uses aid---not debt---for political goals [@dreher_banking_2022].
+
+# Methods
+
+To test hypotheses 1-4 we rely on zero-inflated negative binomial regression models using yearly counts at the recipient-year level of the number of *Xinhua* article mentions and the number of bilateral diplomatic visits from Beijing as the response variables, respectively. Since these outcomes reflect discrete counts, we apply a method that explicitly models a discrete count process. We opt for negative binomial regression rather than Poisson since the variance of the outcomes is not equivalent to their means. We further apply the zero-inflated negative binomial model since the distributions of yearly coverage counts and visits contain a substantial number of zero values. Because of the panel nature of the data, we further include random recipient intercepts in model estimation to account for within-recipient dependence and additional unobserved recipient heterogeneity.
+
+The first two specifications below model the yearly count of *Xinhua* mentions and of diplomatic visits from Beijing given the identity of the recipient country as one of either an aid beneficiary, a debtor, or both. These variables are denoted by a vector called "Type" which contains binary indicators for whether country $i$ in year $t$ receives exclusively aid, exclusively debt, or both from Beijing.
+
+$$
+\text{coverage}_{it} = \exp\{\tau_t + \text{Type}_{it}^\top \beta + X_{it} ^\top \gamma + \rho_i + \epsilon_{it} \}; \tag{1}
+$$
+
+$$
+\text{visits}_{it} = \exp\{\tau_t + \text{Type}_{it}^\top \beta + X_{it} ^\top \gamma + \rho_i + \epsilon_{it} \}. \tag{2}
+$$
+
+These models are blunt tests of differences between coverage and visits for aid recipients and debtors relative to countries that receive neither from China. We additionally estimate the following two models to test whether changes in the amount of aid or debt received correspond to shifts in coverage and visits:
+
+$$
+\text{coverage}_{it} = \exp\{\tau_t + \beta_1 \text{ asinh}(\text{aid}_{it-1}) + \beta_2 \text{ asinh}(\text{debt}_{it-1}) + X_{it} ^\top \gamma + \rho_i + \epsilon_{it} \}; \tag{3}
+$$
+
+$$
+\text{visits}_{it} = \exp\{\tau_t + \beta_2 \text{ asinh}(\text{aid}_{it-1}) + \beta_4 \text{ asinh}(\text{debt}_{it-1}) + X_{it} ^\top \gamma + \rho_i + \epsilon_{it} \}. \tag{4}
+$$
+
+Hypotheses 1-4 are tested via the direction and statistical significance of $\beta$ parameters 1-4. H1 (that aid recipients receive more outward facing coverage in *Xinhua*) will be supported if $\beta_1 > 0$ and H2 (that aid recipients host more diplomatic missions from Beijing) will be supported if $\beta_2 > 0$. H3 and H4 (hypotheses that parallel H1 and H2, but which apply to Chinese debt) will be supported if $\beta_3>0$ and $\beta_4>0$, respectively.
+
+Models 1-4 each include year intercepts to adjust for yearly shocks and changes to Beijing's overall aid and debt portfolio, denoted by the term $\tau_t$. The parameter $\rho_i$ denotes random recipient intercepts. The vector $X_{it}$ denotes a set of control variables to improve precision and to adjust for possible confounders for Chinese bilateral financing, *Xinhua* coverage, and diplomatic visits. A summary of these variables, any transformations applied, and their sources is given in Table [x].
+
+[Table x goes here]
 
 # Some Stylized Facts
 
-In this section, we will provide some figures to show the trends of Chinese aid and debt between 2002 and 2017 and the top 20 recipients in terms of their financial portfolios on average. Then we will present some visuals on the correlations between *Xinhua* news coverage, diplomatic visits, Chinese financial outflow destinations in yearly trends as well as in countries ranked the highest percentiles on each dimension. 
+In this section, we will provide some figures to show the trends of Chinese aid and debt between 2002 and 2017 and the top 20 recipients in terms of their financial portfolios on average. Then we will present some visuals on the correlations between *Xinhua* news coverage, diplomatic visits, Chinese financial outflow destinations in yearly trends as well as in countries ranked the highest percentiles on each dimension.
 
 ## Main variables
 
 *aid, debt, Xinhua mentions, diplomatic visits*
-
 
 ## Trends in Aid and Debt
 
@@ -234,11 +260,7 @@ Figure \@ref(fig:aid-debt-cov) shows trends in the number yearly *Xinhua* mentio
 
 Recall that hypotheses 1 and 3 hold that Beijing will concentrate more *Xinhua* coverage in development finance recipients, and that hypotheses 2 and 4 hold that it will send more diplomatic missions to recipients. With respect to aid, there is little observable difference in country coverage in *Xinhua* depending on recipient status. However, recipients host appreciably more diplomatic missions from Beijing than non-recipients. The difference narrows by 2013, but remains across the entire sample period. With respect to debt, there are notable differences in both *Xinhua* mentions and diplomatic missions between debtor and non-debtor developing countries. Debtor status corresponds with more frequent yearly mentions in *Xinhua* and a greater number of hosted missions from Beijing.
 
-
 Finally, we examine the overlaps between top 20 *Xinhua* news coverage countries and the top 10 percent aid and debt recipients of the year in Figure \@ref(fig:coverage-combined). The y-axis is the list of top 20 *Xinhuan* news coverage countries ranked in order. The blud or red colors denote whether the countries are ranked as top 10 percent debt aid or recipients of the year. The bigger the dot is, the higher amount of yearly news coverage count it is. Russia received the highest number of news exposure between 2002 and 2017 on average. It also consistently stands as top 10 percent debt recipients of the year (shown as red dots in Figure \@ref(fig:coverage-combined) (bottom)). Take India as another example: in 2009, 2010, 2011 and 2012, it received over 400 times mentions in *Xinhua* and ranked as the top 10 percent debt recipients. Indonesia also consistently received over 200 yearly mentions in *Xinhua* reports and borrowed significantly amount of money from China. Overall, there is a significant overlap for countries receiving high media exposure and scoring high percentiles in Chinese debt and aid during the time of investigation.
-
-
-
 
 ```{r coverage-combined, fig.cap='Distribution of top 20 Xinhua news coverage ocuntries and top 10 percent aid (top) and debt (bottom) recipients from 2002 to 2017.', out.width="100%",fig.show='hold'}
 
@@ -247,12 +269,9 @@ include_graphics(
 
 ```
 
-
 Similarly, Figure \@ref(fig:visits-combined) shows the overlaps between top 20 diplomatic visits countries and the top 10 percent aid and debt recipients of the year. Nine countries[^7] were listed as the top 20 diplomatic visits and *Xinhua* news coverage on average between 2002 and 2017. Countries such as Kazakhstan, India and Thailand often hosted Chinese high officials for more than 30 times a year. Overall, China seemed to visit the list of the top 10 countries over 10 times and reguarly except for four countries in 2016 and 2017. These countries were more likely to be countries where received the highest percentiles of financial inflows from China.
 
-
 [^7]: India, Indonesia, Thailand, Malaysia, Afghanistan, Pakistan, Philippines, Cambodia, Vietnam.
-
 
 ```{r visits-combined, fig.cap='Distribution of top 20 diplomatic visits destinations and top 10 percent aid (top) and debt (bottom) recipients from 2002 to 2017.', out.width="100%", fig.show='hold'}
 
@@ -263,13 +282,9 @@ include_graphics(
 
 These patterns remain only suggestive. Many factors jointly determine Beijing's financing, *Xinhua* coverage, and diplomatic missions that likely confound straightforward identification of the relationships among these variables. The next section summarizes the results from more rigorous statistical tests of hypotheses 1 to 4.
 
-
-
 # Results
 
-
 **Adding confounders here**
-
 
 ```{r binom-est, fig.cap='Estimated Negative Binomial model coefficients with 95\\% confidence intervals. Controls and year fixed effects not shown. Models were estimated with random recipient intercepts.', fig.show='hold'}
 include_graphics(
