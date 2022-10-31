@@ -431,23 +431,19 @@ bind_rows(
       each = 2
     )),
     var_type = c(
-      rep('Country Classification',
+      rep('Models: (3) & (4)',
           len = 6),
-      rep('Financing Received',
+      rep('Models: (1) & (2)',
           len = 4)
     )
   ) -> fixed_effs
-ggplot(fixed_effs) +
+ggplot(fixed_effs %>% filter(var_type == "Models: (1) & (2)")) +
   aes(
     x = estimate,
     xmin = estimate - 1.96 * std.error,
     xmax = estimate + 1.96 * std.error,
     y = term,
     color = Outcome
-  ) +
-  facet_wrap(
-    ~ var_type,
-    scales = 'free'
   ) +
   geom_point(
     position = ggstance::position_dodgev(-.5)
@@ -490,99 +486,145 @@ ggplot(fixed_effs) +
     width = 6
   )
 
-tibble(
-  None = predict(znb_counts_type, type = 'response', 
-                 newdata = new_dt %>% mutate(type = unique(type[type=='None']))),
-  Aid = predict(znb_counts_type, type = 'response', 
-                newdata = new_dt %>% mutate(type = unique(type[type=='Aid']))),
-  Debt = predict(znb_counts_type, type = 'response', 
-                 newdata = new_dt %>% mutate(type = unique(type[type=='Debt']))),
-  Both = predict(znb_counts_type, type = 'response', 
-                 newdata = new_dt %>% mutate(type = unique(type[type=='Both'])))
-) -> count_preds
-
-tibble(
-  None = predict(znb_visits_type, type = 'response', 
-                 newdata = new_dt %>% mutate(type = unique(type[type=='None']))),
-  Aid = predict(znb_visits_type, type = 'response', 
-                newdata = new_dt %>% mutate(type = unique(type[type=='Aid']))),
-  Debt = predict(znb_visits_type, type = 'response', 
-                 newdata = new_dt %>% mutate(type = unique(type[type=='Debt']))),
-  Both = predict(znb_visits_type, type = 'response', 
-                 newdata = new_dt %>% mutate(type = unique(type[type=='Both'])))
-) -> visit_preds
-
-count_preds %>%
-  summarize(
-    across(
-      everything(),
-      mean
-    )
+## generate predictions
+aid_vals <- seq(
+  asinh(min(new_dt$aid[new_dt$recipient=="Pakistan"])), 
+  asinh(max(new_dt$aid[new_dt$recipient=="Pakistan"])), 
+  by = 1
+) %>% sinh() %>% .[1:10]
+debt_vals <- seq(
+  asinh(min(new_dt$debt[new_dt$recipient=="Pakistan"])), 
+  asinh(max(new_dt$debt[new_dt$recipient=="Pakistan"])), 
+  by = 1
+) %>% sinh() %>% .[1:10]
+my_sample <- function(data, y, r) data %>%
+  filter(year == y,
+         recipient == r) %>%
+  sample_n(10, replace = T)
+nd1 <- new_dt %>%
+  my_sample(., 2017, "Pakistan") %>%
+  mutate(aid = aid_vals) %>%
+  bind_cols(
+    predict(znb_counts_cont, ., type = "link", se.fit = T)
   ) %>%
-  pivot_longer(
-    everything()
-  ) -> count_out
-visit_preds %>%
-  summarize(
-    across(
-      everything(),
-      mean
-    )
-  ) %>%
-  pivot_longer(
-    everything()
-  ) -> visit_out
-bind_rows(
-  count_out %>%
-    mutate(outcome = 'Xinhua Mentions'),
-  visit_out %>%
-    mutate(outcome = 'Diplomatic Visits')
-) %>%
-  group_by(outcome) %>%
   mutate(
-    new_value = value / max(value)
+    count = exp(fit),
+    ll  = exp(fit - 1.96 * se.fit),
+    ul  = exp(fit + 1.96 * se.fit)
+  )
+nd2 <- new_dt %>%
+  my_sample(., 2017, "Pakistan") %>%
+  mutate(debt = debt_vals) %>%
+  bind_cols(
+    predict(znb_counts_cont, ., type = "link", se.fit = T)
+  ) %>%
+  mutate(
+    count = exp(fit),
+    ll  = exp(fit - 1.96 * se.fit),
+    ul  = exp(fit + 1.96 * se.fit)
+  )
+nd3 <- new_dt %>%
+  my_sample(., 2017, "Pakistan") %>%
+  mutate(aid = aid_vals) %>%
+  bind_cols(
+    predict(znb_visits_cont, ., type = "link", se.fit = T)
+  ) %>%
+  mutate(
+    count = exp(fit),
+    ll  = exp(fit - 1.96 * se.fit),
+    ul  = exp(fit + 1.96 * se.fit)
+  )
+nd4 <- new_dt %>%
+  my_sample(., 2017, "Pakistan") %>%
+  mutate(debt = debt_vals) %>%
+  bind_cols(
+    predict(znb_visits_cont, ., type = "link", se.fit = T)
+  ) %>%
+  mutate(
+    count = exp(fit),
+    ll  = exp(fit - 1.96 * se.fit),
+    ul  = exp(fit + 1.96 * se.fit)
+  )
+
+bind_rows(
+  nd1 %>% mutate(outcome = "Mentions", 
+                 by = "Aid"),
+  nd2 %>% mutate(outcome = "Mentions",
+                 by = "Debt"),
+  nd3 %>% mutate(outcome = "Visits",
+                 by = "Aid"),
+  nd4 %>% mutate(outcome = "Visits",
+                 by = "Debt")
+) %>%
+  mutate(
+    val = rep(c(aid_vals, debt_vals), len = n())
+  ) -> plt_dt
+ggplot(plt_dt) +
+  aes(x = val + 1,
+      y = count,
+      ymin = ll,
+      ymax = ul) +
+  geom_line() +
+  geom_ribbon(alpha = 0.4) +
+  facet_grid(
+    outcome ~ by,
+    scales = "free"
+  ) +
+  scale_x_log10()
+
+plt_dt %>%
+  group_by(outcome, by) %>%
+  summarize(
+    mareff = mean(diff(count))
+  ) -> mareff
+its <- 2000
+map_dfr(
+  1:its,
+  ~ plt_dt %>%
+      group_by(outcome, by) %>%
+      summarize(
+        mareff = mean(diff(count + 
+                             rnorm(n(), 
+                                   se.fit))),
+        .groups = "drop"
+      )
+) -> bmareff
+
+bmareff %>%
+  group_by(outcome, by) %>%
+  summarize(
+    se = sd(mareff)
+  ) %>%
+  full_join(
+    mareff
   ) %>%
   ggplot() +
-  aes(
-    x = new_value,
-    y = name,
-    fill = outcome,
-    label = round(value, 2)
-  ) +
-  geom_col(
-    color = 'black',
-    position = ggstance::position_dodgev(-.9)
-  ) +
-  geom_text(
-    hjust = 1.2,
-    color = 'white',
-    position = ggstance::position_dodgev(-.9)
-  ) +
-  scale_fill_manual(
-    values = c(
-      'Diplomatic Visits' = 'royalblue',
-      'Xinhua Mentions' = 'indianred3'
-    )
-  ) +
-  scale_x_continuous(
-    breaks = NULL
-  ) +
-  labs(
-    x = NULL,
-    y = NULL,
-    fill = 'Outcome'
-  ) +
-  theme(
-    legend.position = 'top'
-  ) +
-  guides(
-    fill = guide_legend(
-      title.position = 'top',
-      title.hjust = 0.5
-    )
-  ) 
-  ggsave(
-    here('06_figures/predicted_differences.png'),
-    height = 4,
-    width = 6
+  aes(x = mareff,
+      y = by,
+      color = outcome) +
+  geom_point() +
+  geom_errorbarh(
+    aes(xmin = mareff - 1.96 * se,
+        xmax = mareff + 1.96 * se)
+  )
+
+library(ggridges)
+ggplot(bmareff) +
+  aes(x = mareff,
+      y = by) +
+  facet_wrap(~ outcome,
+             scales = "free_x") +
+  geom_density_ridges()
+
+library(kableExtra)
+mareff %>%
+  kable(
+    format = "latex",
+    caption = "Marginal Effects",
+    booktabs = T,
+    linesep = "",
+    digits = 2
+  ) %>%
+  footnote(
+    general = "Estimates for Pakistan, 2017."
   )
