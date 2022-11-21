@@ -22,8 +22,9 @@ dt <- read_csv(
 
 # summary stats
 stargazer::stargazer(
-  as.data.frame(dt),
-  type = 'text'
+  as.data.frame(dt %>% mutate(fdi = fdi/1000000)),
+  type = 'latex',
+  title = "Summary Statistics"
 )
 
 # aid and debt over time
@@ -391,6 +392,14 @@ summary(znb_counts_type)
 summary(znb_visits_type)
 summary(znb_counts_cont)
 summary(znb_visits_cont)
+fits_to_save <- list(
+  znb_counts_cont = znb_counts_cont,
+  znb_visits_cont = znb_visits_cont
+)
+save(
+  fits_to_save,
+  file = here("03_analysis", "model_fits.R")
+)
 
 bind_rows(
   broom.mixed::tidy(

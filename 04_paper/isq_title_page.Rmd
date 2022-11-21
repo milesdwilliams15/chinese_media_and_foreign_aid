@@ -1,0 +1,19 @@
+---
+#title: "Untitled"
+#author: "Miles D. Williams"
+#date: '2022-11-21'
+output: pdf_document
+fontfamily: mathpazo
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Title**: Who Gets More Money, Attention and Handshakes? Chinese Overseas Developing Financing, *Xinhua*, and Diplomacy
+
+**Authors**: Lucie Lu^[University of Illinois at Urbana-Champaign], Miles D. Williams^[Denison University - williamsmd@denison.edu]
+
+**Abstract**: How does China support the ostensible diplomatic and image-boosting goals of its overseas development financing? We leverage two new datasets that have recently been made available to answer this question---one, a database of millions of English edition *Xinhua* articles; the other, a database of Beijing's bilateral diplomatic missions in developing countries since the turn of the century. We propose that Beijing wields the English version of *Xinhua* as a tool to promote its image abroad, and that it engages in diplomatic missions to foster closer ties with developing countries in parallel with its allocation of foreign aid. We expect, all else equal, that greater media coverage in *Xinhua* and bilateral diplomatic activity will concentrate in developing countries that receive more foreign aid from China. At the same time, because of the greater controversy surrounding its use, we expect China's growing portfolio of debt allocation to have weaker or null correspondence with coverage and visits. Surprisingly, we show that this expectation only partially holds. Aid recipients receive more coverage in *Xinhua*, and debtors host a greater number of diplomatic missions from Beijing. While China likes to talk about its aid recipients, it prioritizes diplomacy with its debtors.
+
+**Key Words**: foreign aid, China, media, diplomacy
