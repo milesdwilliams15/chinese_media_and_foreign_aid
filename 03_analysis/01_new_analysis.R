@@ -10,12 +10,14 @@ library(tidyverse) # syntax
 library(glmmTMB)   # mixed-effects neg. binom. models
 library(texreg)    # printing regression output
 library(here)      # reduce headaches navigating the working directory
-theme_set(theme_light())
+library(coolorrr)  # plotting theme and palette
+set_palette()
+set_theme()
 
 # data --------------------------------------------------------------------
 
 dt <- read_csv(
-  here('01_data/final_data/final_data_imputed.csv')
+  here('01_data','final_data', 'final_data_imputed.csv')
 )
 
 # descriptives ------------------------------------------------------------
@@ -31,11 +33,11 @@ stargazer::stargazer(
 dt %>%
   group_by(year) %>%
   summarize(
-    Aid = sum(aid),
-    Debt = sum(debt)
+    ODA = sum(aid),
+    OOF = sum(debt)
   ) %>%
   pivot_longer(
-    Aid:Debt
+    ODA:OOF
   ) %>%
   mutate(
     value = value / 1000000
@@ -55,12 +57,7 @@ dt %>%
   scale_y_continuous(
     labels = scales::comma
   ) +
-  scale_color_manual(
-    values = c(
-      'Aid' = 'royalblue',
-      'Debt' = 'indianred3'
-    )
-  ) +
+  ggpal() +
   labs(
     x = NULL,
     y = 'Yearly Total\n(millions $)',
@@ -100,20 +97,14 @@ dt %>%
   scale_y_continuous(
     labels = scales::comma
   ) +
-  scale_color_manual(
-    values = c('Recipient' = 'royalblue', 
-               'Non-recipient' = 'indianred3')
-  ) +
+  ggpal() +
   facet_wrap(
     ~ name, scales = 'free'
   ) +
   labs(
     x = NULL,
     y = 'Yearly Total',
-    color = NULL
-  ) +
-  theme(
-    legend.position = 'top'
+    color = "ODA"
   ) 
   ggsave(
     here('06_figures/total_coverage_visits_by_aid.png'),
@@ -142,20 +133,14 @@ dt %>%
   scale_y_continuous(
     labels = scales::comma
   ) +
-  scale_color_manual(
-    values = c('Debtor' = 'royalblue', 
-               'Non-debtor' = 'indianred3')
-  ) +
+  ggpal() +
   facet_wrap(
     ~ name, scales = 'free'
   ) +
   labs(
     x = NULL,
     y = 'Yearly Total',
-    color = NULL
-  ) +
-  theme(
-    legend.position = 'top'
+    color = 'OOF'
   ) 
   ggsave(
     here('06_figures/total_coverage_visits_by_debt.png'),
@@ -182,19 +167,14 @@ dt %>%
   geom_line(
     size = 0.75
   ) +
-  scale_color_manual(
-    values = c('Recipient' = 'royalblue', 'Non-recipient' = 'indianred3')
-  ) +
+  ggpal() +
   facet_wrap(
     ~ name, scales = 'free'
   ) +
   labs(
     x = NULL,
     y = 'Yearly Total per Country',
-    color = NULL
-  ) +
-  theme(
-    legend.position = 'top'
+    color = 'ODA'
   ) 
   ggsave(
     here('06_figures/rate_coverage_visits_by_aid.png'),
@@ -220,20 +200,15 @@ dt %>%
   geom_line(
     size = 0.75
   ) +
-  scale_color_manual(
-    values = c('Debtor' = 'royalblue', 'Non-debtor' = 'indianred3')
-  ) +
+  ggpal() +
   facet_wrap(
     ~ name, scales = 'free'
   ) +
   labs(
     x = NULL,
     y = 'Yearly Total per Country',
-    color = NULL
-  ) +
-  theme(
-    legend.position = 'top'
-  )
+    color = 'OOF'
+  ) 
   ggsave(
     here('06_figures/rate_coverage_visits_by_debt.png'),
     height = 4,
@@ -267,22 +242,12 @@ dt %>%
   geom_line(
     size = 0.75
   ) +
-  scale_color_manual(
-    values = c(
-      'None' = 'grey',
-      'Aid' = 'royalblue',
-      'Debt' = 'indianred3',
-      'Both' = 'forestgreen'
-    )
-  ) +
+  ggpal() +
   labs(
     x = NULL,
     y = 'N Countries',
     color = NULL
-  ) +
-  theme(
-    legend.position = 'top'
-  )
+  ) 
   ggsave(
     here('06_figures/dev_countries_over_time_by_type.png'),
     height = 4,
@@ -317,14 +282,7 @@ dt %>%
   geom_line(
     size = 0.75
   ) +
-  scale_color_manual(
-    values = c(
-      'None' = 'grey',
-      'Aid' = 'royalblue',
-      'Debt' = 'indianred3',
-      'Both' = 'forestgreen'
-    )
-  ) +
+  ggpal() +
   facet_wrap(
     ~ name, scales = 'free'
   ) +
@@ -332,10 +290,7 @@ dt %>%
     x = NULL,
     y = 'Yearly Total per Country',
     color = NULL
-  ) +
-  theme(
-    legend.position = 'top'
-  ) 
+  )  
   ggsave(
     here('06_figures/rate_coverage_visits_by_type.png'),
     height = 4,
@@ -344,6 +299,7 @@ dt %>%
 
 # analysis ----------------------------------------------------------------
 
+  ## prep the data ----
 dt %>%
   mutate(
     type = socsci::frcode(
@@ -360,22 +316,12 @@ dt %>%
     )
   ) -> new_dt
 
+  ## the model formulas ----
 type_form <- ~ type + income + pop + disaster + civilwar +
   dist + v2x_api + imports + exports + distance + fdi
 cont_form <- update(type_form, ~ . - type + asinh(aid) + asinh(debt))
 
-glmmTMB(
-  update(type_form, counts_by_year ~ . + as.factor(year) + (1 | recipient)),
-  data = new_dt,
-  ziformula = ~1,
-  family = nbinom1
-) -> znb_counts_type
-glmmTMB(
-  update(type_form, total_visits ~ . + as.factor(year) + (1 | recipient)),
-  data = new_dt,
-  ziformula = ~1,
-  family = nbinom2
-) -> znb_visits_type
+  ## neg binomial models ----
 glmmTMB(
   update(cont_form, counts_by_year ~ . + as.factor(year) + (1 | recipient)),
   data = new_dt,
@@ -388,25 +334,76 @@ glmmTMB(
   ziformula = ~1,
   family = nbinom2
 ) -> znb_visits_cont
-summary(znb_counts_type)
-summary(znb_visits_type)
-summary(znb_counts_cont)
-summary(znb_visits_cont)
+
+  ## OLS models ----
+library(estimatr)
+lm_robust(
+  update(cont_form, asinh(counts_by_year) ~ .),
+  data = new_dt,
+  fixed_effects = ~ year + recipient,
+  clusters = recipient,
+  se_type = "stata"
+) -> ols_counts_cont
+lm_robust(
+  update(cont_form, asinh(total_visits) ~ .),
+  data = new_dt,
+  fixed_effects = ~ year + recipient,
+  clusters = recipient,
+  se_type = "stata"
+) -> ols_visits_cont
+
+  ## poisson models ----
+glm(
+  update(cont_form, counts_by_year ~ . + as.factor(year)),
+  data = new_dt,
+  family = quasipoisson
+) -> pml_counts_cont
+glm(
+  update(cont_form, total_visits ~ . + as.factor(year)),
+  data = new_dt,
+  family = quasipoisson
+) -> pml_visits_cont
+
 fits_to_save <- list(
   znb_counts_cont = znb_counts_cont,
-  znb_visits_cont = znb_visits_cont
+  znb_visits_cont = znb_visits_cont,
+  ols_counts_cont = ols_counts_cont,
+  ols_visits_cont = ols_visits_cont,
+  pml_counts_cont = pml_counts_cont,
+  pml_visits_cont = pml_visits_cont
 )
 save(
   fits_to_save,
   file = here("03_analysis", "model_fits.R")
 )
 
+library(lmtest)
+library(sandwich)
+pstars <- function(x) {
+  case_when(
+    between(x, 0.1, 0) ~ " ",
+    between(x, 0.05, 0.1) ~ "+",
+    between(x, 0.01, 0.05) ~ "*",
+    between(x, 0.001, 0.01) ~ "**",
+    between(x, 0, 0.001) ~ "***"
+  )
+}
 bind_rows(
-  broom.mixed::tidy(
-    znb_counts_type
+  broom::tidy(
+    pml_counts_cont %>%
+      coeftest(vcov. = vcovCL(., cluster = new_dt$recipient,
+                              type = "HC0"))
   ),
-  broom.mixed::tidy(
-    znb_visits_type
+  broom::tidy(
+    pml_visits_cont %>%
+      coeftest(vcov. = vcovCL(., cluster = new_dt$recipient,
+                              type = "HC0"))
+  ),
+ tidy(
+    ols_counts_cont
+  ),
+  tidy(
+    ols_visits_cont
   ),
   broom.mixed::tidy(
     znb_counts_cont
@@ -416,43 +413,30 @@ bind_rows(
   )
 ) %>%
   filter(
-    term %in% c(paste0(
-      'type', c('Aid', 'Debt', 'Both')
-    ), 'asinh(aid)', 'asinh(debt)')
+    term %in% c('asinh(aid)', 'asinh(debt)')
   ) %>%
   mutate(
     term = c(rep(
-      c('Recipient', 'Debtor', 'Both'),
-      len = 6
-    ),
-    rep(
-      c('Aid (asinh)', 'Debt (asinh)'),
-      len = 4
+      c('ODA (asinh)', 'OOF (asinh)'),
+      len = n()
     )),
-    Outcome = c(rep(
-      c('Xinhua Coverage',
-        'Diplomatic Visits'),
-      each = 3
+    Outcome = rep(
+      rep(c("Coverage", "Visits"), each = 2),
+      len = n()
     ),
-    rep(
-      c('Xinhua Coverage',
-        'Diplomatic Visits'),
-      each = 2
-    )),
-    var_type = c(
-      rep('Models: (3) & (4)',
-          len = 6),
-      rep('Models: (1) & (2)',
-          len = 4)
-    )
+    var_type = 
+      rep(c(
+        "PPML", "OLS", "ZinfNB"
+      ), each = 4)
   ) -> fixed_effs
-ggplot(fixed_effs %>% filter(var_type == "Models: (1) & (2)")) +
+ggplot(fixed_effs) +
   aes(
     x = estimate,
     xmin = estimate - 1.96 * std.error,
     xmax = estimate + 1.96 * std.error,
     y = term,
-    color = Outcome
+    color = Outcome,
+    label = pstars(p.value)
   ) +
   geom_point(
     position = ggstance::position_dodgev(-.5)
@@ -461,27 +445,36 @@ ggplot(fixed_effs %>% filter(var_type == "Models: (1) & (2)")) +
     position = ggstance::position_dodgev(-.5),
     height = 0
   ) +
+  geom_text(
+    vjust = -.25,
+    position = ggstance::position_dodgev(-.5),
+    show.legend = F
+  ) +
   labs(
     x = 'Coefficient with 95% CI',
     y = NULL,
-    color = 'Outcome',
-    caption = 'Mixed Effects Zero-inflated Negative Binomial Estimates'
+    color = 'Outcome'
   ) +
   geom_vline(
     xintercept = 0,
     lty = 2
   ) +
-  scale_color_manual(
-    values = c(
-      'Diplomatic Visits' = 'royalblue',
-      'Xinhua Coverage' = 'indianred3'
-    )
-  ) +
+  ggpal() +
+  facet_wrap(~ var_type) +
   theme(
     legend.position = 'top',
     plot.caption = element_text(
       hjust = .5
-    )
+    ),
+    axis.text.x = 
+      element_text(
+        size = 10
+      ),
+    panel.grid.major.y = 
+      element_line(
+        linewidth = 20,
+        color = "gray95"
+      )
   ) +
   guides(
     color = guide_legend(
@@ -492,7 +485,7 @@ ggplot(fixed_effs %>% filter(var_type == "Models: (1) & (2)")) +
   ggsave(
     here('06_figures/neg_binom_estimates.png'),
     height = 4,
-    width = 6
+    width = 12
   )
 
 ## generate predictions
